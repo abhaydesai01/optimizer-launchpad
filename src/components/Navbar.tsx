@@ -23,23 +23,28 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => setMobileOpen(false), [location]);
+  useEffect(() => {
+    setMobileOpen(false);
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"}`}>
-      <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between h-16">
-        <Link to="/" className="text-xl font-bold">
-          <span className="text-primary">O</span>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/70 backdrop-blur-2xl border-b border-white/[0.06] shadow-lg shadow-black/20" : "bg-transparent"}`}>
+      <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between h-[72px]">
+        <Link to="/" className="text-xl font-extrabold tracking-tight">
+          <span className="gradient-text">O</span>
           <span className="text-foreground">ptimizer360</span>
         </Link>
 
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-1">
           {links.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === link.to ? "text-primary border-b-2 border-primary pb-0.5" : "text-muted-foreground"
+              className={`text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 ${
+                location.pathname === link.to
+                  ? "text-primary bg-primary/10"
+                  : "text-muted-foreground hover:text-foreground hover:bg-white/[0.04]"
               }`}
             >
               {link.label}
@@ -48,28 +53,28 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:block">
-          <Button asChild size="sm">
+          <Button asChild size="sm" className="rounded-full px-6 font-semibold shadow-lg shadow-primary/20">
             <Link to="/contact">Book a Call →</Link>
           </Button>
         </div>
 
-        <button className="lg:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
+        <button className="lg:hidden text-foreground p-2" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-16 bg-background/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center gap-8">
+        <div className="lg:hidden fixed inset-0 top-[72px] bg-background/98 backdrop-blur-2xl z-40 flex flex-col items-center justify-center gap-6 animate-fade-in">
           {links.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`text-lg font-medium ${location.pathname === link.to ? "text-primary" : "text-foreground"}`}
+              className={`text-2xl font-semibold transition-colors ${location.pathname === link.to ? "gradient-text" : "text-foreground"}`}
             >
               {link.label}
             </Link>
           ))}
-          <Button asChild>
+          <Button asChild size="lg" className="rounded-full px-8 mt-4">
             <Link to="/contact">Book a Call →</Link>
           </Button>
         </div>

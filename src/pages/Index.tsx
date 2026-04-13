@@ -4,23 +4,23 @@ import SectionLabel from "@/components/SectionLabel";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import FadeIn from "@/components/FadeIn";
 import AREChart from "@/components/AREChart";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Zap, Building2, Phone, Heart, Calculator, Sparkles } from "lucide-react";
 
 const products = [
-  { name: "ARE", full: "Autonomous Revenue Engine", badge: "Flagship Product", color: "border-primary", badgeColor: "bg-primary/20 text-primary", desc: "Builds category-owning media brands, compounds organic leads across 6 platforms, and routes qualified inquiries to your centers — 24/7, no human operators.", stat: "₹40–50 Cr asset built per brand in 5 years", link: "/products/are" },
-  { name: "Accounting Intelligence Platform", badge: "Live Product", color: "border-o360-gold", badgeColor: "bg-o360-gold/20 text-o360-gold", desc: "Autonomous bookkeeping, GST compliance, invoice reconciliation, and financial intelligence — powered by LLMs.", stat: "Zero manual data entry. Real-time financial intelligence." },
-  { name: "Facility Management System", badge: "Live Product", color: "border-o360-purple", badgeColor: "bg-o360-purple/20 text-o360-purple", desc: "End-to-end facility operations — maintenance, vendor management, AMC tracking, compliance — fully automated and agentic.", stat: "Zero spreadsheet ops. Full audit trail." },
-  { name: "Voice Agent Platform", badge: "Live Product", color: "border-o360-orange", badgeColor: "bg-o360-orange/20 text-o360-orange", desc: "Human-quality AI voice agents for inbound/outbound calls, lead qualification, appointment scheduling. Hindi + English.", stat: "Handles 1,000+ calls/day. No human operators." },
-  { name: "Patient Care System", badge: "Live · HealthTech", color: "border-o360-pink", badgeColor: "bg-o360-pink/20 text-o360-pink", desc: "AI-powered chronic care management, patient engagement automation, and care program delivery for clinics and hospitals.", stat: "Live for chronic care programs across specialties." },
+  { name: "ARE", full: "Autonomous Revenue Engine", badge: "Flagship Product", borderColor: "border-l-primary", badgeColor: "bg-primary/10 text-primary border border-primary/20", desc: "Builds category-owning media brands, compounds organic leads across 6 platforms, and routes qualified inquiries to your centers — 24/7, no human operators.", stat: "₹40–50 Cr asset built per brand in 5 years", link: "/products/are", icon: Zap, glow: "glow-teal" },
+  { name: "Accounting Intelligence Platform", badge: "Live Product", borderColor: "border-l-accent", badgeColor: "bg-accent/10 text-accent border border-accent/20", desc: "Autonomous bookkeeping, GST compliance, invoice reconciliation, and financial intelligence — powered by LLMs.", stat: "Zero manual data entry. Real-time financial intelligence.", icon: Calculator },
+  { name: "Facility Management System", badge: "Live Product", borderColor: "border-l-o360-purple", badgeColor: "bg-o360-purple/10 text-o360-purple border border-o360-purple/20", desc: "End-to-end facility operations — maintenance, vendor management, AMC tracking, compliance — fully automated and agentic.", stat: "Zero spreadsheet ops. Full audit trail.", icon: Building2 },
+  { name: "Voice Agent Platform", badge: "Live Product", borderColor: "border-l-o360-orange", badgeColor: "bg-o360-orange/10 text-o360-orange border border-o360-orange/20", desc: "Human-quality AI voice agents for inbound/outbound calls, lead qualification, appointment scheduling. Hindi + English.", stat: "Handles 1,000+ calls/day. No human operators.", icon: Phone },
+  { name: "Patient Care System", badge: "Live · HealthTech", borderColor: "border-l-o360-pink", badgeColor: "bg-o360-pink/10 text-o360-pink border border-o360-pink/20", desc: "AI-powered chronic care management, patient engagement automation, and care program delivery for clinics and hospitals.", stat: "Live for chronic care programs across specialties.", icon: Heart },
 ];
 
 const verticals = [
-  { name: "Education & EdTech", desc: "ARE for vocational, higher ed, and franchise networks" },
-  { name: "HealthTech", desc: "Patient care systems, voice agents, chronic care management" },
-  { name: "FinTech", desc: "Expense management, cross-border, payment intelligence" },
-  { name: "Enterprise Operations", desc: "Facility management, agentic workflows, automation" },
-  { name: "Government & Public", desc: "Large-scale data platforms and public systems" },
-  { name: "Custom AI Builds", desc: "Purpose-built AI systems for any vertical" },
+  { name: "Education & EdTech", desc: "ARE for vocational, higher ed, and franchise networks", icon: "🎓" },
+  { name: "HealthTech", desc: "Patient care systems, voice agents, chronic care management", icon: "🏥" },
+  { name: "FinTech", desc: "Expense management, cross-border, payment intelligence", icon: "💳" },
+  { name: "Enterprise Operations", desc: "Facility management, agentic workflows, automation", icon: "🏢" },
+  { name: "Government & Public", desc: "Large-scale data platforms and public systems", icon: "🏛️" },
+  { name: "Custom AI Builds", desc: "Purpose-built AI systems for any vertical", icon: "⚡" },
 ];
 
 const teamCards = [
@@ -33,51 +33,85 @@ const teamCards = [
 const Index = () => (
   <div className="min-h-screen">
     {/* HERO */}
-    <section className="min-h-screen flex items-center pt-16">
-      <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-[58%_42%] gap-12 items-center">
-        <div>
-          <SectionLabel>AI-NATIVE PRODUCTS + SOLUTIONS</SectionLabel>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-6">
-            We Build AI Systems<br />That Run Your Business.
-          </h1>
-          <p className="text-primary text-lg md:text-xl font-bold mb-4">
-            Revenue engines. Patient care platforms. Voice agents.<br className="hidden md:block" />
-            Accounting intelligence. Built once. Running forever.
-          </p>
-          <p className="text-muted-foreground text-base mb-8 max-w-xl">
-            Optimizer360 is an AI-native product company led by serial entrepreneur Salil Chaturvedi. Our flagship product — ARE, the Autonomous Revenue Engine — builds media brands, compounds organic traffic, and delivers qualified leads to your sales team 24/7.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button asChild size="lg"><Link to="/products/are">Explore ARE <ArrowRight className="ml-1" size={16} /></Link></Button>
-            <Button asChild variant="outline" size="lg"><Link to="/products">See All Products</Link></Button>
+    <section className="min-h-screen flex items-center hero-gradient relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
+      <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-o360-purple/5 rounded-full blur-[100px]" />
+
+      <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-[55%_45%] gap-16 items-center relative z-10 pt-20">
+        <FadeIn direction="left">
+          <div>
+            <SectionLabel>AI-NATIVE PRODUCTS + SOLUTIONS</SectionLabel>
+            <h1 className="text-4xl md:text-5xl lg:text-[64px] font-extrabold text-foreground leading-[1.1] mb-6 tracking-tight">
+              We Build AI Systems<br />
+              <span className="gradient-text">That Run Your Business.</span>
+            </h1>
+            <p className="text-lg md:text-xl font-semibold text-primary/90 mb-4 leading-relaxed">
+              Revenue engines. Patient care platforms. Voice agents.
+              <br className="hidden md:block" />
+              Accounting intelligence. Built once. Running forever.
+            </p>
+            <p className="text-muted-foreground text-base mb-10 max-w-xl leading-relaxed">
+              Optimizer360 is an AI-native product company led by serial entrepreneur Salil Chaturvedi. Our flagship product — ARE, the Autonomous Revenue Engine — builds media brands, compounds organic traffic, and delivers qualified leads to your sales team 24/7.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button asChild size="lg" className="rounded-full px-8 font-semibold shadow-lg shadow-primary/25 text-base h-12">
+                <Link to="/products/are">Explore ARE <ArrowRight className="ml-2" size={18} /></Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full px-8 font-semibold border-white/10 hover:bg-white/5 text-base h-12">
+                <Link to="/products">See All Products</Link>
+              </Button>
+            </div>
           </div>
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedCounter target="30+" label="AI products shipped" />
-          <AnimatedCounter target="₹100Cr+" label="Monthly transactions on our platforms" />
-          <AnimatedCounter target="15+" label="AI consultants on the team" />
-          <AnimatedCounter target="5" label="Live AI products across verticals" />
-        </div>
+        </FadeIn>
+
+        <FadeIn direction="right" delay={0.2}>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { target: "30+", label: "AI products shipped" },
+              { target: "₹100Cr+", label: "Monthly transactions on our platforms" },
+              { target: "15+", label: "AI consultants on the team" },
+              { target: "5", label: "Live AI products across verticals" },
+            ].map((s) => (
+              <div key={s.label} className="glass-card rounded-xl p-2">
+                <AnimatedCounter target={s.target} label={s.label} />
+              </div>
+            ))}
+          </div>
+        </FadeIn>
       </div>
     </section>
 
     {/* PRODUCT SUITE */}
-    <section className="py-20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 relative">
+      <div className="absolute inset-0 section-gradient" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
-          <SectionLabel>THE PRODUCT SUITE</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Five AI Products. All Live. All Shipping.</h2>
-          <p className="text-muted-foreground mb-10 max-w-xl">We don't concept. We ship. Every product in our portfolio is deployed and running.</p>
+          <div className="text-center mb-16">
+            <SectionLabel>THE PRODUCT SUITE</SectionLabel>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">Five AI Products. All Live. All Shipping.</h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">We don't concept. We ship. Every product in our portfolio is deployed and running.</p>
+          </div>
         </FadeIn>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((p, i) => (
-            <FadeIn key={p.name} delay={i * 0.1} className={i >= 3 ? "lg:col-span-1" : ""}>
-              <div className={`bg-card border-l-[6px] ${p.color} rounded-lg p-6 h-full hover:scale-[1.02] transition-transform`}>
-                <span className={`inline-block text-[11px] font-bold px-3 py-1 rounded-full mb-3 ${p.badgeColor}`}>{p.badge}</span>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{p.name}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{p.desc}</p>
-                <p className="text-xs text-primary font-medium">{p.stat}</p>
-                {p.link && <Link to={p.link} className="text-sm text-primary font-medium mt-3 inline-flex items-center gap-1 hover:underline">Explore ARE <ArrowRight size={14} /></Link>}
+            <FadeIn key={p.name} delay={i * 0.08} className={i >= 3 ? "lg:col-span-1" : ""}>
+              <div className={`glass-card border-l-[4px] ${p.borderColor} p-6 h-full card-hover ${p.glow || ""}`}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <p.icon size={20} className="text-primary" />
+                  </div>
+                  <span className={`text-[10px] font-bold px-3 py-1 rounded-full ${p.badgeColor}`}>{p.badge}</span>
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">{p.name}</h3>
+                {p.full && <p className="text-xs text-muted-foreground mb-3">{p.full}</p>}
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{p.desc}</p>
+                <p className="text-xs font-semibold gradient-text">{p.stat}</p>
+                {p.link && (
+                  <Link to={p.link} className="text-sm text-primary font-semibold mt-4 inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                    Explore ARE <ArrowRight size={14} />
+                  </Link>
+                )}
               </div>
             </FadeIn>
           ))}
@@ -86,20 +120,28 @@ const Index = () => (
     </section>
 
     {/* ARE TEASER */}
-    <section className="py-20 bg-secondary/20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] -translate-x-1/2" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
-          <SectionLabel>FLAGSHIP PRODUCT — ARE</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">ARE Doesn't Run Campaigns. It Builds Revenue Infrastructure.</h2>
+          <div className="text-center mb-16">
+            <SectionLabel>FLAGSHIP PRODUCT — ARE</SectionLabel>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">
+              ARE Doesn't Run Campaigns.<br />
+              <span className="gradient-text">It Builds Revenue Infrastructure.</span>
+            </h2>
+          </div>
         </FadeIn>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <FadeIn>
-            <p className="text-muted-foreground mb-6">
-              Most companies spend ₹1.5L/month on ads and get thin, cold leads. ARE builds category-owning media brands — like Shiksha for admissions, Collegedekho for colleges — that rank on Google, build YouTube audiences, generate Instagram followers, and route every inquiry to your sales team.
+          <FadeIn direction="left">
+            <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
+              Most companies spend ₹1.5L/month on ads and get thin, cold leads. ARE builds category-owning media brands that rank on Google, build YouTube audiences, generate Instagram followers, and route every inquiry to your sales team. The spend declines every year. The leads keep rising.
             </p>
-            <Button asChild><Link to="/products/are">See How ARE Works <ArrowRight className="ml-1" size={16} /></Link></Button>
+            <Button asChild className="rounded-full px-8 shadow-lg shadow-primary/25">
+              <Link to="/products/are">See How ARE Works <ArrowRight className="ml-2" size={16} /></Link>
+            </Button>
           </FadeIn>
-          <FadeIn delay={0.2}>
+          <FadeIn direction="right" delay={0.2}>
             <AREChart />
           </FadeIn>
         </div>
@@ -107,81 +149,101 @@ const Index = () => (
     </section>
 
     {/* SOLUTIONS BY VERTICAL */}
-    <section className="py-20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 relative">
+      <div className="absolute inset-0 section-gradient" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
-          <SectionLabel>SOLUTIONS</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10">Built Across Six Verticals.</h2>
+          <div className="text-center mb-16">
+            <SectionLabel>SOLUTIONS</SectionLabel>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">Built Across Six Verticals.</h2>
+          </div>
         </FadeIn>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {verticals.map((v, i) => (
-            <FadeIn key={v.name} delay={i * 0.1}>
-              <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 hover:scale-[1.02] transition-all">
-                <h3 className="text-lg font-semibold text-foreground mb-2">{v.name}</h3>
-                <p className="text-sm text-muted-foreground">{v.desc}</p>
+            <FadeIn key={v.name} delay={i * 0.08}>
+              <div className="glass-card rounded-xl p-6 card-hover group">
+                <div className="text-3xl mb-4">{v.icon}</div>
+                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{v.name}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{v.desc}</p>
               </div>
             </FadeIn>
           ))}
         </div>
-        <FadeIn className="mt-8">
-          <Button asChild variant="outline"><Link to="/solutions">See All Solutions <ArrowRight className="ml-1" size={16} /></Link></Button>
+        <FadeIn className="mt-10 text-center">
+          <Button asChild variant="outline" className="rounded-full px-8 border-white/10 hover:bg-white/5">
+            <Link to="/solutions">See All Solutions <ArrowRight className="ml-2" size={16} /></Link>
+          </Button>
         </FadeIn>
       </div>
     </section>
 
     {/* CLIENT PROOF */}
-    <section className="py-20 bg-secondary/20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 relative overflow-hidden">
+      <div className="absolute top-1/2 right-0 w-96 h-96 bg-accent/5 rounded-full blur-[120px]" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
-          <SectionLabel>CLIENT — APTECH LIMITED</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">3 Media Brands. 3.1 Lakh Leads/Year. ₹40–50 Crore Asset Built.</h2>
-          <p className="text-muted-foreground mb-10 max-w-2xl">ARE deployed for Arena Animation, MAAC, and Lakmé Academy — India's largest vocational education network.</p>
+          <div className="text-center mb-16">
+            <SectionLabel>CLIENT — APTECH LIMITED</SectionLabel>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">
+              3 Media Brands. 3.1 Lakh Leads/Year.
+              <br />
+              <span className="gradient-text-gold">₹40–50 Crore Asset Built.</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">ARE deployed for Arena Animation, MAAC, and Lakmé Academy — India's largest vocational education network.</p>
+          </div>
         </FadeIn>
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
           {[
             { num: "50,180/mo", label: "Arena Animation monthly leads by Year 5" },
             { num: "₹5.1L", label: "Marketing spend saved per brand over 5 years" },
             { num: "₹40–50 Cr", label: "Combined media brand asset value" },
           ].map((s, i) => (
             <FadeIn key={s.num} delay={i * 0.1}>
-              <div className="bg-card rounded-lg p-6 text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{s.num}</div>
+              <div className="glass-card rounded-xl p-8 text-center card-hover">
+                <div className="text-3xl md:text-4xl font-extrabold gradient-text stat-glow mb-3">{s.num}</div>
                 <div className="text-sm text-muted-foreground">{s.label}</div>
               </div>
             </FadeIn>
           ))}
         </div>
-        <FadeIn>
-          <Button asChild><Link to="/case-studies/aptech">Read the Full Case Study <ArrowRight className="ml-1" size={16} /></Link></Button>
+        <FadeIn className="text-center">
+          <Button asChild className="rounded-full px-8 shadow-lg shadow-primary/25">
+            <Link to="/case-studies/aptech">Read the Full Case Study <ArrowRight className="ml-2" size={16} /></Link>
+          </Button>
         </FadeIn>
       </div>
     </section>
 
     {/* FOUNDER STRIP */}
-    <section className="py-20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 relative">
+      <div className="absolute inset-0 section-gradient" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
-          <SectionLabel>LED BY</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10">Three Decades of Building. Now Building in AI.</h2>
+          <div className="text-center mb-16">
+            <SectionLabel>LED BY</SectionLabel>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">Three Decades of Building. Now Building in AI.</h2>
+          </div>
         </FadeIn>
         <FadeIn>
-          <div className="bg-card border border-border rounded-lg p-8 grid lg:grid-cols-2 gap-8">
+          <div className="glass-card rounded-2xl p-8 md:p-12 grid lg:grid-cols-[1fr_auto] gap-10">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-1">Salil Chaturvedi</h3>
-              <p className="text-sm text-muted-foreground mb-4">Founder & CEO, Optimizer360</p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <h3 className="text-3xl font-extrabold text-foreground mb-1">Salil Chaturvedi</h3>
+              <p className="text-sm text-muted-foreground mb-5">Founder & CEO, Optimizer360</p>
+              <div className="flex flex-wrap gap-2 mb-6">
                 {["Co-founder, Provogue (1997)", "Co-founder, Prozone Realty (2007)", "Founder, StackIntel (2024)"].map(c => (
-                  <span key={c} className="text-[11px] font-medium px-3 py-1 rounded-full bg-secondary text-foreground">{c}</span>
+                  <span key={c} className="text-[11px] font-medium px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.06] text-foreground/80">{c}</span>
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground mb-4">Serial entrepreneur across fashion, real estate, fintech, and now AI. Three decades. Four companies. One consistent instinct: move before the market.</p>
-              <Button asChild variant="outline" size="sm"><Link to="/founder">Meet Salil <ArrowRight className="ml-1" size={14} /></Link></Button>
+              <p className="text-muted-foreground leading-relaxed mb-6">Serial entrepreneur across fashion, real estate, fintech, and now AI. Three decades. Four companies. One consistent instinct: move before the market.</p>
+              <Button asChild variant="outline" size="sm" className="rounded-full border-white/10 hover:bg-white/5">
+                <Link to="/founder">Meet Salil <ArrowRight className="ml-1" size={14} /></Link>
+              </Button>
             </div>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-6 lg:gap-8 items-center">
               {[{ num: "15+", label: "AI consultants" }, { num: "6", label: "Verticals served" }, { num: "30+", label: "AI systems shipped" }].map(s => (
                 <div key={s.label} className="text-center">
-                  <div className="text-2xl font-bold text-primary">{s.num}</div>
-                  <div className="text-xs text-muted-foreground">{s.label}</div>
+                  <div className="text-3xl font-extrabold gradient-text stat-glow">{s.num}</div>
+                  <div className="text-xs text-muted-foreground mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -191,19 +253,21 @@ const Index = () => (
     </section>
 
     {/* TEAM */}
-    <section className="py-20 bg-secondary/20">
+    <section className="py-24">
       <div className="container mx-auto px-4 lg:px-8">
         <FadeIn>
-          <SectionLabel>THE TEAM</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">15+ AI Consultants. Deep Domain Expertise.</h2>
-          <p className="text-muted-foreground mb-10 max-w-2xl">Optimizer360 runs on a core team spanning AI product, engineering, growth, and domain specialists.</p>
+          <div className="text-center mb-16">
+            <SectionLabel>THE TEAM</SectionLabel>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">15+ AI Consultants. Deep Domain Expertise.</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Optimizer360 runs on a core team spanning AI product, engineering, growth, and domain specialists.</p>
+          </div>
         </FadeIn>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {teamCards.map((t, i) => (
-            <FadeIn key={t.title} delay={i * 0.1}>
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-2">{t.title}</h3>
-                <p className="text-sm text-muted-foreground">{t.desc}</p>
+            <FadeIn key={t.title} delay={i * 0.08}>
+              <div className="glass-card rounded-xl p-6 card-hover">
+                <h3 className="text-lg font-bold text-foreground mb-2">{t.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{t.desc}</p>
               </div>
             </FadeIn>
           ))}
@@ -212,15 +276,21 @@ const Index = () => (
     </section>
 
     {/* BOTTOM CTA */}
-    <section className="py-20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 hero-gradient" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
-          <div className="bg-card border-l-[6px] border-primary rounded-lg p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">Ready to Build Something That Runs Itself?</h2>
-            <p className="text-muted-foreground mb-6">ARE starts at ₹2,50,000/month. Custom AI builds from discovery. First call is free.</p>
-            <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg"><Link to="/products/are">Explore ARE <ArrowRight className="ml-1" size={16} /></Link></Button>
-              <Button asChild variant="outline" size="lg"><Link to="/contact">Book a Strategy Call <ArrowRight className="ml-1" size={16} /></Link></Button>
+          <div className="glass-card border-l-[4px] border-primary rounded-2xl p-10 md:p-16 text-center glow-teal">
+            <Sparkles className="text-primary mx-auto mb-6" size={32} />
+            <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4 tracking-tight">Ready to Build Something That Runs Itself?</h2>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">ARE starts at ₹2,50,000/month. Custom AI builds from discovery. First call is free.</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild size="lg" className="rounded-full px-8 font-semibold shadow-lg shadow-primary/25 h-12">
+                <Link to="/products/are">Explore ARE <ArrowRight className="ml-2" size={18} /></Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full px-8 font-semibold border-white/10 hover:bg-white/5 h-12">
+                <Link to="/contact">Book a Strategy Call <ArrowRight className="ml-2" size={18} /></Link>
+              </Button>
             </div>
           </div>
         </FadeIn>
