@@ -44,7 +44,7 @@ const AnimatedCounter = ({ target, label }: AnimatedCounterProps) => {
 
   return (
     <div ref={ref} className="text-center p-6">
-      <div className="text-4xl md:text-5xl font-extrabold gradient-text stat-glow mb-2">{display}</div>
+      <div className="text-3xl md:text-4xl font-extrabold gradient-text stat-glow mb-2 whitespace-nowrap">{display}</div>
       <div className="text-sm text-muted-foreground font-medium">{label}</div>
     </div>
   );
