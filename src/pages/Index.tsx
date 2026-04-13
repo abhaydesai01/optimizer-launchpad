@@ -37,43 +37,32 @@ const Index = () => (
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
       <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-o360-purple/5 rounded-full blur-[100px]" />
 
-      <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-[55%_45%] gap-16 items-center relative z-10 pt-20">
-        <FadeIn direction="left">
-          <div>
-            <SectionLabel>AI-NATIVE PRODUCTS + SOLUTIONS</SectionLabel>
-            <h1 className="text-4xl md:text-5xl lg:text-[64px] font-extrabold text-foreground leading-[1.1] mb-6 tracking-tight">
-              We Build AI Systems<br />
-              <span className="gradient-text">That Run Your Business.</span>
-            </h1>
-            <p className="text-lg md:text-xl font-semibold text-primary/90 mb-4 leading-relaxed">
-              Revenue engines. Patient care platforms. Voice agents.
-              <br className="hidden md:block" />
-              Accounting intelligence. Built once. Running forever.
-            </p>
-            <p className="text-muted-foreground text-base mb-10 max-w-xl leading-relaxed">
-              Optimizer360 is an AI-native product company founded by serial entrepreneur Salil Chaturvedi. Three decades of building companies — from Provogue to Prozone Realty — now applied to autonomous AI systems that generate leads, manage operations, care for patients, and run financials without a human operator in the loop.
-            </p>
-            <p className="text-muted-foreground text-sm mb-10 max-w-xl leading-relaxed">
-              Our flagship product, ARE (Autonomous Revenue Engine), builds category-owning media brands that compound organic traffic and route qualified leads to your sales team 24/7. We also build and deploy four other live AI products across healthtech, fintech, facility operations, and enterprise.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="rounded-full px-8 font-semibold shadow-lg shadow-primary/25 text-base h-12">
-                <Link to="/products/are">Explore ARE <ArrowRight className="ml-2" size={18} /></Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full px-8 font-semibold border-white/10 hover:bg-white/5 text-base h-12">
-                <Link to="/products">See All Products</Link>
-              </Button>
-            </div>
+      <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10">
+        <FadeIn>
+          <h1 className="text-5xl md:text-6xl lg:text-[80px] font-extrabold text-foreground leading-[1.05] mb-8 tracking-tight">
+            We Build AI Systems<br />
+            <span className="gradient-text">That Run Your Business.</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+            Five live products. Zero human operators. Revenue that compounds while you sleep.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button asChild size="lg" className="rounded-full px-10 font-semibold shadow-lg shadow-primary/25 text-base h-14">
+              <Link to="/products/are">Explore ARE <ArrowRight className="ml-2" size={18} /></Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="rounded-full px-10 font-semibold border-white/10 hover:bg-white/5 text-base h-14">
+              <Link to="/products">See All Products</Link>
+            </Button>
           </div>
         </FadeIn>
 
-        <FadeIn direction="right" delay={0.2}>
-          <div className="grid grid-cols-2 gap-4">
+        <FadeIn delay={0.3}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
             {[
               { target: "30+", label: "AI products shipped" },
-              { target: "₹100Cr+", label: "Monthly transactions on our platforms" },
-              { target: "15+", label: "AI consultants on the team" },
-              { target: "5", label: "Live AI products across verticals" },
+              { target: "₹100Cr+", label: "Monthly transactions" },
+              { target: "15+", label: "AI consultants" },
+              { target: "5", label: "Live products" },
             ].map((s) => (
               <div key={s.label} className="glass-card rounded-xl p-2">
                 <AnimatedCounter target={s.target} label={s.label} />
