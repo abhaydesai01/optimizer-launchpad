@@ -60,14 +60,9 @@ const Products = () => (
             </div>
           </FadeIn>
         ))}
-      </div>
-    </section>
 
-    {/* FinTech Products inline */}
-    <section className="pb-24">
-      <div className="container mx-auto px-4 lg:px-8 space-y-6">
         {fintechProducts.map((p, i) => (
-          <FadeIn key={p.name} delay={i * 0.06}>
+          <FadeIn key={p.name} delay={(products.length + i) * 0.06}>
             <div className="glass-card rounded-xl p-6 md:p-8 card-hover border-l-4 border-l-accent">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">

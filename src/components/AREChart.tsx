@@ -43,7 +43,7 @@ const AREChart = () => (
       </ComposedChart>
     </ResponsiveContainer>
     <p className="text-xs text-muted-foreground text-center mt-4 font-medium">
-      Month 1: ₹1.75L / 150 leads → Month 60: ₹35K / 50,000+ leads
+      Spend decreases → Leads compound. Autonomous growth over 60 months.
     </p>
   </div>
 );
