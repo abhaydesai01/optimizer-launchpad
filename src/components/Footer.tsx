@@ -16,10 +16,10 @@ const Footer = () => (
           <h4 className="text-xs font-bold uppercase tracking-[2px] text-foreground/60 mb-5">Products</h4>
           <div className="flex flex-col gap-3">
             {[
-              { to: "/products/are", label: "ARE" },
-              { to: "/products", label: "Accounting Intelligence" },
-              { to: "/products", label: "Facility Management" },
-              { to: "/products", label: "Voice Agent" },
+              { to: "/products/are", label: "ARE — Autonomous Revenue Engine" },
+              { to: "/products", label: "Accounting Intelligence Platform" },
+              { to: "/products", label: "Facility Management System" },
+              { to: "/products", label: "Voice Agent Platform" },
               { to: "/products", label: "Patient Care System" },
               { to: "/products", label: "Custom AI Builds" },
             ].map(l => (
@@ -35,8 +35,8 @@ const Footer = () => (
               { to: "/about", label: "About" },
               { to: "/founder", label: "Founder" },
               { to: "/solutions", label: "Solutions" },
-              { to: "/case-studies/aptech", label: "Case Studies" },
-              { to: "/pricing", label: "Pricing" },
+              { to: "/contact", label: "Case Studies" },
+              { to: "/contact", label: "Pricing" },
               { to: "/contact", label: "Contact" },
             ].map(l => (
               <Link key={l.label} to={l.to} className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">{l.label}</Link>

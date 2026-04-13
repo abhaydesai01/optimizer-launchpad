@@ -39,9 +39,9 @@ const Contact = () => {
 
   const steps = [
     { icon: Clock, text: "We review your submission within 4 hours" },
-    { icon: PhoneIcon, text: "Brand onboarding call — 30 minutes" },
-    { icon: Users, text: "We map your media brand architecture" },
-    { icon: FileText, text: "Proposal + pricing within 48 hours" },
+    { icon: PhoneIcon, text: "Brand onboarding call scheduled — 30 minutes" },
+    { icon: Users, text: "We map your media brand architecture and 5-year model" },
+    { icon: FileText, text: "Proposal and pricing delivered within 48 hours" },
   ];
 
   return (
@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="absolute top-1/3 left-1/2 w-96 h-96 bg-primary/5 rounded-full blur-[150px] -translate-x-1/2" />
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6 tracking-tight">Let's Build Your <span className="gradient-text">Revenue Engine.</span></h1>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Book a 30-minute strategy call. We'll map the architecture, model your 5-year CPL decline, and show you what the asset will be worth.</p>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Book a 30-minute strategy call. We will map the media brand architecture for your vertical, model your 5-year cost-per-lead decline, and show you what the asset will be worth by Year 5. No pitch. No obligation. Just a clear picture of what ARE delivers in your specific context.</p>
         </div>
       </section>
 
@@ -66,23 +66,23 @@ const Contact = () => {
                         <FormItem><FormLabel className="text-foreground/80">Your Name *</FormLabel><FormControl><Input placeholder="Full name" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
                       )} />
                       <FormField control={form.control} name="company" render={({ field }) => (
-                        <FormItem><FormLabel className="text-foreground/80">Company / Brand *</FormLabel><FormControl><Input placeholder="Company name" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
+                        <FormItem><FormLabel className="text-foreground/80">Company or Brand Name *</FormLabel><FormControl><Input placeholder="Company name" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
                       )} />
                     </div>
                     <div className="grid md:grid-cols-2 gap-5">
                       <FormField control={form.control} name="role" render={({ field }) => (
-                        <FormItem><FormLabel className="text-foreground/80">Your Role</FormLabel><FormControl><Input placeholder="e.g. CEO, CMO" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
+                        <FormItem><FormLabel className="text-foreground/80">Your Role / Designation</FormLabel><FormControl><Input placeholder="e.g. CEO, CMO" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
                       )} />
                       <FormField control={form.control} name="email" render={({ field }) => (
-                        <FormItem><FormLabel className="text-foreground/80">Email *</FormLabel><FormControl><Input type="email" placeholder="you@company.com" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
+                        <FormItem><FormLabel className="text-foreground/80">Email Address *</FormLabel><FormControl><Input type="email" placeholder="you@company.com" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
                       )} />
                     </div>
                     <div className="grid md:grid-cols-2 gap-5">
                       <FormField control={form.control} name="phone" render={({ field }) => (
-                        <FormItem><FormLabel className="text-foreground/80">Phone *</FormLabel><FormControl><Input placeholder="+91 9876543210" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
+                        <FormItem><FormLabel className="text-foreground/80">Phone Number *</FormLabel><FormControl><Input placeholder="+91 9876543210" className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
                       )} />
                       <FormField control={form.control} name="centers" render={({ field }) => (
-                        <FormItem><FormLabel className="text-foreground/80">Number of Centers</FormLabel>
+                        <FormItem><FormLabel className="text-foreground/80">Number of Centres / Locations</FormLabel>
                           <Select onValueChange={field.onChange} value={field.value}>
                             <FormControl><SelectTrigger className="bg-white/[0.04] border-white/[0.08]"><SelectValue placeholder="Select" /></SelectTrigger></FormControl>
                             <SelectContent>{["1–10", "10–50", "50–200", "200–500", "500+"].map(o => <SelectItem key={o} value={o}>{o}</SelectItem>)}</SelectContent>
@@ -91,7 +91,7 @@ const Contact = () => {
                       )} />
                     </div>
                     <FormField control={form.control} name="vertical" render={({ field }) => (
-                      <FormItem><FormLabel className="text-foreground/80">Industry</FormLabel>
+                      <FormItem><FormLabel className="text-foreground/80">Vertical / Industry</FormLabel>
                         <Select onValueChange={field.onChange} value={field.value}>
                           <FormControl><SelectTrigger className="bg-white/[0.04] border-white/[0.08]"><SelectValue placeholder="Select" /></SelectTrigger></FormControl>
                           <SelectContent>{["Vocational Education", "Higher Education", "Beauty & Wellness", "HealthTech", "FinTech", "Real Estate", "Enterprise", "Government", "Other"].map(o => <SelectItem key={o} value={o}>{o}</SelectItem>)}</SelectContent>
@@ -99,16 +99,16 @@ const Contact = () => {
                       <FormMessage /></FormItem>
                     )} />
                     <FormField control={form.control} name="challenge" render={({ field }) => (
-                      <FormItem><FormLabel className="text-foreground/80">Biggest challenge?</FormLabel><FormControl><Textarea rows={3} placeholder="Tell us..." className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
+                      <FormItem><FormLabel className="text-foreground/80">What is your biggest acquisition challenge?</FormLabel><FormControl><Textarea rows={3} placeholder="Tell us..." className="bg-white/[0.04] border-white/[0.08] focus:border-primary/50" {...field} /></FormControl><FormMessage /></FormItem>
                     )} />
                     <FormField control={form.control} name="interest" render={({ field }) => (
-                      <FormItem><FormLabel className="text-foreground/80">Which option?</FormLabel><FormControl>
+                      <FormItem><FormLabel className="text-foreground/80">Which option interests you?</FormLabel><FormControl>
                         <RadioGroup onValueChange={field.onChange} value={field.value} className="space-y-2.5">
                           {[
-                            { value: "option-a", label: "Single Brand Pilot ₹2.5L/mo" },
-                            { value: "option-b", label: "Full 3-Brand ₹6L/mo" },
+                            { value: "option-a", label: "Option A — Single Brand Pilot" },
+                            { value: "option-b", label: "Option B — Full 3-Brand Deployment" },
                             { value: "custom", label: "Custom AI Build" },
-                            { value: "explore", label: "Not sure — want to explore" },
+                            { value: "explore", label: "Not sure yet — want to explore" },
                           ].map(o => (
                             <div key={o.value} className="flex items-center space-x-3">
                               <RadioGroupItem value={o.value} id={o.value} />
@@ -127,7 +127,7 @@ const Contact = () => {
             <FadeIn delay={0.2}>
               <div className="space-y-8 lg:pl-4">
                 <div>
-                  <h3 className="text-lg font-bold text-foreground mb-8">What Happens Next</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-8">What Happens After You Submit</h3>
                   <div className="space-y-6">
                     {steps.map((step, i) => (
                       <div key={i} className="flex gap-4 items-start">
