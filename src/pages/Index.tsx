@@ -124,10 +124,10 @@ const Index = () => (
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <FadeIn direction="left">
             <p className="text-muted-foreground mb-4 leading-relaxed text-lg">
-              Most brands spend ₹1.5–2 lakh a month on digital ads and get thin, cold leads — one bad month and the pipeline is empty. ARE is built on a different logic entirely.
+              Most brands burn money on ads and get cold leads. One bad month and the pipeline is empty. ARE is built on a different logic entirely.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Instead of running campaigns, ARE builds category-owning media brands — the way Shiksha.com owns the school admissions search, the way Collegedekho owns the college admissions search. A brand with its own editorial identity, its own YouTube channel, its own Google rankings, its own WhatsApp audience. A lead engine that wakes up before you do and doesn't stop when you turn off the budget.
+              ARE builds category-owning media brands — with their own editorial identity, YouTube channel, Google rankings, and WhatsApp audience. A lead engine that compounds over time and doesn't stop when you turn off the budget.
             </p>
             <Button asChild className="rounded-full px-8 shadow-lg shadow-primary/25">
               <Link to="/products/are">See How ARE Works <ArrowRight className="ml-2" size={16} /></Link>
