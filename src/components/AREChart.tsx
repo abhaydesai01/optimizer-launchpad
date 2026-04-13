@@ -12,19 +12,37 @@ const data = [
 ];
 
 const AREChart = () => (
-  <div className="w-full">
-    <ResponsiveContainer width="100%" height={350}>
-      <ComposedChart data={data} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="hsl(218, 45%, 22%)" />
-        <XAxis dataKey="month" tick={{ fill: "hsl(211, 24%, 58%)", fontSize: 12 }} axisLine={{ stroke: "hsl(218, 45%, 22%)" }} />
-        <YAxis yAxisId="spend" orientation="left" tick={{ fill: "hsl(211, 24%, 58%)", fontSize: 12 }} axisLine={{ stroke: "hsl(218, 45%, 22%)" }} label={{ value: "Spend ₹K", angle: -90, position: "insideLeft", fill: "hsl(211, 24%, 58%)", fontSize: 11 }} />
-        <YAxis yAxisId="leads" orientation="right" tick={{ fill: "hsl(211, 24%, 58%)", fontSize: 12 }} axisLine={{ stroke: "hsl(218, 45%, 22%)" }} label={{ value: "Leads", angle: 90, position: "insideRight", fill: "hsl(211, 24%, 58%)", fontSize: 11 }} />
-        <Tooltip contentStyle={{ backgroundColor: "hsl(213, 56%, 17%)", border: "1px solid hsl(218, 45%, 22%)", borderRadius: 8, color: "#fff" }} />
-        <Bar yAxisId="spend" dataKey="spend" fill="hsl(14, 87%, 55%)" radius={[4, 4, 0, 0]} barSize={30} name="Spend (₹K)" />
-        <Line yAxisId="leads" type="monotone" dataKey="leads" stroke="hsl(170, 100%, 39%)" strokeWidth={3} dot={{ fill: "hsl(170, 100%, 39%)", r: 4 }} name="Leads" />
+  <div className="w-full glass-card p-6 rounded-xl">
+    <ResponsiveContainer width="100%" height={320}>
+      <ComposedChart data={data} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+        <defs>
+          <linearGradient id="spendGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="hsl(14, 87%, 55%)" stopOpacity={0.9} />
+            <stop offset="100%" stopColor="hsl(14, 87%, 55%)" stopOpacity={0.4} />
+          </linearGradient>
+          <linearGradient id="leadGradient" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="hsl(168, 100%, 35%)" />
+            <stop offset="100%" stopColor="hsl(168, 100%, 50%)" />
+          </linearGradient>
+        </defs>
+        <CartesianGrid strokeDasharray="3 3" stroke="hsl(220, 20%, 18%)" />
+        <XAxis dataKey="month" tick={{ fill: "hsl(215, 15%, 55%)", fontSize: 11 }} axisLine={false} tickLine={false} />
+        <YAxis yAxisId="spend" orientation="left" tick={{ fill: "hsl(215, 15%, 55%)", fontSize: 11 }} axisLine={false} tickLine={false} />
+        <YAxis yAxisId="leads" orientation="right" tick={{ fill: "hsl(215, 15%, 55%)", fontSize: 11 }} axisLine={false} tickLine={false} />
+        <Tooltip
+          contentStyle={{
+            backgroundColor: "hsl(220, 25%, 12%)",
+            border: "1px solid hsl(220, 20%, 20%)",
+            borderRadius: 12,
+            color: "#fff",
+            boxShadow: "0 20px 40px -10px rgba(0,0,0,0.5)",
+          }}
+        />
+        <Bar yAxisId="spend" dataKey="spend" fill="url(#spendGradient)" radius={[6, 6, 0, 0]} barSize={28} name="Spend (₹K)" />
+        <Line yAxisId="leads" type="monotone" dataKey="leads" stroke="url(#leadGradient)" strokeWidth={3} dot={{ fill: "hsl(168, 100%, 40%)", r: 5, strokeWidth: 2, stroke: "hsl(220, 30%, 8%)" }} name="Leads" />
       </ComposedChart>
     </ResponsiveContainer>
-    <p className="text-xs text-muted-foreground text-center mt-3">
+    <p className="text-xs text-muted-foreground text-center mt-4 font-medium">
       Month 1: ₹1.75L / 150 leads → Month 60: ₹35K / 50,000+ leads
     </p>
   </div>
