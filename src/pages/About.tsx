@@ -22,16 +22,19 @@ const achievements = [
 
 const About = () => (
   <div className="min-h-screen">
-    <section className="pt-32 pb-24 hero-gradient relative overflow-hidden">
+    <section className="pt-36 pb-28 hero-gradient relative overflow-hidden">
       <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-primary/5 rounded-full blur-[150px]" />
-      <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 max-w-3xl text-center relative z-10">
         <SectionLabel>ABOUT OPTIMIZER360</SectionLabel>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6 tracking-tight">We Build AI Systems <span className="gradient-text">That Run Without You.</span></h1>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-          Optimizer360 is an AI-native product company based in Bengaluru, India. We build autonomous systems — for revenue generation, patient care, facility operations, and financial intelligence — that run 24 hours a day without a human operator in the loop.
+        <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-8 tracking-tight leading-tight">
+          We Build AI Systems<br />
+          <span className="gradient-text">That Run Without You.</span>
+        </h1>
+        <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed mb-6">
+          AI-native product company based in Mumbai, India. Autonomous systems for revenue, patient care, facility operations, and financial intelligence — running 24/7 without a human in the loop.
         </p>
-        <p className="text-muted-foreground text-base max-w-2xl mx-auto leading-relaxed mt-4">
-          Founded by serial entrepreneur Salil Chaturvedi. Operated by a 15+ person team of AI consultants, engineers, and domain specialists. Backed by three decades of market instinct and a track record of building from zero.
+        <p className="text-muted-foreground text-base max-w-xl mx-auto leading-relaxed">
+          Founded by Salil Chaturvedi. 15+ person team of AI consultants, engineers, and domain specialists.
         </p>
       </div>
     </section>
