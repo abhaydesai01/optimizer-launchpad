@@ -33,17 +33,17 @@ const teamCards = [
 const Index = () => (
   <div className="min-h-screen">
     {/* HERO */}
-    <section className="min-h-screen flex items-center hero-gradient relative overflow-hidden">
+    <section className="pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient relative overflow-hidden">
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
       <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-o360-purple/5 rounded-full blur-[100px]" />
 
       <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10">
         <FadeIn>
-          <h1 className="text-5xl md:text-6xl lg:text-[80px] font-extrabold text-foreground leading-[1.05] mb-8 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-foreground leading-[1.08] mb-8 tracking-tight">
             We Build AI Systems<br />
             <span className="gradient-text">That Run Your Business.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             Five live products. Zero human operators. Revenue that compounds while you sleep.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -57,7 +57,7 @@ const Index = () => (
         </FadeIn>
 
         <FadeIn delay={0.3}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
             {[
               { target: "30+", label: "AI products shipped" },
               { target: "₹100Cr+", label: "Monthly transactions" },
