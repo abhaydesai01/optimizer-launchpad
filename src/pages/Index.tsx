@@ -56,20 +56,18 @@ const Index = () => (
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.3}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
-            {[
-              { target: "30+", label: "AI products shipped" },
-              { target: "₹100Cr+", label: "Monthly transactions" },
-              { target: "15+", label: "AI consultants" },
-              { target: "5", label: "Live products" },
-            ].map((s) => (
-              <div key={s.label} className="glass-card rounded-xl p-2">
-                <AnimatedCounter target={s.target} label={s.label} />
-              </div>
-            ))}
-          </div>
-        </FadeIn>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+          {[
+            { target: "30+", label: "AI products shipped" },
+            { target: "₹100Cr+", label: "Monthly transactions" },
+            { target: "15+", label: "AI consultants" },
+            { target: "5", label: "Live products" },
+          ].map((s) => (
+            <div key={s.label} className="glass-card rounded-xl p-2">
+              <AnimatedCounter target={s.target} label={s.label} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
 
