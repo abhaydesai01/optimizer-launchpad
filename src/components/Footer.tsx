@@ -9,7 +9,7 @@ const Footer = () => (
             <span className="gradient-text">O</span>ptimizer360
           </Link>
           <p className="text-sm text-muted-foreground mb-2 leading-relaxed">AI-Native Products. Autonomous Systems. Real Revenue.</p>
-          <p className="text-xs text-muted-foreground/60">Bengaluru, India</p>
+          <p className="text-xs text-muted-foreground/60">Mumbai, India</p>
         </div>
 
         <div>
