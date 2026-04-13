@@ -33,7 +33,6 @@ const Footer = () => (
           <div className="flex flex-col gap-3">
             {[
               { to: "/about", label: "About" },
-              { to: "/founder", label: "Founder" },
               { to: "/solutions", label: "Solutions" },
               { to: "/contact", label: "Case Studies" },
               { to: "/contact", label: "Pricing" },
