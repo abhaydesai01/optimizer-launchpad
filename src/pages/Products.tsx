@@ -63,35 +63,26 @@ const Products = () => (
       </div>
     </section>
 
-    {/* StackIntel FinTech Product Line */}
-    <section className="py-24 relative">
-      <div className="absolute inset-0 section-gradient" />
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <FadeIn>
-          <div className="text-center mb-16">
-            <SectionLabel>STACKINTEL — FINTECH INFRASTRUCTURE</SectionLabel>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4 tracking-tight">8 FinTech Products. <span className="gradient-text">All Live. Production-Grade.</span></h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Full-stack payment infrastructure, banking-as-a-service, and settlement platforms — built for banks, fintechs, and enterprises.</p>
-          </div>
-        </FadeIn>
-        <div className="grid md:grid-cols-2 gap-6">
-          {fintechProducts.map((p, i) => (
-            <FadeIn key={p.name} delay={i * 0.06}>
-              <div className="glass-card rounded-xl p-6 card-hover border-l-4 border-l-accent h-full">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
-                    <p.icon size={20} className="text-accent" />
-                  </div>
-                  <span className="text-[10px] font-bold px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">{p.status}</span>
+    {/* FinTech Products inline */}
+    <section className="pb-24">
+      <div className="container mx-auto px-4 lg:px-8 space-y-6">
+        {fintechProducts.map((p, i) => (
+          <FadeIn key={p.name} delay={i * 0.06}>
+            <div className="glass-card rounded-xl p-6 md:p-8 card-hover border-l-4 border-l-accent">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
+                  <p.icon size={20} className="text-accent" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{p.name}</h3>
-                <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{p.desc}</p>
-                <p className="text-xs text-muted-foreground mb-2"><strong className="text-foreground">Key features:</strong> {p.features}</p>
-                <p className="text-xs text-muted-foreground"><strong className="text-foreground">Who it's for:</strong> {p.who}</p>
+                <span className="text-[10px] font-bold px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">{p.status}</span>
+                <span className="text-xs text-muted-foreground">FinTech</span>
               </div>
-            </FadeIn>
-          ))}
-        </div>
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">{p.name}</h3>
+              <p className="text-muted-foreground mb-3 leading-relaxed">{p.desc}</p>
+              <p className="text-sm text-muted-foreground mb-2"><strong className="text-foreground">Key features:</strong> {p.features}</p>
+              <p className="text-sm text-muted-foreground"><strong className="text-foreground">Who it's for:</strong> {p.who}</p>
+            </div>
+          </FadeIn>
+        ))}
       </div>
     </section>
 
