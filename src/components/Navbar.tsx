@@ -9,7 +9,6 @@ const links = [
   { to: "/solutions", label: "Solutions" },
   { to: "/case-studies/aptech", label: "Case Studies" },
   { to: "/about", label: "About" },
-  { to: "/founder", label: "Founder" },
 ];
 
 const Navbar = () => {

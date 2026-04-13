@@ -176,20 +176,19 @@ const Index = () => (
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
           <div className="text-center mb-16">
-            <SectionLabel>CLIENT — APTECH LIMITED</SectionLabel>
+            <SectionLabel>PROVEN RESULTS</SectionLabel>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">
-              Three Media Brands. 3.1 Lakh Leads Per Year.
-              <br />
-              <span className="gradient-text-gold">₹40–50 Crore Asset Built.</span>
+              Media Brands That Compound.<br />
+              <span className="gradient-text-gold">Real Revenue. Real Assets.</span>
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">ARE deployed for Arena Animation (animationcareers.in), MAAC (vfxcourseindia.in), and Lakmé Academy (beautycareers.in) — India's largest vocational education network.</p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">ARE-powered brands generate leads autonomously — growing every month while cost per lead drops to near zero.</p>
           </div>
         </FadeIn>
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {[
-            { num: "50,180/mo", label: "Arena Animation leads by Year 5" },
-            { num: "₹5.1L", label: "Marketing spend saved per brand over 5 years" },
-            { num: "₹40–50 Cr", label: "Combined media brand asset value across all three brands" },
+            { num: "50,000+", label: "Leads per month at scale" },
+            { num: "₹13", label: "Cost per lead by Month 60" },
+            { num: "₹40–50 Cr", label: "Media brand asset value built" },
           ].map((s, i) => (
             <FadeIn key={s.num} delay={i * 0.1}>
               <div className="glass-card rounded-xl p-8 text-center card-hover">
@@ -201,49 +200,12 @@ const Index = () => (
         </div>
         <FadeIn className="text-center">
           <Button asChild className="rounded-full px-8 shadow-lg shadow-primary/25">
-            <Link to="/contact">See What ARE Delivers for Your Brand <ArrowRight className="ml-2" size={16} /></Link>
+            <Link to="/contact">See What ARE Can Build for You <ArrowRight className="ml-2" size={16} /></Link>
           </Button>
         </FadeIn>
       </div>
     </section>
 
-    {/* FOUNDER STRIP */}
-    <section className="py-24 relative">
-      <div className="absolute inset-0 section-gradient" />
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <FadeIn>
-          <div className="text-center mb-16">
-            <SectionLabel>FOUNDED BY</SectionLabel>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">Three Decades of Building. Now Building in AI.</h2>
-          </div>
-        </FadeIn>
-        <FadeIn>
-          <div className="glass-card rounded-2xl p-8 md:p-12 grid lg:grid-cols-[1fr_auto] gap-10">
-            <div>
-              <h3 className="text-3xl font-extrabold text-foreground mb-1">Salil Chaturvedi</h3>
-              <p className="text-sm text-muted-foreground mb-5">Founder & CEO, Optimizer360</p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {["Co-founder, Provogue (1997)", "Co-founder, Prozone Realty (2007)", "Founder, StackIntel (2024)"].map(c => (
-                  <span key={c} className="text-[11px] font-medium px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.06] text-foreground/80">{c}</span>
-                ))}
-              </div>
-              <p className="text-muted-foreground leading-relaxed mb-6">Serial entrepreneur across fashion, real estate, fintech, and now AI. Three decades. Four companies built from zero. One consistent instinct: move before the market does.</p>
-              <Button asChild variant="outline" size="sm" className="rounded-full border-white/10 hover:bg-white/5">
-                <Link to="/founder">Meet Salil <ArrowRight className="ml-1" size={14} /></Link>
-              </Button>
-            </div>
-            <div className="grid grid-cols-3 gap-6 lg:gap-8 items-center">
-              {[{ num: "15+", label: "AI consultants" }, { num: "6", label: "Verticals served" }, { num: "30+", label: "AI systems shipped" }].map(s => (
-                <div key={s.label} className="text-center">
-                  <div className="text-3xl font-extrabold gradient-text stat-glow">{s.num}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </FadeIn>
-      </div>
-    </section>
 
     {/* TEAM */}
     <section className="py-24">

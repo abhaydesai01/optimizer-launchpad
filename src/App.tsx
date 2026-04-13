@@ -10,7 +10,6 @@ import AREPage from "./pages/ARE";
 import Products from "./pages/Products";
 import Solutions from "./pages/Solutions";
 import Aptech from "./pages/Aptech";
-import Founder from "./pages/Founder";
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
@@ -31,7 +30,7 @@ const App = () => (
           <Route path="/products" element={<Products />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/case-studies/aptech" element={<Aptech />} />
-          <Route path="/founder" element={<Founder />} />
+          
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
