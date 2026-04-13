@@ -7,20 +7,20 @@ import AREChart from "@/components/AREChart";
 import { ArrowRight, Zap, Building2, Phone, Heart, Calculator, Sparkles } from "lucide-react";
 
 const products = [
-  { name: "ARE", full: "Autonomous Revenue Engine", badge: "Flagship Product", borderColor: "border-l-primary", badgeColor: "bg-primary/10 text-primary border border-primary/20", desc: "Builds category-owning media brands, compounds organic leads across 6 platforms, and routes qualified inquiries to your centers — 24/7, no human operators.", stat: "₹40–50 Cr asset built per brand in 5 years", link: "/products/are", icon: Zap, glow: "glow-teal" },
-  { name: "Accounting Intelligence Platform", badge: "Live Product", borderColor: "border-l-accent", badgeColor: "bg-accent/10 text-accent border border-accent/20", desc: "Autonomous bookkeeping, GST compliance, invoice reconciliation, and financial intelligence — powered by LLMs.", stat: "Zero manual data entry. Real-time financial intelligence.", icon: Calculator },
-  { name: "Facility Management System", badge: "Live Product", borderColor: "border-l-o360-purple", badgeColor: "bg-o360-purple/10 text-o360-purple border border-o360-purple/20", desc: "End-to-end facility operations — maintenance, vendor management, AMC tracking, compliance — fully automated and agentic.", stat: "Zero spreadsheet ops. Full audit trail.", icon: Building2 },
-  { name: "Voice Agent Platform", badge: "Live Product", borderColor: "border-l-o360-orange", badgeColor: "bg-o360-orange/10 text-o360-orange border border-o360-orange/20", desc: "Human-quality AI voice agents for inbound/outbound calls, lead qualification, appointment scheduling. Hindi + English.", stat: "Handles 1,000+ calls/day. No human operators.", icon: Phone },
-  { name: "Patient Care System", badge: "Live · HealthTech", borderColor: "border-l-o360-pink", badgeColor: "bg-o360-pink/10 text-o360-pink border border-o360-pink/20", desc: "AI-powered chronic care management, patient engagement automation, and care program delivery for clinics and hospitals.", stat: "Live for chronic care programs across specialties.", icon: Heart },
+  { name: "ARE", full: "Autonomous Revenue Engine", badge: "Flagship Product", borderColor: "border-l-primary", badgeColor: "bg-primary/10 text-primary border border-primary/20", desc: "Builds category-owning media brands that own keyword categories on Google, build YouTube audiences, generate Instagram followers, and route every qualified inquiry to your sales team — 24 hours a day, without a human operator.", stat: "₹40–50 Cr media brand asset built per brand over 5 years", link: "/products/are", icon: Zap, glow: "glow-teal" },
+  { name: "Accounting Intelligence Platform", badge: "Live Product", borderColor: "border-l-accent", badgeColor: "bg-accent/10 text-accent border border-accent/20", desc: "Autonomous bookkeeping, GST compliance, invoice reconciliation, and real-time financial intelligence — powered by large language models. Connect it to your existing stack or run it standalone. Your books close themselves.", stat: "Zero manual data entry. Continuous financial intelligence.", icon: Calculator },
+  { name: "Facility Management System", badge: "Live Product", borderColor: "border-l-o360-purple", badgeColor: "bg-o360-purple/10 text-o360-purple border border-o360-purple/20", desc: "End-to-end facility operations — maintenance scheduling, vendor management, AMC tracking, compliance documentation — fully automated and agentic. WhatsApp-first field operations. Full audit trail. No spreadsheets.", stat: "Zero spreadsheet ops. Full accountability. Always on.", icon: Building2 },
+  { name: "Voice Agent Platform", badge: "Live Product", borderColor: "border-l-o360-orange", badgeColor: "bg-o360-orange/10 text-o360-orange border border-o360-orange/20", desc: "Human-quality AI voice agents that handle inbound calls, qualify leads, schedule appointments, follow up on pending actions, and escalate to a human only when genuinely needed. Hindi and English. Phone and WhatsApp.", stat: "Handles 1,000+ calls a day. Zero human operators on the line.", icon: Phone },
+  { name: "Patient Care System", badge: "Live · HealthTech", borderColor: "border-l-o360-pink", badgeColor: "bg-o360-pink/10 text-o360-pink border border-o360-pink/20", desc: "AI-powered chronic care management, patient engagement automation, and care program delivery. Built for multi-specialty clinics and chronic disease programs. Covers diabetic care, hair transplant, dentistry, and maternity.", stat: "Live across multiple specialties. Patients engaged. Physicians free to focus on care.", icon: Heart },
 ];
 
 const verticals = [
-  { name: "Education & EdTech", desc: "ARE for vocational, higher ed, and franchise networks", icon: "🎓" },
+  { name: "Education & EdTech", desc: "ARE for vocational education, higher ed, and franchise networks", icon: "🎓" },
   { name: "HealthTech", desc: "Patient care systems, voice agents, chronic care management", icon: "🏥" },
-  { name: "FinTech", desc: "Expense management, cross-border, payment intelligence", icon: "💳" },
-  { name: "Enterprise Operations", desc: "Facility management, agentic workflows, automation", icon: "🏢" },
-  { name: "Government & Public", desc: "Large-scale data platforms and public systems", icon: "🏛️" },
-  { name: "Custom AI Builds", desc: "Purpose-built AI systems for any vertical", icon: "⚡" },
+  { name: "FinTech", desc: "Accounting intelligence, expense management, payment infrastructure", icon: "💳" },
+  { name: "Enterprise Operations", desc: "Facility management, agentic workflows, automation at scale", icon: "🏢" },
+  { name: "Government & Public Sector", desc: "Large-scale data platforms and public infrastructure systems", icon: "🏛️" },
+  { name: "Custom AI Builds", desc: "Purpose-built autonomous systems for any vertical", icon: "⚡" },
 ];
 
 const teamCards = [
@@ -34,7 +34,6 @@ const Index = () => (
   <div className="min-h-screen">
     {/* HERO */}
     <section className="min-h-screen flex items-center hero-gradient relative overflow-hidden">
-      {/* Decorative elements */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
       <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-o360-purple/5 rounded-full blur-[100px]" />
 
@@ -52,7 +51,10 @@ const Index = () => (
               Accounting intelligence. Built once. Running forever.
             </p>
             <p className="text-muted-foreground text-base mb-10 max-w-xl leading-relaxed">
-              Optimizer360 is an AI-native product company led by serial entrepreneur Salil Chaturvedi. Our flagship product — ARE, the Autonomous Revenue Engine — builds media brands, compounds organic traffic, and delivers qualified leads to your sales team 24/7.
+              Optimizer360 is an AI-native product company founded by serial entrepreneur Salil Chaturvedi. Three decades of building companies — from Provogue to Prozone Realty — now applied to autonomous AI systems that generate leads, manage operations, care for patients, and run financials without a human operator in the loop.
+            </p>
+            <p className="text-muted-foreground text-sm mb-10 max-w-xl leading-relaxed">
+              Our flagship product, ARE (Autonomous Revenue Engine), builds category-owning media brands that compound organic traffic and route qualified leads to your sales team 24/7. We also build and deploy four other live AI products across healthtech, fintech, facility operations, and enterprise.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8 font-semibold shadow-lg shadow-primary/25 text-base h-12">
@@ -90,7 +92,7 @@ const Index = () => (
           <div className="text-center mb-16">
             <SectionLabel>THE PRODUCT SUITE</SectionLabel>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">Five AI Products. All Live. All Shipping.</h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">We don't concept. We ship. Every product in our portfolio is deployed and running.</p>
+            <p className="text-muted-foreground max-w-xl mx-auto">We don't concept. We ship. Every product in this suite is deployed, running, and generating real results for real clients today.</p>
           </div>
         </FadeIn>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -134,8 +136,11 @@ const Index = () => (
         </FadeIn>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <FadeIn direction="left">
-            <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-              Most companies spend ₹1.5L/month on ads and get thin, cold leads. ARE builds category-owning media brands that rank on Google, build YouTube audiences, generate Instagram followers, and route every inquiry to your sales team. The spend declines every year. The leads keep rising.
+            <p className="text-muted-foreground mb-4 leading-relaxed text-lg">
+              Most brands spend ₹1.5–2 lakh a month on digital ads and get thin, cold leads — one bad month and the pipeline is empty. ARE is built on a different logic entirely.
+            </p>
+            <p className="text-muted-foreground mb-8 leading-relaxed">
+              Instead of running campaigns, ARE builds category-owning media brands — the way Shiksha.com owns the school admissions search, the way Collegedekho owns the college admissions search. A brand with its own editorial identity, its own YouTube channel, its own Google rankings, its own WhatsApp audience. A lead engine that wakes up before you do and doesn't stop when you turn off the budget.
             </p>
             <Button asChild className="rounded-full px-8 shadow-lg shadow-primary/25">
               <Link to="/products/are">See How ARE Works <ArrowRight className="ml-2" size={16} /></Link>
@@ -155,7 +160,8 @@ const Index = () => (
         <FadeIn>
           <div className="text-center mb-16">
             <SectionLabel>SOLUTIONS</SectionLabel>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">Built Across Six Verticals.</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">Built Across Six Verticals.</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Every solution we propose comes backed by a product we have already built and shipped.</p>
           </div>
         </FadeIn>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -185,18 +191,18 @@ const Index = () => (
           <div className="text-center mb-16">
             <SectionLabel>CLIENT — APTECH LIMITED</SectionLabel>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">
-              3 Media Brands. 3.1 Lakh Leads/Year.
+              Three Media Brands. 3.1 Lakh Leads Per Year.
               <br />
               <span className="gradient-text-gold">₹40–50 Crore Asset Built.</span>
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">ARE deployed for Arena Animation, MAAC, and Lakmé Academy — India's largest vocational education network.</p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">ARE deployed for Arena Animation (animationcareers.in), MAAC (vfxcourseindia.in), and Lakmé Academy (beautycareers.in) — India's largest vocational education network.</p>
           </div>
         </FadeIn>
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {[
-            { num: "50,180/mo", label: "Arena Animation monthly leads by Year 5" },
+            { num: "50,180/mo", label: "Arena Animation leads by Year 5" },
             { num: "₹5.1L", label: "Marketing spend saved per brand over 5 years" },
-            { num: "₹40–50 Cr", label: "Combined media brand asset value" },
+            { num: "₹40–50 Cr", label: "Combined media brand asset value across all three brands" },
           ].map((s, i) => (
             <FadeIn key={s.num} delay={i * 0.1}>
               <div className="glass-card rounded-xl p-8 text-center card-hover">
@@ -208,7 +214,7 @@ const Index = () => (
         </div>
         <FadeIn className="text-center">
           <Button asChild className="rounded-full px-8 shadow-lg shadow-primary/25">
-            <Link to="/case-studies/aptech">Read the Full Case Study <ArrowRight className="ml-2" size={16} /></Link>
+            <Link to="/contact">See What ARE Delivers for Your Brand <ArrowRight className="ml-2" size={16} /></Link>
           </Button>
         </FadeIn>
       </div>
@@ -220,7 +226,7 @@ const Index = () => (
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <FadeIn>
           <div className="text-center mb-16">
-            <SectionLabel>LED BY</SectionLabel>
+            <SectionLabel>FOUNDED BY</SectionLabel>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">Three Decades of Building. Now Building in AI.</h2>
           </div>
         </FadeIn>
@@ -234,7 +240,7 @@ const Index = () => (
                   <span key={c} className="text-[11px] font-medium px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.06] text-foreground/80">{c}</span>
                 ))}
               </div>
-              <p className="text-muted-foreground leading-relaxed mb-6">Serial entrepreneur across fashion, real estate, fintech, and now AI. Three decades. Four companies. One consistent instinct: move before the market.</p>
+              <p className="text-muted-foreground leading-relaxed mb-6">Serial entrepreneur across fashion, real estate, fintech, and now AI. Three decades. Four companies built from zero. One consistent instinct: move before the market does.</p>
               <Button asChild variant="outline" size="sm" className="rounded-full border-white/10 hover:bg-white/5">
                 <Link to="/founder">Meet Salil <ArrowRight className="ml-1" size={14} /></Link>
               </Button>
@@ -259,7 +265,7 @@ const Index = () => (
           <div className="text-center mb-16">
             <SectionLabel>THE TEAM</SectionLabel>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">15+ AI Consultants. Deep Domain Expertise.</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Optimizer360 runs on a core team spanning AI product, engineering, growth, and domain specialists.</p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Optimizer360 runs on a core team spanning AI product, engineering, growth, and domain specialists — covering fintech, healthtech, edtech, and enterprise automation. Every person on this team has shipped AI systems in production.</p>
           </div>
         </FadeIn>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -283,7 +289,7 @@ const Index = () => (
           <div className="glass-card border-l-[4px] border-primary rounded-2xl p-10 md:p-16 text-center glow-teal">
             <Sparkles className="text-primary mx-auto mb-6" size={32} />
             <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4 tracking-tight">Ready to Build Something That Runs Itself?</h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">ARE starts at ₹2,50,000/month. Custom AI builds from discovery. First call is free.</p>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Book a strategy call and we'll map the right AI system for your business. First call is free.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="rounded-full px-8 font-semibold shadow-lg shadow-primary/25 h-12">
                 <Link to="/products/are">Explore ARE <ArrowRight className="ml-2" size={18} /></Link>
