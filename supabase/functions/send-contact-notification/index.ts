@@ -46,7 +46,7 @@ Deno.serve(async (req) => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Optimizer360 <onboarding@resend.dev>",
+        from: "Optimizer360 <noreply@optimizer360.ai>",
         to: RECIPIENTS,
         reply_to: data.email ? String(data.email).slice(0, 255) : undefined,
         subject: `New Lead: ${safe(data.name)} — ${safe(data.company)}`,
