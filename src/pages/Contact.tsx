@@ -11,6 +11,8 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import FadeIn from "@/components/FadeIn";
 import { toast } from "sonner";
 import { Mail, MapPin, Clock, FileText, Phone as PhoneIcon, Users } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Required").max(100),
@@ -32,9 +34,23 @@ const Contact = () => {
     defaultValues: { name: "", company: "", role: "", email: "", phone: "", centers: "", vertical: "", challenge: "", interest: "" },
   });
 
-  const onSubmit = (data: FormValues) => {
-    toast.success("Thank you! We'll review your submission within 4 hours.");
-    form.reset();
+  const [submitting, setSubmitting] = useState(false);
+
+  const onSubmit = async (data: FormValues) => {
+    setSubmitting(true);
+    try {
+      const { error } = await supabase.functions.invoke("send-contact-notification", {
+        body: data,
+      });
+      if (error) throw error;
+      toast.success("Thank you! We'll review your submission within 4 hours.");
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      toast.error("Submission failed. Please try again or email us directly.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const steps = [
@@ -118,7 +134,7 @@ const Contact = () => {
                         </RadioGroup>
                       </FormControl><FormMessage /></FormItem>
                     )} />
-                    <Button type="submit" size="lg" className="w-full rounded-full font-semibold shadow-lg shadow-primary/25 h-12">Book Strategy Call →</Button>
+                    <Button type="submit" disabled={submitting} size="lg" className="w-full rounded-full font-semibold shadow-lg shadow-primary/25 h-12">{submitting ? "Sending..." : "Book Strategy Call →"}</Button>
                   </form>
                 </Form>
               </div>
