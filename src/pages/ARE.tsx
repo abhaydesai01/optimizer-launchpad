@@ -26,7 +26,7 @@ const stages = [
 ];
 
 const vsRows = [
-  { label: "Setup time", are: "4 weeks", agency: "2–4 weeks", inhouse: "3–6 months" },
+  { label: "Setup time", are: "1 week", agency: "2–4 weeks", inhouse: "3–6 months" },
   { label: "Monthly cost", are: "Scoped to brand", agency: "₹1–3L + ads", inhouse: "₹5–10L salaries" },
   { label: "Lead quality", are: "Content-warmed, high intent", agency: "Cold, ad-driven", inhouse: "Varies" },
   { label: "Organic compounding", are: "Yes — 97% by M60", agency: "No", inhouse: "Slow" },
@@ -211,15 +211,15 @@ const AREPage = () => (
         <FadeIn>
           <div className="text-center mb-10">
             <SectionLabel>WHO IS ARE FOR</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-4 tracking-tight">Built For Brands with Volume to Win.</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">ARE delivers maximum ROI for organisations with geographic reach — franchise networks, multi-centre education groups, multi-city health systems, and enterprise brands competing for category leadership.</p>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-4 tracking-tight">Built For Anyone Who Needs Leads.</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">If your business depends on generating qualified leads — ARE is built for you. From single-location operators to multi-city enterprises, across every category and vertical.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 mb-10">
-            {["Vocational Education", "Higher Education", "Beauty & Wellness", "HealthTech", "Real Estate", "Enterprise B2B"].map(v => (
+            {["Education", "Healthcare", "Beauty & Wellness", "Real Estate", "FinTech", "SaaS", "D2C", "Professional Services", "Enterprise B2B", "Local Businesses"].map(v => (
               <span key={v} className="px-5 py-2.5 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/20">{v}</span>
             ))}
           </div>
-          <p className="text-sm text-muted-foreground text-center max-w-2xl mx-auto mb-10">Clients served include Aptech Limited (Arena Animation, MAAC, Lakmé Academy) and Univista. ARE is live and delivering qualified leads in vocational education and enterprise verticals.</p>
+          <p className="text-sm text-muted-foreground text-center max-w-2xl mx-auto mb-10">ARE is live and delivering qualified leads across multiple verticals — wherever there are customers searching, ARE captures them.</p>
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4 tracking-tight">Ready to Build Your Revenue Engine?</h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Book a demo call and we'll model the media brand architecture for your vertical, show you what category ownership looks like in your space, and walk you through what ARE delivers.</p>
