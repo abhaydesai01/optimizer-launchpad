@@ -10,8 +10,13 @@ import Article from "@/lib/models/Article";
 export const dynamic = "force-dynamic";
 
 async function getArticle(slug: string) {
-  await connectDB();
-  return Article.findOne({ slug, published: true }).lean();
+  try {
+    await connectDB();
+    return await Article.findOne({ slug, published: true }).lean();
+  } catch (error) {
+    console.error(`Failed to load blog article for slug "${slug}":`, error);
+    return null;
+  }
 }
 
 export async function generateMetadata({
@@ -41,12 +46,6 @@ export default async function BlogArticlePage({
   return (
     <main className="container mx-auto max-w-3xl px-4 py-16">
       <div className="mb-4 flex flex-wrap gap-2">
-        <Link
-          href="/"
-          className="inline-flex rounded-full border border-[#D6DEEC] bg-white px-4 py-2 text-sm font-semibold text-[#1f2740] transition-colors hover:bg-[#f4f6fb]"
-        >
-          ← Back to main website
-        </Link>
         <Link
           href="/blog"
           className="inline-flex rounded-full border border-[#D6DEEC] bg-white px-4 py-2 text-sm font-semibold text-[#1f2740] transition-colors hover:bg-[#f4f6fb]"

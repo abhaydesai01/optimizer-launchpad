@@ -22,19 +22,22 @@ function withDbName(uri, dbName) {
 async function migrate() {
   const oldUri = process.env.OLD_MONGODB_URI;
   const newUriBase = process.env.NEW_MONGODB_URI;
-  const explicitDbName = process.env.MONGO_DB_NAME;
+  const sourceDbNameOverride = process.env.SOURCE_DB_NAME || process.env.MONGO_DB_NAME;
+  const targetDbNameOverride = process.env.TARGET_DB_NAME;
   const overwrite = (process.env.OVERWRITE_TARGET || "true").toLowerCase() !== "false";
 
   if (!oldUri || !newUriBase) {
     throw new Error("OLD_MONGODB_URI and NEW_MONGODB_URI are required");
   }
 
-  const sourceDbName = explicitDbName || parseDbName(oldUri);
+  const sourceDbName = sourceDbNameOverride || parseDbName(oldUri);
   if (!sourceDbName) {
-    throw new Error("Could not determine source DB name. Provide MONGO_DB_NAME.");
+    throw new Error("Could not determine source DB name. Provide SOURCE_DB_NAME.");
   }
 
-  const newUri = withDbName(newUriBase, sourceDbName);
+  const targetDbName =
+    targetDbNameOverride || parseDbName(newUriBase) || "test";
+  const newUri = withDbName(newUriBase, targetDbName);
 
   const oldClient = new MongoClient(oldUri);
   const newClient = new MongoClient(newUri);
@@ -43,7 +46,7 @@ async function migrate() {
   await newClient.connect();
 
   const sourceDb = oldClient.db(sourceDbName);
-  const targetDb = newClient.db(sourceDbName);
+  const targetDb = newClient.db(targetDbName);
 
   const collections = await sourceDb.listCollections({}, { nameOnly: true }).toArray();
 
@@ -79,7 +82,7 @@ async function migrate() {
     JSON.stringify(
       {
         sourceDb: sourceDbName,
-        targetDb: sourceDbName,
+        targetDb: targetDbName,
         migratedCollections: summary.length,
         details: summary,
       },
