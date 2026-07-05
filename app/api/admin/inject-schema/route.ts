@@ -57,7 +57,7 @@ Return only valid JSON:
   "articleSchema": { "@context": "https://schema.org", "@type": "Article" },
   "internalLinks": [
     { "anchorText": "GEO optimization", "targetUrl": "/", "context": "..." },
-    { "anchorText": "Autonomous Revenue Engine", "targetUrl": "/are", "context": "..." }
+    { "anchorText": "Agency GEO Platform", "targetUrl": "/agency", "context": "..." }
   ]
 }`,
         },

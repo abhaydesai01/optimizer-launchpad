@@ -1,45 +1,61 @@
+import type { Metadata } from "next";
+import { SubPageShell } from "@/components/marketing/SubPageShell";
+
+export const metadata: Metadata = {
+  title: "Careers",
+  description:
+    "Join Optimizer360.ai — a Stack Intel company building the discipline of AI SEO for enterprise brands.",
+  alternates: { canonical: "https://optimizer360.ai/careers" },
+};
+
 export default function CareersPage() {
   return (
-    <main className="container mx-auto max-w-5xl px-4 py-16">
-      <section className="rounded-2xl border border-[#E2E7F0] bg-white p-8 md:p-12">
-        <p className="text-sm font-semibold uppercase tracking-wide text-[#00A27A]">
-          Careers
-        </p>
-        <h1 className="display mt-3 text-3xl font-bold text-[#222735] md:text-5xl">
-          Build the future of AI-first growth
-        </h1>
-        <p className="mt-4 max-w-3xl text-sm text-[#5E667D]">
-          We are a lean team building practical systems for GEO, distribution, and
-          autonomous revenue operations. If you like shipping fast with customer
-          impact, we want to hear from you.
-        </p>
-      </section>
-
-      <section className="mt-8 grid gap-6 md:grid-cols-2">
-        <article className="rounded-2xl border border-[#E2E7F0] bg-white p-6">
-          <h2 className="text-xl font-semibold text-[#222735]">Open applications</h2>
-          <p className="mt-3 text-sm text-[#5E667D]">
-            We are currently accepting open applications for product, growth,
-            content, and engineering roles.
+    <SubPageShell
+      kicker="Careers"
+      title="Help brands earn the answer."
+      intro="We are a lean team building the discipline of AI SEO — strategy, content and engineering that make enterprise brands citable by AI engines. If you like shipping fast with visible customer impact, we want to hear from you."
+    >
+      <div className="grid gap-6 md:grid-cols-2">
+        <article className="mk-card p-8">
+          <h2 className="font-serif-display text-xl text-[var(--paper)]">
+            Open applications
+          </h2>
+          <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
+            We accept open applications for GEO strategy, content, and
+            engineering roles. Tell us what you would own.
           </p>
           <a
-            href="mailto:careers@optimizer360.ai?subject=Open%20Application%20-%20Optimizer360"
-            className="mt-5 inline-flex rounded-full bg-[#222735] px-5 py-2 text-sm font-semibold text-white"
+            href="mailto:careers@optimizer360.ai?subject=Open%20Application%20-%20Optimizer360.ai"
+            className="mk-btn mk-btn-primary mt-6"
           >
             Send application
           </a>
         </article>
 
-        <article className="rounded-2xl border border-[#E2E7F0] bg-white p-6">
-          <h2 className="text-xl font-semibold text-[#222735]">What we look for</h2>
-          <ul className="mt-3 space-y-2 text-sm text-[#5E667D]">
-            <li>- Ownership mindset with strong execution speed</li>
-            <li>- Clear written communication</li>
-            <li>- Curiosity about AI-native workflows and GTM systems</li>
-            <li>- Ability to work across strategy and implementation</li>
+        <article className="mk-card p-8">
+          <h2 className="font-serif-display text-xl text-[var(--paper)]">
+            What we look for
+          </h2>
+          <ul className="mt-3 space-y-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
+            <li className="flex gap-3">
+              <span className="mt-2.5 h-px w-5 shrink-0 bg-[var(--mint)]" aria-hidden="true" />
+              Ownership mindset with strong execution speed
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-2.5 h-px w-5 shrink-0 bg-[var(--mint)]" aria-hidden="true" />
+              Clear written communication
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-2.5 h-px w-5 shrink-0 bg-[var(--mint)]" aria-hidden="true" />
+              Curiosity about how AI engines read, trust and cite
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-2.5 h-px w-5 shrink-0 bg-[var(--mint)]" aria-hidden="true" />
+              Comfort working across strategy and implementation
+            </li>
           </ul>
         </article>
-      </section>
-    </main>
+      </div>
+    </SubPageShell>
   );
 }

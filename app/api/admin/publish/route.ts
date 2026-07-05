@@ -14,13 +14,13 @@ async function generateLinkedInDraft(articleTitle: string, articleUrl: string) {
     messages: [
       {
         role: "user",
-        content: `Write a 150-word LinkedIn post for Salil Chaturvedi.
+        content: `Write a 150-word LinkedIn post for the Optimizer360 team account.
 Topic: ${articleTitle}
 URL: ${articleUrl}
 
 Rules:
 - Strong opening hook
-- Founder-level direct voice
+- Operator-level direct voice
 - Max 2 hashtags`,
       },
     ],

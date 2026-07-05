@@ -152,7 +152,7 @@ Add redirect rule (Netlify redirects file or UI):
 ## 5) Final Production Smoke Tests
 
 - Public pages load:
-  - `/`, `/are`, `/usecases`, `/blog`, `/contact`
+  - `/`, `/agency`, `/usecases`, `/blog`, `/contact`
 - Contact and audit forms:
   - valid submit works
   - invalid captcha fails

@@ -9,12 +9,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = "https://optimizer360.ai";
   const routes = [
     "",
-    "/are",
+    "/request-audit",
+    "/ai-seo",
+    "/engines",
+    "/compare",
+    "/agency",
     "/usecases",
     "/blog",
     "/about",
     "/careers",
-    "/pricing",
     "/contact",
     "/privacy",
     "/terms",

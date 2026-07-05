@@ -15,35 +15,17 @@ export default function Icon() {
           width: "100%",
           height: "100%",
           display: "flex",
-          alignItems: "center",
+          flexDirection: "column",
           justifyContent: "center",
-          background: "#111827",
+          gap: 4,
+          background: "#060a14",
           borderRadius: 7,
-          position: "relative",
+          padding: "0 6px",
         }}
       >
-        <div
-          style={{
-            color: "#F9FAFB",
-            fontSize: 20,
-            fontWeight: 800,
-            lineHeight: 1,
-            fontFamily: "Inter, Arial, sans-serif",
-          }}
-        >
-          O
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            right: 6,
-            bottom: 6,
-            width: 7,
-            height: 7,
-            borderRadius: "50%",
-            background: "#10B981",
-          }}
-        />
+        <div style={{ height: 3, width: 14, borderRadius: 2, background: "#8d99b2" }} />
+        <div style={{ height: 3, width: 20, borderRadius: 2, background: "#3ce8b4" }} />
+        <div style={{ height: 3, width: 10, borderRadius: 2, background: "#8d99b2" }} />
       </div>
     ),
     {

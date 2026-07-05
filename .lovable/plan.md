@@ -39,8 +39,8 @@ Build a 9-page, dark-themed, production-ready website for Optimizer360 — an AI
 - Results per brand (3-column table), Asset accumulation table (Year 1–5), Asset valuation cards
 
 ### 6. Founder `/founder`
-- Premium personal brand hero for Salil Chaturvedi
-- Vertical career timeline (Provogue → Prozone → StackIntel → Optimizer360)
+- Premium brand vision hero for Optimizer360 leadership
+- Vertical execution timeline (legacy businesses → StackIntel → Optimizer360)
 - 3 philosophy cards, Team capability cards, CTA
 
 ### 7. About `/about`

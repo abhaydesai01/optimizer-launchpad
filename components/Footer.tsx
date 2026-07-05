@@ -36,8 +36,8 @@ export function Footer({ onHowItWorks }: FooterProps) {
             <Link href="/" className={linkClass}>
               GEO
             </Link>
-            <Link href="/are" className={linkClass}>
-              ARE (Autonomous Revenue Engine)
+            <Link href="/agency" className={linkClass}>
+              Agency GEO Platform
             </Link>
             <p className="text-sm text-[var(--text-faint)]">Coming Soon</p>
           </div>
@@ -59,6 +59,12 @@ export function Footer({ onHowItWorks }: FooterProps) {
             </Link>
             <Link href="/careers" className={linkClass}>
               Careers
+            </Link>
+            <Link href="/privacy" className={linkClass}>
+              Privacy
+            </Link>
+            <Link href="/terms" className={linkClass}>
+              Terms
             </Link>
             {onHowItWorks ? (
               <button onClick={onHowItWorks} className={`${linkClass} text-left`}>

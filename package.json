@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed:targets": "ts-node scripts/seed-targets.ts"
+    "seed:targets": "ts-node scripts/seed-targets.ts",
+    "verify:marketing": "node scripts/verify-marketing-routes.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.98.0",

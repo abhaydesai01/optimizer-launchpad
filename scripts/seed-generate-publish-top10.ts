@@ -195,7 +195,7 @@ function buildSchema(title: string, slug: string, description: string) {
       description,
       author: {
         "@type": "Person",
-        name: "Salil Chaturvedi",
+        name: "Optimizer360 Team",
       },
       publisher: {
         "@type": "Organization",
@@ -206,7 +206,7 @@ function buildSchema(title: string, slug: string, description: string) {
     },
     internalLinks: [
       { anchorText: "Generative Engine Optimization", targetUrl: "/", context: "Homepage" },
-      { anchorText: "Autonomous Revenue Engine", targetUrl: "/are", context: "Product" },
+      { anchorText: "Agency GEO Platform", targetUrl: "/agency", context: "Product" },
       { anchorText: "Use Cases", targetUrl: "/usecases", context: "Playbooks" },
     ],
   };
@@ -238,7 +238,7 @@ async function run() {
 
     const slug = article?.slug || (await resolveUniqueSlug(targetSeed.keyword));
     const title = targetSeed.prompt;
-    const metaTitle = `${title} | Optimizer360`;
+    const metaTitle = title;
     const metaDescription = `Practical guide for ${targetSeed.keyword} with implementation steps and KPI framework by Optimizer360.`;
     const draft = buildArticleBody(targetSeed);
     const schemaJson = buildSchema(title, slug, metaDescription);

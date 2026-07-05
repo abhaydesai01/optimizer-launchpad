@@ -36,7 +36,7 @@ Next.js 14 marketing site and admin content pipeline for GEO publishing.
 ## Key Routes
 
 - Public:
-  - `/`, `/are`, `/blog`, `/blog/[slug]`, `/about`, `/pricing`, `/contact`
+  - `/`, `/agency`, `/blog`, `/blog/[slug]`, `/about`, `/pricing`, `/contact`
 - Admin:
   - `/admin/login`
   - `/admin`, `/admin/targets`, `/admin/articles`

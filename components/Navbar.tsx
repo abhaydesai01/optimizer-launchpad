@@ -12,7 +12,7 @@ type NavbarProps = {
 
 const NAV_LINKS = [
   { label: "GEO", href: "/#geo" },
-  { label: "ARE", href: "/are" },
+  { label: "Agency", href: "/agency" },
   { label: "Use Cases", dropdown: true as const },
   { label: "How It Works", action: "how" as const },
   { label: "Pricing", href: "/#pricing" },

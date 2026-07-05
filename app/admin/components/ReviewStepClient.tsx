@@ -38,7 +38,7 @@ export function ReviewStepClient({
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             className="h-36 w-full rounded-xl border border-[#E2E7F0] p-3 text-sm"
-            placeholder="Add India-specific context or Salil's POV..."
+            placeholder="Add India-specific context or brand POV..."
           />
           <label className="block text-sm font-medium text-[#222735]">
             Anything to remove or change?
