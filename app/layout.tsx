@@ -149,6 +149,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       lang="en"
       className={`${interTight.variable} ${inter.variable} ${fraunces.variable}`}
     >
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-89SE77PEFT"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-89SE77PEFT');`,
+          }}
+        />
+      </head>
       <body>
         {children}
         <script
