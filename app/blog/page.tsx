@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Optimizer360.ai insights on AI SEO, Generative Engine Optimisation (GEO), and autonomous distribution systems.",
+    "Optimizer360.ai insights on AI GEO, Generative Engine Optimisation, and autonomous distribution systems.",
   alternates: { canonical: "https://optimizer360.ai/blog" },
 };
 

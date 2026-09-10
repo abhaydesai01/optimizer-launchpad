@@ -5,14 +5,14 @@ import { CONTACT_EMAIL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms that govern Optimizer360.ai's AI SEO and Generative Engine Optimisation services.",
+    "The terms that govern Optimizer360.ai's AI GEO and Generative Engine Optimisation services.",
   alternates: { canonical: "https://optimizer360.ai/terms" },
 };
 
 const SECTIONS = [
   {
     heading: "Scope of services",
-    body: "Optimizer360.ai provides AI SEO (Generative Engine Optimisation) strategy, content, technical structuring and tracking services as defined in individual engagement agreements.",
+    body: "Optimizer360.ai provides AI GEO (Generative Engine Optimisation) strategy, content, technical structuring and tracking services as defined in individual engagement agreements.",
   },
   {
     heading: "No guaranteed placements",

@@ -15,15 +15,15 @@ export function WhatIsGeo() {
       <div className="mk-wrap grid gap-14 lg:grid-cols-[1.2fr_1fr] lg:gap-20">
         <div>
           <Reveal>
-            <p className="mk-kicker">What AI SEO is</p>
+            <p className="mk-kicker">What AI GEO is</p>
             <h2 id="what-is-geo-heading" className="mk-h2 mt-5 text-[var(--paper)]">
-              SEO earned you a rank in a list. AI SEO earns you a place in the
+              SEO earned you a rank in a list. AI GEO earns you a place in the
               answer.
             </h2>
           </Reveal>
           <Reveal delay={100}>
             <p className="mk-body mt-7">
-              AI SEO — formally, Generative Engine Optimisation (GEO) — is the
+              AI GEO — formally, Generative Engine Optimisation — is the
               discipline of structuring your credibility, content and evidence
               so AI engines can read, trust and cite you. When a buyer asks
               ChatGPT or Google AI who to trust, the engine composes one answer
@@ -44,7 +44,7 @@ export function WhatIsGeo() {
                 href="/ai-seo"
                 className="text-sm font-medium text-[var(--mint)] underline decoration-[var(--ink-line-strong)] underline-offset-8 transition-colors hover:decoration-[var(--mint)]"
               >
-                Read the executive briefing: What is AI SEO? →
+                Read the executive briefing: What is AI GEO? →
               </Link>
             </p>
           </Reveal>
@@ -59,7 +59,7 @@ export function WhatIsGeo() {
               A familiar name. A different discipline.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-[var(--paper-muted)]">
-              We call it AI SEO because that&apos;s the fastest way to
+              We call it AI GEO because that&apos;s the fastest way to
               understand it. But the mechanics are new: AI engines don&apos;t
               rank keywords and backlinks — they cite trust, structure and
               evidence. Your search rankings don&apos;t transfer automatically.

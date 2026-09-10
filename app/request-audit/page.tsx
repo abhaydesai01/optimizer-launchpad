@@ -29,7 +29,7 @@ const auditPageSchema = {
   name: "Request a GEO Audit",
   url: "https://optimizer360.ai/request-audit",
   description:
-    "Request a confidential AI SEO (Generative Engine Optimisation) audit from Optimizer360.ai across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
+    "Request a confidential AI GEO (Generative Engine Optimisation) audit from Optimizer360.ai across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
 };
 
 const ASSURANCES = [

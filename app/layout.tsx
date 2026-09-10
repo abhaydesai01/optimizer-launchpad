@@ -32,7 +32,7 @@ const orgSchema = {
     name: "Optimizer360.ai",
     url: "https://optimizer360.ai",
     description:
-      "Optimizer360.ai is an AI SEO firm — Generative Engine Optimisation (GEO) — that helps enterprise brands get named, cited and correctly positioned inside AI answers across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
+      "Optimizer360.ai is an AI GEO firm — Generative Engine Optimisation — that helps enterprise brands get named, cited and correctly positioned inside AI answers across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
     sameAs: ["https://linkedin.com/company/optimizer360"],
   }),
   alternateName: ["Optimizer360", "Optimizer 360"],
@@ -42,7 +42,7 @@ const orgSchema = {
   },
   email: "hello@optimizer360.ai",
   knowsAbout: [
-    "AI SEO",
+    "AI GEO",
     "Generative Engine Optimisation",
     "Answer Engine Optimisation",
     "AI search visibility",
@@ -58,15 +58,15 @@ const websiteSchema = {
   name: "Optimizer360.ai",
   url: "https://optimizer360.ai",
   description:
-    "AI SEO for enterprise brands — Generative Engine Optimisation that makes your brand the answer AI gives.",
+    "AI GEO for enterprise brands — Generative Engine Optimisation that makes your brand the answer AI gives.",
   publisher: { "@type": "Organization", name: "Optimizer360.ai" },
 };
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "AI SEO — Generative Engine Optimisation (GEO)",
-  serviceType: "AI SEO / Generative Engine Optimisation",
+  name: "AI GEO — Generative Engine Optimisation",
+  serviceType: "AI GEO / Generative Engine Optimisation",
   provider: { "@type": "Organization", name: "Optimizer360.ai", url: "https://optimizer360.ai" },
   areaServed: "Worldwide",
   audience: {
@@ -83,14 +83,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://optimizer360.ai"),
   title: {
     default:
-      "Optimizer360.ai — AI SEO & Generative Engine Optimisation (GEO) for Enterprise Brands",
+      "Optimizer360.ai — AI GEO & Generative Engine Optimisation for Enterprise Brands",
     template: "%s | Optimizer360.ai",
   },
   description:
-    "Be the brand AI recommends. Optimizer360.ai is the AI SEO (GEO) firm that makes your brand the answer AI gives — across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude. A Stack Intel company. We never fabricate data.",
+    "Be the brand AI recommends. Optimizer360.ai is the AI GEO firm that makes your brand the answer AI gives — across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude. A Stack Intel company. We never fabricate data.",
   keywords: [
-    "AI SEO",
-    "AI SEO agency",
+    "AI GEO",
+    "AI GEO agency",
     "Generative Engine Optimisation",
     "GEO",
     "Answer Engine Optimisation",
@@ -107,9 +107,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Optimizer360.ai — AI SEO & GEO for Enterprise Brands",
+      "Optimizer360.ai — AI GEO for Enterprise Brands",
     description:
-      "Be the brand AI recommends. AI SEO (Generative Engine Optimisation) across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
+      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
     url: "https://optimizer360.ai",
     siteName: "Optimizer360.ai",
     type: "website",
@@ -119,15 +119,15 @@ export const metadata: Metadata = {
         url: "https://optimizer360.ai/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Optimizer360.ai — AI SEO & Generative Engine Optimisation",
+        alt: "Optimizer360.ai — AI GEO & Generative Engine Optimisation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Optimizer360.ai — AI SEO & GEO for Enterprise Brands",
+    title: "Optimizer360.ai — AI GEO for Enterprise Brands",
     description:
-      "Be the brand AI recommends. AI SEO (Generative Engine Optimisation) across all five major AI engines.",
+      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across all five major AI engines.",
     images: ["https://optimizer360.ai/og-image.png"],
   },
   robots: {

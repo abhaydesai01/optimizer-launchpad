@@ -5,7 +5,7 @@ import { buildFAQSchema, buildProductSchema } from "@/lib/schema-library";
 import { CAL_LINK } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "For Agencies — White-Label AI SEO Platform",
+  title: "For Agencies — White-Label AI GEO Platform",
   description:
     "Launch a GEO service line under your brand. White-label AI visibility dashboards, audit engine, prompt intelligence and multi-client management across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
   alternates: { canonical: "https://optimizer360.ai/agency" },
@@ -66,7 +66,7 @@ export default function AgencyPage() {
   return (
     <SubPageShell
       kicker="For agencies"
-      title="The AI SEO platform built for agency partners."
+      title="The AI GEO platform built for agency partners."
       intro="Launch a high-margin GEO practice under your brand. Track AI citations across five engines, run auditable delivery, and present measurable client outcomes every month."
     >
       <div className="grid gap-4 sm:grid-cols-3">

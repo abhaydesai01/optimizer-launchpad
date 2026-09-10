@@ -53,7 +53,7 @@ export async function GET() {
             display: "flex",
           }}
         >
-          AI SEO · Generative Engine Optimisation for enterprise brands
+          AI GEO · Generative Engine Optimisation for enterprise brands
         </div>
         <div
           style={{

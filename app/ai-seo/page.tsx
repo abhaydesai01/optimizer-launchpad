@@ -8,12 +8,12 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { CAL_LINK } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "What is AI SEO? The Executive Briefing on GEO",
+  title: "What is AI GEO? The Executive Briefing on GEO",
   description:
-    "AI SEO — Generative Engine Optimisation (GEO) — explained for decision-makers: why AI answers replaced the search results page, how engines choose which brands to cite, and what earning the answer actually involves.",
+    "AI GEO — Generative Engine Optimisation — explained for decision-makers: why AI answers replaced the search results page, how engines choose which brands to cite, and what earning the answer actually involves.",
   alternates: { canonical: "https://optimizer360.ai/ai-seo" },
   openGraph: {
-    title: "What is AI SEO? The Executive Briefing on GEO | Optimizer360.ai",
+    title: "What is AI GEO? The Executive Briefing on GEO | Optimizer360.ai",
     description:
       "Why AI answers replaced the search results page, how engines choose which brands to cite, and what earning the answer involves.",
     url: "https://optimizer360.ai/ai-seo",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "What is AI SEO? The Executive Briefing on Generative Engine Optimisation",
+  headline: "What is AI GEO? The Executive Briefing on Generative Engine Optimisation",
   description:
-    "AI SEO (GEO) explained for enterprise decision-makers: why AI answers replaced the search results page, how AI engines choose which brands to cite, and what earning the answer involves.",
+    "AI GEO explained for enterprise decision-makers: why AI answers replaced the search results page, how AI engines choose which brands to cite, and what earning the answer involves.",
   author: { "@type": "Organization", name: "Optimizer360.ai", url: "https://optimizer360.ai" },
   publisher: { "@type": "Organization", name: "Optimizer360.ai" },
   mainEntityOfPage: "https://optimizer360.ai/ai-seo",
   about: [
-    { "@type": "Thing", name: "AI SEO" },
+    { "@type": "Thing", name: "AI GEO" },
     { "@type": "Thing", name: "Generative Engine Optimisation" },
     { "@type": "Thing", name: "Answer Engine Optimisation" },
   ],
@@ -40,11 +40,11 @@ const articleSchema = {
 const definedTermSchema = {
   "@context": "https://schema.org",
   "@type": "DefinedTermSet",
-  name: "AI SEO Glossary",
+  name: "AI GEO Glossary",
   hasDefinedTerm: [
     {
       "@type": "DefinedTerm",
-      name: "AI SEO",
+      name: "AI GEO",
       description:
         "The practice of structuring a brand's credibility, content and evidence so AI engines can read, trust and cite it in their answers. The plain-language name for Generative Engine Optimisation.",
     },
@@ -52,7 +52,7 @@ const definedTermSchema = {
       "@type": "DefinedTerm",
       name: "Generative Engine Optimisation (GEO)",
       description:
-        "The formal name for AI SEO: optimising for the synthesised answers of generative AI engines such as ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
+        "The formal name for AI GEO: optimising for the synthesised answers of generative AI engines such as ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
     },
     {
       "@type": "DefinedTerm",
@@ -89,7 +89,7 @@ export default function AiSeoGuidePage() {
             <Reveal>
               <p className="mk-kicker">The executive briefing</p>
               <h1 className="mk-h1 mt-6 max-w-3xl text-[var(--paper)]">
-                What is AI SEO?
+                What is AI GEO?
               </h1>
               <p className="mk-body mt-7 max-w-2xl">
                 A plain-language briefing on Generative Engine Optimisation —
@@ -160,7 +160,7 @@ export default function AiSeoGuidePage() {
                 </SectionHeading>
                 <div className="border-l-2 border-[var(--mint)] bg-[var(--ink-900)] p-6">
                   <p className="font-serif-display text-lg leading-relaxed text-[var(--paper)]">
-                    AI SEO — formally, Generative Engine Optimisation (GEO) —
+                    AI GEO — formally, Generative Engine Optimisation —
                     is the discipline of structuring a brand&apos;s
                     credibility, content and evidence so AI engines can read,
                     trust and cite it in their answers.
@@ -222,7 +222,7 @@ export default function AiSeoGuidePage() {
                   What the work actually involves
                 </SectionHeading>
                 <p className="mk-body">
-                  A serious AI SEO engagement has four movements. A{" "}
+                  A serious AI GEO engagement has four movements. A{" "}
                   <strong className="text-[var(--paper)]">baseline</strong>:
                   recording exactly how each engine answers about you today.
                   A <strong className="text-[var(--paper)]">diagnosis</strong>:
@@ -242,7 +242,7 @@ export default function AiSeoGuidePage() {
                 <SectionHeading id="glossary">Glossary</SectionHeading>
                 <dl className="space-y-6">
                   <div>
-                    <dt className="font-serif-display text-lg text-[var(--paper)]">AI SEO</dt>
+                    <dt className="font-serif-display text-lg text-[var(--paper)]">AI GEO</dt>
                     <dd className="mt-2 text-[15px] leading-relaxed text-[var(--paper-muted)]">
                       The plain-language name for this discipline. Same thing as GEO.
                     </dd>

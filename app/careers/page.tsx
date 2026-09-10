@@ -4,7 +4,7 @@ import { SubPageShell } from "@/components/marketing/SubPageShell";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join Optimizer360.ai — a Stack Intel company building the discipline of AI SEO for enterprise brands.",
+    "Join Optimizer360.ai — a Stack Intel company building the discipline of AI GEO for enterprise brands.",
   alternates: { canonical: "https://optimizer360.ai/careers" },
 };
 
@@ -13,7 +13,7 @@ export default function CareersPage() {
     <SubPageShell
       kicker="Careers"
       title="Help brands earn the answer."
-      intro="We are a lean team building the discipline of AI SEO — strategy, content and engineering that make enterprise brands citable by AI engines. If you like shipping fast with visible customer impact, we want to hear from you."
+      intro="We are a lean team building the discipline of AI GEO — strategy, content and engineering that make enterprise brands citable by AI engines. If you like shipping fast with visible customer impact, we want to hear from you."
     >
       <div className="grid gap-6 md:grid-cols-2">
         <article className="mk-card p-8">

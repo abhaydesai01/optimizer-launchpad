@@ -1,13 +1,13 @@
 export const MARKETING_FAQ = [
   {
-    question: "What is AI SEO?",
+    question: "What is AI GEO?",
     answer:
-      "AI SEO — formally called Generative Engine Optimisation (GEO), and sometimes Answer Engine Optimisation (AEO) — is the discipline of structuring a brand's credibility, content and evidence so AI engines like ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude can read, trust and cite the brand in their answers. Where traditional SEO earns a rank in a list of links, AI SEO earns a place in the answer itself.",
+      "AI GEO — formally called Generative Engine Optimisation, and sometimes Answer Engine Optimisation (AEO) — is the discipline of structuring a brand's credibility, content and evidence so AI engines like ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude can read, trust and cite the brand in their answers. Where traditional SEO earns a rank in a list of links, AI GEO earns a place in the answer itself.",
   },
   {
-    question: "How is AI SEO (GEO) different from traditional SEO?",
+    question: "How is AI GEO different from traditional SEO?",
     answer:
-      "Traditional SEO optimises for a ranked list of links; AI SEO optimises for a single synthesised answer. AI engines choose what to cite based on trust, structure and evidence rather than keywords and backlinks alone. Strong search rankings do not transfer automatically — the answer has to be earned on its own terms.",
+      "Traditional SEO optimises for a ranked list of links; AI GEO optimises for a single synthesised answer. AI engines choose what to cite based on trust, structure and evidence rather than keywords and backlinks alone. Strong search rankings do not transfer automatically — the answer has to be earned on its own terms.",
   },
   {
     question: "Does Optimizer360.ai guarantee AI citations?",
@@ -42,7 +42,7 @@ export const MARKETING_FAQ = [
   {
     question: "Do you replace our SEO agency or work alongside them?",
     answer:
-      "Alongside. AI SEO is a distinct discipline from traditional SEO, and the two reinforce each other. We coordinate with your existing SEO or content team where one exists — our technical structuring and content work complements search rankings rather than competing with them.",
+      "Alongside. AI GEO is a distinct discipline from traditional SEO, and the two reinforce each other. We coordinate with your existing SEO or content team where one exists — our technical structuring and content work complements search rankings rather than competing with them.",
   },
   {
     question: "What do you need from our team?",

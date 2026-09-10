@@ -24,7 +24,7 @@ export default function ContactPage() {
           </h2>
           <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
             A focused conversation about how AI currently represents your brand
-            and whether AI SEO is worth your attention. No deck, no pressure.
+            and whether AI GEO is worth your attention. No deck, no pressure.
           </p>
           <a
             href={CAL_LINK}

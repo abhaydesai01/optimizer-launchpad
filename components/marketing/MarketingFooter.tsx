@@ -17,7 +17,7 @@ export function MarketingFooter() {
             A Stack Intel company.
           </p>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-[var(--paper-muted)]">
-            AI SEO for enterprise brands — Generative Engine Optimisation that
+            AI GEO for enterprise brands — Generative Engine Optimisation that
             makes your brand the answer AI gives, across ChatGPT, Perplexity,
             Google AI Overviews, Gemini and Claude.
           </p>

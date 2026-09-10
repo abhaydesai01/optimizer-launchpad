@@ -138,7 +138,7 @@ export default function ComparePage() {
               href="/ai-seo"
               className="font-medium text-[var(--mint)] underline decoration-[var(--ink-line-strong)] underline-offset-4 hover:decoration-[var(--mint)]"
             >
-              AI SEO is a different discipline
+              AI GEO is a different discipline
             </Link>
             . Keep your SEO stack; add Optimizer360.ai for the answer layer.
           </p>

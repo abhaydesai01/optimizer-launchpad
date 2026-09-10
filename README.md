@@ -14,9 +14,7 @@ Next.js 14 marketing site and admin content pipeline for GEO publishing.
 
 1. Install dependencies:
    - `npm install`
-2. Create environment file:
-   - `cp .env.local.example .env.local`
-3. Fill required environment variables:
+2. Create a `.env.local` file (gitignored — no template is committed; ask a teammate for values):
    - `MONGODB_URI`
    - `ANTHROPIC_API_KEY`
    - `ADMIN_EMAIL`
@@ -29,6 +27,7 @@ Next.js 14 marketing site and admin content pipeline for GEO publishing.
    - `FOUNDER_QUEUE_SECRET` (required in production for queue job auth)
    - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`
    - `RECAPTCHA_SECRET_KEY`
+   - `NEXT_PUBLIC_DASHBOARD_URL` (dashboard app URL for the navbar's Login link; defaults to `https://geo.optimizer360.ai`)
    - Optional: `NEXT_PUBLIC_CAL_LINK`, `INDEXNOW_KEY`
 4. Run dev server:
    - `npm run dev`

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { AnswerGlyph } from "@/components/marketing/AnswerMark";
 import { MARKETING_NAV, MARKETING_NAV_MOBILE_EXTRAS } from "@/lib/marketing-routes";
+import { DASHBOARD_LOGIN_URL } from "@/lib/site";
 
 export function MarketingNav() {
   const pathname = usePathname() ?? "";
@@ -68,9 +69,9 @@ export function MarketingNav() {
               {link.label}
             </Link>
           ))}
-          <Link href="/request-audit" className="mk-btn mk-btn-primary !px-5 !py-2.5">
-            Request an Audit
-          </Link>
+          <a href={DASHBOARD_LOGIN_URL} className="mk-btn mk-btn-primary !px-5 !py-2.5">
+            Login
+          </a>
         </nav>
 
         <button
@@ -118,13 +119,13 @@ export function MarketingNav() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/request-audit"
+            <a
+              href={DASHBOARD_LOGIN_URL}
               onClick={() => setOpen(false)}
               className="mk-btn mk-btn-primary mt-3"
             >
-              Request an Audit
-            </Link>
+              Login
+            </a>
           </div>
         </nav>
       ) : null}

@@ -30,7 +30,7 @@ export function Hero() {
         <div>
           <Reveal>
             <p className="mk-kicker">
-              AI SEO <span className="text-[var(--paper-muted)]">·</span>{" "}
+              AI GEO <span className="text-[var(--paper-muted)]">·</span>{" "}
               <span className="text-[var(--paper-muted)]">
                 Generative Engine Optimisation
               </span>
@@ -45,7 +45,7 @@ export function Hero() {
             <p className="mk-body mt-7 max-w-xl">
               Your customers now ask ChatGPT, Perplexity and Google AI who to
               trust — and the answer names only a few brands. Optimizer360.ai
-              is the AI SEO firm that makes sure one of them is you.
+              is the AI GEO firm that makes sure one of them is you.
             </p>
           </Reveal>
           <Reveal delay={240}>

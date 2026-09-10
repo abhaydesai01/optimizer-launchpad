@@ -9,7 +9,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Optimizer360.ai is a specialist AI SEO (Generative Engine Optimisation) firm built by Stack Intel. We believe AI is the new front door to every brand — and we operate on radical honesty: no fabricated data, no hollow guarantees.",
+    "Optimizer360.ai is a specialist AI GEO (Generative Engine Optimisation) firm built by Stack Intel. We believe AI is the new front door to every brand — and we operate on radical honesty: no fabricated data, no hollow guarantees.",
   alternates: {
     canonical: "https://optimizer360.ai/about",
   },
@@ -28,7 +28,7 @@ const aboutSchema = {
   name: "About Optimizer360.ai",
   url: "https://optimizer360.ai/about",
   description:
-    "Optimizer360.ai is a specialist AI SEO (Generative Engine Optimisation) firm built by Stack Intel, operating on radical honesty.",
+    "Optimizer360.ai is a specialist AI GEO (Generative Engine Optimisation) firm built by Stack Intel, operating on radical honesty.",
   mainEntity: {
     "@type": "Organization",
     name: "Optimizer360.ai",
@@ -54,7 +54,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={120}>
               <p className="mk-body mt-7 max-w-2xl">
-                Optimizer360.ai is a specialist AI SEO firm — Generative Engine
+                Optimizer360.ai is a specialist AI GEO firm — Generative Engine
                 Optimisation, built by Stack Intel. We exist for one reason:
                 when your customers ask AI who to trust, the answer should
                 include you — accurately, credibly, and on the strength of
