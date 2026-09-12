@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
+import { pageMeta } from "@/lib/page-metadata";
 import { CAL_LINK } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Thank You",
   description: "Your request has been received.",
-  robots: { index: false, follow: false },
-};
+  path: "/thank-you",
+  noIndex: true,
+});
 
 type ThankYouProps = {
   searchParams: {

@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
+import { pageMeta } from "@/lib/page-metadata";
 import { CONTACT_EMAIL } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Terms of Service",
   description:
     "The terms that govern Optimizer360.ai's AI GEO and Generative Engine Optimisation services.",
-  alternates: { canonical: "https://optimizer360.ai/terms" },
-};
+  path: "/terms",
+});
 
 const SECTIONS = [
   {
@@ -42,6 +42,10 @@ export default function TermsPage() {
       kicker="Legal"
       title="Terms of Service"
       intro="Last updated: July 5, 2026"
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "Terms" },
+      ]}
     >
       <div className="max-w-3xl space-y-10">
         {SECTIONS.map((section) => (

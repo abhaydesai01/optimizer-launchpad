@@ -1,15 +1,17 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Check, Minus, X } from "lucide-react";
+import { JsonLd } from "@/components/marketing/JsonLd";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
+import { pageMeta } from "@/lib/page-metadata";
+import { buildItemListSchema } from "@/lib/schema-library";
 import { CAL_LINK } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Optimizer360.ai vs Tracking Tools & SEO Agencies",
   description:
     "How Optimizer360.ai compares to AI visibility tracking tools (like Peec AI or Profound) and traditional SEO agencies — tracking, diagnosis, content, entity structuring and an assigned execution team in one engagement.",
-  alternates: { canonical: "https://optimizer360.ai/compare" },
-};
+  path: "/compare",
+});
 
 type Support = "yes" | "no" | "partial";
 
@@ -45,7 +47,24 @@ export default function ComparePage() {
       kicker="Comparison"
       title="Trackers show you the problem. We're built to fix it."
       intro="AI visibility trackers (Peec AI, Profound and others) are good measurement tools — and measurement alone doesn't change what AI says about you. Traditional SEO agencies execute — on signals AI engines don't weight. Here's the honest comparison."
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "Compare" },
+      ]}
     >
+      <JsonLd
+        id="compare-list"
+        data={buildItemListSchema({
+          name: "Optimizer360.ai capability comparison",
+          description:
+            "How Optimizer360.ai compares to AI visibility trackers and traditional SEO agencies.",
+          items: ROWS.map((row) => ({
+            name: row.capability,
+            description: row.note,
+            url: "https://optimizer360.ai/compare",
+          })),
+        })}
+      />
       <div className="overflow-x-auto">
         <table className="w-full min-w-[720px] border-collapse text-left">
           <caption className="sr-only">

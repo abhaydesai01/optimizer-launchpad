@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed:targets": "ts-node scripts/seed-targets.ts",
+    "seed:targets": "npx tsx scripts/seed-targets.ts",
+    "seed:pillars": "npx tsx scripts/seed-pillar-articles.ts",
     "verify:marketing": "node scripts/verify-marketing-routes.mjs"
   },
   "dependencies": {

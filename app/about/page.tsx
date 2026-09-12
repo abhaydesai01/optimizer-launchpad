@@ -1,26 +1,18 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
 import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
+import { pageMeta } from "@/lib/page-metadata";
+import { FOUNDER_NOTE } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "About",
   description:
     "Optimizer360.ai is a specialist AI GEO (Generative Engine Optimisation) firm built by Stack Intel. We believe AI is the new front door to every brand — and we operate on radical honesty: no fabricated data, no hollow guarantees.",
-  alternates: {
-    canonical: "https://optimizer360.ai/about",
-  },
-  openGraph: {
-    title: "About Optimizer360.ai",
-    description:
-      "A specialist GEO firm built by Stack Intel. Radical honesty as an operating constraint: no fabricated data, no hollow guarantees, everything verifiable.",
-    url: "https://optimizer360.ai/about",
-    type: "website",
-  },
-};
+  path: "/about",
+});
 
 const aboutSchema = {
   "@context": "https://schema.org",
@@ -61,6 +53,18 @@ export default function AboutPage() {
                 evidence the engines can verify.
               </p>
             </Reveal>
+            {FOUNDER_NOTE ? (
+              <Reveal delay={180}>
+                <blockquote className="mk-card mt-10 max-w-2xl p-6">
+                  <p className="text-[15px] leading-relaxed text-[var(--paper-soft)]">
+                    “{FOUNDER_NOTE.quote}”
+                  </p>
+                  <footer className="mt-4 text-sm text-[var(--paper-muted)]">
+                    {FOUNDER_NOTE.name}, {FOUNDER_NOTE.role}
+                  </footer>
+                </blockquote>
+              </Reveal>
+            ) : null}
           </div>
         </section>
 

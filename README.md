@@ -35,7 +35,8 @@ Next.js 14 marketing site and admin content pipeline for GEO publishing.
 ## Key Routes
 
 - Public:
-  - `/`, `/agency`, `/blog`, `/blog/[slug]`, `/about`, `/pricing`, `/contact`
+  - `/`, `/agency`, `/blog`, `/blog/[slug]`, `/authors/[slug]`, `/faq`, `/usecases`, `/about`, `/contact`
+  - Discovery: `/llms.txt`, `/llms-full.txt`, `/ai.txt`, `/feed.xml`, `/sitemap.xml`
 - Admin:
   - `/admin/login`
   - `/admin`, `/admin/targets`, `/admin/articles`
@@ -43,7 +44,7 @@ Next.js 14 marketing site and admin content pipeline for GEO publishing.
 
 ## Pipeline Flow
 
-1. Seed targets (optional)
+1. Seed targets (`npm run seed:targets`) and/or publish pillar posts (`npm run seed:pillars`)
 2. Start pipeline from admin dashboard
 3. Generate brief
 4. Generate draft
@@ -59,6 +60,8 @@ Next.js 14 marketing site and admin content pipeline for GEO publishing.
 
 This deletes all existing targets before reseeding.
 Use only in local/dev or with explicit approval in shared environments.
+
+`npm run seed:pillars` upserts six citation-grade pillar articles and a default author. It does not delete other posts. The same six posts are also compiled into the app as a fallback so `/blog` stays populated if Mongo is empty.
 
 ## Security and Abuse Controls
 
@@ -79,6 +82,7 @@ Use only in local/dev or with explicit approval in shared environments.
     - `LocalBusiness`
     - `Product`
     - `QAPage`
+    - `Person`, `BreadcrumbList`, `SoftwareApplication`, `Article`, `Blog`, `ItemList`, `ContactPage`
 - Robots template library:
   - `lib/robots-template.ts`
   - Consumed by `app/robots.ts`
@@ -127,3 +131,7 @@ If pipeline or form submission fails:
 - `npm run start` - run built app
 - `npm run lint` - lint checks
 - `npm run seed:targets` - destructive target reseed
+- `npm run seed:pillars` - upsert six published GEO pillar posts
+- `npm run verify:marketing` - GET public routes (requires `npm run dev`)
+
+The Vite `index.html` / `src/` tree is a leftover from an older SPA and is not served by the Next.js App Router. Do not treat its meta tags as live SEO.

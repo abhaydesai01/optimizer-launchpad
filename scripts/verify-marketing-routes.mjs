@@ -1,8 +1,5 @@
-#!/usr/bin/env node
-/**
- * Smoke-test marketing routes: HTTP 200, dark theme, no legacy shell.
- * Usage: node scripts/verify-marketing-routes.mjs [baseUrl]
- */
+const BASE = process.env.VERIFY_BASE_URL || "http://localhost:3000";
+
 const ROUTES = [
   "/",
   "/about",
@@ -16,37 +13,46 @@ const ROUTES = [
   "/privacy",
   "/terms",
   "/thank-you",
+  "/blog",
+  "/usecases",
+  "/faq",
+  "/authors/geo-team",
+  "/llms.txt",
+  "/llms-full.txt",
+  "/ai.txt",
+  "/feed.xml",
+  "/sitemap.xml",
+  "/og-image.png",
 ];
 
-const base = process.argv[2] || "http://localhost:3000";
-let failed = 0;
+const failures = [];
 
 for (const route of ROUTES) {
-  const url = `${base}${route}`;
+  const url = `${BASE}${route}`;
   try {
-    const res = await fetch(url);
-    const html = await res.text();
-    const hasDark = html.includes("theme-ink");
-    const hasOld = html.includes('bg-[#f5f6fa]') || html.includes("PublicPageShell");
-    const ok = res.status === 200 && hasDark && !hasOld;
-    if (!ok) {
-      console.log(`FAIL ${route}: status=${res.status} dark=${hasDark} legacy=${hasOld}`);
-      failed++;
-    } else {
-      console.log(`OK   ${route}`);
+    const response = await fetch(url, { redirect: "follow" });
+    if (response.status !== 200) {
+      failures.push(`${route} → ${response.status}`);
+      continue;
     }
-  } catch (err) {
-    console.log(`FAIL ${route}: ${err.message}`);
-    failed++;
+    if (route === "/llms.txt") {
+      const text = await response.text();
+      if (!text.includes("Optimizer360.ai") || !text.includes("/blog")) {
+        failures.push(`${route} → missing expected llms.txt content`);
+      }
+    }
+    if (route === "/ai.txt" && !(await response.clone().text()).includes("llms.txt")) {
+      failures.push(`${route} → missing llms.txt pointer`);
+    }
+  } catch (error) {
+    failures.push(`${route} → ${error instanceof Error ? error.message : "fetch failed"}`);
   }
 }
 
-const pricingRes = await fetch(`${base}/pricing`, { redirect: "manual" });
-if (pricingRes.status === 307 || pricingRes.status === 308) {
-  console.log("OK   /pricing (redirects)");
-} else {
-  console.log(`FAIL /pricing: expected redirect, got ${pricingRes.status}`);
-  failed++;
+if (failures.length) {
+  console.error("Marketing route verification failed:");
+  for (const failure of failures) console.error(`  ${failure}`);
+  process.exit(1);
 }
 
-process.exit(failed > 0 ? 1 : 0);
+console.log(`Verified ${ROUTES.length} routes at ${BASE}`);

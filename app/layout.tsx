@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Fraunces, Inter, Inter_Tight } from "next/font/google";
-import {
-  buildFAQSchema,
-  buildOrganizationSchema,
-} from "@/lib/schema-library";
-import { MARKETING_FAQ } from "@/lib/marketing-faq";
+import { buildOrganizationSchema } from "@/lib/schema-library";
+import { SITE_LOGO_URL } from "@/lib/site";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -34,6 +31,7 @@ const orgSchema = {
     description:
       "Optimizer360.ai is an AI GEO firm — Generative Engine Optimisation — that helps enterprise brands get named, cited and correctly positioned inside AI answers across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
     sameAs: ["https://linkedin.com/company/optimizer360"],
+    logo: SITE_LOGO_URL,
   }),
   alternateName: ["Optimizer360", "Optimizer 360"],
   parentOrganization: {
@@ -76,8 +74,6 @@ const serviceSchema = {
   description:
     "Optimizer360.ai structures a brand's credibility, content and evidence so AI engines — ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude — can read, trust and cite it. Baseline audit, gap diagnosis, gap-targeted content and entity structuring, and weekly citation tracking across all five engines. Engagements are scoped individually; request an audit for a quote.",
 };
-
-const faqSchema = buildFAQSchema([...MARKETING_FAQ]);
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://optimizer360.ai"),
@@ -175,10 +171,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </body>
     </html>

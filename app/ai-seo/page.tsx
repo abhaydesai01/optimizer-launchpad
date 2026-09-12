@@ -1,35 +1,38 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
 import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
-import { CAL_LINK } from "@/lib/site";
+import { GEO_GLOSSARY } from "@/lib/glossary";
+import { pageMeta } from "@/lib/page-metadata";
+import { buildArticleSchema } from "@/lib/schema-library";
+import { CAL_LINK, DEFAULT_OG_IMAGE, SITE_LOGO_URL, SITE_URL } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "What is AI GEO? The Executive Briefing on GEO",
   description:
     "AI GEO — Generative Engine Optimisation — explained for decision-makers: why AI answers replaced the search results page, how engines choose which brands to cite, and what earning the answer actually involves.",
-  alternates: { canonical: "https://optimizer360.ai/ai-seo" },
-  openGraph: {
-    title: "What is AI GEO? The Executive Briefing on GEO | Optimizer360.ai",
-    description:
-      "Why AI answers replaced the search results page, how engines choose which brands to cite, and what earning the answer involves.",
-    url: "https://optimizer360.ai/ai-seo",
-    type: "article",
-  },
-};
+  path: "/ai-seo",
+  type: "article",
+  publishedTime: "2026-03-01T00:00:00.000Z",
+  modifiedTime: "2026-09-12T00:00:00.000Z",
+  authors: ["Optimizer360 GEO team"],
+});
 
 const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "What is AI GEO? The Executive Briefing on Generative Engine Optimisation",
-  description:
-    "AI GEO explained for enterprise decision-makers: why AI answers replaced the search results page, how AI engines choose which brands to cite, and what earning the answer involves.",
-  author: { "@type": "Organization", name: "Optimizer360.ai", url: "https://optimizer360.ai" },
-  publisher: { "@type": "Organization", name: "Optimizer360.ai" },
-  mainEntityOfPage: "https://optimizer360.ai/ai-seo",
+  ...buildArticleSchema({
+    headline: "What is AI GEO? The Executive Briefing on Generative Engine Optimisation",
+    description:
+      "AI GEO explained for enterprise decision-makers: why AI answers replaced the search results page, how AI engines choose which brands to cite, and what earning the answer involves.",
+    url: `${SITE_URL}/ai-seo`,
+    datePublished: "2026-03-01T00:00:00.000Z",
+    dateModified: "2026-09-12T00:00:00.000Z",
+    authorName: "Optimizer360 GEO team",
+    authorUrl: `${SITE_URL}/authors/geo-team`,
+    image: DEFAULT_OG_IMAGE,
+    publisherLogo: SITE_LOGO_URL,
+  }),
   about: [
     { "@type": "Thing", name: "AI GEO" },
     { "@type": "Thing", name: "Generative Engine Optimisation" },
@@ -41,32 +44,11 @@ const definedTermSchema = {
   "@context": "https://schema.org",
   "@type": "DefinedTermSet",
   name: "AI GEO Glossary",
-  hasDefinedTerm: [
-    {
-      "@type": "DefinedTerm",
-      name: "AI GEO",
-      description:
-        "The practice of structuring a brand's credibility, content and evidence so AI engines can read, trust and cite it in their answers. The plain-language name for Generative Engine Optimisation.",
-    },
-    {
-      "@type": "DefinedTerm",
-      name: "Generative Engine Optimisation (GEO)",
-      description:
-        "The formal name for AI GEO: optimising for the synthesised answers of generative AI engines such as ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
-    },
-    {
-      "@type": "DefinedTerm",
-      name: "Answer Engine Optimisation (AEO)",
-      description:
-        "A closely related term emphasising optimisation for engines that return direct answers rather than lists of links.",
-    },
-    {
-      "@type": "DefinedTerm",
-      name: "AI citation",
-      description:
-        "When an AI engine names or references a brand or source in its answer. Citations are earned through trust, structure and evidence; they cannot be bought.",
-    },
-  ],
+  hasDefinedTerm: GEO_GLOSSARY.map((term) => ({
+    "@type": "DefinedTerm",
+    name: term.name,
+    description: term.description,
+  })),
 };
 
 function SectionHeading({ id, children }: { id: string; children: string }) {

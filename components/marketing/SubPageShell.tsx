@@ -2,15 +2,26 @@ import type { ReactNode } from "react";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
+import {
+  BreadcrumbTrail,
+  type BreadcrumbItem,
+} from "@/components/marketing/BreadcrumbTrail";
 
 type SubPageShellProps = {
   kicker: string;
   title: string;
   intro?: string;
+  breadcrumbs?: BreadcrumbItem[];
   children: ReactNode;
 };
 
-export function SubPageShell({ kicker, title, intro, children }: SubPageShellProps) {
+export function SubPageShell({
+  kicker,
+  title,
+  intro,
+  breadcrumbs,
+  children,
+}: SubPageShellProps) {
   return (
     <div className="theme-ink min-h-screen">
       <MarketingNav />
@@ -19,6 +30,7 @@ export function SubPageShell({ kicker, title, intro, children }: SubPageShellPro
         {/* pt accounts for announcement bar + sticky header */}
         <section className="pb-14 pt-52 md:pt-60">
           <div className="mk-wrap">
+            {breadcrumbs?.length ? <BreadcrumbTrail items={breadcrumbs} /> : null}
             <p className="mk-kicker">{kicker}</p>
             <h1 className="mk-h2 mt-5 max-w-3xl text-[var(--paper)]">{title}</h1>
             {intro ? <p className="mk-body mt-6 max-w-2xl">{intro}</p> : null}

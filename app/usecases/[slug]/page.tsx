@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import { notFound } from "next/navigation";
+import { BreadcrumbTrail } from "@/components/marketing/BreadcrumbTrail";
+import { pageMeta } from "@/lib/page-metadata";
 import { buildFAQSchema } from "@/lib/schema-library";
 import { getUseCaseBySlug, useCases } from "@/lib/usecases";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
@@ -21,13 +23,11 @@ export async function generateMetadata({
   const useCase = getUseCaseBySlug(params.slug);
   if (!useCase) return {};
 
-  return {
+  return pageMeta({
     title: useCase.title,
     description: useCase.tagline,
-    alternates: {
-      canonical: `https://optimizer360.ai/usecases/${useCase.slug}`,
-    },
-  };
+    path: `/usecases/${useCase.slug}`,
+  });
 }
 
 export default function UseCaseDetailPage({
@@ -50,6 +50,13 @@ export default function UseCaseDetailPage({
       <MarketingNav />
       <CardGlow />
       <main className="mk-wrap max-w-5xl pb-24 pt-52 md:pt-60">
+        <BreadcrumbTrail
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Use cases", href: "/usecases" },
+            { label: useCase.shortTitle },
+          ]}
+        />
         <Script
           id={`usecase-faq-${useCase.slug}`}
           type="application/ld+json"

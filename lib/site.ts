@@ -1,3 +1,15 @@
+export const SITE_URL = "https://optimizer360.ai";
+export const SITE_NAME = "Optimizer360.ai";
+export const SITE_LOGO_URL = `${SITE_URL}/og-image.png`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
+
+/** Fill this when a public founder bio exists. Do not invent a name. */
+export const FOUNDER_NOTE: {
+  name: string;
+  role: string;
+  quote: string;
+} | null = null;
+
 export const CAL_LINK =
   process.env.NEXT_PUBLIC_CAL_LINK ||
   "https://cal.com/abhay-desai/free-geo-strategy-call-optimizer360";

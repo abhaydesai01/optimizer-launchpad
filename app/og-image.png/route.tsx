@@ -2,7 +2,14 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export async function GET() {
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const customTitle = searchParams.get("title")?.trim().slice(0, 140);
+  const title = customTitle || "Be the brand AI recommends.";
+  const subtitle = customTitle
+    ? "AI GEO · Generative Engine Optimisation"
+    : "AI GEO · Generative Engine Optimisation for enterprise brands";
+
   return new ImageResponse(
     (
       <div
@@ -36,14 +43,14 @@ export async function GET() {
         </div>
         <div
           style={{
-            fontSize: 84,
+            fontSize: customTitle && customTitle.length > 70 ? 48 : customTitle ? 64 : 84,
             fontWeight: 700,
             lineHeight: 1.05,
             letterSpacing: -2,
             display: "flex",
           }}
         >
-          Be the brand AI recommends.
+          {title}
         </div>
         <div
           style={{
@@ -53,7 +60,7 @@ export async function GET() {
             display: "flex",
           }}
         >
-          AI GEO · Generative Engine Optimisation for enterprise brands
+          {subtitle}
         </div>
         <div
           style={{

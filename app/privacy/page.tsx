@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
+import { pageMeta } from "@/lib/page-metadata";
 import { CONTACT_EMAIL } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Privacy Policy",
   description:
     "How Optimizer360.ai collects, uses and protects the information you share with us.",
-  alternates: { canonical: "https://optimizer360.ai/privacy" },
-};
+  path: "/privacy",
+});
 
 const SECTIONS = [
   {
@@ -42,6 +42,10 @@ export default function PrivacyPage() {
       kicker="Legal"
       title="Privacy Policy"
       intro="Last updated: July 5, 2026"
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "Privacy" },
+      ]}
     >
       <div className="max-w-3xl space-y-10">
         {SECTIONS.map((section) => (

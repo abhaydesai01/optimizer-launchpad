@@ -26,6 +26,12 @@ export interface IArticleSchema {
   internalLinks: { anchorText: string; targetUrl: string; context: string }[];
 }
 
+export interface IArticleSource {
+  stat: string;
+  context: string;
+  url?: string;
+}
+
 export interface IArticle extends Document {
   targetId: mongoose.Types.ObjectId;
   slug: string;
@@ -42,6 +48,12 @@ export interface IArticle extends Document {
   published: boolean;
   publishedAt?: Date;
   linkedinDraft?: string;
+  authorSlug?: string;
+  authorName?: string;
+  authorRole?: string;
+  category?: string;
+  sources?: IArticleSource[];
+  excerpt?: string;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -63,6 +75,12 @@ const ArticleSchema = new Schema<IArticle>(
     published: { type: Boolean, default: false },
     publishedAt: { type: Date },
     linkedinDraft: { type: String, default: "" },
+    authorSlug: { type: String, default: "geo-team" },
+    authorName: { type: String, default: "Optimizer360 GEO team" },
+    authorRole: { type: String, default: "GEO strategists" },
+    category: { type: String, default: "geo-explainer" },
+    sources: { type: [Schema.Types.Mixed], default: [] },
+    excerpt: { type: String, default: "" },
   },
   { timestamps: true },
 );

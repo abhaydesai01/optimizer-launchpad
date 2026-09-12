@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
+import { pageMeta } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Careers",
   description:
     "Join Optimizer360.ai — a Stack Intel company building the discipline of AI GEO for enterprise brands.",
-  alternates: { canonical: "https://optimizer360.ai/careers" },
-};
+  path: "/careers",
+});
 
 export default function CareersPage() {
   return (
@@ -14,6 +14,10 @@ export default function CareersPage() {
       kicker="Careers"
       title="Help brands earn the answer."
       intro="We are a lean team building the discipline of AI GEO — strategy, content and engineering that make enterprise brands citable by AI engines. If you like shipping fast with visible customer impact, we want to hear from you."
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "Careers" },
+      ]}
     >
       <div className="grid gap-6 md:grid-cols-2">
         <article className="mk-card p-8">

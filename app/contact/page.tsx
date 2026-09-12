@@ -1,14 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/marketing/JsonLd";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
+import { pageMeta } from "@/lib/page-metadata";
+import { buildContactPageSchema } from "@/lib/schema-library";
 import { CAL_LINK, CONTACT_EMAIL } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Contact",
   description:
     "Talk to Optimizer360.ai — book a 20-minute call, request an AI visibility audit, or email us directly.",
-  alternates: { canonical: "https://optimizer360.ai/contact" },
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
@@ -16,7 +18,20 @@ export default function ContactPage() {
       kicker="Contact"
       title="Talk to a person, not a pipeline."
       intro="Whether you want the audit first or a conversation first, both routes reach the same team."
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "Contact" },
+      ]}
     >
+      <JsonLd
+        id="contact-page"
+        data={buildContactPageSchema({
+          name: "Contact Optimizer360.ai",
+          url: "https://optimizer360.ai/contact",
+          description:
+            "Book a 20-minute call, request an AI visibility audit, or email Optimizer360.ai.",
+        })}
+      />
       <div className="grid gap-6 md:grid-cols-3">
         <article className="mk-card p-8">
           <h2 className="font-serif-display text-xl text-[var(--paper)]">

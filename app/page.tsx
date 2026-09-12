@@ -18,6 +18,11 @@ import { EngineCoverage } from "@/components/marketing/sections/EngineCoverage";
 import { Integrations } from "@/components/marketing/sections/Integrations";
 import { EarlyMover } from "@/components/marketing/sections/EarlyMover";
 import { FinalCta } from "@/components/marketing/sections/FinalCta";
+import { JsonLd } from "@/components/marketing/JsonLd";
+import { buildFAQSchema } from "@/lib/schema-library";
+import { MARKETING_FAQ } from "@/lib/marketing-faq";
+
+const faqSchema = buildFAQSchema([...MARKETING_FAQ]);
 
 export default function Page() {
   return (
@@ -42,6 +47,7 @@ export default function Page() {
         <EarlyMover />
         <Faq />
         <FinalCta />
+        <JsonLd id="homepage-faq" data={faqSchema} />
       </main>
       <MarketingFooter />
     </div>

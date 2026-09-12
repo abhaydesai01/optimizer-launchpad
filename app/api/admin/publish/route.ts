@@ -4,6 +4,13 @@ import Article from "@/lib/models/Article";
 import Target from "@/lib/models/Target";
 import PipelineLog from "@/lib/models/PipelineLog";
 import { anthropicClient } from "@/lib/ai";
+import {
+  assertPublishableArticleSchema,
+  enforcedArticleSchema,
+  mergeInjectedSchema,
+} from "@/lib/article-schema";
+import { DEFAULT_AUTHOR } from "@/lib/default-author";
+import { excerptFromMarkdown, sourcesFromBrief } from "@/lib/excerpt";
 import { requireAdmin } from "@/lib/require-admin";
 import { logPipelineFailure } from "@/lib/pipeline-log";
 
@@ -66,17 +73,47 @@ export async function POST(request: Request) {
       );
     }
 
-    if (article.status === "schema_injected") {
-      const hasArticleSchema =
-        Boolean(article.schemaJson) &&
-        typeof article.schemaJson === "object" &&
-        Boolean((article.schemaJson as Record<string, unknown>).articleSchema);
-      if (!hasArticleSchema) {
+    if (article.status === "schema_injected" || article.status === "review_done") {
+      const existingSchema = article.schemaJson?.articleSchema;
+      try {
+        if (existingSchema) {
+          assertPublishableArticleSchema(existingSchema);
+        } else {
+          article.schemaJson = mergeInjectedSchema({
+            article,
+            headline: article.title || article.brief?.h1 || article.slug,
+            claudeFaq: article.schemaJson?.faqSchema,
+            internalLinks: article.schemaJson?.internalLinks,
+          });
+        }
+      } catch {
+        article.schemaJson = {
+          ...(article.schemaJson || {}),
+          articleSchema: enforcedArticleSchema(article, article.title || article.slug),
+          faqSchema: article.schemaJson?.faqSchema || { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [] },
+          internalLinks: article.schemaJson?.internalLinks || [],
+        };
+      }
+      try {
+        assertPublishableArticleSchema(article.schemaJson.articleSchema);
+      } catch (schemaError) {
         return NextResponse.json(
-          { error: "Schema is missing. Re-run schema injection before publishing." },
+          {
+            error:
+              schemaError instanceof Error
+                ? schemaError.message
+                : "Article schema is invalid. Re-run schema injection.",
+          },
           { status: 400 },
         );
       }
+    }
+
+    article.authorName = article.authorName || DEFAULT_AUTHOR.name;
+    article.authorSlug = article.authorSlug || DEFAULT_AUTHOR.slug;
+    article.excerpt = article.excerpt || excerptFromMarkdown(finalContent);
+    if (!article.sources?.length) {
+      article.sources = sourcesFromBrief(article.brief?.statsToInclude);
     }
 
     article.published = true;
@@ -106,7 +143,12 @@ export async function POST(request: Request) {
           body: JSON.stringify({
             host: "optimizer360.ai",
             key: process.env.INDEXNOW_KEY,
-            urlList: [`https://optimizer360.ai/blog/${article.slug}`],
+            urlList: [
+              `https://optimizer360.ai/blog/${article.slug}`,
+              "https://optimizer360.ai/feed.xml",
+              "https://optimizer360.ai/llms.txt",
+              "https://optimizer360.ai/blog",
+            ],
           }),
         });
         indexNowStatus = pingResponse.ok ? "submitted" : `failed_${pingResponse.status}`;

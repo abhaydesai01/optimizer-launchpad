@@ -1,23 +1,28 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/marketing/JsonLd";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
-import { buildFAQSchema, buildProductSchema } from "@/lib/schema-library";
+import { pageMeta } from "@/lib/page-metadata";
+import {
+  buildFAQSchema,
+  buildProductSchema,
+  buildSoftwareApplicationSchema,
+} from "@/lib/schema-library";
 import { CAL_LINK } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "For Agencies — White-Label AI GEO Platform",
   description:
     "Launch a GEO service line under your brand. White-label AI visibility dashboards, audit engine, prompt intelligence and multi-client management across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
-  alternates: { canonical: "https://optimizer360.ai/agency" },
-  openGraph: {
-    title: "For Agencies | Optimizer360.ai",
-    description:
-      "White-label GEO intelligence platform for agencies — audit engine, live citation dashboard, prompt intelligence and automated reporting.",
-    url: "https://optimizer360.ai/agency",
-    type: "website",
-    images: ["https://optimizer360.ai/og-image.png"],
-  },
-};
+  path: "/agency",
+});
+
+const agencySoftwareSchema = buildSoftwareApplicationSchema({
+  name: "Optimizer360.ai Agency Platform",
+  description:
+    "White-label GEO intelligence platform for agencies: audit engine, live citation dashboard, prompt intelligence, source mapping, and automated reporting.",
+  url: "https://optimizer360.ai/agency",
+  applicationCategory: "BusinessApplication",
+});
 
 const agencyProductSchema = buildProductSchema({
   name: "Optimizer360.ai Agency Platform",
@@ -68,6 +73,10 @@ export default function AgencyPage() {
       kicker="For agencies"
       title="The AI GEO platform built for agency partners."
       intro="Launch a high-margin GEO practice under your brand. Track AI citations across five engines, run auditable delivery, and present measurable client outcomes every month."
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "For agencies" },
+      ]}
     >
       <div className="grid gap-4 sm:grid-cols-3">
         {STATS.map((stat) => (
@@ -173,14 +182,9 @@ export default function AgencyPage() {
         </div>
       </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(agencyProductSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(agencyFaqSchema) }}
-      />
+      <JsonLd id="agency-product" data={agencyProductSchema} />
+      <JsonLd id="agency-software" data={agencySoftwareSchema} />
+      <JsonLd id="agency-faq" data={agencyFaqSchema} />
     </SubPageShell>
   );
 }

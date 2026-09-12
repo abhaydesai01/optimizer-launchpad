@@ -1,12 +1,17 @@
 import { describe, expect, it } from "vitest";
 import {
+  buildArticleSchema,
+  buildBreadcrumbSchema,
+  buildContactPageSchema,
   buildCourseSchema,
   buildFAQSchema,
   buildLocalBusinessSchema,
   buildMedicalBusinessSchema,
   buildOrganizationSchema,
+  buildPersonSchema,
   buildProductSchema,
   buildQAPageSchema,
+  buildSoftwareApplicationSchema,
   schemaTemplateLibrary,
 } from "@/lib/schema-library";
 
@@ -19,13 +24,20 @@ describe("schema template library", () => {
   it("exposes all required template builders", () => {
     expect(Object.keys(schemaTemplateLibrary).sort()).toEqual(
       [
+        "Article",
+        "Blog",
+        "BreadcrumbList",
+        "ContactPage",
         "Course",
         "FAQPage",
+        "ItemList",
         "LocalBusiness",
         "MedicalBusiness",
         "Organization",
+        "Person",
         "Product",
         "QAPage",
+        "SoftwareApplication",
       ].sort(),
     );
   });
@@ -85,6 +97,63 @@ describe("schema template library", () => {
       priceCurrency: "INR",
     });
     expectSchemaEnvelope(schema as Record<string, unknown>, "Product");
+  });
+
+  it("builds Organization schema with logo", () => {
+    const schema = buildOrganizationSchema({
+      name: "Optimizer360.ai",
+      url: "https://optimizer360.ai",
+      description: "GEO firm",
+      logo: "https://optimizer360.ai/og-image.png",
+    });
+    expect((schema.logo as { url?: string }).url).toBe("https://optimizer360.ai/og-image.png");
+  });
+
+  it("builds valid Article schema envelope", () => {
+    const schema = buildArticleSchema({
+      headline: "What is AI GEO?",
+      description: "Definition",
+      url: "https://optimizer360.ai/blog/what-is-ai-geo",
+      datePublished: "2026-09-12T00:00:00.000Z",
+      authorName: "Optimizer360 GEO team",
+      image: "https://optimizer360.ai/og-image.png",
+      publisherLogo: "https://optimizer360.ai/og-image.png",
+    });
+    expectSchemaEnvelope(schema as Record<string, unknown>, "Article");
+    expect(schema.datePublished).toBe("2026-09-12T00:00:00.000Z");
+  });
+
+  it("builds valid Breadcrumb, Person, SoftwareApplication and ContactPage schemas", () => {
+    expectSchemaEnvelope(
+      buildBreadcrumbSchema([{ name: "Home", url: "https://optimizer360.ai" }]) as Record<
+        string,
+        unknown
+      >,
+      "BreadcrumbList",
+    );
+    expectSchemaEnvelope(
+      buildPersonSchema({
+        name: "Optimizer360 GEO team",
+        url: "https://optimizer360.ai/authors/geo-team",
+      }) as Record<string, unknown>,
+      "Person",
+    );
+    expectSchemaEnvelope(
+      buildSoftwareApplicationSchema({
+        name: "Agency Platform",
+        description: "White-label GEO",
+        url: "https://optimizer360.ai/agency",
+      }) as Record<string, unknown>,
+      "SoftwareApplication",
+    );
+    expectSchemaEnvelope(
+      buildContactPageSchema({
+        name: "Contact",
+        url: "https://optimizer360.ai/contact",
+        description: "Talk to us",
+      }) as Record<string, unknown>,
+      "ContactPage",
+    );
   });
 
   it("builds valid QAPage schema envelope", () => {

@@ -6,6 +6,8 @@ import PipelineLog from "@/lib/models/PipelineLog";
 import { anthropicClient, extractJson } from "@/lib/ai";
 import { requireAdmin } from "@/lib/require-admin";
 import { logPipelineFailure } from "@/lib/pipeline-log";
+import { DEFAULT_AUTHOR } from "@/lib/default-author";
+import { sourcesFromBrief } from "@/lib/excerpt";
 import { resolveUniqueArticleSlug } from "@/lib/slug";
 
 export async function POST(request: Request) {
@@ -44,10 +46,12 @@ Secondary keywords: ${(secondaryKeywords ?? []).join(", ")}
 
 Rules:
 - H1 exact user-style question
-- First paragraph must directly answer the H1
-- Include FAQ section in H2 list
+- The draft's first 40-60 words must directly answer the H1
+- Include both a Sources H2 and an FAQ H2
 - 800-1000 words target
-- Include real stats with sources
+- Every statistic MUST include a public https URL in "source". If you cannot cite a public URL, omit the statistic entirely
+- Do not invent client names, awards, citation rates, traffic numbers, or guarantees
+- Optimizer360.ai never promises citations; engines decide
 
 Return only JSON:
 {
@@ -55,10 +59,10 @@ Return only JSON:
   "slug": "...",
   "metaTitle": "...",
   "metaDescription": "...",
-  "h2s": ["...", "...", "...", "...", "FAQ: Common Questions"],
+  "h2s": ["...", "...", "...", "...", "Sources", "FAQ: Common Questions"],
   "keyPoints": ["...", "...", "...", "..."],
   "statsToInclude": [
-    {"stat": "...", "context": "...", "source": "..."}
+    {"stat": "...", "context": "...", "source": "https://..."}
   ],
   "angle": "...",
   "wordCountTarget": 900
@@ -86,6 +90,10 @@ Return only JSON:
         title: brief.h1 || prompt,
         metaTitle: brief.metaTitle || "",
         metaDescription: brief.metaDescription || "",
+        sources: sourcesFromBrief(brief.statsToInclude),
+        authorName: DEFAULT_AUTHOR.name,
+        authorSlug: DEFAULT_AUTHOR.slug,
+        authorRole: DEFAULT_AUTHOR.role,
         status: "draft_pending",
       },
       { new: true },

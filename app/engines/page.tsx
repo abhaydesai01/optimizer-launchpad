@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
+import { pageMeta } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "AI Engine Coverage — ChatGPT, Perplexity, Gemini & More",
   description:
     "Optimizer360.ai tracks AI visibility, citations, sentiment and competitor position across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude — weekly, prompt by prompt.",
-  alternates: { canonical: "https://optimizer360.ai/engines" },
-};
+  path: "/engines",
+});
 
 const ENGINES = [
   {
@@ -60,6 +60,10 @@ export default function EnginesPage() {
       kicker="Engine coverage"
       title="Every engine your buyers ask. One tracking standard."
       intro="Optimizer360.ai measures the same prompts across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude — weekly, with metrics you can reproduce in any engine yourself."
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "Engines" },
+      ]}
     >
       <div className="space-y-8">
         {ENGINES.map((engine) => (

@@ -3,14 +3,17 @@
 export const MARKETING_NAV = [
   { label: "Platform", href: "/#platform" },
   { label: "Engines", href: "/engines" },
+  { label: "Blog", href: "/blog" },
+  { label: "Use cases", href: "/usecases" },
   { label: "Compare", href: "/compare" },
-  { label: "For agencies", href: "/agency" },
   { label: "About", href: "/about" },
 ] as const;
 
 /** Extra links shown in mobile nav only (keeps desktop nav focused). */
 export const MARKETING_NAV_MOBILE_EXTRAS = [
   { label: "What is AI GEO?", href: "/ai-seo" },
+  { label: "For agencies", href: "/agency" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
@@ -18,6 +21,9 @@ export const MARKETING_FOOTER = {
   product: [
     { label: "Platform", href: "/#platform" },
     { label: "Engine coverage", href: "/engines" },
+    { label: "Blog", href: "/blog" },
+    { label: "Use cases", href: "/usecases" },
+    { label: "FAQ", href: "/faq" },
     { label: "How we compare", href: "/compare" },
     { label: "What is AI GEO?", href: "/ai-seo" },
     { label: "For agencies", href: "/agency" },
@@ -48,4 +54,7 @@ export const MARKETING_ROUTES = [
   "/privacy",
   "/terms",
   "/thank-you",
+  "/blog",
+  "/usecases",
+  "/faq",
 ] as const;

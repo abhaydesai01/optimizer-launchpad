@@ -1,18 +1,16 @@
-import type { Metadata } from "next";
 import { UseCasesPageClient } from "@/components/usecases/UseCasesPageClient";
 import { useCaseRoles, useCaseSegments } from "@/lib/usecases";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
+import { pageMeta } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "GEO Use Cases by Segment and Role",
   description:
     "Explore detailed GEO use cases by industry segment and role. See how CMO, founder, growth, and agency teams use Optimizer360 to turn AI visibility into qualified pipeline.",
-  alternates: {
-    canonical: "https://optimizer360.ai/usecases",
-  },
-};
+  path: "/usecases",
+});
 
 export default function UseCasesPage({
   searchParams,

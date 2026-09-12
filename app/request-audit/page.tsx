@@ -1,27 +1,18 @@
-import type { Metadata } from "next";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
 import { AuditRequestForm } from "@/components/marketing/AuditRequestForm";
 import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
+import { pageMeta } from "@/lib/page-metadata";
 import { CAL_LINK } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Request an Audit",
   description:
     "See exactly how AI represents your brand today. A confidential, no-obligation GEO audit across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude. We never fabricate data — every finding is yours to verify.",
-  alternates: {
-    canonical: "https://optimizer360.ai/request-audit",
-  },
-  openGraph: {
-    title: "Request an AI Visibility Audit | Optimizer360.ai",
-    description:
-      "A confidential, no-obligation audit of how AI answers about your brand — across all five major engines.",
-    url: "https://optimizer360.ai/request-audit",
-    type: "website",
-  },
-};
+  path: "/request-audit",
+});
 
 const auditPageSchema = {
   "@context": "https://schema.org",

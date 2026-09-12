@@ -3,6 +3,9 @@ import connectDB from "@/lib/mongodb";
 import Article from "@/lib/models/Article";
 import PipelineLog from "@/lib/models/PipelineLog";
 import { anthropicClient, applyInternalLinks, extractJson } from "@/lib/ai";
+import { mergeInjectedSchema } from "@/lib/article-schema";
+import { DEFAULT_AUTHOR } from "@/lib/default-author";
+import { excerptFromMarkdown, sourcesFromBrief } from "@/lib/excerpt";
 import { requireAdmin } from "@/lib/require-admin";
 import { logPipelineFailure } from "@/lib/pipeline-log";
 
@@ -72,10 +75,37 @@ Return only valid JSON:
     const schema = extractJson(first.text);
     const internalLinks = Array.isArray(schema.internalLinks) ? schema.internalLinks : [];
     const linkedContent = applyInternalLinks(finalContent, internalLinks);
+    const existing = await Article.findById(articleId);
+    if (!existing) {
+      return NextResponse.json({ error: "Article not found" }, { status: 404 });
+    }
+
+    const merged = mergeInjectedSchema({
+      article: {
+        slug,
+        title: h1,
+        metaDescription: metaDescription || existing.metaDescription,
+        publishedAt: existing.publishedAt,
+        updatedAt: existing.updatedAt,
+        createdAt: existing.createdAt,
+        authorName: existing.authorName || DEFAULT_AUTHOR.name,
+        authorSlug: existing.authorSlug || DEFAULT_AUTHOR.slug,
+      },
+      headline: h1,
+      claudeFaq: schema.faqSchema,
+      internalLinks,
+    });
 
     await Article.findByIdAndUpdate(articleId, {
-      schemaJson: schema,
+      schemaJson: merged,
       finalContent: linkedContent,
+      excerpt: existing.excerpt || excerptFromMarkdown(linkedContent),
+      sources:
+        existing.sources?.length
+          ? existing.sources
+          : sourcesFromBrief(existing.brief?.statsToInclude),
+      authorName: existing.authorName || DEFAULT_AUTHOR.name,
+      authorSlug: existing.authorSlug || DEFAULT_AUTHOR.slug,
       status: "schema_injected",
     });
 
@@ -86,7 +116,7 @@ Return only valid JSON:
       notes: "Schema injected and links applied",
     });
 
-    return NextResponse.json({ schema, finalContent: linkedContent });
+    return NextResponse.json({ schema: merged, finalContent: linkedContent });
   } catch (error) {
     console.error(error);
     await logPipelineFailure(
