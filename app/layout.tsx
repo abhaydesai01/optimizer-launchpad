@@ -157,6 +157,33 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   gtag('config', 'G-89SE77PEFT');`,
           }}
         />
+        {/* optimizer360 realtime attribution */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){
+  var endpoint='https://api.optimizer360.ai/api/attribution/events';
+  var key='attr_6aa8f92f2b41f2960681d169';
+  var sidKey='optimizer360_attr_sid';
+  var vidKey='optimizer360_attr_vid';
+  function id(){return Math.random().toString(36).slice(2)+Date.now().toString(36)}
+  function store(k){try{var v=localStorage.getItem(k);if(!v){v=id();localStorage.setItem(k,v)}return v}catch(e){return id()}}
+  function params(){try{return new URLSearchParams(location.search)}catch(e){return new URLSearchParams()}}
+  function send(eventType, extra){
+    var q=params();
+    var body=JSON.stringify(Object.assign({
+      publicKey:key,eventType:eventType,sessionId:store(sidKey),visitorId:store(vidKey),
+      landingUrl:location.href,referrer:document.referrer,
+      utmSource:q.get('utm_source')||undefined,utmMedium:q.get('utm_medium')||undefined,
+      utmCampaign:q.get('utm_campaign')||undefined,occurredAt:new Date().toISOString()
+    },extra||{}));
+    if(navigator.sendBeacon){navigator.sendBeacon(endpoint,new Blob([body],{type:'application/json'}));return}
+    fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true}).catch(function(){});
+  }
+  send('pageview');
+  window.optimizer360Attribution={track:function(name,extra){send(name==='conversion'?'conversion':'click',extra)}};
+})();`,
+          }}
+        />
       </head>
       <body>
         {children}
