@@ -215,6 +215,11 @@ export default function AboutPage() {
                   Request an Audit
                 </Link>
               </div>
+              <p className="mt-10 text-xs text-[var(--paper-muted)]">
+                Optimizer360.ai is a Mumbai-based generative engine
+                optimisation (GEO) firm. We are not affiliated with Optimize
+                360 or We360.ai.
+              </p>
             </Reveal>
           </div>
         </section>

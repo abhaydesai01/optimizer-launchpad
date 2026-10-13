@@ -54,4 +54,9 @@ export const MARKETING_FAQ = [
     answer:
       "Audit requests and findings are treated as confidential, used only to prepare and deliver your engagement, and never shared. A mutual NDA is available on request before any information changes hands. See our Privacy Policy for the details.",
   },
+  {
+    question: "Is Optimizer360.ai the same company as Optimize 360 or We360.ai?",
+    answer:
+      "No. Optimizer360.ai is a Mumbai-based generative engine optimisation (GEO) firm that helps brands get named and cited in AI answers such as ChatGPT, Gemini and Google AI Overviews. We are not affiliated with Optimize 360, a Swiss/French agency, or with We360.ai, a workforce-analytics software company. If you are looking for us, our website is optimizer360.ai.",
+  },
 ] as const;
