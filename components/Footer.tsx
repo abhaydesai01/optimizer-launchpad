@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LINKEDIN_URL } from "@/lib/site";
 
 type FooterProps = {
   onHowItWorks?: () => void;
@@ -84,7 +85,7 @@ export function Footer({ onHowItWorks }: FooterProps) {
           </p>
           <div className="space-y-3">
             <a
-              href="https://linkedin.com/company/optimizer360"
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noreferrer"
               className={linkClass}

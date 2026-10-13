@@ -9,7 +9,7 @@ import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { CardGlow } from "@/components/marketing/CardGlow";
 import { categoryLabel } from "@/lib/article-categories";
-import { excerptFromMarkdown } from "@/lib/excerpt";
+import { excerptFromMarkdown, stripSecondaryKeywords } from "@/lib/excerpt";
 import connectDB from "@/lib/mongodb";
 import Article, { type IArticleSource } from "@/lib/models/Article";
 import { articleOgImage, pageMeta } from "@/lib/page-metadata";
@@ -152,7 +152,7 @@ export default async function BlogArticlePage({
 
         <article className="prose prose-invert mt-8 max-w-none prose-headings:text-[var(--paper)] prose-p:text-[var(--paper-soft)] prose-a:text-[var(--mint)] prose-strong:text-[var(--paper)]">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {article.finalContent || article.draft}
+            {stripSecondaryKeywords(article.finalContent || article.draft || "")}
           </ReactMarkdown>
         </article>
 

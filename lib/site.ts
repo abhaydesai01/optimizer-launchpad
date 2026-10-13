@@ -3,6 +3,18 @@ export const SITE_NAME = "Optimizer360.ai";
 export const SITE_LOGO_URL = `${SITE_URL}/og-image.png`;
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
+export const LINKEDIN_URL = "https://www.linkedin.com/company/optimizer360ai/";
+export const FOUNDER_NAME = "Salil Chaturvedi";
+export const ORG_ADDRESS = {
+  "@type": "PostalAddress",
+  streetAddress:
+    "1st Floor, Provogue House, 105/106, Off New Link Rd, Veera Desai Industrial Estate, Andheri West",
+  addressLocality: "Mumbai",
+  addressRegion: "Maharashtra",
+  postalCode: "400053",
+  addressCountry: "IN",
+} as const;
+
 /** Fill this when a public founder bio exists. Do not invent a name. */
 export const FOUNDER_NOTE: {
   name: string;

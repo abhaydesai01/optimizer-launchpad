@@ -5,7 +5,7 @@ import { CardGlow } from "@/components/marketing/CardGlow";
 import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
 import { pageMeta } from "@/lib/page-metadata";
-import { FOUNDER_NOTE } from "@/lib/site";
+import { FOUNDER_NAME, FOUNDER_NOTE, LINKEDIN_URL, ORG_ADDRESS } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "About",
@@ -25,7 +25,10 @@ const aboutSchema = {
     "@type": "Organization",
     name: "Optimizer360.ai",
     url: "https://optimizer360.ai",
+    sameAs: [LINKEDIN_URL],
     parentOrganization: { "@type": "Organization", name: "Stack Intel" },
+    address: ORG_ADDRESS,
+    founder: { "@type": "Person", name: FOUNDER_NAME },
   },
 };
 

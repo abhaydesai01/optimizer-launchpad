@@ -1,4 +1,12 @@
-export function excerptFromMarkdown(markdown: string, maxWords = 55): string {
+/** Drops the "Secondary keywords: ..." line that the draft pipeline left in stored article bodies. */
+export function stripSecondaryKeywords(markdown: string): string {
+  return markdown
+    .replace(/^[ \t]*(?:[*_]{1,2})?Secondary keywords:?(?:[*_]{1,2})?.*(?:\r?\n|$)/gim, "")
+    .replace(/\n{3,}/g, "\n\n");
+}
+
+export function excerptFromMarkdown(rawMarkdown: string, maxWords = 55): string {
+  const markdown = stripSecondaryKeywords(rawMarkdown);
   const firstParagraph =
     markdown
       .replace(/^#{1,6}\s+.+$/gm, "")
