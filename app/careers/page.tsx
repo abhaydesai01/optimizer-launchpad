@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/page-metadata";
 export const metadata = pageMeta({
   title: "Careers",
   description:
-    "Join Optimizer360.ai — a Stack Intel company building the discipline of AI GEO for enterprise brands.",
+    "Join Optimizer360.ai — building the discipline of AI GEO for enterprise brands.",
   path: "/careers",
 });
 

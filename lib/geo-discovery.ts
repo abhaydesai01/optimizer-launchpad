@@ -25,7 +25,6 @@ export async function buildLlmsTxt(): Promise<string> {
     "",
     "> Optimizer360.ai is an AI GEO firm — Generative Engine Optimisation — that helps enterprise brands get named, cited and correctly positioned inside AI answers.",
     "",
-    "Parent company: Stack Intel.",
     "Engines covered: ChatGPT, Perplexity, Google AI Overviews, Gemini, Claude.",
     "Operating principle: radical honesty. No fabricated data. No guaranteed citations — engines decide what they cite.",
     `Contact: ${CONTACT_EMAIL}`,

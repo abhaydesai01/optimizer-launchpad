@@ -5,12 +5,12 @@ import { CardGlow } from "@/components/marketing/CardGlow";
 import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
 import { pageMeta } from "@/lib/page-metadata";
-import { FOUNDER_NAME, FOUNDER_NOTE, LINKEDIN_URL, ORG_ADDRESS } from "@/lib/site";
+import { FOUNDER_NAME, FOUNDER_NOTE, ORG_ADDRESS, SAME_AS_URLS } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "About",
   description:
-    "Optimizer360.ai is a specialist AI GEO (Generative Engine Optimisation) firm built by Stack Intel. We believe AI is the new front door to every brand — and we operate on radical honesty: no fabricated data, no hollow guarantees.",
+    "Optimizer360.ai is a specialist AI GEO (Generative Engine Optimisation) firm. We believe AI is the new front door to every brand — and we operate on radical honesty: no fabricated data, no hollow guarantees.",
   path: "/about",
 });
 
@@ -20,13 +20,12 @@ const aboutSchema = {
   name: "About Optimizer360.ai",
   url: "https://optimizer360.ai/about",
   description:
-    "Optimizer360.ai is a specialist AI GEO (Generative Engine Optimisation) firm built by Stack Intel, operating on radical honesty.",
+    "Optimizer360.ai is a specialist AI GEO (Generative Engine Optimisation) firm operating on radical honesty.",
   mainEntity: {
     "@type": "Organization",
     name: "Optimizer360.ai",
     url: "https://optimizer360.ai",
-    sameAs: [LINKEDIN_URL],
-    parentOrganization: { "@type": "Organization", name: "Stack Intel" },
+    sameAs: SAME_AS_URLS,
     address: ORG_ADDRESS,
     founder: { "@type": "Person", name: FOUNDER_NAME },
   },
@@ -50,7 +49,7 @@ export default function AboutPage() {
             <Reveal delay={120}>
               <p className="mk-body mt-7 max-w-2xl">
                 Optimizer360.ai is a specialist AI GEO firm — Generative Engine
-                Optimisation, built by Stack Intel. We exist for one reason:
+                Optimisation. We exist for one reason:
                 when your customers ask AI who to trust, the answer should
                 include you — accurately, credibly, and on the strength of
                 evidence the engines can verify.

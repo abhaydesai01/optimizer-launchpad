@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { AnswerGlyph } from "@/components/marketing/AnswerMark";
 import { MARKETING_FOOTER } from "@/lib/marketing-routes";
+import { FACEBOOK_URL, GOOGLE_BUSINESS_URL, INSTAGRAM_URL, LINKEDIN_URL } from "@/lib/site";
+
+const SOCIAL_LINKS = [
+  { label: "LinkedIn", href: LINKEDIN_URL },
+  { label: "Instagram", href: INSTAGRAM_URL },
+  { label: "Facebook", href: FACEBOOK_URL },
+  { label: "Google Business Profile", href: GOOGLE_BUSINESS_URL },
+];
 
 export function MarketingFooter() {
   return (
@@ -12,9 +20,6 @@ export function MarketingFooter() {
             <span className="font-serif-display text-xl text-[var(--paper)]">
               Optimizer360<span className="text-[var(--mint)]">.ai</span>
             </span>
-          </p>
-          <p className="mt-3 text-sm text-[var(--paper-muted)]">
-            A Stack Intel company.
           </p>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-[var(--paper-muted)]">
             AI GEO for enterprise brands — Generative Engine Optimisation that
@@ -70,6 +75,20 @@ export function MarketingFooter() {
             hello@optimizer360.ai
           </a>
           <ul className="mt-6 space-y-3">
+            {SOCIAL_LINKS.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[var(--paper-soft)] transition-colors hover:text-[var(--mint)]"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <ul className="mt-6 space-y-3">
             {MARKETING_FOOTER.legal.map((link) => (
               <li key={link.href}>
                 <Link
@@ -90,8 +109,7 @@ export function MarketingFooter() {
       <div className="mk-hairline">
         <div className="mk-wrap py-6 text-xs text-[var(--paper-muted)]">
           <p>
-            © {new Date().getFullYear()} Optimizer360.ai · A Stack Intel
-            company · Mumbai, India
+            © {new Date().getFullYear()} Optimizer360.ai · Mumbai, India
           </p>
         </div>
       </div>

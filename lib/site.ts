@@ -4,6 +4,11 @@ export const SITE_LOGO_URL = `${SITE_URL}/og-image.png`;
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export const LINKEDIN_URL = "https://www.linkedin.com/company/optimizer360ai/";
+export const INSTAGRAM_URL = "https://www.instagram.com/optimizer360ai/";
+export const FACEBOOK_URL = "https://www.facebook.com/people/Optimizer-AI/61594958716542/";
+export const GOOGLE_BUSINESS_URL = "https://share.google/rJWDB6ofoXqJMEwiU";
+/** Every official profile of the company, used for schema sameAs. Add new profiles here. */
+export const SAME_AS_URLS = [LINKEDIN_URL, INSTAGRAM_URL, FACEBOOK_URL, GOOGLE_BUSINESS_URL];
 export const FOUNDER_NAME = "Salil Chaturvedi";
 export const ORG_ADDRESS = {
   "@type": "PostalAddress",
