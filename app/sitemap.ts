@@ -3,6 +3,7 @@ import connectDB from "@/lib/mongodb";
 import Article from "@/lib/models/Article";
 import { ROUTE_REVISIONS } from "@/lib/route-revisions";
 import { STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
+import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 import { useCases } from "@/lib/usecases";
 
 export const dynamic = "force-dynamic";
@@ -40,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let blogArticles: { slug?: string; updatedAt?: Date; publishedAt?: Date }[] = [];
   try {
     await connectDB();
-    blogArticles = await Article.find({ published: true })
+    blogArticles = await Article.find({ published: true, slug: { $nin: RETIRED_ARTICLE_SLUGS } })
       .select("slug updatedAt publishedAt")
       .lean();
   } catch (error) {
@@ -50,7 +51,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const seen = new Set(blogArticles.map((article) => article.slug).filter(Boolean));
   const dynamicBlogEntries: MetadataRoute.Sitemap = [
     ...blogArticles.filter((article) => Boolean(article.slug)),
-    ...STATIC_PILLAR_ARTICLES.filter((article) => !seen.has(article.slug)),
+    ...STATIC_PILLAR_ARTICLES.filter(
+      (article) => !seen.has(article.slug) && !isRetiredArticle(article.slug),
+    ),
   ].map((article) => ({
     url: `${base}/blog/${article.slug}`,
     changeFrequency: "weekly" as const,

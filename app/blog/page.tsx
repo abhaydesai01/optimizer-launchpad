@@ -13,6 +13,7 @@ import { pageMeta } from "@/lib/page-metadata";
 import { buildBlogSchema } from "@/lib/schema-library";
 import { SITE_URL } from "@/lib/site";
 import { STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
+import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -48,6 +49,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     await connectDB();
     articles = await Article.find({
       published: true,
+      slug: { $nin: RETIRED_ARTICLE_SLUGS },
       ...(selected ? { category: selected } : {}),
     })
       .sort({ publishedAt: -1 })
@@ -60,7 +62,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 
   const seen = new Set(articles.map((article) => article.slug));
   const extras = STATIC_PILLAR_ARTICLES.filter((article) => {
-    if (seen.has(article.slug)) return false;
+    if (seen.has(article.slug) || isRetiredArticle(article.slug)) return false;
     return !selected || article.category === selected;
   }).map((article) => ({
     _id: article.slug,

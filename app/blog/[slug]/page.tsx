@@ -9,12 +9,14 @@ import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { CardGlow } from "@/components/marketing/CardGlow";
 import { categoryLabel } from "@/lib/article-categories";
+import { withArticleSchemaDefaults } from "@/lib/article-schema";
 import { excerptFromMarkdown, stripSecondaryKeywords } from "@/lib/excerpt";
 import connectDB from "@/lib/mongodb";
 import Article, { type IArticleSource } from "@/lib/models/Article";
 import { articleOgImage, pageMeta } from "@/lib/page-metadata";
 import { DEFAULT_AUTHOR } from "@/lib/default-author";
 import { getStaticPillar, STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
+import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -90,7 +92,7 @@ export default async function BlogArticlePage({
   try {
     related = await Article.find({
       published: true,
-      slug: { $ne: article.slug },
+      slug: { $ne: article.slug, $nin: RETIRED_ARTICLE_SLUGS },
       ...(article.category ? { category: article.category } : {}),
     })
       .sort({ publishedAt: -1 })
@@ -102,7 +104,10 @@ export default async function BlogArticlePage({
   }
   if (related.length === 0) {
     related = STATIC_PILLAR_ARTICLES.filter(
-      (item) => item.slug !== article.slug && item.category === article.category,
+      (item) =>
+        item.slug !== article.slug &&
+        !isRetiredArticle(item.slug) &&
+        item.category === article.category,
     ).slice(0, 3);
   }
 
@@ -115,7 +120,10 @@ export default async function BlogArticlePage({
           <JsonLd id="faq-schema" data={article.schemaJson.faqSchema} />
         ) : null}
         {article.schemaJson?.articleSchema ? (
-          <JsonLd id="article-schema" data={article.schemaJson.articleSchema} />
+          <JsonLd
+            id="article-schema"
+            data={withArticleSchemaDefaults(article.schemaJson.articleSchema, article)}
+          />
         ) : null}
 
         <BreadcrumbTrail

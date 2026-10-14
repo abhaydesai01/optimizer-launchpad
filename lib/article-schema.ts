@@ -35,6 +35,17 @@ export function enforcedArticleSchema(article: ArticleLike, headline?: string) {
   });
 }
 
+/** Fills datePublished, dateModified and image on a stored Article schema that lacks them. */
+export function withArticleSchemaDefaults(stored: Record<string, unknown>, article: ArticleLike) {
+  const defaults = enforcedArticleSchema(article) as Record<string, unknown>;
+  return {
+    ...stored,
+    datePublished: stored.datePublished || defaults.datePublished,
+    dateModified: stored.dateModified || defaults.dateModified,
+    image: stored.image || defaults.image,
+  };
+}
+
 export function mergeInjectedSchema(input: {
   article: ArticleLike;
   headline: string;

@@ -10,6 +10,7 @@ import { pageMeta } from "@/lib/page-metadata";
 import { buildPersonSchema } from "@/lib/schema-library";
 import { SITE_URL } from "@/lib/site";
 import { STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
+import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -52,7 +53,11 @@ export default async function AuthorPage({
   let posts: { slug: string; title: string; excerpt?: string; metaDescription?: string }[] = [];
   try {
     await connectDB();
-    posts = await Article.find({ published: true, authorSlug: author.slug })
+    posts = await Article.find({
+      published: true,
+      authorSlug: author.slug,
+      slug: { $nin: RETIRED_ARTICLE_SLUGS },
+    })
       .sort({ publishedAt: -1 })
       .select("slug title excerpt metaDescription")
       .lean();
@@ -63,7 +68,7 @@ export default async function AuthorPage({
     const seen = new Set(posts.map((post) => post.slug));
     posts = [
       ...posts,
-      ...STATIC_PILLAR_ARTICLES.filter((post) => !seen.has(post.slug)).map((post) => ({
+      ...STATIC_PILLAR_ARTICLES.filter((post) => !seen.has(post.slug) && !isRetiredArticle(post.slug)).map((post) => ({
         slug: post.slug,
         title: post.title,
         excerpt: post.excerpt,

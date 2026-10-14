@@ -13,6 +13,7 @@ import { DEFAULT_AUTHOR } from "@/lib/default-author";
 import { excerptFromMarkdown, sourcesFromBrief } from "@/lib/excerpt";
 import { requireAdmin } from "@/lib/require-admin";
 import { logPipelineFailure } from "@/lib/pipeline-log";
+import { submitToIndexNow } from "@/lib/indexnow";
 
 async function generateLinkedInDraft(articleTitle: string, articleUrl: string) {
   const response = await anthropicClient.messages.create({
@@ -135,23 +136,14 @@ export async function POST(request: Request) {
     });
 
     let indexNowStatus = "skipped";
-    if (process.env.INDEXNOW_KEY) {
+    if (process.env.NODE_ENV === "production") {
       try {
-        const pingResponse = await fetch("https://api.indexnow.org/indexnow", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            host: "optimizer360.ai",
-            key: process.env.INDEXNOW_KEY,
-            urlList: [
-              `https://optimizer360.ai/blog/${article.slug}`,
-              "https://optimizer360.ai/feed.xml",
-              "https://optimizer360.ai/llms.txt",
-              "https://optimizer360.ai/blog",
-            ],
-          }),
-        });
-        indexNowStatus = pingResponse.ok ? "submitted" : `failed_${pingResponse.status}`;
+        indexNowStatus = await submitToIndexNow([
+          `https://optimizer360.ai/blog/${article.slug}`,
+          "https://optimizer360.ai/feed.xml",
+          "https://optimizer360.ai/llms.txt",
+          "https://optimizer360.ai/blog",
+        ]);
       } catch (indexNowError) {
         indexNowStatus = "failed_exception";
         await PipelineLog.create({
