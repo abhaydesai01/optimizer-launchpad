@@ -100,6 +100,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://optimizer360.ai",
   },
+  // Google Search Console ownership tag. Keep it: removing it un-verifies the property.
+  verification: {
+    google: "Y39ll0sAdls-421IWlEOaFqVLvWFFfYguZociO_7sRY",
+  },
   openGraph: {
     title:
       "Optimizer360.ai — AI GEO for Enterprise Brands",

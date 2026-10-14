@@ -1,14 +1,6 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="64"
-  height="64"
-  viewBox="0 0 64 64"
-  fill="none"
->
-  <rect width="64" height="64" rx="14" fill="#111827" />
-  <path
-    d="M32 14C22.0589 14 14 22.0589 14 32C14 41.9411 22.0589 50 32 50C41.9411 50 50 41.9411 50 32C50 22.0589 41.9411 14 32 14ZM32 43C25.9249 43 21 38.0751 21 32C21 25.9249 25.9249 21 32 21C38.0751 21 43 25.9249 43 32C43 38.0751 38.0751 43 32 43Z"
-    fill="#F9FAFB"
-  />
-  <circle cx="47.5" cy="47.5" r="5.5" fill="#10B981" />
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="7" fill="#060a14" />
+  <rect x="6" y="7.5" width="14" height="3" rx="2" fill="#8d99b2" />
+  <rect x="6" y="14.5" width="20" height="3" rx="1.5" fill="#3ce8b4" />
+  <rect x="6" y="21.5" width="10" height="3" rx="1.5" fill="#8d99b2" />
 </svg>
