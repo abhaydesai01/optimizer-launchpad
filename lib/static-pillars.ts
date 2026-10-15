@@ -27,6 +27,7 @@ export type ResolvedArticle = {
 };
 
 export function pillarToArticle(pillar: PillarArticle): ResolvedArticle {
+  const date = pillar.publishedAt ? new Date(pillar.publishedAt) : PILLAR_DATE;
   return {
     slug: pillar.slug,
     title: pillar.title,
@@ -41,17 +42,17 @@ export function pillarToArticle(pillar: PillarArticle): ResolvedArticle {
     authorName: DEFAULT_AUTHOR.name,
     authorRole: DEFAULT_AUTHOR.role,
     published: true,
-    publishedAt: PILLAR_DATE,
-    updatedAt: PILLAR_DATE,
-    createdAt: PILLAR_DATE,
+    publishedAt: date,
+    updatedAt: date,
+    createdAt: date,
     schemaJson: mergeInjectedSchema({
       article: {
         slug: pillar.slug,
         title: pillar.title,
         metaDescription: pillar.metaDescription,
-        publishedAt: PILLAR_DATE,
-        updatedAt: PILLAR_DATE,
-        createdAt: PILLAR_DATE,
+        publishedAt: date,
+        updatedAt: date,
+        createdAt: date,
         authorName: DEFAULT_AUTHOR.name,
         authorSlug: DEFAULT_AUTHOR.slug,
       },

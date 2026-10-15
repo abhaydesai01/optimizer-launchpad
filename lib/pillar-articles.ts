@@ -12,6 +12,8 @@ export type PillarArticle = {
   secondaryKeywords: string[];
   content: string;
   sources: Array<{ stat: string; context: string; url?: string }>;
+  /** ISO date; defaults to the shared pillar date in static-pillars.ts */
+  publishedAt?: string;
   faq: Array<{ question: string; answer: string }>;
 };
 
@@ -373,6 +375,81 @@ Do not stuff llms.txt with keyword lists. Do not claim citation rates. Do not al
         question: "Should we block AI trainers but allow search bots?",
         answer:
           "That is a policy choice. Be explicit. Blocking all AI agents will also limit answer-engine retrieval.",
+      },
+    ],
+  },
+  {
+    slug: "when-ai-gets-your-brand-wrong",
+    title: "When AI gets your brand wrong: how to find and fix inaccurate answers",
+    metaTitle: "When AI gets your brand wrong: how to find and fix inaccurate answers",
+    metaDescription:
+      "An AI answer can be confident and wrong. Here is where inaccurate brand descriptions come from, how to find them, and how to correct them at the source.",
+    excerpt:
+      "An inaccurate AI answer is rarely random. It is usually an engine faithfully repeating a stale, confused or missing source. You correct it by fixing what the engine reads, not by arguing with the engine.",
+    category: "geo-explainer",
+    prompt: "How do I fix wrong information about my brand in AI answers?",
+    keyword: "AI inaccurate brand answers",
+    secondaryKeywords: ["wrong AI answers about my brand", "AI brand accuracy", "GEO"],
+    publishedAt: "2026-10-15T00:00:00.000Z",
+    content: `Most brands worry about not being named in AI answers. Far fewer check what happens when they are. An engine can mention you prominently and still give the wrong founding year, a discontinued product, last year’s results or a namesake company’s reviews. Visibility without accuracy can cost more than absence, because the buyer believes what they read.
+
+## Where wrong answers come from
+
+- **Stale pages.** An old press release or a third-party profile is easier to retrieve than your current page, so the engine quotes a figure that was true two years ago.
+- **Entity confusion.** Two companies share a name, or a group runs several businesses, and the engine merges them into one description.
+- **Missing records.** When no retrievable page states a fact clearly, an engine may fill the gap with something that merely sounds right.
+- **Low-quality or hostile sources.** A single forum thread or complaint page becomes the most quotable thing written about you.
+
+## How to find them
+
+Run the questions a buyer, investor or journalist would actually ask, across every major engine, and save each answer with its date and its cited sources. Then grade each answer line by line against a fact sheet your own team has signed off. Note the source behind every error. That source, not the engine, is what you fix.
+
+## How to correct them
+
+1. **Publish the correct fact where it can be retrieved.** A clear, dated page that answers the question in its opening lines.
+2. **Make your entity unambiguous.** [Google’s documentation](https://developers.google.com/search/docs/appearance/structured-data/organization) says Organization structured data can help it understand an organisation’s details and distinguish it from others. Consistent names, logo, address and sameAs links to your official profiles all support this.
+3. **Deal with the stale source.** Update or retire it where you control it. Where you don’t, request a correction with evidence, not a complaint.
+4. **Strengthen corroboration.** The correct version should appear in more than one credible place, not only on your own site.
+5. **Re-measure.** Run the same prompts again and record whether the answer changed, and which source the engine now cites.
+
+## What not to do
+
+Don’t try to bury legitimate coverage or flood the web with thin pages. Engines look for corroboration, and manufactured volume tends to read as noise. Suppression attempts can also become the story themselves. And don’t expect an overnight fix: each engine refreshes its sources on its own schedule.
+
+## How we approach it
+
+Optimizer360.ai grades AI answers against a client-approved fact sheet, traces each error to the source behind it, and corrects at that source. Every before and after can be checked by asking the engine yourself.
+
+[Request an audit](/request-audit) to see how AI engines describe your brand today.
+
+## Related
+
+- [What an AI visibility audit includes](/blog/what-an-ai-visibility-audit-includes)
+- [How ChatGPT, Perplexity, Gemini, Claude and AI Overviews pick brands to cite](/blog/how-ai-engines-choose-brands-to-cite)
+- [Request an audit](/request-audit)
+`,
+    sources: [
+      {
+        stat: "Google says Organization structured data can help it understand an organisation’s administrative details and tell it apart from others.",
+        context: "Google Search Central, Organization structured data (last updated 8 September 2026).",
+        url: "https://developers.google.com/search/docs/appearance/structured-data/organization",
+      },
+    ],
+    faq: [
+      {
+        question: "Can we ask the engine to correct itself?",
+        answer:
+          "In-product feedback is not a reliable correction route. The lasting fix is changing what the engine retrieves and how consistently the correct version is corroborated.",
+      },
+      {
+        question: "How long does a correction take?",
+        answer:
+          "We won’t invent a number. It depends on the engine, the source and how widely the error has spread. What we commit to is recording the same prompt before and after, so you can see when it moves.",
+      },
+      {
+        question: "Is this the same as online reputation management?",
+        answer:
+          "It overlaps, but the goal differs. The aim is an accurate answer built on evidence, not pushing coverage out of sight.",
       },
     ],
   },

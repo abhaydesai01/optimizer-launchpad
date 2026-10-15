@@ -9,6 +9,9 @@ export const FACEBOOK_URL = "https://www.facebook.com/people/Optimizer-AI/615949
 export const GOOGLE_BUSINESS_URL = "https://share.google/rJWDB6ofoXqJMEwiU";
 /** Every official profile of the company, used for schema sameAs. Add new profiles here. */
 export const SAME_AS_URLS = [LINKEDIN_URL, INSTAGRAM_URL, FACEBOOK_URL, GOOGLE_BUSINESS_URL];
+/** Approved company description (medium version, 14 Oct 2026 content pack). Use it for profiles and schema. */
+export const ORG_DESCRIPTION =
+  "Optimizer360.ai is a specialist Generative Engine Optimisation (GEO) firm based in Mumbai. Buyers increasingly ask AI engines who to trust, and each answer names only a few brands. We make sure credible brands are among them, accurately. Working across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude, we track how engines describe a brand, find the questions where it is missing or misrepresented, and close those gaps with content and technical work. We never fabricate data, and every finding can be verified in the engines themselves.";
 export const FOUNDER_NAME = "Salil Chaturvedi";
 export const ORG_ADDRESS = {
   "@type": "PostalAddress",

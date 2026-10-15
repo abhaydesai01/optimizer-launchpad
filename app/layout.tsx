@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Fraunces, Inter, Inter_Tight } from "next/font/google";
 import { buildOrganizationSchema } from "@/lib/schema-library";
-import { FOUNDER_NAME, ORG_ADDRESS, SAME_AS_URLS, SITE_LOGO_URL } from "@/lib/site";
+import { FOUNDER_NAME, ORG_ADDRESS, ORG_DESCRIPTION, SAME_AS_URLS, SITE_LOGO_URL } from "@/lib/site";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -28,8 +28,7 @@ const orgSchema = {
   ...buildOrganizationSchema({
     name: "Optimizer360.ai",
     url: "https://optimizer360.ai",
-    description:
-      "Optimizer360.ai is an AI GEO firm — Generative Engine Optimisation — that helps enterprise brands get named, cited and correctly positioned inside AI answers across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
+    description: ORG_DESCRIPTION,
     // Profiles live in SAME_AS_URLS (lib/site.ts); add Crunchbase, G2, Clutch there once live
     sameAs: SAME_AS_URLS,
     founderName: FOUNDER_NAME,
