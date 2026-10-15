@@ -34,7 +34,7 @@ const orgSchema = {
     founderName: FOUNDER_NAME,
     logo: SITE_LOGO_URL,
   }),
-  alternateName: ["Optimizer360", "Optimizer 360"],
+  alternateName: ["Optimizer360", "Optimizer 360", "Optimizer AI"],
   address: ORG_ADDRESS,
   email: "hello@optimizer360.ai",
   knowsAbout: [
