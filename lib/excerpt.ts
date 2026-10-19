@@ -35,3 +35,8 @@ export function sourcesFromBrief(
       };
     });
 }
+
+/** Turns [text](url) into text. FAQ answers are plain text on the page and in FAQ schema. */
+export function stripMarkdownLinks(text: string): string {
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+}

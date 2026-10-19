@@ -1,6 +1,6 @@
 import { mergeInjectedSchema } from "@/lib/article-schema";
 import { DEFAULT_AUTHOR } from "@/lib/default-author";
-import { excerptFromMarkdown } from "@/lib/excerpt";
+import { excerptFromMarkdown, stripMarkdownLinks } from "@/lib/excerpt";
 import { PILLAR_ARTICLES, type PillarArticle } from "@/lib/pillar-articles";
 
 const PILLAR_DATE = new Date("2026-09-12T00:00:00.000Z");
@@ -57,7 +57,10 @@ export function pillarToArticle(pillar: PillarArticle): ResolvedArticle {
         authorSlug: DEFAULT_AUTHOR.slug,
       },
       headline: pillar.title,
-      fallbackFaq: pillar.faq,
+      fallbackFaq: pillar.faq.map((item) => ({
+        question: item.question,
+        answer: stripMarkdownLinks(item.answer),
+      })),
       internalLinks: [
         { anchorText: "What is AI GEO?", targetUrl: "/ai-seo", context: "Definition briefing" },
         { anchorText: "Request an audit", targetUrl: "/request-audit", context: "Conversion" },
