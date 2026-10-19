@@ -16,7 +16,7 @@ import Article, { type IArticleSource } from "@/lib/models/Article";
 import { articleOgImage, pageMeta } from "@/lib/page-metadata";
 import { DEFAULT_AUTHOR } from "@/lib/default-author";
 import { getStaticPillar, STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
-import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
+import { DB_EXCLUDED_SLUGS, isOverriddenArticle, isRetiredArticle } from "@/lib/retired-articles.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -26,6 +26,10 @@ type FaqEntity = {
 };
 
 async function getArticle(slug: string) {
+  if (isOverriddenArticle(slug)) {
+    const override = getStaticPillar(slug);
+    if (override) return override;
+  }
   try {
     await connectDB();
     const fromDb = await Article.findOne({ slug, published: true }).lean();
@@ -92,7 +96,7 @@ export default async function BlogArticlePage({
   try {
     related = await Article.find({
       published: true,
-      slug: { $ne: article.slug, $nin: RETIRED_ARTICLE_SLUGS },
+      slug: { $ne: article.slug, $nin: DB_EXCLUDED_SLUGS },
       ...(article.category ? { category: article.category } : {}),
     })
       .sort({ publishedAt: -1 })

@@ -10,7 +10,7 @@ import { pageMeta } from "@/lib/page-metadata";
 import { buildPersonSchema } from "@/lib/schema-library";
 import { SITE_URL } from "@/lib/site";
 import { STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
-import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
+import { DB_EXCLUDED_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -56,7 +56,7 @@ export default async function AuthorPage({
     posts = await Article.find({
       published: true,
       authorSlug: author.slug,
-      slug: { $nin: RETIRED_ARTICLE_SLUGS },
+      slug: { $nin: DB_EXCLUDED_SLUGS },
     })
       .sort({ publishedAt: -1 })
       .select("slug title excerpt metaDescription")

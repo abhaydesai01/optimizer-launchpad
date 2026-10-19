@@ -453,4 +453,211 @@ Optimizer360.ai grades AI answers against a client-approved fact sheet, traces e
       },
     ],
   },
+  {
+    slug: "generative-engine-optimization",
+    title: "What is GEO (generative engine optimisation)?",
+    metaTitle: "What is GEO (generative engine optimisation)? A plain guide",
+    metaDescription:
+      "GEO, or generative engine optimisation, is how a business gets named in AI answers from ChatGPT, Gemini and Google AI Overviews. What it is, what works, what it cannot do.",
+    excerpt:
+      "GEO, short for generative engine optimisation, is the work of making a business easy for AI tools such as ChatGPT, Gemini and Google AI Overviews to find, understand and name in their answers. It builds on SEO (search engine optimisation); it does not replace it.",
+    category: "geo-explainer",
+    prompt: "What is GEO (generative engine optimisation)?",
+    keyword: "generative engine optimisation",
+    secondaryKeywords: ["GEO", "what is GEO", "AI search optimisation"],
+    publishedAt: "2026-10-19T00:00:00.000Z",
+    content: `## GEO in plain words
+
+When you search Google the classic way, you get a list of links and you choose. When you ask an AI tool the same question, it writes one answer and often names a few businesses inside it. GEO is the work of being one of the businesses it names, and of being described correctly when it does.
+
+Most of that work is ordinary and checkable: clear pages, accurate facts, proof behind your claims, and trustworthy sites that say the same thing about you.
+
+## Why it matters now
+
+The AI answer can end the search. A buyer who asks "who is the best provider of X?" may act on the shortlist in the answer without ever opening a results page. If your business is not in that shortlist, you will not see a lost click in your analytics, because the visit never started.
+
+## Is GEO better than SEO?
+
+No, and it is not a replacement. SEO helps your pages rank and get found. GEO helps the AI tools that read those pages name you and describe you accurately. AI tools mostly work from pages they can already reach, so a site with weak SEO foundations is a weak starting point for GEO. Do SEO first and add GEO on top. The [comparison of AEO, GEO and SEO](/blog/geo-vs-seo-vs-aeo) shows where the three differ.
+
+## "GEO" does not always mean this
+
+The same three letters mean other things, and AI tools do not always pick the one you intended. We tested this. On 7 October 2026 we asked ChatGPT, Gemini and Google AI Overviews 30 questions each, once, and read every answer. Seven of the questions depended on the tool understanding "GEO", "AEO" or "SEO for ChatGPT" as this discipline.
+
+- **ChatGPT** answered about something else on six of the seven. It treated GEO as local or geographic SEO, or as mapping and space agencies, and answered "What is AEO?" with "Authorized Economic Operator", a customs programme.
+- **Gemini** gave both meanings on three of them, asked which meaning was intended once, and once explained GEO as geostationary orbit.
+- **Google AI Overviews** read all seven as this discipline.
+- On a related question that spelled out "generative engine optimization" in full, ChatGPT read the term correctly.
+
+This is one test on one day. Answers vary from run to run. The lesson is practical all the same: **spell the term out** in titles, headings and the first sentence of any page that you want an AI tool to read this way.
+
+## What actually helps
+
+1. **Let the tools in.** Google says a page needs to be indexed and eligible to show a snippet in normal Search, with "no additional requirements" for AI Overviews and AI Mode. For ChatGPT, OpenAI says to allow its search crawler, OAI-SearchBot, in your robots.txt file. It lists this separately from GPTBot, which relates to training.
+2. **Answer the question first.** Put the plain answer in the first two sentences, then explain.
+3. **Spell out acronyms** the first time you use them, so the tool can tell which meaning you intend.
+4. **Show your evidence.** Use real numbers with a date and a source, a named author with credentials, and links to primary sources.
+5. **Be described the same way elsewhere.** AI tools check what other sources say about you. Matching profiles, directory listings, reviews and press coverage reinforce the facts on your own site.
+6. **Keep pages current.** Show when each page was published and last updated.
+
+You do not need a special file or special markup for Google's AI features. Google states that no special schema.org structured data is needed for them. Structured data is still good practice for search in general.
+
+## What GEO cannot do
+
+It cannot guarantee that an AI tool will mention you. The tools decide what to name, and they change how they decide without notice. Google itself says indexing and serving "isn't guaranteed" even when every requirement is met. Be wary of anyone who sells guaranteed AI citations. The honest promise is the work and the measurement.
+
+## How to measure it
+
+Pick the 20 to 30 questions your buyers really ask. Ask each one on the same AI tools on a regular schedule. Record three things: whether your business is named, whether your website or profile is cited as a source, and whether the description is correct. Repeat monthly and compare against your first run. That first run is your baseline.
+
+## Where to start
+
+1. Write down the questions your buyers ask.
+2. Run them on ChatGPT, Gemini and Google AI Overviews, and save the answers.
+3. Fix what you find first: missing or wrong facts, crawlers blocked, and pages that bury the answer.
+
+Optimizer360.ai begins every engagement with this baseline. You can [read what an AI visibility audit includes](/blog/what-an-ai-visibility-audit-includes) or [request one](/request-audit).
+`,
+    sources: [
+      {
+        stat: "Google says there are no additional requirements to appear in AI Overviews or AI Mode, and that no special schema.org structured data is needed.",
+        context: "Google Search Central, AI features and your website (last updated 10 December 2025).",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+      {
+        stat: "OpenAI says to allow its search crawler, OAI-SearchBot, in robots.txt to appear in ChatGPT search. This is separate from GPTBot, which relates to training.",
+        context: "OpenAI, Overview of OpenAI crawlers.",
+        url: "https://developers.openai.com/api/docs/bots",
+      },
+      {
+        stat: "Optimizer360.ai AI Visibility Baseline, 7 October 2026.",
+        context: "Method: 30 questions asked once each on ChatGPT, Gemini and Google AI Overviews. ChatGPT and Gemini were queried through their APIs with web search on; Google AI Overviews were read from Google in India.",
+      },
+    ],
+    faq: [
+      {
+        question: "What does GEO stand for?",
+        answer:
+          "Generative engine optimisation. It is sometimes called AI search optimisation, and \"GEO\" is also used for geographic or local SEO and for other unrelated terms, so spell it out when it matters.",
+      },
+      {
+        question: "Is GEO the same as AEO?",
+        answer:
+          "They overlap heavily, and many writers use them as synonyms. AEO (answer engine optimisation) is the older term, focused on being the direct answer. GEO is usually used for being named inside AI-written answers. See [AEO vs GEO vs SEO](/blog/geo-vs-seo-vs-aeo).",
+      },
+      {
+        question: "Do I need to stop doing SEO to do GEO?",
+        answer:
+          "No. GEO builds on SEO. Keep your SEO and add GEO on top.",
+      },
+      {
+        question: "Do I need special files or markup to appear in Google's AI Overviews?",
+        answer:
+          "No. Google says no extra technical requirements and no special schema are needed. The page must be indexed and eligible to show a snippet.",
+      },
+      {
+        question: "Can anyone guarantee ChatGPT will mention my business?",
+        answer:
+          "No. The tools decide. What you control is the quality of your pages, the accuracy of what is said about you, and how well you measure the result.",
+      },
+    ],
+  },
+  {
+    slug: "geo-vs-seo-vs-aeo",
+    title: "AEO vs GEO vs SEO: what is the difference?",
+    metaTitle: "AEO vs GEO vs SEO: what is the difference?",
+    metaDescription:
+      "SEO ranks pages, AEO makes you the direct answer, GEO gets you named in AI answers. What AEO means, how the three differ, and what to do first.",
+    excerpt:
+      "SEO (search engine optimisation) aims to rank your pages in a list of search results. AEO (answer engine optimisation) aims to make your page the direct answer to a question, and GEO (generative engine optimisation) aims to get your business named inside answers that AI tools write. In practice the three overlap, and you build AEO and GEO on top of SEO.",
+    category: "comparison",
+    prompt: "AEO vs GEO vs SEO: what is the difference?",
+    keyword: "AEO vs GEO vs SEO",
+    secondaryKeywords: ["answer engine optimisation", "generative engine optimisation", "SEO"],
+    publishedAt: "2026-10-19T00:00:00.000Z",
+    content: `## What is AEO (answer engine optimisation)?
+
+AEO is the practice of writing and structuring content so that a tool that gives a direct answer can use yours: a featured snippet on Google, a voice assistant, or an AI chatbot. The work is concrete. State the question, answer it in the first two sentences, and back it up underneath.
+
+**AEO also means something else.** In customs and trade, AEO stands for Authorized Economic Operator, a status for trusted traders. When we asked ChatGPT "What is AEO?" on 7 October 2026, it answered with that meaning. If you write about answer engine optimisation, spell the term out so tools and readers know which AEO you mean.
+
+## The three terms side by side
+
+| | SEO | AEO | GEO |
+|---|---|---|---|
+| Stands for | Search engine optimisation | Answer engine optimisation | Generative engine optimisation |
+| What you are aiming for | A high place in a list of results | To be the direct answer | To be named and described correctly inside an AI-written answer |
+| Where it shows | Google and Bing results pages | Featured snippets, voice answers, AI answers | ChatGPT, Gemini, Google AI Overviews and similar |
+| How you see progress | Rankings and clicks | Owning the snippet or answer | Being named, cited and described correctly when you ask the questions |
+| Main work | Keywords, links, technical health | Clear question-and-answer content | Clear facts, evidence, matching profiles, and regular measurement |
+
+These are working definitions. The terms are new, there is no official standard, and many writers use AEO and GEO as synonyms. When you read a source, check which meaning it intends.
+
+## How they overlap
+
+All three depend on the same base: pages a tool can reach, that load fast and say clearly what they are about. Google states that AI Overviews and AI Mode need no extra technical requirements beyond what normal Search already asks, and that no special structured data is required. So the basics you already do for SEO carry over directly.
+
+The difference is the finish. SEO stops at "the page is findable and ranks". AEO adds "the answer is extractable". GEO adds "the facts about the business are consistent across the sources the AI tools read, and we check what they actually say".
+
+## Which one should you do first?
+
+SEO. A site that search engines cannot index or understand is a poor base for either of the others. Then write your key pages as direct answers (AEO). Then check what AI tools say about you, fix what is wrong or missing, and keep measuring (GEO).
+
+## Common mistakes
+
+- **Treating GEO as a replacement for SEO.** It is an addition.
+- **Burying the answer.** If the first paragraph is a warm-up, a tool has nothing to quote.
+- **Using the acronym without spelling it out.** In our 7 October 2026 test of 30 questions on ChatGPT, Gemini and Google AI Overviews, ChatGPT answered about something other than this discipline on six of seven questions that used "GEO" or "AEO". It treated GEO as local SEO or as mapping and space agencies, and AEO as the customs programme. Spelling the term out is the simplest fix we know.
+- **Blocking the crawlers.** OpenAI says to allow OAI-SearchBot in your robots.txt file if you want to appear in ChatGPT search.
+- **Inventing numbers.** Unsourced statistics erode trust and are easy to check.
+- **Expecting a guarantee.** No one controls what an AI tool names.
+
+## How to check where you stand
+
+Write down the questions your buyers ask. Ask each on ChatGPT, Gemini and Google AI Overviews. Save the answers and note three things: were you named, were you cited as a source, was the description correct? Repeat on a schedule and compare. [What an AI visibility audit includes](/blog/what-an-ai-visibility-audit-includes) explains the full method, and you can [request one](/request-audit).
+`,
+    sources: [
+      {
+        stat: "Google says there are no additional requirements to appear in AI Overviews or AI Mode, and that no special schema.org structured data is needed.",
+        context: "Google Search Central, AI features and your website (last updated 10 December 2025).",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+      {
+        stat: "OpenAI says to allow its search crawler, OAI-SearchBot, in robots.txt to appear in ChatGPT search. This is separate from GPTBot, which relates to training.",
+        context: "OpenAI, Overview of OpenAI crawlers.",
+        url: "https://developers.openai.com/api/docs/bots",
+      },
+      {
+        stat: "Optimizer360.ai AI Visibility Baseline, 7 October 2026.",
+        context: "Method: 30 questions asked once each on ChatGPT, Gemini and Google AI Overviews. ChatGPT and Gemini were queried through their APIs with web search on; Google AI Overviews were read from Google in India.",
+      },
+    ],
+    faq: [
+      {
+        question: "What is AEO?",
+        answer:
+          "Answer engine optimisation: making your content usable as the direct answer to a question, in a snippet, a voice answer or an AI chatbot. Not to be confused with the Authorized Economic Operator customs status.",
+      },
+      {
+        question: "Is GEO the same as AEO?",
+        answer:
+          "They overlap, and many writers treat them as one. A useful way to tell them apart: AEO is about being the answer, and GEO is about being named correctly inside an AI-written answer.",
+      },
+      {
+        question: "Is SEO dead because of AI?",
+        answer:
+          "No. AI tools mostly work from pages they can reach, so the foundations of SEO still apply. What has changed is that a buyer can now get an answer without visiting a results page.",
+      },
+      {
+        question: "Which one gives the quickest result?",
+        answer:
+          "There is no honest quick answer. Indexing and AI answers update on the tools' own schedules, and Google notes that appearing is never guaranteed. Start with the basics and measure.",
+      },
+      {
+        question: "Do I need special markup for AEO or GEO?",
+        answer:
+          "Not for Google's AI features, according to Google. Structured data is still good practice for search generally.",
+      },
+    ],
+  },
 ];

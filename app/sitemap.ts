@@ -3,7 +3,7 @@ import connectDB from "@/lib/mongodb";
 import Article from "@/lib/models/Article";
 import { ROUTE_REVISIONS } from "@/lib/route-revisions";
 import { STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
-import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
+import { DB_EXCLUDED_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 import { useCases } from "@/lib/usecases";
 
 export const dynamic = "force-dynamic";
@@ -42,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let blogArticles: { slug?: string; updatedAt?: Date; publishedAt?: Date }[] = [];
   try {
     await connectDB();
-    blogArticles = await Article.find({ published: true, slug: { $nin: RETIRED_ARTICLE_SLUGS } })
+    blogArticles = await Article.find({ published: true, slug: { $nin: DB_EXCLUDED_SLUGS } })
       .select("slug updatedAt publishedAt")
       .lean();
   } catch (error) {

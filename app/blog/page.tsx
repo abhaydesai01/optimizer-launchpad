@@ -13,7 +13,7 @@ import { pageMeta } from "@/lib/page-metadata";
 import { buildBlogSchema } from "@/lib/schema-library";
 import { SITE_URL } from "@/lib/site";
 import { STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
-import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
+import { DB_EXCLUDED_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -49,7 +49,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     await connectDB();
     articles = await Article.find({
       published: true,
-      slug: { $nin: RETIRED_ARTICLE_SLUGS },
+      slug: { $nin: DB_EXCLUDED_SLUGS },
       ...(selected ? { category: selected } : {}),
     })
       .sort({ publishedAt: -1 })

@@ -2,7 +2,7 @@ import connectDB from "@/lib/mongodb";
 import Article from "@/lib/models/Article";
 import { excerptFromMarkdown } from "@/lib/excerpt";
 import { STATIC_PILLAR_ARTICLES } from "@/lib/static-pillars";
-import { RETIRED_ARTICLE_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
+import { DB_EXCLUDED_SLUGS, isRetiredArticle } from "@/lib/retired-articles.mjs";
 
 export type PublishedArticleCard = {
   slug: string;
@@ -19,7 +19,7 @@ export type PublishedArticleCard = {
 export async function listPublishedArticles(limit = 100): Promise<PublishedArticleCard[]> {
   try {
     await connectDB();
-    const articles = await Article.find({ published: true, slug: { $nin: RETIRED_ARTICLE_SLUGS } })
+    const articles = await Article.find({ published: true, slug: { $nin: DB_EXCLUDED_SLUGS } })
       .sort({ publishedAt: -1 })
       .select(
         "slug title metaDescription excerpt publishedAt updatedAt category authorName authorSlug finalContent draft",
