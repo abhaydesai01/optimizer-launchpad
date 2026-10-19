@@ -1,13 +1,13 @@
-import { RETIRED_ARTICLE_SLUGS } from "./lib/retired-articles.mjs";
+import { RETIRED_ARTICLE_REDIRECTS } from "./lib/retired-articles.mjs";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
-      ...RETIRED_ARTICLE_SLUGS.map((slug) => ({
+      ...Object.entries(RETIRED_ARTICLE_REDIRECTS).map(([slug, destination]) => ({
         source: `/blog/${slug}`,
-        destination: "/blog",
+        destination,
         permanent: true,
       })),
     ];

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   DB_EXCLUDED_SLUGS,
   OVERRIDDEN_ARTICLE_SLUGS,
+  RETIRED_ARTICLE_REDIRECTS,
   RETIRED_ARTICLE_SLUGS,
   isOverriddenArticle,
   isRetiredArticle,
@@ -10,11 +11,21 @@ import { getStaticPillar } from "./static-pillars";
 import { validateArticleSchema } from "./schema-validate";
 
 describe("retired articles", () => {
-  it("flags the six off-topic slugs and nothing else", () => {
-    expect(RETIRED_ARTICLE_SLUGS).toHaveLength(6);
+  it("flags the six off-topic slugs and the two duplicates, and nothing else", () => {
+    expect(RETIRED_ARTICLE_SLUGS).toHaveLength(8);
     for (const slug of RETIRED_ARTICLE_SLUGS) expect(isRetiredArticle(slug)).toBe(true);
-    expect(isRetiredArticle("what-is-ai-geo")).toBe(false);
+    expect(isRetiredArticle("generative-engine-optimization")).toBe(false);
     expect(isRetiredArticle("geo-vs-seo-vs-aeo")).toBe(false);
+    expect(isRetiredArticle("how-to-get-cited-by-ai-engines")).toBe(false);
+  });
+
+  it("sends each duplicate to the rewritten page and never to a retired page", () => {
+    expect(RETIRED_ARTICLE_REDIRECTS["what-is-ai-geo"]).toBe("/blog/generative-engine-optimization");
+    expect(RETIRED_ARTICLE_REDIRECTS["ai-geo-vs-seo-vs-aeo"]).toBe("/blog/geo-vs-seo-vs-aeo");
+    for (const destination of Object.values(RETIRED_ARTICLE_REDIRECTS)) {
+      expect(isRetiredArticle(destination.replace("/blog/", ""))).toBe(false);
+      expect(destination.startsWith("/blog")).toBe(true);
+    }
   });
 });
 
