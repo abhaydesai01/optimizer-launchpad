@@ -839,4 +839,126 @@ Request an audit, and we scope and quote the engagement after it. There are no p
       },
     ],
   },
+  {
+    slug: "is-seo-dead-now-with-ai",
+    title: "Is SEO dead now with AI?",
+    metaTitle: "Is SEO dead now with AI? What the data says",
+    metaDescription:
+      "AI answers have changed how people click, but SEO is not dead. What Pew, Ahrefs, Seer Interactive and Google's own guidance show, and what to do about it.",
+    excerpt:
+      "No. AI search has changed where people get answers and how often they click, but the pages AI tools draw on still depend on the same foundations: content worth reading, pages that can be reached and understood, and sources that agree with each other. SEO (search engine optimisation) is still the base. What is new is that being named inside an AI answer is a separate result that you now have to check.",
+    category: "geo-explainer",
+    prompt: "Is SEO dead now with AI?",
+    keyword: "is SEO dead",
+    secondaryKeywords: ["SEO and AI", "AI Overviews clicks", "GEO vs SEO"],
+    publishedAt: "2026-10-19T00:00:00.000Z",
+    content: `## What has changed
+
+More people now read a written answer before they see a list of links, and several studies show fewer clicks when that answer appears. The studies measure different things, so we set them side by side with their dates.
+
+- **Pew Research Center (published 22 July 2025).** It followed the browsing of 900 US adults in March 2025. When a Google search showed an AI summary, users clicked a traditional result link in 8% of visits. Without a summary they did so in 15%. Only 1% of visits to pages with a summary involved a click on a link inside the summary. About 18% of the searches in the sample produced an AI summary.
+- **Ahrefs (published 4 February 2026).** It compared 300,000 keywords, half with an AI Overview and half without. For keywords that showed an AI Overview, the average click-through rate (the share of impressions that become clicks) of the top-ranking page was 0.016 in December 2025, against 0.073 in December 2023. Ahrefs puts that 58% below what it forecast without AI Overviews. It describes this as a correlation, and notes that click-through rates also fell on keywords with no AI Overview.
+- **Agarwal and Sen, a working paper on SSRN (posted 3 April 2026).** Participants were randomly given Google with or without AI Overviews. According to the paper's abstract, where an AI Overview appeared, outbound organic clicks fell by about 39.8% and zero-click searches rose by about 34.5%. Sponsored clicks were not affected, and people who did click through engaged with sites in the same way.
+- **Seer Interactive (published 24 April 2026).** It tracked 53 brands and about 5.5 million queries. On queries where Google showed an AI Overview, the organic click-through rate fell from 3.19% in January 2025 to 1.31% in December 2025, then rose to 2.36% in February 2026. On queries without an AI Overview it went from 2.75% to 3.16% to 3.82%. The authors describe the findings as directional, and say the early-2026 rise covers only two months and may not hold.
+- **Google (its 2026 guide for marketers).** Google says total organic click volume from Google Search to websites has been "relatively stable year-over-year", and that clicks from AI Overviews are higher quality, with visitors more likely to spend time on the site. This is Google's own data, and it is not independent.
+
+These do not cancel out. They use different samples, periods and methods. The fair reading is that where an AI answer appears, clicks to websites are lower in the experiment and in the observational data. One large data set shows the drop easing in early 2026, and Google disputes the overall picture. Nobody outside Google can see all of it.
+
+## What has not changed
+
+Google's own guidance is that there are no additional requirements to appear in its AI Overviews or AI Mode, and that no special schema.org structured data is needed. A page has to be indexed and eligible to show a snippet in normal Search, and Google adds that appearing is never guaranteed. Its 2026 guide says SEO remains important whether you want to show up in traditional results or inside AI Overviews and AI Mode.
+
+So the basics still carry the weight: pages search engines can crawl, content that answers real questions with something of its own, and a site that loads well and is easy to read.
+
+## Where SEO alone stops being enough
+
+A page can rank and still not be what an AI tool uses. The tool writes one answer from the sources it can retrieve and trust, and then decides what to name.
+
+We saw a small version of this on 7 October 2026, when we asked ChatGPT, Gemini and Google AI Overviews 30 buyer questions. Nine of them were explainers, such as what GEO (generative engine optimisation) is, and whether SEO is dead. In 24 of the 27 answers to those nine questions, the tools named no company at all. They answered from general sources. Being one of the sources an AI tool reaches for is not the same as ranking, and you can only find out by asking the tool.
+
+It is one test on one day, and answers vary from run to run.
+
+## What to do
+
+Keep your SEO and add three checks.
+
+1. **Do the SEO basics.** Make pages crawlable, keep them fast, and write for the reader. This is also what Google says to do for AI Overviews.
+2. **Answer first.** Put the plain answer in the first two sentences of a page, spell out acronyms the first time you use them, and show the evidence behind your claims with a date and a source.
+3. **Ask the AI tools yourself.** Take the 20 to 30 questions your buyers ask. Ask each on ChatGPT, Gemini and Google AI Overviews on a schedule. Record whether your business is named, whether your website is cited, and whether the description is right. Compare against your first run.
+
+[What an AI visibility audit includes](/blog/what-an-ai-visibility-audit-includes) explains this method in full. You can also read [what GEO is](/blog/generative-engine-optimization) and [how AEO, GEO and SEO differ](/blog/geo-vs-seo-vs-aeo).
+
+## What "dead" would look like
+
+No one can promise that SEO will or will not recover its clicks. If your own search data showed that the questions you rely on had stopped sending visitors and no AI tool named you, that would be a real warning. The way to see it is to measure both: your search traffic, and what the AI tools say. That is a plan you can follow whatever the studies end up showing.
+`,
+    sources: [
+      {
+        stat: "With an AI summary on the results page, users clicked a traditional result in 8% of visits versus 15% without one; 1% of visits involved a click on a link inside the summary.",
+        context: "Pew Research Center, 22 July 2025 (900 US adults, browsing in March 2025).",
+        url: "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+      },
+      {
+        stat: "For keywords with an AI Overview, the top-ranking page's click-through rate was 0.016 in December 2025 against 0.073 in December 2023, which Ahrefs puts 58% below its forecast without AI Overviews.",
+        context: "Ahrefs, 4 February 2026 (300,000 keywords). Ahrefs describes it as a correlation.",
+        url: "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/",
+      },
+      {
+        stat: "In a randomised field experiment, where an AI Overview appeared, outbound organic clicks fell by about 39.8% and zero-click searches rose by about 34.5%, according to the paper's abstract.",
+        context: "Saharsh Agarwal and Ananya Sen, SSRN working paper posted 3 April 2026.",
+        url: "https://ssrn.com/abstract=6513059",
+      },
+      {
+        stat: "On queries with an AI Overview, organic click-through rate fell from 3.19% (January 2025) to 1.31% (December 2025) and rose to 2.36% (February 2026).",
+        context: "Seer Interactive, AIO Impact on Google CTR: 2026 Update (v3), 24 April 2026. 53 brands, about 5.5 million queries. The authors call the findings directional.",
+        url: "https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-2026-update",
+      },
+      {
+        stat: "Google says SEO remains important for traditional results and for AI Overviews and AI Mode, and that organic click volume has been relatively stable year-over-year.",
+        context: "Google, 2026 Marketer's Non-Technical Guide to SEO in AI search. This is Google's own data.",
+        url: "https://services.google.com/fh/files/misc/2026_seo_in_ai_search_guide_for_marketers.pdf",
+      },
+      {
+        stat: "Google says there are no additional requirements to appear in AI Overviews or AI Mode, and that no special schema.org structured data is needed.",
+        context: "Google Search Central, AI features and your website (last updated 10 December 2025).",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+      {
+        stat: "OpenAI says to allow its search crawler, OAI-SearchBot, in robots.txt to appear in ChatGPT search. It is separate from GPTBot.",
+        context: "OpenAI, Overview of OpenAI crawlers.",
+        url: "https://developers.openai.com/api/docs/bots",
+      },
+      {
+        stat: "Optimizer360.ai AI Visibility Baseline, 7 October 2026.",
+        context: "Method: 30 questions asked once each on ChatGPT, Gemini and Google AI Overviews. ChatGPT and Gemini were queried through their APIs with web search on; Google AI Overviews were read from Google in India.",
+      },
+    ],
+    faq: [
+      {
+        question: "Is GEO replacing SEO?",
+        answer:
+          "No. GEO (generative engine optimisation) builds on SEO. AI tools mostly work from pages they can already reach, so the SEO foundations still matter. GEO adds the work of checking and improving what AI tools say about you.",
+      },
+      {
+        question: "Do I need a different strategy for ChatGPT?",
+        answer:
+          "Allow OpenAI's search crawler, OAI-SearchBot, in your robots.txt file if you want to appear in ChatGPT search. OpenAI lists it separately from GPTBot, which relates to training. Beyond that, clear pages, accurate facts and consistent profiles help across the board.",
+      },
+      {
+        question: "Should I stop paying for SEO?",
+        answer:
+          "Not because of AI answers. Google says SEO still matters for AI Overviews and AI Mode. Check what your own traffic and the AI tools show, and decide from that.",
+      },
+      {
+        question: "How do I know whether AI tools name my business?",
+        answer:
+          "Ask them. Run the questions your buyers ask on the main AI tools, save the answers with the date, and repeat on a schedule.",
+      },
+      {
+        question: "Will AI Overviews keep reducing clicks?",
+        answer:
+          "No one knows. The data so far is mixed and changes quickly, and the studies disagree on size. Watch your own numbers.",
+      },
+    ],
+  },
 ];
