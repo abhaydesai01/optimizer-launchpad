@@ -18,7 +18,7 @@ type Support = "yes" | "no" | "partial";
 const ROWS: { capability: string; tracker: Support; seo: Support; o360: Support; note?: string }[] = [
   { capability: "Tracks AI visibility across engines", tracker: "yes", seo: "no", o360: "yes" },
   { capability: "Diagnoses the exact prompts you're losing", tracker: "partial", seo: "no", o360: "yes" },
-  { capability: "Creates gap-targeted content (client-approved)", tracker: "no", seo: "partial", o360: "yes" },
+  { capability: "Creates gap-targeted content (client-approved)", tracker: "partial", seo: "partial", o360: "yes" },
   { capability: "Technical & entity structuring for AI readability", tracker: "no", seo: "partial", o360: "yes" },
   { capability: "An assigned team that executes the fixes", tracker: "no", seo: "partial", o360: "yes" },
   { capability: "Weekly verifiable reporting across all 5 engines", tracker: "partial", seo: "no", o360: "yes" },
@@ -76,7 +76,7 @@ export default function ComparePage() {
                 Capability
               </th>
               <th scope="col" className="px-4 py-4 text-center text-sm font-semibold text-[var(--paper-soft)]">
-                Tracking-only tools
+                AI visibility tools
               </th>
               <th scope="col" className="px-4 py-4 text-center text-sm font-semibold text-[var(--paper-soft)]">
                 Traditional SEO agencies
@@ -116,6 +116,7 @@ export default function ComparePage() {
         <span className="inline-flex items-center gap-2">
           <X className="h-4 w-4 text-[var(--paper-muted)]" aria-hidden="true" /> Not offered
         </span>
+        <span>Competitor details checked against their public pages on 19 October 2026.</span>
       </p>
 
       <div className="mt-14 grid gap-6 md:grid-cols-2">
@@ -125,12 +126,12 @@ export default function ComparePage() {
           </h2>
           <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
             Peec AI is a strong AI search analytics tool — visibility, position,
-            sentiment and prompt tracking across models. It shows you where you
-            stand. Optimizer360.ai includes the same class of intelligence on
-            our own platform, then adds what Peec does not ship: gap-targeted
-            content, technical and entity structuring, and an assigned
-            strategist, writer and developer who close the gaps the dashboard
-            surfaces.
+            sentiment and prompt tracking across models, with recommended
+            actions and an agent to help act on them. Your team still carries
+            out the work. Optimizer360.ai includes the same class of
+            intelligence on our own platform, then adds the people who do the
+            work: an assigned strategist, writer and developer who close the
+            gaps the dashboard surfaces.
           </p>
         </article>
         <article className="mk-card p-8">
@@ -138,11 +139,12 @@ export default function ComparePage() {
             Optimizer360.ai vs Profound
           </h2>
           <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
-            Profound focuses on AI visibility measurement for brands. Like
-            Peec, it is built for teams who will act on the data themselves.
-            Optimizer360.ai is built for enterprises who want the measurement
-            and the execution in one engagement — with radical honesty on every
-            number and no hollow citation guarantees.
+            Profound is a self-service platform: AI visibility tracking plus
+            an AI assistant and agents that help your team draft content and
+            run workflows. Like Peec, it is built for teams who will do the
+            work themselves. Optimizer360.ai is built for enterprises who want
+            the measurement and the execution in one engagement — with radical
+            honesty on every number and no hollow citation guarantees.
           </p>
         </article>
         <article className="mk-card p-8">

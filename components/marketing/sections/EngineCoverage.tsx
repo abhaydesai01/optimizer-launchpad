@@ -48,9 +48,10 @@ export function EngineCoverage() {
             All five engines. One tracking layer.
           </h2>
           <p className="mk-body mt-6 max-w-2xl">
-            Peec and other trackers measure one surface at a time. We track
-            every major answer engine your buyers reach — weekly, prompt by
-            prompt, with the same methodology across all five.
+            Tracking tools usually have you choose which engines to follow,
+            and plans can cap how many. We track every major answer engine
+            your buyers reach — weekly, prompt by prompt, with the same
+            methodology across all five.
           </p>
         </Reveal>
 
