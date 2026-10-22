@@ -7,6 +7,7 @@ import { Hero } from "@/components/marketing/sections/Hero";
 import { TheShift } from "@/components/marketing/sections/TheShift";
 import { InvisibleCost } from "@/components/marketing/sections/InvisibleCost";
 import { WhatIsGeo } from "@/components/marketing/sections/WhatIsGeo";
+import { Explainers } from "@/components/marketing/sections/Explainers";
 import { Process } from "@/components/marketing/sections/Process";
 import { Deliverables } from "@/components/marketing/sections/Deliverables";
 import { RadicalHonesty } from "@/components/marketing/sections/RadicalHonesty";
@@ -36,6 +37,7 @@ export default function Page() {
         <TheShift />
         <InvisibleCost />
         <WhatIsGeo />
+        <Explainers />
         <FeatureWorkflow />
         <Process />
         <Deliverables />

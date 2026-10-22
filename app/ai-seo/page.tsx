@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ArticleLinks } from "@/components/marketing/ArticleLinks";
+import { EXPLAINER_ARTICLES } from "@/lib/featured-articles";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
@@ -252,6 +254,16 @@ export default function AiSeoGuidePage() {
                     </dd>
                   </div>
                 </dl>
+              </div>
+
+              <div>
+                <h2 className="font-serif-display text-2xl text-[var(--paper)]">Go deeper</h2>
+                <p className="mk-body mt-4 max-w-2xl">
+                  Plain-language explainers on the terms above, each dated and sourced.
+                </p>
+                <div className="mt-8">
+                  <ArticleLinks items={EXPLAINER_ARTICLES} />
+                </div>
               </div>
 
               <div id="faq-pointer" className="border border-[var(--ink-line-strong)] bg-[var(--ink-900)] p-8 md:p-10">

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ArticleLinks } from "@/components/marketing/ArticleLinks";
+import { EXPLAINER_ARTICLES, MORE_ARTICLES } from "@/lib/featured-articles";
 import { JsonLd } from "@/components/marketing/JsonLd";
 import { SubPageShell } from "@/components/marketing/SubPageShell";
 import { MARKETING_FAQ } from "@/lib/marketing-faq";
@@ -68,6 +70,16 @@ export default function FaqPage() {
             ))}
           </ul>
         </article>
+      </div>
+
+      <div className="mt-14">
+        <h2 className="font-serif-display text-2xl text-[var(--paper)]">Read more</h2>
+        <p className="mk-body mt-4 max-w-2xl">
+          Longer answers, each dated and sourced.
+        </p>
+        <div className="mt-8">
+          <ArticleLinks items={[...EXPLAINER_ARTICLES, ...MORE_ARTICLES]} />
+        </div>
       </div>
     </SubPageShell>
   );
