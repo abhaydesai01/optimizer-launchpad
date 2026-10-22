@@ -961,4 +961,146 @@ No one can promise that SEO will or will not recover its clicks. If your own sea
       },
     ],
   },
+  {
+    slug: "product-data-ai-shopping",
+    title: "Your product data is the new shop window: what AI shopping reads about your products",
+    metaTitle: "Product data and AI shopping: what engines read",
+    metaDescription:
+      "When shoppers ask AI what to buy, the answer rests on your product data. Here’s what Google and OpenAI say merchants should share, plus a simple checklist.",
+    excerpt:
+      "Picture a shopper asking AI what to buy. The answer depends on what the engine can read about your products: price, stock, descriptions and images. Google and OpenAI both let merchants hand that data over directly. The rule that matters most is a simple one: keep it accurate, current and the same everywhere.",
+    category: "vertical",
+    prompt: "How does AI shopping use my product data?",
+    keyword: "AI shopping product data",
+    secondaryKeywords: ["product feed", "Merchant Center", "ChatGPT shopping"],
+    publishedAt: "2026-10-22T00:00:00.000Z",
+    content: `Picture a shopper typing a question into an AI engine: what should I buy in your category? The answer names a product. Sometimes it quotes a price. Sometimes it even says whether the item is in stock.
+
+So where did that come from? Increasingly, it didn’t come from your advertising. It came from your product data, and most businesses have never thought of it as a shop window.
+
+## What the platforms say
+
+Good news first: both Google and OpenAI let merchants share product data with them directly.
+
+- **Google.** Its documentation says structured data “can help Google understand your page better,” and that merchants can “tell Google directly which products you want to show on Google” by uploading a feed to Google Merchant Center. Participation in Merchant Center is required to appear in the Google Shopping tab.
+- **OpenAI.** Its commerce documentation says product feeds help ChatGPT “present accurate product information in shopping experiences.” Merchants send a structured feed with required fields for every record, and OpenAI says it is “generally recommended to provide the entire feed once a day.”
+
+A quick, honest note on availability. OpenAI says onboarding product feeds in ChatGPT is currently open to approved partners, and shopping features can vary by country and device. So check what applies in your market before you plan around it.
+
+## What this means in plain English
+
+Strip away the detail and both platforms are really asking for the same three things.
+
+- **Accurate.** Price and availability are what shoppers act on, so they have to be right. A mismatch costs you trust fast.
+- **Current.** Google says it does not guarantee how long changes on your site take to be processed, and OpenAI generally recommends refreshing the full feed once a day. Old data is wrong data, even if it was right last week.
+- **Consistent.** Google advises making sure your structured data matches the visible text on the page. The same principle applies across your site, your feed and your marketplace listings. When an engine sees three versions of the truth, it has no way to know which one to trust.
+
+## Where product data usually goes wrong
+
+These are the problems we look for first. You might recognise a few.
+
+- An old price still showing on one channel, long after the sale ended
+- A discontinued variant that’s still listed as available
+- The same product named three different ways
+- A one-line description that tells a shopper nothing useful
+- Missing or poor-quality images
+
+## How Optimizer360.ai finds these problems
+
+Most of these errors are invisible from the inside. Your team sees the right price on your own site, while an engine quietly quotes the old one from somewhere else.
+
+That is what our [AI visibility audit](/blog/what-an-ai-visibility-audit-includes) is built to surface. We run the questions your shoppers actually ask across the AI engines, and record what each one says about your products, which competitors are named instead, and which sources the answer relied on. You get a dated baseline you can verify by asking the same questions yourself. [See how the engines are covered](/engines).
+
+## A simple checklist
+
+1. Pick one source of truth for every product, and update that first.
+2. Make everything agree. Website, feed and marketplace listings should tell the same story.
+3. Add structured data that matches what’s visible on the page.
+4. Use a feed where a platform offers one, and refresh it on a schedule.
+5. Ask the engines about your products, and read what they say. Wrong answers show you where to look.
+
+## What nobody can promise
+
+A clean feed doesn’t guarantee a recommendation. The engines decide. What you control is whether they have accurate, current, consistent facts to work with, so that a wrong answer is never your fault. We explain how the engines weigh sources in [how AI engines choose which brands to cite](/blog/how-ai-engines-choose-brands-to-cite).
+
+## How we help
+
+We start by asking the engines what they say about your products today. Then we trace each error back to the source behind it and work alongside your team to fix it there. Every finding is something you can check yourself by asking the engine.
+
+In practice, an engagement follows four steps:
+
+- **Baseline.** A recorded picture of how the engines describe your products today, so progress is measured against the truth rather than memory.
+- **Diagnose.** We map the exact questions where your products are missing, described wrongly or out-positioned by a competitor.
+- **Build.** Gap-targeted content, plus structured data and pages the engines can read and cite. You approve everything before it is published.
+- **Prove.** Weekly tracking, with a monthly report and a quarterly review, so you can see what moved and where the work still is.
+
+Your account is handled by an assigned team, not a ticket queue. If an engine is already getting something wrong, [our guide to fixing inaccurate AI answers](/blog/when-ai-gets-your-brand-wrong) shows how we trace and correct it.
+
+[Request an audit](/contact) to see what AI says about your products.
+`,
+    sources: [
+      {
+        stat: "Google says merchants can tell it directly which products to show by uploading a feed to Google Merchant Center, that participation in Merchant Center is required to appear in the Shopping tab, and that it does not guarantee how long changes take to be processed.",
+        context: "Google Search Central, Share your product data with Google (last updated 10 December 2025).",
+        url: "https://developers.google.com/search/docs/specialty/ecommerce/share-your-product-data-with-google",
+      },
+      {
+        stat: "Google says there are no additional requirements to appear in AI Overviews or AI Mode, and that no special schema.org structured data is needed.",
+        context: "Google Search Central, AI features and your website (last updated 10 December 2025).",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+      {
+        stat: "OpenAI says onboarding product feeds in ChatGPT is currently available to approved partners, and that it is generally recommended to provide the entire feed once a day.",
+        context: "OpenAI, Agentic Commerce: Get started (read 22 October 2026).",
+        url: "https://developers.openai.com/commerce/guides/get-started",
+      },
+      {
+        stat: "OpenAI describes the product feed fields and update guidance for a discovery feed.",
+        context: "OpenAI, Agentic Commerce: Products (read 22 October 2026).",
+        url: "https://developers.openai.com/commerce/specs/feed",
+      },
+    ],
+    faq: [
+      {
+        question: "Do we need a product feed to appear in AI answers?",
+        answer:
+          "Not on every engine. A feed is one route, and clear, accurate pages matter too. We only talk about routes we can back up with documentation.",
+      },
+      {
+        question: "Is this only for large retailers?",
+        answer:
+          "No. Google says smaller sites can use an automated feed built from crawled web content, and the checklist above works at any size.",
+      },
+      {
+        question: "Does structured data guarantee that AI engines will use our product details?",
+        answer:
+          "No. Google says structured data isn’t required for generative AI search and that there is no special schema.org markup to add, though it can help Google understand your page. Think of it as good housekeeping, not a switch.",
+      },
+      {
+        question: "What should we do if an engine shows the wrong price or a discontinued product?",
+        answer:
+          "Find where the engine got it. It is often an old page, a marketplace listing or an outdated feed. Fix it at that source, then ask the engine again and note what changed.",
+      },
+      {
+        question: "Can you guarantee our products will be recommended?",
+        answer:
+          "No, and nobody honestly can. What we can do is show you what engines say today, fix what’s wrong at the source, and track what changes.",
+      },
+      {
+        question: "How does an Optimizer360.ai engagement start?",
+        answer:
+          "With a baseline audit. We run your brand across the AI engines and show you the honest picture: where your products are named, where they are missed, and what the engines say instead. Engagements are scoped and quoted individually after the audit, so you know what you are buying before any commitment. Request an audit.",
+      },
+      {
+        question: "Will you change our website or product pages without our approval?",
+        answer:
+          "No. You approve all content before it is published. For structured data, we need access to your site, either through your developers or ours.",
+      },
+      {
+        question: "How long does it take to see results?",
+        answer:
+          "We won’t invent a number. Engines refresh their sources on their own schedules, and timelines vary by category and starting position. What we commit to is visibility of progress: your baseline on day one, weekly tracking from week one, and honest reporting of what has moved and what hasn’t.",
+      },
+    ],
+  },
 ];
