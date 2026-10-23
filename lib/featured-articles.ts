@@ -32,6 +32,16 @@ export const MORE_ARTICLES: FeaturedArticle[] = [
     blurb: "Managed service or software: how they differ and when each fits.",
   },
   {
+    href: "/blog/peec-ai-alternatives",
+    title: "Peec AI alternatives",
+    blurb: "Options compared on published prices, with the cost per 1,000 AI answers.",
+  },
+  {
+    href: "/blog/profound-alternatives",
+    title: "Profound alternatives",
+    blurb: "Options with public pricing, and when a managed service fits better.",
+  },
+  {
     href: "/blog/geo-tool-india",
     title: "AI SEO and GEO services in India",
     blurb: "GEO services from our Mumbai office and how an engagement runs.",
