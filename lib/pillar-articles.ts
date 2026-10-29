@@ -1321,4 +1321,122 @@ Every tool above, Profound included, is software your team runs. If you do not h
       },
     ],
   },
+  {
+    slug: "trust-led-categories-evidence-ai-can-check",
+    title: "Trust is the product: why hospitals, banks and schools need evidence AI can check",
+    metaTitle: "Trust-led brands and AI answers: evidence engines can check",
+    metaDescription:
+      "When a buyer asks AI whether a hospital, bank or school can be trusted, evidence decides the answer. Here is what Google says about trust, and a simple plan.",
+    excerpt:
+      "Some purchases are too important to guess. When buyers ask AI whether a hospital, bank or school can be trusted, the answer rests on evidence the engine can find and check. Google says trust is the most important part of quality, and gives extra weight to topics that affect health and money. The brands that win are the ones whose credentials are easy to find, easy to read and easy to verify.",
+    category: "vertical",
+    prompt: "How do trust-led brands show evidence AI can check?",
+    keyword: "trust AI answers hospitals banks schools",
+    secondaryKeywords: ["E-E-A-T", "trust-led brands", "AI answers healthcare finance education"],
+    publishedAt: "2026-10-29T00:00:00.000Z",
+    content: `“Which hospital can I trust for my mother’s surgery?”
+
+“Is this bank safe for my family’s savings?”
+
+“Which business school is worth the fees?”
+
+Nobody asks these lightly. And more and more, people ask them to an AI engine first, then to a friend, and only then to you.
+
+## Why these categories are different
+
+Google is open about this. Its guidance on helpful content says that, of the qualities it looks for, “trust is most important.” It also gives “even more weight to content that aligns with strong E-E-A-T for topics that could significantly impact the health, financial stability, or safety of people.”
+
+E-E-A-T stands for experience, expertise, authoritativeness and trustworthiness. Google also notes that E-E-A-T is not itself a specific ranking factor. It is a way of describing what its systems try to reward.
+
+One honest caveat. That is Google’s guidance for Google Search. We have not found comparable published guidance from other engines, so we will not claim the others work the same way. What we do know is that a worried buyer wants the same thing from any source: proof.
+
+## What evidence looks like
+
+Google suggests three simple questions about any page. They work well as a trust checklist.
+
+- **Who?** Google asks whether it is “self-evident to your visitors who authored your content,” and whether pages carry a byline where one might be expected. A health article signed by a named doctor says more than one signed by “admin.”
+- **How?** Google says “it’s helpful to readers to know how a piece of content was produced.” Who reviewed it, and on what basis?
+- **Why?** Google calls this “perhaps the most important question,” and the right answer is content created “primarily to help people.”
+
+It also asks whether the content offers “original information, reporting, research, or analysis.” A page that repeats what every competitor says gives an engine no reason to prefer you.
+
+## A gap to look for
+
+Some trust-led brands have real credentials: qualified specialists, proper licences, a long record. If those credentials live only in a brochure, a PDF or an image, an engine may not read them. The brand is then credible in person and quiet in the answer.
+
+## A simple plan
+
+1. List the questions a nervous buyer asks. Use their words, not your marketing words.
+2. Answer each one on its own page, in the opening lines, signed by a named person.
+3. Put credentials in text. Google’s guidance says to make sure “important content is available in textual form.”
+4. Say only what you can back. Rules on claims in health and finance vary by country, so involve your compliance team.
+5. Check that outside sources agree with you. Directories, profiles and listings should tell the same story as your site.
+6. Ask the engines the same trust questions your buyers ask, and read what they say.
+
+## How Optimizer360.ai catches this
+
+Trust-led brands are exactly who we built this for: healthcare, finance, real estate, education, jewellery and hospitality. Our [AI visibility audit](/blog/what-an-ai-visibility-audit-includes) runs your buyer questions, including the trust and comparison questions above, across the engines and records whether you are named, how you are framed and who is named instead. You get a dated baseline you can verify by asking the same questions yourself.
+
+## What nobody can promise
+
+No firm can guarantee that an engine will name you, and any firm that says otherwise is selling certainty it does not have. The engines decide. What you control is how clear, credible and checkable your evidence is. We explain how the engines weigh sources in [how AI engines choose which brands to cite](/blog/how-ai-engines-choose-brands-to-cite).
+
+## How we help
+
+We start with a recorded baseline and then work through four steps:
+
+- **Baseline.** How each engine describes you today.
+- **Diagnose.** The exact trust questions where you are missing, weak or out-positioned.
+- **Build.** Gap-targeted content, plus structured data and pages built to be cited. You approve everything before it is published, so your compliance team can review it first.
+- **Prove.** Weekly tracking, a monthly report and a quarterly review.
+
+An assigned team handles your account. If an engine is already getting facts wrong, our guide to [fixing inaccurate AI answers](/blog/when-ai-gets-your-brand-wrong) covers the next step. Or [request an audit](/request-audit) to see how AI answers the trust questions about you.
+
+## Related
+
+- [What an AI visibility audit includes](/blog/what-an-ai-visibility-audit-includes)
+- [How AI engines choose which brands to cite](/blog/how-ai-engines-choose-brands-to-cite)
+- [When AI gets your brand wrong](/blog/when-ai-gets-your-brand-wrong)
+- [Use cases by sector](/usecases)
+`,
+    sources: [
+      {
+        stat: "Google says that, of the qualities it looks for in content, trust is most important, and that it gives extra weight to topics that affect health, financial stability or safety. E-E-A-T itself is not a specific ranking factor.",
+        context: "Google Search Central, Creating helpful, reliable, people-first content (last updated 5 October 2026).",
+        url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      },
+      {
+        stat: "Google lists making sure important content is available in textual form among its search best practices, and says there are no additional requirements to appear in AI Overviews or AI Mode.",
+        context: "Google Search Central, AI features and your website (last updated 10 December 2025).",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+    ],
+    faq: [
+      {
+        question: "Is E-E-A-T a ranking factor?",
+        answer:
+          "Google says it is not a specific ranking factor. It describes a mix of factors that help its systems identify content showing experience, expertise, authoritativeness and trustworthiness, with trust the most important.",
+      },
+      {
+        question: "Do we need to name the authors of our content?",
+        answer:
+          "Google asks whether it is self-evident who wrote a page and whether it carries a byline where one might be expected. For health and money topics, a named, qualified author is a strong, simple signal.",
+      },
+      {
+        question: "How does an Optimizer360.ai engagement start?",
+        answer:
+          "With a baseline audit across the AI engines, showing where your brand is named, where it is missed and what the engines say instead. Engagements are scoped and quoted individually after the audit. Request an audit.",
+      },
+      {
+        question: "Is our information kept confidential?",
+        answer:
+          "Yes. Audit requests and findings are treated as confidential and used only to prepare and deliver your engagement. A mutual NDA is available on request before any information changes hands.",
+      },
+      {
+        question: "Will you publish anything without our approval?",
+        answer:
+          "No. You approve all content before it is published, which leaves room for your own compliance review. For structured data, we need access to your site, either through your developers or ours.",
+      },
+    ],
+  },
 ];

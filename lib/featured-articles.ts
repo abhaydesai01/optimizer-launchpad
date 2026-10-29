@@ -32,6 +32,11 @@ export const MORE_ARTICLES: FeaturedArticle[] = [
     blurb: "Managed service or software: how they differ and when each fits.",
   },
   {
+    href: "/blog/trust-led-categories-evidence-ai-can-check",
+    title: "Trust is the product",
+    blurb: "Why hospitals, banks and schools need evidence AI can check.",
+  },
+  {
     href: "/blog/peec-ai-alternatives",
     title: "Peec AI alternatives",
     blurb: "Options compared on published prices, with the cost per 1,000 AI answers.",
