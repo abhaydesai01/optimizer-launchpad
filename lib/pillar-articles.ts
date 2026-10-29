@@ -1439,4 +1439,206 @@ An assigned team handles your account. If an engine is already getting facts wro
       },
     ],
   },
+  {
+    slug: "how-to-do-seo-for-chatgpt",
+    title: "How to do SEO for ChatGPT: what actually helps",
+    metaTitle: "How to do SEO for ChatGPT: what actually helps",
+    metaDescription:
+      "How to get your business found in ChatGPT search: let OpenAI's search crawler in, be clear and consistent across the web, and check what ChatGPT says.",
+    excerpt:
+      "To be found in ChatGPT, let OpenAI's search crawler reach your site, make your pages clear and consistent with what other sources say about you, and then ask ChatGPT what it says. There is no special trick. ChatGPT mostly answers from the web pages it can find, so the basics of SEO (search engine optimisation) still carry the weight.",
+    category: "engine-guide",
+    prompt: "How do I do SEO for ChatGPT?",
+    keyword: "SEO for ChatGPT",
+    secondaryKeywords: ["ChatGPT search", "OAI-SearchBot", "get found in ChatGPT"],
+    publishedAt: "2026-10-23T00:00:00.000Z",
+    content: `## First, what "SEO for ChatGPT" means
+People use the phrase for two different things. One is getting your business named and linked in ChatGPT's answers. The other is using ChatGPT to write content that ranks on Google. This article is about the first. The two are easy to mix up: when we asked ChatGPT "How do I do SEO for ChatGPT?" on 7 October 2026, as one of 30 buyer questions we put to three AI tools, it answered about ranking ChatGPT-written content in Google. It is one test on one day, and answers vary, so spell out what you mean when you write about this.
+
+## How ChatGPT finds information
+ChatGPT can search the web when a question needs current information, and its answers may include links to the sources it used. OpenAI's help page also says that ChatGPT search sometimes partners with other search providers, and that it rewrites a question into one or more targeted queries to send to them. It adds that results and citations can be incomplete, outdated or incorrect.
+
+What this means for you: ChatGPT's answer depends on what its search can retrieve, from your site and from other pages about you. If your own page is hard to find, thin or out of date, or if other pages say something different, that is what ChatGPT has to work with.
+
+## What helps
+
+1. **Let the right crawler in.** OpenAI lists three crawlers separately. OAI-SearchBot is the one that surfaces sites in ChatGPT's search features, and OpenAI says a site that opts out will not be shown in ChatGPT search answers, though it can still appear as a navigational link. GPTBot relates to training. ChatGPT-User handles actions a person asks for in ChatGPT. You can allow OAI-SearchBot without allowing GPTBot, and OpenAI says it can take around 24 hours for a robots.txt change to take effect.
+2. **Answer the question first.** Put the plain answer in the first two sentences of the page, then explain.
+3. **Say the same thing everywhere.** Keep your name, description, address and services identical on your site, your profiles, directories and reviews. When a search turns up different versions, ChatGPT has no way to tell which is right.
+4. **Make facts easy to find.** Put prices, locations, dates and claims on clear, dated pages, and link to your sources.
+5. **Earn mentions on other sites.** Profiles, reviews, roundups and press give a search more than one place to find you. Appearing is the publishers' decision, so plan for effort, not a guarantee.
+6. **Keep pages current.** An old price or a closed branch on an indexed page can end up in an answer.
+
+You do not need a special file or special markup for this. For Google's own AI features, Google says no extra requirements or special schema are needed, and the same advice (clear, current pages that can be crawled) applies here.
+
+## What does not help
+- **Promises of guaranteed placement.** No one controls what ChatGPT names, so no one can promise an organic mention. Paid advertising, where a platform offers it, is a separate matter that this article does not cover.
+- **Blocking the search crawler and expecting to appear.** If OAI-SearchBot is blocked, ChatGPT search will not show the site.
+- **Invented statistics and fake reviews.** They are easy to check and they damage trust.
+
+## How to check where you stand
+Write down the 20 to 30 questions your customers ask. Ask each in ChatGPT, on a schedule, and save the answer with its date and the sources it cites. Note three things: whether your business is named, whether your own site is cited, and whether what it says is correct. If it is wrong, find the page it came from. That page, and not ChatGPT, is what you fix. Then ask the same question again. [What an AI visibility audit includes](/blog/what-an-ai-visibility-audit-includes) describes the full method.
+
+Related reading: [how AI engines choose which brands to cite](/blog/how-ai-engines-choose-brands-to-cite) and [when AI gets your brand wrong](/blog/when-ai-gets-your-brand-wrong). You can also [request an audit](/request-audit).
+`,
+    sources: [
+      {
+        stat: "OpenAI, \"Overview of OpenAI crawlers\" (OAI-SearchBot, GPTBot, ChatGPT-User).",
+        context: "Read 23 October 2026.",
+        url: "https://developers.openai.com/api/docs/bots",
+      },
+      {
+        stat: "OpenAI Help Center, \"Searching the web with ChatGPT\".",
+        context: "Read 23 October 2026.",
+        url: "https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt",
+      },
+      {
+        stat: "Google Search Central, \"AI features and your website\".",
+        context: "Last updated 10 December 2025.",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+      {
+        stat: "Optimizer360.ai, AI Visibility Baseline, 7 October 2026.",
+        context: "Read 23 October 2026.",
+        url: "https://optimizer360.ai/blog/generative-engine-optimization",
+      },
+    ],
+    faq: [
+      {
+        question: "How do I get my website into ChatGPT search?",
+        answer:
+          "Allow OpenAI's search crawler, OAI-SearchBot, in your robots.txt file, and publish clear pages that other sources agree with. OpenAI says a blocked site will not be shown in ChatGPT search answers, though it can still appear as a navigational link, and nothing guarantees that an allowed site will be.",
+      },
+      {
+        question: "Do I need to allow GPTBot?",
+        answer:
+          "No. OpenAI lists GPTBot, which relates to training, separately from OAI-SearchBot. You can allow one without the other.",
+      },
+      {
+        question: "Can I pay to be recommended by ChatGPT?",
+        answer:
+          "No one can sell you a guaranteed organic mention, and we would be wary of anyone who does. Paid advertising, where a platform offers it, is a separate matter from the work in this article.",
+      },
+      {
+        question: "Is SEO for ChatGPT different from SEO for Google?",
+        answer:
+          "The foundations are the same: pages that can be crawled, clear answers and sources that agree. The differences are which crawler to allow and that you check ChatGPT's answers directly.",
+      },
+      {
+        question: "Does ChatGPT always search the web?",
+        answer:
+          "No. OpenAI says ChatGPT may search automatically when a question would benefit from current information. Answers without a search come from what the model already knows.",
+      },
+      {
+        question: "How long until ChatGPT shows a change?",
+        answer:
+          "There is no honest number. OpenAI says a robots.txt change can take around 24 hours to take effect, and what ChatGPT says depends on what its search finds at the time.",
+      },
+    ],
+  },
+  {
+    slug: "what-is-llm-seo",
+    title: "What is LLM SEO? A plain guide for brands",
+    metaTitle: "What is LLM SEO? A plain guide for brands",
+    metaDescription:
+      "LLM SEO means helping AI tools built on large language models find and describe your brand correctly. What it is, how it differs from SEO, and what to do.",
+    excerpt:
+      "LLM SEO is the work of helping AI tools built on large language models (LLMs), such as ChatGPT and Gemini, find your brand and describe it correctly. It is another name for what many people call GEO (generative engine optimisation), and it builds on traditional SEO (search engine optimisation) rather than replacing it.",
+    category: "geo-explainer",
+    prompt: "What is LLM SEO and how do I optimize my brand for LLMs?",
+    keyword: "LLM SEO",
+    secondaryKeywords: ["large language model SEO", "optimise for LLMs", "GEO"],
+    publishedAt: "2026-10-23T00:00:00.000Z",
+    content: `## What an LLM is, in plain words
+A large language model is the software behind AI chat tools. It writes answers in sentences instead of showing a list of links. When someone asks it for a recommendation, it may name a few businesses, and LLM SEO is about making sure that yours is described accurately when that happens.
+
+## LLM SEO, GEO, AEO and SEO: how the names relate
+There is no official standard, and writers use the terms differently. A working guide:
+
+| Term | Stands for | What it usually means |
+|---|---|---|
+| SEO | Search engine optimisation | Ranking pages in a list of search results |
+| AEO | Answer engine optimisation | Being the direct answer to a question |
+| GEO | Generative engine optimisation | Being named inside an answer an AI writes |
+| LLM SEO | Large language model SEO | Mostly the same as GEO, named after the technology |
+
+Many people use GEO, AEO and LLM SEO as near-synonyms. When you read a source, check which meaning it intends. [AEO vs GEO vs SEO](/blog/geo-vs-seo-vs-aeo) goes through the differences.
+
+## Two ways an LLM learns about your brand
+OpenAI separates its crawlers by job, and that shows two routes.
+
+- **What the model has already learned.** Some web crawling is used to train models. OpenAI lists GPTBot as the crawler that may gather content for training, and says blocking it tells OpenAI the content should not be used for that.
+- **What it finds when it searches.** Tools such as ChatGPT can also search the web for a question and cite what they find. OpenAI lists OAI-SearchBot as the crawler that surfaces sites in ChatGPT's search features.
+
+You can influence the second route more directly, because pages that are clear, current and consistent are what a search can retrieve. The first route changes only when the model is updated, on the provider's schedule.
+
+## What to do to optimise a brand for LLMs
+1. **Do the SEO basics.** Pages that can be crawled, load quickly and answer real questions are the base. Google says there are no extra requirements to appear in its AI Overviews and AI Mode, and no special schema is needed.
+2. **Answer first and spell terms out.** Put the plain answer in the first two sentences. Spell out acronyms such as GEO and AEO the first time. In our test on 7 October 2026, ChatGPT answered about something other than this discipline on six of seven questions that used GEO or AEO. It is one test on one day.
+3. **Keep your facts the same everywhere.** Name, description, address, services and prices should match across your site and your profiles.
+4. **Cite your sources and date your pages.** Evidence with a date is easier to trust and to check.
+5. **Be mentioned on other credible sites.** Reviews, directories and press help an AI tool confirm what you do. Whether a publisher mentions you is the publisher's decision.
+6. **Measure by asking.** Ask the questions your buyers ask on the main AI tools on a schedule. Record whether you are named, whether your site is cited and whether the description is right.
+
+## What about llms.txt?
+llms.txt is a proposed file that summarises a site for language models. Google says you do not need new machine-readable files, AI text files or markup for its AI features. Treat llms.txt as optional housekeeping, and do not expect it to change what an AI tool says. [llms.txt and robots.txt for AI crawlers](/blog/llms-txt-and-robots-txt-for-ai-crawlers) covers it in more detail.
+
+## What no one can promise
+No one controls what an AI tool names. Engines change how they decide without notice. The honest commitment is to do the work and to measure the result. [Request an audit](/request-audit) to see what AI tools say about your brand today.
+`,
+    sources: [
+      {
+        stat: "OpenAI, \"Overview of OpenAI crawlers\" (OAI-SearchBot, GPTBot, ChatGPT-User).",
+        context: "Read 23 October 2026.",
+        url: "https://developers.openai.com/api/docs/bots",
+      },
+      {
+        stat: "Google Search Central, \"AI features and your website\".",
+        context: "Last updated 10 December 2025.",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+      {
+        stat: "llms.txt proposal.",
+        context: "Reference.",
+        url: "https://llmstxt.org/",
+      },
+      {
+        stat: "Optimizer360.ai, AI Visibility Baseline, 7 October 2026.",
+        context: "Read 23 October 2026.",
+        url: "https://optimizer360.ai/blog/generative-engine-optimization",
+      },
+    ],
+    faq: [
+      {
+        question: "What does LLM SEO mean?",
+        answer:
+          "LLM stands for large language model. LLM SEO is the work of helping AI tools built on those models find and describe your brand correctly. It is mostly the same as GEO.",
+      },
+      {
+        question: "Is LLM SEO different from SEO?",
+        answer:
+          "It builds on SEO. The foundations are the same, and LLM SEO adds checking what AI tools say about you and fixing the sources behind any errors.",
+      },
+      {
+        question: "Is LLM SEO the same as GEO?",
+        answer:
+          "Mostly. Many writers use the two as near-synonyms. GEO names the goal (being named in generative answers), and LLM SEO names the technology behind the tools.",
+      },
+      {
+        question: "Do I need llms.txt?",
+        answer:
+          "No. Google says no special files are needed for its AI features. llms.txt is a proposal, and it is optional.",
+      },
+      {
+        question: "Can I stop AI tools from using my content?",
+        answer:
+          "OpenAI says blocking GPTBot signals that your content should not be used for training. Blocking OAI-SearchBot means a site will not be shown in ChatGPT search answers. Decide each one on its own.",
+      },
+      {
+        question: "Can anyone guarantee that an LLM will name my brand?",
+        answer:
+          "No. The tools decide what to name.",
+      },
+    ],
+  },
 ];

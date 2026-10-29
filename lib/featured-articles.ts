@@ -37,6 +37,16 @@ export const MORE_ARTICLES: FeaturedArticle[] = [
     blurb: "Why hospitals, banks and schools need evidence AI can check.",
   },
   {
+    href: "/blog/how-to-do-seo-for-chatgpt",
+    title: "How to do SEO for ChatGPT",
+    blurb: "What actually helps you get found in ChatGPT search, and what does not.",
+  },
+  {
+    href: "/blog/what-is-llm-seo",
+    title: "What is LLM SEO?",
+    blurb: "A plain guide to optimising a brand for large language models.",
+  },
+  {
     href: "/blog/peec-ai-alternatives",
     title: "Peec AI alternatives",
     blurb: "Options compared on published prices, with the cost per 1,000 AI answers.",
