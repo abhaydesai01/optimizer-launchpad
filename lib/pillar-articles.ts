@@ -1641,4 +1641,117 @@ No one controls what an AI tool names. Engines change how they decide without no
       },
     ],
   },
+  {
+    slug: "questions-to-ask-before-hiring-a-geo-firm",
+    title: "Eight questions to ask before you hire a GEO firm",
+    metaTitle: "Eight questions to ask before hiring a GEO firm",
+    metaDescription:
+      "GEO is new, and it is hard to tell a serious partner from a glossy pitch. Eight questions to ask any firm, including us, and what good answers sound like.",
+    excerpt:
+      "Generative Engine Optimisation is young, and the market is full of confident promises. These eight questions help you tell a serious partner from a glossy pitch. We have answered each one for ourselves, so you can hold us to the same standard.",
+    category: "comparison",
+    prompt: "What questions should I ask before hiring a GEO firm?",
+    keyword: "hire a GEO firm",
+    secondaryKeywords: ["GEO agency questions", "choosing a GEO partner", "GEO firm"],
+    publishedAt: "2026-11-06T00:00:00.000Z",
+    content: `Most brands buying GEO are doing it for the first time. There is no industry rulebook to lean on, no long track record to check, and a lot of impressive-sounding language.
+
+So here is a shortcut. Eight questions to put to any firm you are considering. For each, we have written what a good answer sounds like, and how we would answer it ourselves. Please ask us all eight. We would rather be tested than trusted blindly.
+
+## 1. Can you guarantee we will be cited?
+**What a good answer sounds like.** No. Engines decide what they cite, and even Google says that indexing and serving are not guaranteed. A firm that guarantees citations is promising something it does not control.
+
+**How we answer.** No. We will never promise a citation. What we promise is the work that earns them, and an honest account of what moved.
+
+## 2. Can I verify every number myself?
+**What a good answer sounds like.** Yes. You should be able to open an engine, ask the same question and see the same kind of answer. If a number cannot be reproduced, treat it with caution.
+
+**How we answer.** Every data point we report is something you can reproduce yourself. We do not publish findings you cannot check.
+
+## 3. Which engines do you track, and how often?
+**What a good answer sounds like.** A named list of engines, a fixed set of questions, and a regular, dated schedule. Answers can differ from one ask to the next, so a single snapshot is not enough.
+
+**How we answer.** We track across the major AI engines and measure weekly, with the same questions each time so movement can be judged against a pattern. [See the engines we cover](/engines).
+
+## 4. What do you do after the report?
+**What a good answer sounds like.** Finding the problem is the easy half. A good firm explains how it fixes things at the source: the content, the structured data, the pages and the entity signals the engines read.
+
+**How we answer.** Our work runs in four steps: baseline, diagnose, build, prove. Tracking shows the problem, and we are built to fix it too. [See how that compares to tracking-only tools](/compare).
+
+## 5. Who approves what gets published, and what access do you need?
+**What a good answer sounds like.** You do. A serious firm explains exactly what it will change, asks permission first and tells you what access it needs.
+
+**How we answer.** You approve everything before it goes live. For structured data we need access to your site, either through your developers or ours.
+
+## 6. What do I know about cost before I commit?
+**What a good answer sounds like.** Scope first, price second. A firm that quotes before it has looked at your brand is guessing.
+
+**How we answer.** We start with a baseline audit, and engagements are scoped and quoted individually after it, so you know what you are buying before any commitment. [Request an audit](/request-audit).
+
+## 7. Whose platform is it?
+**What a good answer sounds like.** You should know what the firm built, what it resells and who can explain how each number is produced.
+
+**How we answer.** We run on our own in-house GEO platform, not a white-labelled one, so we can explain every figure in it.
+
+## 8. Who works on my account, and what will you tell me when something is not working?
+**What a good answer sounds like.** A named team, a regular reporting rhythm, and a firm willing to say what has not moved.
+
+**How we answer.** You get an assigned team and reporting every week, month and quarter. When something has not moved, the report says so.
+
+## Four red flags
+- A guaranteed citation or ranking in AI answers. See question one.
+- One screenshot offered as proof. A single answer proves very little.
+- Precise figures with no method behind them. A decimal point needs something to stand on.
+- Case studies you cannot trace. Ask who the client was and whether you can verify the result.
+
+## Before you ask anyone anything
+Do one thing first. Ask three or four AI engines the questions your buyers ask, and write down what they say. It takes an afternoon, and it makes every conversation with a firm sharper. Our guide to [what an AI visibility audit includes](/blog/what-an-ai-visibility-audit-includes) shows what a fuller version looks like, and [how AI engines choose which brands to cite](/blog/how-ai-engines-choose-brands-to-cite) explains why the answers differ.
+
+If you would like to put all eight questions to us, [request an audit](/request-audit). We will show you where your brand stands today, and you can judge the rest for yourself.
+`,
+    sources: [
+      {
+        stat: "Google Search Central, \"AI features and your website\" (indexing and serving are not guaranteed).",
+        context: "Read 6 November 2026.",
+        url: "https://developers.google.com/search/docs/appearance/ai-features",
+      },
+      {
+        stat: "OpenAI, \"Text generation\" guide (model output is described as non-deterministic).",
+        context: "Read 6 November 2026.",
+        url: "https://developers.openai.com/api/docs/guides/text",
+      },
+      {
+        stat: "Optimizer360.ai, home page (metrics, weekly tracking, reproducible data points).",
+        context: "Read 6 November 2026.",
+        url: "https://optimizer360.ai",
+      },
+    ],
+    faq: [
+      {
+        question: "How do I know whether I need GEO at all?",
+        answer:
+          "Ask a few engines your buyers’ questions. If you are named, described correctly and consistently across them, you may need monitoring more than a project. If you are missing or misdescribed, you have your answer.",
+      },
+      {
+        question: "Does Optimizer360.ai replace our SEO agency?",
+        answer:
+          "No. We work alongside your existing SEO or content team. Search rankings and AI answers are related but separate, and the work complements rather than competes.",
+      },
+      {
+        question: "Is our information kept confidential?",
+        answer:
+          "Yes. Audit requests and findings are treated as confidential and used only to prepare and deliver your engagement. A mutual NDA is available on request before any information changes hands.",
+      },
+      {
+        question: "How long before we see results?",
+        answer:
+          "We will not invent a number. Engines refresh their sources on their own schedules, and timelines vary by category and starting position. You get a baseline on day one and weekly tracking from week one, so progress is visible as it happens.",
+      },
+      {
+        question: "Who is Optimizer360.ai for?",
+        answer:
+          "Brands where trust decides the sale, such as healthcare, finance, real estate, education, jewellery and hospitality, along with product brands. If buyers research you before they contact you, it is probably relevant.",
+      },
+    ],
+  },
 ];

@@ -47,6 +47,11 @@ export const MORE_ARTICLES: FeaturedArticle[] = [
     blurb: "A plain guide to optimising a brand for large language models.",
   },
   {
+    href: "/blog/questions-to-ask-before-hiring-a-geo-firm",
+    title: "Eight questions to ask before hiring a GEO firm",
+    blurb: "A buyer’s guide: what good answers sound like, and four red flags.",
+  },
+  {
     href: "/blog/peec-ai-alternatives",
     title: "Peec AI alternatives",
     blurb: "Options compared on published prices, with the cost per 1,000 AI answers.",
