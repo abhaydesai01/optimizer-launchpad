@@ -2,22 +2,12 @@ import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { CardGlow } from "@/components/marketing/CardGlow";
 import { PromptMarquee } from "@/components/marketing/PromptMarquee";
-import { PlatformShowcase } from "@/components/marketing/PlatformShowcase";
-import { Hero } from "@/components/marketing/sections/Hero";
-import { TheShift } from "@/components/marketing/sections/TheShift";
-import { InvisibleCost } from "@/components/marketing/sections/InvisibleCost";
-import { WhatIsGeo } from "@/components/marketing/sections/WhatIsGeo";
-import { Explainers } from "@/components/marketing/sections/Explainers";
-import { Process } from "@/components/marketing/sections/Process";
-import { Deliverables } from "@/components/marketing/sections/Deliverables";
-import { RadicalHonesty } from "@/components/marketing/sections/RadicalHonesty";
-import { WhoItsFor } from "@/components/marketing/sections/WhoItsFor";
+import { HeroScroll } from "@/components/marketing/scroll/HeroScroll";
+import { MetricsScroll } from "@/components/marketing/scroll/MetricsScroll";
+import { StagesScroll } from "@/components/marketing/scroll/StagesScroll";
+import { EnginesOrbit } from "@/components/marketing/scroll/EnginesOrbit";
+import { ScrollProgress } from "@/components/marketing/scroll/ScrollProgress";
 import { Faq } from "@/components/marketing/sections/Faq";
-import { MetricsStrip } from "@/components/marketing/sections/MetricsStrip";
-import { FeatureWorkflow } from "@/components/marketing/sections/FeatureWorkflow";
-import { EngineCoverage } from "@/components/marketing/sections/EngineCoverage";
-import { Integrations } from "@/components/marketing/sections/Integrations";
-import { EarlyMover } from "@/components/marketing/sections/EarlyMover";
 import { FinalCta } from "@/components/marketing/sections/FinalCta";
 import { JsonLd } from "@/components/marketing/JsonLd";
 import { buildFAQSchema } from "@/lib/schema-library";
@@ -28,25 +18,15 @@ const faqSchema = buildFAQSchema([...MARKETING_FAQ]);
 export default function Page() {
   return (
     <div className="theme-ink min-h-screen">
+      <ScrollProgress />
       <MarketingNav />
       <CardGlow />
       <main>
-        <Hero />
+        <HeroScroll />
         <PromptMarquee />
-        <MetricsStrip />
-        <TheShift />
-        <InvisibleCost />
-        <WhatIsGeo />
-        <Explainers />
-        <FeatureWorkflow />
-        <Process />
-        <Deliverables />
-        <PlatformShowcase />
-        <EngineCoverage />
-        <Integrations />
-        <RadicalHonesty />
-        <WhoItsFor />
-        <EarlyMover />
+        <StagesScroll />
+        <EnginesOrbit />
+        <MetricsScroll />
         <Faq />
         <FinalCta />
         <JsonLd id="homepage-faq" data={faqSchema} />

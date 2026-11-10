@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { AnswerGlyph } from "@/components/marketing/AnswerMark";
 import { MARKETING_NAV, MARKETING_NAV_MOBILE_EXTRAS } from "@/lib/marketing-routes";
-import { DASHBOARD_LOGIN_URL } from "@/lib/site";
+import { CAL_LINK, DASHBOARD_LOGIN_URL } from "@/lib/site";
 
 export function MarketingNav() {
   const pathname = usePathname() ?? "";
@@ -33,13 +33,15 @@ export function MarketingNav() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <Link
-        href="/request-audit"
+      <a
+        href={CAL_LINK}
+        target="_blank"
+        rel="noreferrer"
         className="block bg-[var(--mint-dim)] py-2 text-center text-xs font-medium tracking-wide text-[var(--mint)] transition-colors hover:bg-[rgba(60,232,180,0.16)]"
       >
-        The founding-client window is open — your category&apos;s AI answer is
-        still up for grabs. Request an audit →
-      </Link>
+        The founding-client window is open. Your category&apos;s AI answer is
+        still up for grabs. Book a demo →
+      </a>
       <div className="mk-wrap flex h-[72px] items-center justify-between">
         <Link
           href="/"
@@ -69,8 +71,19 @@ export function MarketingNav() {
               {link.label}
             </Link>
           ))}
-          <a href={DASHBOARD_LOGIN_URL} className="mk-btn mk-btn-primary !px-5 !py-2.5">
+          <a
+            href={DASHBOARD_LOGIN_URL}
+            className="text-sm text-[var(--paper-soft)] transition-colors hover:text-[var(--paper)]"
+          >
             Login
+          </a>
+          <a
+            href={CAL_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="mk-btn mk-btn-primary !h-9 !px-4"
+          >
+            Book a demo
           </a>
         </nav>
 
@@ -79,7 +92,7 @@ export function MarketingNav() {
           aria-label={open ? "Close navigation" : "Open navigation"}
           aria-expanded={open}
           onClick={() => setOpen((prev) => !prev)}
-          className="rounded-sm border border-[var(--ink-line-strong)] p-2 text-[var(--paper)] lg:hidden"
+          className="rounded-lg border border-[var(--ink-line-strong)] p-2 text-[var(--paper)] lg:hidden"
         >
           {open ? <X size={18} /> : <Menu size={18} />}
         </button>
@@ -120,9 +133,18 @@ export function MarketingNav() {
               </Link>
             ))}
             <a
-              href={DASHBOARD_LOGIN_URL}
+              href={CAL_LINK}
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setOpen(false)}
               className="mk-btn mk-btn-primary mt-3"
+            >
+              Book a demo
+            </a>
+            <a
+              href={DASHBOARD_LOGIN_URL}
+              onClick={() => setOpen(false)}
+              className="mk-btn mk-btn-ghost mt-2"
             >
               Login
             </a>
