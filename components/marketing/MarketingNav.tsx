@@ -7,8 +7,10 @@ import { Menu, X } from "lucide-react";
 import { AnswerGlyph } from "@/components/marketing/AnswerMark";
 import { MARKETING_NAV, MARKETING_NAV_MOBILE_EXTRAS } from "@/lib/marketing-routes";
 import { CAL_LINK, DASHBOARD_LOGIN_URL } from "@/lib/site";
+import { ThemeToggle } from "@/components/marketing/scroll/ThemeToggle";
 
-export function MarketingNav() {
+/** `themeToggle` shows the light/dark switch (only pages on the editorial theme support it). */
+export function MarketingNav({ themeToggle = false }: { themeToggle?: boolean }) {
   const pathname = usePathname() ?? "";
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -29,19 +31,16 @@ export function MarketingNav() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled || open
-          ? "border-b border-[var(--ink-line)] bg-[rgba(6,10,20,0.88)] backdrop-blur-md"
+          ? "border-b border-[var(--ink-line)] bg-[color-mix(in_srgb,var(--ink-950)_88%,transparent)] backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <a
-        href={CAL_LINK}
-        target="_blank"
-        rel="noreferrer"
-        className="block bg-[var(--mint-dim)] py-2 text-center text-xs font-medium tracking-wide text-[var(--mint)] transition-colors hover:bg-[rgba(60,232,180,0.16)]"
+      <Link
+        href="/request-audit"
+        className="block text-balance bg-[var(--mint-dim)] px-4 py-2 text-center text-xs font-medium tracking-wide text-[var(--mint)] transition-colors hover:bg-[rgba(60,232,180,0.16)]"
       >
-        The founding-client window is open. Your category&apos;s AI answer is
-        still up for grabs. Book a demo →
-      </a>
+        Your category&apos;s AI answer is still up for grabs. Request an audit →
+      </Link>
       <div className="mk-wrap flex h-[72px] items-center justify-between">
         <Link
           href="/"
@@ -85,8 +84,11 @@ export function MarketingNav() {
           >
             Book a demo
           </a>
+          {themeToggle ? <ThemeToggle /> : null}
         </nav>
 
+        <div className="flex items-center gap-2 lg:hidden">
+        {themeToggle ? <ThemeToggle /> : null}
         <button
           type="button"
           aria-label={open ? "Close navigation" : "Open navigation"}
@@ -96,11 +98,12 @@ export function MarketingNav() {
         >
           {open ? <X size={18} /> : <Menu size={18} />}
         </button>
+        </div>
       </div>
 
       {open ? (
         <nav
-          className="border-t border-[var(--ink-line)] bg-[rgba(6,10,20,0.97)] lg:hidden"
+          className="border-t border-[var(--ink-line)] bg-[color-mix(in_srgb,var(--ink-950)_97%,transparent)] lg:hidden"
           aria-label="Mobile navigation"
         >
           <div className="mk-wrap flex flex-col gap-1 py-4">

@@ -81,7 +81,7 @@ function Bar({ p, index, height }: { p: MotionValue<number>; index: number; heig
   const last = index === BAR_HEIGHTS.length - 1;
   return (
     <motion.span
-      className={`w-full rounded-t-sm ${last ? "bg-[var(--mint)]" : "bg-[rgba(60,232,180,0.28)]"}`}
+      className={`w-full rounded-t-sm ${last ? "bg-[var(--mint)]" : "bg-[var(--mint)] opacity-25"}`}
       style={{ height: h }}
     />
   );
@@ -120,7 +120,7 @@ function Share({ p }: { p: MotionValue<number> }) {
   );
 }
 
-const RANKS = ["Competitor A", "Competitor B", "Competitor C", "Your brand"];
+const RANKS = ["Halden Heart Institute", "St. Arlo Cardiac", "Rowan Medical", "Your brand"];
 
 function Rank({ p }: { p: MotionValue<number> }) {
   // the brand climbs from 4th to 1st; the others shift down one slot
@@ -192,7 +192,7 @@ function MetricCard({ metric, index, p }: { metric: (typeof METRICS)[number]; in
         {String(index + 1).padStart(2, "0")}
       </p>
       <h3 className="font-serif-display mt-2 text-2xl text-[var(--paper)]">{metric.label}</h3>
-      <div className="my-8">
+      <div className="my-[min(2rem,3vh)]">
         <MetricVisual visual={metric.visual} p={p} />
       </div>
       <p className="mt-auto text-[14px] leading-relaxed text-[var(--paper-muted)]">{metric.detail}</p>
@@ -228,14 +228,18 @@ export function MetricsScroll() {
   const desktop = useIsDesktop();
   const ref = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const laneRef = useRef<HTMLDivElement>(null);
   const [distance, setDistance] = useState(0);
 
   useIsoLayoutEffect(() => {
     if (!desktop) return;
     const measure = () => {
       const track = trackRef.current;
-      if (!track) return;
-      setDistance(Math.max(0, track.scrollWidth - window.innerWidth + 80));
+      const lane = laneRef.current;
+      if (!track || !lane) return;
+      // slide until the last card's right edge lines up with the content column's right edge
+      const laneRect = lane.getBoundingClientRect();
+      setDistance(Math.max(0, track.scrollWidth - laneRect.width));
     };
     measure();
     window.addEventListener("resize", measure);
@@ -247,12 +251,11 @@ export function MetricsScroll() {
 
   const heading = (
     <div className="mk-wrap">
-      <p className="mk-kicker">What we measure</p>
-      <h2 id="metrics-heading" className="mk-h2 mt-4 max-w-2xl text-[var(--paper)]">
-        Five numbers that tell you if AI is choosing you.
+      <h2 id="metrics-heading" className="font-serif-display text-[clamp(1.8rem,2.6vw,2.9rem)] leading-[1.06] text-[var(--paper)]">
+        Five numbers that say whether AI is choosing you.
       </h2>
       <p className="mt-4 max-w-xl text-[14px] text-[var(--paper-muted)]">
-        Measured weekly and verifiable in any engine. Figures shown are illustrative.
+        Measured weekly. You can check every one in the engines. Figures shown here are examples.
       </p>
     </div>
   );
@@ -272,13 +275,15 @@ export function MetricsScroll() {
 
   return (
     <section ref={ref} className="relative h-[320vh] mk-hairline bg-[var(--ink-900)]" aria-labelledby="metrics-heading">
-      <div className="sticky top-0 flex h-screen flex-col justify-center gap-12 overflow-clip pt-16">
+      <div className="sticky top-0 flex h-screen flex-col justify-center gap-[5vh] overflow-clip pb-6 pt-[108px]">
         {heading}
-        <motion.div ref={trackRef} style={{ x }} className="flex w-max gap-6 pl-[max(1.25rem,calc((100vw-1160px)/2))] pr-10">
-          {METRICS.map((metric, index) => (
-            <PinnedCard key={metric.label} metric={metric} index={index} progress={scrollYProgress} />
-          ))}
-        </motion.div>
+        <div ref={laneRef} className="mk-wrap">
+          <motion.div ref={trackRef} style={{ x }} className="flex w-max gap-6">
+            {METRICS.map((metric, index) => (
+              <PinnedCard key={metric.label} metric={metric} index={index} progress={scrollYProgress} />
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );

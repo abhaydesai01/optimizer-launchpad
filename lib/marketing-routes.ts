@@ -12,7 +12,6 @@ export const MARKETING_NAV = [
 /** Extra links shown in mobile nav only (keeps desktop nav focused). */
 export const MARKETING_NAV_MOBILE_EXTRAS = [
   { label: "What is AI GEO?", href: "/ai-seo" },
-  { label: "For agencies", href: "/agency" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -26,8 +25,7 @@ export const MARKETING_FOOTER = {
     { label: "FAQ", href: "/faq" },
     { label: "How we compare", href: "/compare" },
     { label: "What is AI GEO?", href: "/ai-seo" },
-    { label: "For agencies", href: "/agency" },
-  ],
+    ],
   company: [
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },

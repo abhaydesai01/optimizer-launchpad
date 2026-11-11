@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
+  AnimatePresence,
   motion,
   useMotionValueEvent,
   useScroll,
@@ -14,34 +15,7 @@ import { EngineParticles } from "@/components/marketing/scroll/EngineParticles";
 import { ENGINES, loadGlyph, type EngineInfo } from "@/components/marketing/scroll/engineMarks";
 
 const N = ENGINES.length;
-const GLYPHS = "!<>-_\\/[]{}=+*^?#01";
-
-/** Scrambles from random glyphs into `text` whenever it changes. */
-function useScramble(text: string, duration = 650) {
-  const [out, setOut] = useState(text);
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setOut(text);
-      return;
-    }
-    const start = performance.now();
-    let raf = 0;
-    const tick = (now: number) => {
-      const p = Math.min(1, (now - start) / duration);
-      const settled = Math.floor(p * text.length);
-      setOut(
-        text
-          .split("")
-          .map((ch, i) => (i < settled || ch === " " ? ch : GLYPHS[(Math.random() * GLYPHS.length) | 0]))
-          .join(""),
-      );
-      if (p < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [text, duration]);
-  return out;
-}
+const EASE = [0.22, 1, 0.36, 1] as const;
 
 /** Each engine holds for the first part of its slot, then morphs into the next. */
 function holdThenMorph(e: number) {
@@ -127,7 +101,7 @@ function OrbitCard({ engine, index, position }: { engine: EngineInfo; index: num
       </motion.div>
       <motion.span
         style={{ opacity: labelOpacity }}
-        className="mt-2 whitespace-nowrap text-[11px] uppercase tracking-[0.14em] text-[var(--paper-soft)]"
+        className="mt-2 whitespace-nowrap text-[13px] font-medium text-[var(--paper-soft)]"
       >
         {engine.name}
       </motion.span>
@@ -156,39 +130,49 @@ export function EnginesOrbit() {
   const [active, setActive] = useState(0);
   useMotionValueEvent(position, "change", (p) => setActive(Math.min(N - 1, Math.round(p))));
   const engine = ENGINES[active];
-  const name = useScramble(engine.name);
 
   return (
     <section
       ref={ref}
       id="engines"
-      className="relative mk-hairline bg-[var(--ink-950)]"
+      className="theme-ink relative bg-[var(--ink-950)] text-[var(--paper)]"
       style={{ height: `${N * 90 + 100}vh` }}
       aria-labelledby="engines-heading"
     >
-      <div className="sticky top-0 flex h-screen items-center overflow-clip pt-16">
+      <div className="sticky top-0 flex h-screen items-center overflow-clip pb-6 pt-[108px]">
         <div className="mk-wrap grid items-center gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
           <div className="order-2 lg:order-1">
-            <p className="mk-kicker">Engine coverage</p>
-            <h2 id="engines-heading" className="mk-h2 mt-4 text-[var(--paper)]">
-              Every major answer engine. One method.
+            <h2 id="engines-heading" className="font-serif-display text-[clamp(1.8rem,2.6vw,2.9rem)] leading-[1.06] text-[var(--paper)]">
+              Every engine your buyers ask. Tracked the same way, every week.
             </h2>
 
-            <div className="mt-8 min-h-[250px]" aria-live="polite">
+            <div className="mt-6 min-h-[170px] sm:mt-8 sm:min-h-[250px]" aria-live="polite">
               <p className="flex items-center gap-3 text-[12px] tabular-nums text-[var(--paper-muted)]">
                 {String(active + 1).padStart(2, "0")} / {String(N).padStart(2, "0")}
                 <span className="h-px w-8 bg-[var(--ink-line-strong)]" aria-hidden="true" />
                 {engine.maker}
               </p>
-              <p className="font-serif-display mt-3 text-4xl text-[var(--mint)] sm:text-5xl" aria-label={engine.name}>
-                {name}
+              {/* the engine's name rises out of its line as the orbit brings it to the front */}
+              <p className="font-serif-display relative mt-3 h-[1.15em] overflow-hidden text-4xl leading-[1.15] text-[var(--mint)] sm:text-5xl">
+                <AnimatePresence initial={false} mode="popLayout">
+                  <motion.span
+                    key={engine.id}
+                    className="block"
+                    initial={{ y: "100%", opacity: 0 }}
+                    animate={{ y: "0%", opacity: 1 }}
+                    exit={{ y: "-100%", opacity: 0 }}
+                    transition={{ duration: 0.45, ease: EASE }}
+                  >
+                    {engine.name}
+                  </motion.span>
+                </AnimatePresence>
               </p>
               <motion.p
                 key={engine.id}
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="mt-4 max-w-md text-[15px] leading-relaxed text-[var(--paper-soft)]"
+                className="mt-4 max-w-md text-[16px] leading-relaxed text-[var(--paper-soft)]"
               >
                 {engine.how}
               </motion.p>
@@ -197,10 +181,10 @@ export function EnginesOrbit() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4, delay: 0.1 }}
-                className="mt-5 grid max-w-md grid-cols-2 gap-x-4 gap-y-2"
+                className="mt-5 hidden max-w-md grid-cols-2 gap-x-4 gap-y-2 sm:grid"
               >
                 {engine.tracks.map((item) => (
-                  <li key={item} className="flex gap-2 text-[13px] text-[var(--paper-muted)]">
+                  <li key={item} className="flex gap-2 text-[14px] text-[var(--paper-soft)]">
                     <span className="mt-2 h-px w-3 shrink-0 bg-[var(--mint)]" aria-hidden="true" />
                     {item}
                   </li>
@@ -213,7 +197,7 @@ export function EnginesOrbit() {
                 <div key={item.id}>
                   <StepBar position={position} index={index} />
                   <span
-                    className={`mt-2 block truncate text-[10px] uppercase tracking-[0.12em] ${
+                    className={`mt-2 block text-[12px] leading-tight ${
                       index === active ? "text-[var(--paper)]" : "text-[var(--paper-muted)]"
                     }`}
                   >

@@ -12,11 +12,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[var(--mint)] text-[var(--ink-950)] shadow-[inset_0_1px_0_rgba(255,255,255,0.35),0_1px_2px_rgba(0,0,0,0.4)] hover:bg-[var(--mint-strong)]",
+          "bg-[var(--btn-bg,var(--mint))] text-[var(--btn-fg,var(--ink-950))] shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_1px_2px_rgba(0,0,0,0.25)] hover:bg-[var(--btn-hover,var(--mint-strong))]",
         outline:
-          "border border-[var(--ink-line-strong)] bg-white/[0.03] text-[var(--paper)] shadow-sm hover:border-[rgba(148,163,196,0.4)] hover:bg-white/[0.07]",
+          "border border-[var(--ink-line-strong)] bg-transparent text-[var(--paper)] hover:border-[var(--paper-muted)] hover:bg-[var(--ink-800)]",
         secondary: "bg-[var(--ink-800)] text-[var(--paper)] hover:bg-[#18233d]",
-        ghost: "text-[var(--paper-soft)] hover:bg-white/[0.06] hover:text-[var(--paper)]",
+        ghost: "text-[var(--paper-soft)] hover:bg-[var(--ink-800)] hover:text-[var(--paper)]",
         link: "text-[var(--mint)] underline-offset-4 hover:underline",
       },
       size: {

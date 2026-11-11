@@ -1,110 +1,117 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, CalendarDays } from "lucide-react";
-import { BeamsBackground } from "@/components/marketing/scroll/BeamsBackground";
-import { HeroAnswerLoop } from "@/components/marketing/scroll/HeroAnswerLoop";
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { HeroDemo } from "@/components/marketing/scroll/HeroAnswerLoop";
 import { Button } from "@/components/ui/button";
 import { CAL_LINK } from "@/lib/site";
 
-const WORDS = ["recommends.", "cites.", "trusts.", "names first."];
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-/** Headline word that cycles in place; every word sits in one grid cell so the line never jumps. */
-function CyclingWord() {
-  const [index, setIndex] = useState(0);
-  const reduced = useReducedMotion();
+// the three facts under the buttons: true for every engagement, nothing invented
+const FACTS = [
+  { value: "5", label: "AI engines tracked" },
+  { value: "Weekly", label: "answer checks" },
+  { value: "Mumbai", label: "India" },
+];
 
-  useEffect(() => {
-    if (reduced) return;
-    const id = setInterval(() => setIndex((i) => (i + 1) % WORDS.length), 2600);
-    return () => clearInterval(id);
-  }, [reduced]);
-
-  return (
-    <span className="relative inline-grid align-bottom">
-      {WORDS.map((word) => (
-        <span key={word} className="invisible col-start-1 row-start-1" aria-hidden="true">
-          {word}
-        </span>
-      ))}
-      <AnimatePresence mode="popLayout" initial={false}>
-        <motion.span
-          key={WORDS[index]}
-          className="col-start-1 row-start-1 text-[var(--mint)]"
-          initial={{ y: "60%", opacity: 0, filter: "blur(6px)" }}
-          animate={{ y: "0%", opacity: 1, filter: "blur(0px)" }}
-          exit={{ y: "-60%", opacity: 0, filter: "blur(6px)" }}
-          transition={{ duration: 0.55, ease: EASE }}
-        >
-          {WORDS[index]}
-        </motion.span>
-      </AnimatePresence>
-    </span>
-  );
-}
-
-const rise = (delay: number) => ({
-  initial: { opacity: 0, y: 18 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.7, delay, ease: EASE },
-});
-
+/**
+ * The first screen: the claim across the top, then the copy and the two actions beside the product
+ * window that proves it. From 1024px wide everything ends inside one screen.
+ */
 export function HeroScroll() {
+  const reduced = useReducedMotion();
+  // entrance: the two lines rise out of their masks, then the rest settles; nothing waits to be read
+  const rise = (delay: number) =>
+    reduced
+      ? {}
+      : {
+          initial: { opacity: 0, y: 14 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.7, delay, ease: EASE },
+        };
+  const line = (i: number) =>
+    reduced
+      ? {}
+      : {
+          initial: { y: "105%" },
+          animate: { y: "0%" },
+          transition: { duration: 0.8, delay: 0.05 + i * 0.09, ease: EASE },
+        };
+
   return (
-    <section className="relative flex min-h-screen items-center overflow-clip" aria-labelledby="hero-heading">
-      <BeamsBackground />
-      <div
-        className="pointer-events-none absolute inset-0"
-        aria-hidden="true"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(6,10,20,0.35) 0%, rgba(6,10,20,0.15) 40%, var(--ink-950) 100%)",
-        }}
-      />
+    <section
+      className="relative flex flex-col pb-12 pt-32 sm:pt-36 lg:min-h-[100svh] lg:pb-10 lg:pt-[8.5rem]"
+      aria-labelledby="hero-heading"
+    >
+      <div className="mk-wrap flex flex-1 flex-col">
+        <h1
+          id="hero-heading"
+          className="font-serif-display text-[clamp(2.6rem,5.6vw,5.4rem)] leading-[0.98] tracking-[-0.01em] text-[var(--paper)]"
+        >
+          <span className="block overflow-hidden pb-[0.06em]">
+            <motion.span className="block" {...line(0)}>
+              Ask AI who&apos;s best in your category.
+            </motion.span>
+          </span>
+          <span className="block overflow-hidden pb-[0.06em]">
+            <motion.span className="block" {...line(1)}>
+              If it isn&apos;t <span className="mk-mark">you</span>, we fix that.
+            </motion.span>
+          </span>
+        </h1>
 
-      <div className="mk-wrap relative grid items-center gap-12 pb-20 pt-40 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pb-16 lg:pt-32">
-        <div>
-          <motion.p className="mk-pill" {...rise(0)}>
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--mint)]" aria-hidden="true" />
-            Generative Engine Optimisation
-          </motion.p>
+        <div className="mt-10 grid flex-1 grid-cols-[minmax(0,1fr)] gap-10 lg:mt-12 lg:grid-cols-12 lg:gap-8">
+          <div className="flex flex-col lg:col-span-4">
+            <motion.p className="max-w-md text-[17px] leading-relaxed text-[var(--paper-soft)]" {...rise(0.3)}>
+              Buyers now ask ChatGPT, Gemini and Perplexity before they ask anyone else. Each answer names
+              two or three brands. We track what the engines say about you and do the work that gets you
+              named.
+            </motion.p>
+            <motion.div className="mt-8 flex flex-wrap items-center gap-3" {...rise(0.38)}>
+              <Button asChild size="lg">
+                <a href={CAL_LINK} target="_blank" rel="noreferrer">
+                  Book a demo
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href="/request-audit">
+                  Request an audit
+                  <ArrowRight aria-hidden="true" />
+                </Link>
+              </Button>
+            </motion.div>
 
-          <motion.h1 id="hero-heading" className="mk-h1 mt-6 text-[var(--paper)]" {...rise(0.08)}>
-            Be the brand AI <CyclingWord />
-          </motion.h1>
+            <motion.dl
+              className="mt-10 grid grid-cols-[repeat(3,minmax(0,1fr))] gap-4 border-t border-[var(--ink-line)] pt-5 lg:mt-auto"
+              {...rise(0.46)}
+            >
+              {FACTS.map((fact) => (
+                <div key={fact.label}>
+                  <dt className="sr-only">{fact.label}</dt>
+                  <dd className="font-serif-display text-[1.4rem] leading-none text-[var(--paper)] sm:text-[1.7rem]">{fact.value}</dd>
+                  <dd aria-hidden="true" className="mt-2 text-[13px] text-[var(--paper-muted)]">
+                    {fact.label}
+                  </dd>
+                </div>
+              ))}
+            </motion.dl>
+          </div>
 
-          <motion.p className="mk-body mt-7 max-w-xl" {...rise(0.16)}>
-            Your buyers now ask ChatGPT, Perplexity and Google AI who to trust,
-            and each answer names only a few brands. Optimizer360.ai makes sure
-            one of them is you.
-          </motion.p>
-
-          <motion.div className="mt-10 flex flex-wrap items-center gap-3" {...rise(0.24)}>
-            <Button asChild size="lg">
-              <a href={CAL_LINK} target="_blank" rel="noreferrer">
-                <CalendarDays aria-hidden="true" />
-                Book a demo
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/request-audit">
-                Get your AI visibility audit
-                <ArrowRight aria-hidden="true" />
-              </Link>
-            </Button>
+          <motion.div
+            className="min-h-0 min-w-0 lg:col-span-8"
+            {...(reduced
+              ? {}
+              : {
+                  initial: { opacity: 0, y: 20, scale: 0.985 },
+                  animate: { opacity: 1, y: 0, scale: 1 },
+                  transition: { duration: 0.9, delay: 0.25, ease: EASE },
+                })}
+          >
+            <HeroDemo />
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: EASE }}
-        >
-          <HeroAnswerLoop />
-        </motion.div>
       </div>
     </section>
   );

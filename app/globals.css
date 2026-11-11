@@ -298,7 +298,9 @@ a {
 /* ───────────────────────────────────────────────
    Optimizer360 — editorial dark theme (marketing)
    ─────────────────────────────────────────────── */
-:root {
+/* .theme-ink repeats the tokens so a dark band can sit inside .theme-paper */
+:root,
+.theme-ink {
   --ink-950: #060a14;
   --ink-900: #0a1020;
   --ink-850: #0d1526;
@@ -374,7 +376,7 @@ a {
 }
 
 .mk-wrap {
-  width: min(1160px, 100% - 2.5rem);
+  width: var(--wrap-w, min(1160px, 100% - 2.5rem));
   margin-inline: auto;
 }
 
@@ -427,26 +429,26 @@ a {
 }
 
 .mk-btn-primary {
-  background: var(--mint);
-  color: var(--ink-950);
+  background: var(--btn-bg, var(--mint));
+  color: var(--btn-fg, var(--ink-950));
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.35),
     0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .mk-btn-primary:hover {
-  background: var(--mint-strong);
+  background: var(--btn-hover, var(--mint-strong));
 }
 
 .mk-btn-ghost {
   border: 1px solid var(--ink-line-strong);
-  background: rgba(255, 255, 255, 0.03);
+  background: transparent;
   color: var(--paper);
 }
 
 .mk-btn-ghost:hover {
-  border-color: rgba(148, 163, 196, 0.4);
-  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--paper-muted);
+  background: var(--ink-800);
 }
 
 .mk-btn:focus-visible,
@@ -704,4 +706,134 @@ a {
   .mk-float {
     animation: none;
   }
+}
+
+/* ───────────────────────────────────────────────
+   Optimizer360 — paper theme (editorial home page)
+   Same brand mint, used as a highlighter on warm paper.
+   ─────────────────────────────────────────────── */
+.theme-ink {
+  --btn-bg: var(--mint);
+  --btn-fg: var(--ink-950);
+  --btn-hover: var(--mint-strong);
+}
+
+.theme-paper {
+  --ink-950: #f4f1ea;
+  --ink-900: #eeeae1;
+  --ink-850: #fbfaf7;
+  --ink-800: #e6e1d6;
+  --ink-line: rgba(17, 20, 26, 0.12);
+  --ink-line-strong: rgba(17, 20, 26, 0.24);
+  --mint: #0a8a68;
+  --mint-strong: #087357;
+  --mint-dim: rgba(60, 232, 180, 0.24);
+  --mint-bright: #3ce8b4;
+  --amber: #9a5b0b;
+  --amber-dim: rgba(227, 178, 105, 0.28);
+  --paper: #11141a;
+  --paper-soft: #30353f;
+  --paper-muted: #666d7a;
+  --btn-bg: #11141a;
+  --btn-fg: #f4f1ea;
+  --btn-hover: #2b303a;
+  --wrap-w: min(1680px, 100% - clamp(2.5rem, 7vw, 8rem));
+  --mark: #3ce8b4;
+  --font-serif: var(--font-news);
+  --font-body: var(--font-grotesk);
+  --font-display: var(--font-grotesk);
+  background: var(--ink-950);
+  color: var(--paper);
+  font-family: var(--font-grotesk), system-ui, sans-serif;
+}
+
+.theme-paper ::selection {
+  background: var(--mint-bright);
+  color: #11141a;
+}
+
+.theme-paper .mk-h1,
+.theme-paper .mk-h2,
+.theme-paper .mk-h3,
+.theme-paper .font-serif-display {
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.theme-paper .mk-kicker,
+.mk-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.theme-paper .mk-kicker {
+  color: var(--paper-muted);
+}
+
+.theme-paper .mk-card {
+  background: var(--ink-850);
+}
+
+.theme-paper .mk-card::after {
+  display: none;
+}
+
+.theme-paper .mk-card:hover {
+  transform: none;
+}
+
+.theme-paper .mk-pill {
+  background: var(--ink-850);
+}
+
+.theme-paper .mk-btn-primary {
+  box-shadow: none;
+}
+
+/* highlighter stroke behind a word, in the true brand mint */
+.mk-mark {
+  background-image: linear-gradient(
+    transparent 30%,
+    var(--mark, #3ce8b4) 30%,
+    var(--mark, #3ce8b4) 88%,
+    transparent 88%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.06em;
+  padding: 0 0.1em;
+  margin: 0 -0.04em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* dark mode for the editorial theme, toggled from the nav (html[data-theme]) */
+html[data-theme="dark"] .theme-paper {
+  --ink-950: #0b0d12;
+  --ink-900: #10131a;
+  --ink-850: #141821;
+  --ink-800: #1c212c;
+  --ink-line: rgba(232, 228, 218, 0.1);
+  --ink-line-strong: rgba(232, 228, 218, 0.2);
+  --mint: #3ce8b4;
+  --mint-strong: #57f5c6;
+  --mint-dim: rgba(60, 232, 180, 0.14);
+  --amber: #e3b269;
+  --amber-dim: rgba(227, 178, 105, 0.14);
+  --paper: #ece8df;
+  --paper-soft: #c3bfb5;
+  --paper-muted: #8a8f99;
+  --btn-bg: #ece8df;
+  --btn-fg: #0b0d12;
+  --btn-hover: #ffffff;
+  --mark: rgba(60, 232, 180, 0.3);
+  color-scheme: dark;
+}
+
+.theme-paper .mk-h2 {
+  font-size: clamp(2rem, 3.4vw, 3.8rem);
+  line-height: 1.04;
 }

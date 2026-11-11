@@ -60,15 +60,8 @@ export const ENGINES: EngineInfo[] = [
     logo: "/engines/claude.png",
     tracks: ["Trust framing", "Third-party sources", "Recommendation lists", "Gap vs competitors"],
   },
-  {
-    id: "grok",
-    name: "Grok",
-    maker: "xAI",
-    how: "Pulls in real-time posts from X alongside web results, so recent conversation shapes its answers.",
-    tags: ["X posts", "Real-time"],
-    logo: "/engines/grok.png",
-    tracks: ["Real-time mentions", "Source mix (X vs web)", "Recommendation lists", "Weekly deltas"],
-  },
+  // The orbit shows the five engines the site says it covers everywhere else (FAQ, schema, copy).
+  // Grok's glyph stays in draw() below in case it is added back to the tracked set.
 ];
 
 const S = 512;

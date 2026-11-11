@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Fraunces, Inter, Inter_Tight } from "next/font/google";
+import { Fraunces, IBM_Plex_Mono, Inter, Inter_Tight, Newsreader, Schibsted_Grotesk } from "next/font/google";
 import { buildOrganizationSchema } from "@/lib/schema-library";
 import { FOUNDER_NAME, ORG_ADDRESS, ORG_DESCRIPTION, SAME_AS_URLS, SITE_LOGO_URL } from "@/lib/site";
 import "./globals.css";
@@ -22,6 +22,28 @@ const fraunces = Fraunces({
   variable: "--font-serif",
   display: "swap",
   axes: ["opsz"],
+});
+
+// Editorial set (used by .theme-paper): newspaper serif, newspaper grotesk, technical mono.
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-news",
+  display: "swap",
+  style: ["normal", "italic"],
+  axes: ["opsz"],
+});
+
+const schibsted = Schibsted_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-grotesk",
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+  weight: ["400", "500"],
 });
 
 const orgSchema = {
@@ -145,9 +167,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${interTight.variable} ${inter.variable} ${fraunces.variable}`}
+      suppressHydrationWarning
+      className={`${interTight.variable} ${inter.variable} ${fraunces.variable} ${newsreader.variable} ${schibsted.variable} ${plexMono.variable}`}
     >
       <head>
+        {/* home page editorial theme: dark by default, light if the visitor chose it; set before first paint */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var t='dark';try{if(localStorage.getItem('o360-theme')==='light')t='light'}catch(e){}document.documentElement.dataset.theme=t})()`,
+          }}
+        />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-89SE77PEFT"></script>
         <script
