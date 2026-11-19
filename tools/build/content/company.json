@@ -63,7 +63,7 @@
       {"q": "Why don't you name your clients?", "a": "Because how a brand is described belongs to the brand. We never name, count or quote clients, and we show no logos or testimonials. Case studies describe the sector and market only."},
       {"q": "Can you guarantee the same results for us?", "a": "No. The engines decide what they say, so no one can honestly guarantee rankings. We measure your starting point, do the work and report every week what moved."}
     ],
-    "related": ["/results/real-estate-ai-visibility/", "/results/investor-relations-narrative/", "/platform/", "/blog/measure-ai-visibility/"]
+    "related": ["/results/real-estate-ai-visibility/", "/results/investor-relations-narrative/", "/platform/", "/blog/what-an-ai-visibility-audit-includes/"]
   },
   {
     "path": "/results/real-estate-ai-visibility/",
@@ -147,7 +147,7 @@
       {"q": "Who is the developer?", "a": "We never name clients. It is a residential developer in India, and that is all we share publicly."},
       {"q": "Why are only two figures published?", "a": "We publish the visibility score and prompts ranked as figures. Citation rate, share of voice and brand sentiment are shown as direction only, so the page stays accurate without exposing client data."}
     ],
-    "related": ["/industries/real-estate/", "/solutions/geo/", "/blog/reddit-wikipedia-ai-visibility/", "/results/"],
+    "related": ["/industries/real-estate/", "/solutions/geo/", "/blog/how-to-get-cited-by-ai-engines/", "/results/"],
     "article": {"published": "2026-11-10", "minutes": 6}
   },
   {
@@ -226,7 +226,7 @@
       {"q": "Is the Meridian Industries example real?", "a": "No. Meridian Industries is a fictional company used to illustrate the pattern. The client is a listed company in India, and we do not name it."},
       {"q": "Why do AI engines quote old figures about a company?", "a": "Engines draw on what they can find and read. If results sit only in PDFs or on hard-to-read pages, older secondary sources often fill the gap."}
     ],
-    "related": ["/solutions/geo-investor-relations/", "/industries/financial-services/", "/blog/ai-answers-investor-relations/", "/results/"],
+    "related": ["/solutions/geo-investor-relations/", "/industries/financial-services/", "/blog/when-ai-gets-your-brand-wrong/", "/results/"],
     "article": {"published": "2026-11-10", "minutes": 6}
   },
   {
@@ -362,7 +362,7 @@
       {"q": "What should I send with my application?", "a": "Send work you are proud of, such as writing, a campaign, code or an analysis, with a short note on what you did and what it achieved. A CV is welcome, but the work matters more."},
       {"q": "Where does Optimizer360 work?", "a": "Our home market is India, and we also work with brands in the United States and Mauritius. Tell us where you are based when you write."}
     ],
-    "related": ["/about/", "/blog/what-is-generative-engine-optimisation/", "/platform/", "/contact/"]
+    "related": ["/about/", "/blog/generative-engine-optimization/", "/platform/", "/contact/"]
   },
   {
     "path": "/contact/",
@@ -461,7 +461,7 @@
       {"q": "What is the difference between a mention and a citation in AI answers?", "a": "A mention is when the engine names the brand in its answer. A citation is when it links to or names a source as the basis for the answer. A brand can be mentioned without its own pages being cited."},
       {"q": "Does llms.txt help a brand appear in AI answers?", "a": "llms.txt is a proposed convention, not an official standard, and support among engines varies. It can do no harm, but clear, accurate, well-structured pages and trusted third-party sources matter far more."}
     ],
-    "related": ["/blog/what-is-generative-engine-optimisation/", "/blog/geo-vs-seo/", "/faq/", "/platform/"]
+    "related": ["/blog/generative-engine-optimization/", "/blog/geo-vs-seo-vs-aeo/", "/faq/", "/platform/"]
   },
   {
     "path": "/faq/",

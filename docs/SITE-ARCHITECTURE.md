@@ -35,12 +35,12 @@ White/Dark toggle stays in the nav on wide screens. On phones a full-screen menu
   /results/real-estate-ai-visibility/        32% → 58% in under 2.5 months
   /results/investor-relations-narrative/
 /blog/                              Hub
-  /blog/what-is-generative-engine-optimisation/   PILLAR guide
-  /blog/geo-vs-seo/
-  /blog/how-ai-engines-choose-sources/
-  /blog/reddit-wikipedia-ai-visibility/
-  /blog/measure-ai-visibility/
-  /blog/ai-answers-investor-relations/
+  /blog/generative-engine-optimization/   PILLAR guide
+  /blog/geo-vs-seo-vs-aeo/
+  /blog/how-ai-engines-choose-brands-to-cite/
+  /blog/how-to-get-cited-by-ai-engines/
+  /blog/what-an-ai-visibility-audit-includes/
+  /blog/when-ai-gets-your-brand-wrong/
 /glossary/                          28 GEO terms (DefinedTermSet)
 /faq/                               FAQPage
 /about/  /careers/  /contact/

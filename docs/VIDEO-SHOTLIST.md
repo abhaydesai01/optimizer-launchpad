@@ -11,10 +11,10 @@
 | # | Page(s) | Caption on the band | Scene (anchor still → motion) |
 |---|---|---|---|
 | 1 | /blog/ | Search is changing shape. Here is what holds. | A marketing head in her 40s at a wooden desk at dusk, Mumbai window light, laptop glow on her face, notebook and chai beside her. **Motion:** slow push-in as she leans back and thinks. |
-| 2 | /blog/geo-vs-seo/ | Ten links became one answer. | A young founder in a co-working space scrolling a long list on his phone, then stopping, the screen glow brightening to soft green. **Motion:** shallow rack focus from phone to his face. |
-| 3 | /blog/how-ai-engines-choose-sources/ | AI listens to what others say about you. | Friends at a roadside chai stall in the evening, one showing another a phone, others leaning in, warm string lights. **Motion:** slow dolly left past the group. |
-| 4 | /blog/measure-ai-visibility/ | Measure the answer, not the hope. | A small team in a glass meeting room, a wall screen with an abstract rising green line (no numbers), a woman pointing, a man nodding. **Motion:** slow push-in through the glass. |
-| 5 | /results/investor-relations-narrative/ + /blog/ai-answers-investor-relations/ | Investors ask AI before they read your filing. | An analyst at a desk at night, city skyline lights behind, reading on a phone and a printed annual report, calm and focused. **Motion:** slow arc around the desk. |
+| 2 | /blog/geo-vs-seo-vs-aeo/ | Ten links became one answer. | A young founder in a co-working space scrolling a long list on his phone, then stopping, the screen glow brightening to soft green. **Motion:** shallow rack focus from phone to his face. |
+| 3 | /blog/how-ai-engines-choose-brands-to-cite/ | AI listens to what others say about you. | Friends at a roadside chai stall in the evening, one showing another a phone, others leaning in, warm string lights. **Motion:** slow dolly left past the group. |
+| 4 | /blog/what-an-ai-visibility-audit-includes/ | Measure the answer, not the hope. | A small team in a glass meeting room, a wall screen with an abstract rising green line (no numbers), a woman pointing, a man nodding. **Motion:** slow push-in through the glass. |
+| 5 | /results/investor-relations-narrative/ + /blog/when-ai-gets-your-brand-wrong/ | Investors ask AI before they read your filing. | An analyst at a desk at night, city skyline lights behind, reading on a phone and a printed annual report, calm and focused. **Motion:** slow arc around the desk. |
 | 6 | /contact/ | Your key. Your door. | **Reuse** the existing door clip (assets/video/zone1-door.mp4). No credits. |
 
 **Deliberately no video:** Glossary, FAQ, Privacy, Terms. These are utility pages, and a film band would slow people down. Their live scenes (term cloud, answer card, data flow) are enough.
@@ -31,5 +31,5 @@
 Every clip can be regenerated on its own if one fails QC.
 
 ## Result (10 Nov 2026)
-Generated and live: `assets/video/v12-desk.mp4` (/blog/), `v12-founder.mp4` (/blog/geo-vs-seo/), `v12-chai.mp4` (/blog/how-ai-engines-choose-sources/), `v12-team.mp4` (/blog/measure-ai-visibility/), `v12-analyst.mp4` (IR case + IR article), plus the existing door clip on /contact/. Each has a `.webp` poster.
+Generated and live: `assets/video/v12-desk.mp4` (/blog/), `v12-founder.mp4` (/blog/geo-vs-seo-vs-aeo/), `v12-chai.mp4` (/blog/how-ai-engines-choose-brands-to-cite/), `v12-team.mp4` (/blog/what-an-ai-visibility-audit-includes/), `v12-analyst.mp4` (IR case + IR article), plus the existing door clip on /contact/. Each has a `.webp` poster.
 Kling 4.0 was rate-limited at the provider, so the clips were made with Kling 3.0 pro (sound off). Actual spend: 127 credits (337 → 210), above the ~117 estimate because Kling 3.0 pro costs about 25 credits per 5 s clip. No retries were needed.

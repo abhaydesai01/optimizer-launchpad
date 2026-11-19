@@ -52,7 +52,7 @@ INDUSTRIES = [
 ]
 RESOURCES = [
     ("/blog/", "Blog", "AI search, explained for marketing heads and founders."),
-    ("/blog/what-is-generative-engine-optimisation/", "What is GEO?", "The complete guide to generative engine optimisation."),
+    ("/blog/generative-engine-optimization/", "What is GEO?", "The complete guide to generative engine optimisation."),
     ("/glossary/", "GEO glossary", "Visibility score, citation rate, share of voice and more."),
     ("/faq/", "FAQ", "Straight answers about how we work."),
 ]
@@ -235,23 +235,13 @@ def h1_of(p):
 
 
 
-COVER = {
-    "/blog/what-is-generative-engine-optimisation/": ("answer", "Guide"),
-    "/blog/geo-vs-seo/": ("podium", "Strategy"),
-    "/blog/how-ai-engines-choose-sources/": ("sources", "Research"),
-    "/blog/reddit-wikipedia-ai-visibility/": ("community", "Playbook"),
-    "/blog/measure-ai-visibility/": ("measure", "Measurement"),
-    "/blog/ai-answers-investor-relations/": ("shield", "Investor relations"),
-}
-
-
 def nice_date(d):
     return re.sub(r"(\d{4})-(\d{2})-(\d{2})", lambda m: f"{int(m.group(3))} {['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][int(m.group(2)) - 1]} {m.group(1)}", d)
 
 
 def post_card(k, featured=False):
-    g, cat = COVER.get(k["path"], ("answer", "Article"))
     a = k.get("article", {})
+    g, cat = a.get("glyph", "answer"), a.get("category", "Article")
     return (f'<li class="bc{" bc--feat" if featured else ""}"><a href="{k["path"]}">'
             f'<div class="bc__art bc__art--{g}" data-glyph="{g}"></div>'
             f'<div class="bc__body"><p class="bc__meta"><span class="bc__cat">{esc(cat)}</span><span>{a.get("minutes", 5)} min read</span></p>'
@@ -427,7 +417,9 @@ def render(p, pages):
         out.append(CONTACT_FORM)
     kids = children(p["path"], pages)
     if kids and p["path"] == "/blog/":
-        posts = sorted(kids, key=lambda k: (k["path"] != "/blog/what-is-generative-engine-optimisation/", k["path"]))
+        posts = sorted(kids, key=lambda k: k["path"])
+        posts.sort(key=lambda k: k.get("article", {}).get("published", ""), reverse=True)  # newest first
+        posts.sort(key=lambda k: k["path"] != "/blog/generative-engine-optimization/")  # pillar guide leads
         cards = "".join(post_card(k, i == 0) for i, k in enumerate(posts))
         out.append(f'<section class="pg-sec"><div class="wrap"><h2 class="pg-h2 pg-h2--sm">Latest articles</h2><ul class="bgrid">{cards}</ul></div></section>')
     elif kids and p["path"] != "/":

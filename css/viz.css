@@ -351,14 +351,15 @@ mark { background: rgba(var(--g), .16); color: var(--green); padding: 0 .2em; bo
 .is-post .pg-hero .pg-h1 { max-width: 18ch; }
 .is-post .pg-sec { padding: clamp(18px, 3.5vh, 36px) 0; }
 .is-post .pg-sec + .pg-sec { border-top: 0; }
-.is-post .pg-split { display: block; max-width: 760px; margin: 0 auto; }
+/* the .wrap side padding (--edge) grows with the viewport, so add it to the cap: the text column stays 760px wide */
+.is-post .pg-split { display: block; max-width: calc(760px + 2 * var(--edge)); margin: 0 auto; }
 .is-post .pg-split > div:first-child .pg-h2 { position: static; }
 .is-post .pg-sec .pg-h2 { max-width: none; margin-bottom: 18px; font-size: clamp(26px, 2.6vw, 38px); }
 .is-post .prose { max-width: none; font-size: 19px; line-height: 1.78; color: color-mix(in srgb, var(--text) 82%, var(--bg)); }
 .is-post .pg-sec > .wrap > .pg-h2, .is-post .pg-sec > .wrap > .pg-intro, .is-post .pg-callout, .is-post .pg-table, .is-post .xh, .is-post .xf, .is-post .pg-stats { max-width: 980px; margin-left: auto; margin-right: auto; }
 .is-post .pg-sec > .wrap > .pg-h2 { max-width: 760px; }
 .is-post .pg-callout { max-width: 760px; padding: 20px 24px; border-left-width: 3px; border-radius: 0 16px 16px 0; background: rgba(var(--g), .07); }
-.is-post #questions .pg-split { max-width: 760px; }
+.is-post #questions .pg-split { max-width: calc(760px + 2 * var(--edge)); }
 .is-post #questions .pg-split > div:first-child .pg-h2 { margin-bottom: 8px; }
 /* six articles: the guide across the top, then three, then two */
 @media (min-width: 1101px) {

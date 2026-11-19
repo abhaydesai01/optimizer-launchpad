@@ -192,7 +192,7 @@
       {
         "type": "prose",
         "h2": "What is generative engine optimisation?",
-        "html": "<p>Generative engine optimisation (also spelled <em>generative engine optimization</em>) is the practice of shaping what AI engines say when a buyer asks about your category. You will also see it called AI search optimisation, answer engine optimisation (AEO), LLM visibility or, informally, ChatGPT SEO. The goal is the same: <strong>be named in the answer, be cited as a source, and be described with facts that are true today.</strong></p><p>SEO earns a position in a list of links. GEO earns a sentence inside the answer itself. The two share foundations, such as crawlable pages and clear structure, but GEO also depends on the third-party sources engines read: reviews, forums, Wikipedia, press and comparison lists. Read <a href=\"/blog/what-is-generative-engine-optimisation/\">what generative engine optimisation is</a> for the long version, or <a href=\"/blog/geo-vs-seo/\">GEO vs SEO</a> for a side-by-side view.</p>"
+        "html": "<p>Generative engine optimisation (also spelled <em>generative engine optimization</em>) is the practice of shaping what AI engines say when a buyer asks about your category. You will also see it called AI search optimisation, answer engine optimisation (AEO), LLM visibility or, informally, ChatGPT SEO. The goal is the same: <strong>be named in the answer, be cited as a source, and be described with facts that are true today.</strong></p><p>SEO earns a position in a list of links. GEO earns a sentence inside the answer itself. The two share foundations, such as crawlable pages and clear structure, but GEO also depends on the third-party sources engines read: reviews, forums, Wikipedia, press and comparison lists. Read <a href=\"/blog/generative-engine-optimization/\">what generative engine optimisation is</a> for the long version, or <a href=\"/blog/geo-vs-seo-vs-aeo/\">GEO vs SEO</a> for a side-by-side view.</p>"
       },
       {
         "type": "prose",
@@ -355,7 +355,7 @@
       },
       {
         "type": "callout",
-        "html": "<p><strong>What we won't promise:</strong> guaranteed rankings, a fixed position in ChatGPT, or a set number of mentions. No one controls these engines. We will not write fake reviews, post as fake customers or make promotional Wikipedia edits. We do the rigorous work, log every change and show you each week what moved. Read <a href=\"/blog/measure-ai-visibility/\">how to measure AI visibility</a> to see how we keep ourselves honest.</p>"
+        "html": "<p><strong>What we won't promise:</strong> guaranteed rankings, a fixed position in ChatGPT, or a set number of mentions. No one controls these engines. We will not write fake reviews, post as fake customers or make promotional Wikipedia edits. We do the rigorous work, log every change and show you each week what moved. Read <a href=\"/blog/what-an-ai-visibility-audit-includes/\">what an AI visibility audit includes</a> to see how we keep ourselves honest.</p>"
       }
     ],
     "faqs": [
@@ -387,7 +387,7 @@
     "related": [
       "/platform/",
       "/results/real-estate-ai-visibility/",
-      "/blog/what-is-generative-engine-optimisation/",
+      "/blog/generative-engine-optimization/",
       "/solutions/geo-investor-relations/"
     ]
   },
@@ -519,7 +519,7 @@
       {
         "type": "prose",
         "h2": "What changed in one investor relations programme?",
-        "html": "<p>For one listed company in India, the AI answer to common investor questions moved from old figures and a resolved controversy to the latest filing. Answer accuracy went up, current sources were cited more often, the old controversy stopped leading the answer, and investor sentiment in the answers improved.</p><p>See the before-and-after in the <a href=\"/results/investor-relations-narrative/\">investor relations case study</a>, illustrated with a fictional company, Meridian Industries. For the wider picture, read <a href=\"/blog/ai-answers-investor-relations/\">how AI answers shape investor relations</a>.</p>"
+        "html": "<p>For one listed company in India, the AI answer to common investor questions moved from old figures and a resolved controversy to the latest filing. Answer accuracy went up, current sources were cited more often, the old controversy stopped leading the answer, and investor sentiment in the answers improved.</p><p>See the before-and-after in the <a href=\"/results/investor-relations-narrative/\">investor relations case study</a>, illustrated with a fictional company, Meridian Industries. For the wider picture, read <a href=\"/blog/when-ai-gets-your-brand-wrong/\">what happens when AI gets your brand wrong</a>.</p>"
       }
     ],
     "faqs": [
@@ -546,7 +546,7 @@
     ],
     "related": [
       "/results/investor-relations-narrative/",
-      "/blog/ai-answers-investor-relations/",
+      "/blog/when-ai-gets-your-brand-wrong/",
       "/industries/financial-services/",
       "/solutions/geo/"
     ]
@@ -682,7 +682,7 @@
     "related": [
       "/solutions/content-community/",
       "/solutions/geo/",
-      "/blog/how-ai-engines-choose-sources/"
+      "/blog/how-ai-engines-choose-brands-to-cite/"
     ]
   },
   {
@@ -762,7 +762,7 @@
       {
         "type": "prose",
         "h2": "Do brand mentions matter more than backlinks for AI visibility?",
-        "html": "<p>A large Ahrefs study of 75,000 brands found that brand mentions track AI Overview visibility much more closely than backlinks do. That is a correlation, not proof of cause, but it matches what we see in the sources engines cite: they lean on places that <em>talk about</em> a brand, not only places that link to it.</p><p>A feeder network is built to create those mentions honestly, through useful content and earned coverage. Read <a href=\"/blog/how-ai-engines-choose-sources/\">how AI engines choose sources</a> for more on what they trust.</p>"
+        "html": "<p>A large Ahrefs study of 75,000 brands found that brand mentions track AI Overview visibility much more closely than backlinks do. That is a correlation, not proof of cause, but it matches what we see in the sources engines cite: they lean on places that <em>talk about</em> a brand, not only places that link to it.</p><p>A feeder network is built to create those mentions honestly, through useful content and earned coverage. Read <a href=\"/blog/how-ai-engines-choose-brands-to-cite/\">how AI engines choose brands to cite</a> for more on what they trust.</p>"
       },
       {
         "type": "stats",
@@ -834,7 +834,7 @@
     ],
     "related": [
       "/solutions/content-community/",
-      "/blog/how-ai-engines-choose-sources/",
+      "/blog/how-ai-engines-choose-brands-to-cite/",
       "/solutions/reputation/",
       "/solutions/geo/"
     ]
@@ -909,7 +909,7 @@
       {
         "type": "prose",
         "h2": "How can a brand use Reddit without astroturfing?",
-        "html": "<p>Reddit marketing for brands works only when it is done openly. Our rules are simple:</p><ul><li>Post from an account that is clearly the brand, never a fake customer.</li><li>Answer the question that was asked, with facts, even when the honest answer is not your product.</li><li>Follow each community's own rules, and stay out where brands are not welcome.</li><li>Never buy upvotes or coordinate accounts to push a thread.</li></ul><p>In one real-estate programme, open answers in city and home-buying threads were part of what lifted the developer's AI visibility. More on the method in <a href=\"/blog/reddit-wikipedia-ai-visibility/\">Reddit, Wikipedia and AI visibility</a>.</p>"
+        "html": "<p>Reddit marketing for brands works only when it is done openly. Our rules are simple:</p><ul><li>Post from an account that is clearly the brand, never a fake customer.</li><li>Answer the question that was asked, with facts, even when the honest answer is not your product.</li><li>Follow each community's own rules, and stay out where brands are not welcome.</li><li>Never buy upvotes or coordinate accounts to push a thread.</li></ul><p>In one real-estate programme, open answers in city and home-buying threads were part of what lifted the developer's AI visibility. More on the method in <a href=\"/blog/how-to-get-cited-by-ai-engines/\">how to get cited by AI engines</a>.</p>"
       },
       {
         "type": "steps",
@@ -970,7 +970,7 @@
       }
     ],
     "related": [
-      "/blog/reddit-wikipedia-ai-visibility/",
+      "/blog/how-to-get-cited-by-ai-engines/",
       "/solutions/feeder-network/",
       "/solutions/reputation/"
     ]
@@ -1235,7 +1235,7 @@
       {
         "type": "prose",
         "h2": "What do you do with attribution data?",
-        "html": "<p>You move money to what works. If buyers keep naming one guide or one review site, that feeder gets more investment. If a channel produces traffic but no pipeline, you can stop it with confidence. And when the board asks what organic marketing returns, you can show deals, not impressions.</p><p>The data also sharpens the rest of the engine. First-touch answers reveal new questions for <a href=\"/solutions/geo/\">GEO</a>, and conversations from <a href=\"/solutions/ai-agents/\">AI agents</a> show which facts buyers needed before they booked. See <a href=\"/blog/measure-ai-visibility/\">how to measure AI visibility</a> for the metrics behind the first scoreboard.</p>"
+        "html": "<p>You move money to what works. If buyers keep naming one guide or one review site, that feeder gets more investment. If a channel produces traffic but no pipeline, you can stop it with confidence. And when the board asks what organic marketing returns, you can show deals, not impressions.</p><p>The data also sharpens the rest of the engine. First-touch answers reveal new questions for <a href=\"/solutions/geo/\">GEO</a>, and conversations from <a href=\"/solutions/ai-agents/\">AI agents</a> show which facts buyers needed before they booked. See <a href=\"/blog/what-an-ai-visibility-audit-includes/\">what an AI visibility audit includes</a> for the metrics behind the first scoreboard.</p>"
       },
       {
         "type": "callout",
@@ -1266,7 +1266,7 @@
     ],
     "related": [
       "/solutions/ai-agents/",
-      "/blog/measure-ai-visibility/",
+      "/blog/what-an-ai-visibility-audit-includes/",
       "/platform/"
     ]
   },
@@ -1397,7 +1397,7 @@
       {
         "type": "prose",
         "h2": "What is Cited Intelligence?",
-        "html": "<p><strong>Cited Intelligence</strong> is the record that ties cause to effect. Every scan stores the answer, the brands named and every source cited. Every fix is logged with what was shipped and when. Then the next scans show what the answer did next.</p><p>Over time this builds a clear history for each buyer question: what the engines said, what we changed and how the answer moved. It is how we show progress honestly, and how we learn which kinds of fix work in each category. See <a href=\"/blog/measure-ai-visibility/\">how to measure AI visibility</a> for the metrics, or the <a href=\"/glossary/\">glossary</a> for the terms.</p>"
+        "html": "<p><strong>Cited Intelligence</strong> is the record that ties cause to effect. Every scan stores the answer, the brands named and every source cited. Every fix is logged with what was shipped and when. Then the next scans show what the answer did next.</p><p>Over time this builds a clear history for each buyer question: what the engines said, what we changed and how the answer moved. It is how we show progress honestly, and how we learn which kinds of fix work in each category. See <a href=\"/blog/what-an-ai-visibility-audit-includes/\">what an AI visibility audit includes</a> for the metrics, or the <a href=\"/glossary/\">glossary</a> for the terms.</p>"
       },
       {
         "type": "cols",
@@ -1459,7 +1459,7 @@
     ],
     "related": [
       "/solutions/geo/",
-      "/blog/measure-ai-visibility/",
+      "/blog/what-an-ai-visibility-audit-includes/",
       "/glossary/",
       "/results/real-estate-ai-visibility/"
     ]

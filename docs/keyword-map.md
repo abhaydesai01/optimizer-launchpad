@@ -3,12 +3,23 @@
 | Page | Title | Primary keyword | Secondary keywords |
 |---|---|---|---|
 | /blog/ | GEO blog: AI search, explained | GEO blog | generative engine optimisation guide, AI search blog, AI visibility, GEO vs SEO, how to get mentioned in ChatGPT |
-| /blog/what-is-generative-engine-optimisation/ | What is generative engine optimisation (GEO)? | what is generative engine optimisation | what is GEO, generative engine optimization, GEO meaning, GEO marketing, how to get mentioned in ChatGPT |
-| /blog/geo-vs-seo/ | GEO vs SEO: what changes and what stays | GEO vs SEO | is SEO dead, AEO vs GEO vs SEO, difference between GEO and SEO, SEO vs AI search, answer engine optimisation |
-| /blog/how-ai-engines-choose-sources/ | How AI engines choose sources and brands | how does ChatGPT choose sources | how AI picks brands to recommend, ChatGPT citations, AI citation sources, how to get cited by ChatGPT, Perplexity sources |
-| /blog/reddit-wikipedia-ai-visibility/ | Reddit and Wikipedia for AI visibility | Reddit for AI visibility | Wikipedia for brands, Wikidata for SEO, Reddit marketing for brands, Wikipedia conflict of interest, Wikidata entity |
-| /blog/measure-ai-visibility/ | How to measure AI visibility and share of voice | how to measure AI visibility | AI share of voice, track brand in ChatGPT, AI visibility score, citation rate, brand sentiment in AI answers |
-| /blog/ai-answers-investor-relations/ | AI answers and investor relations: a guide | AI answers investor relations | what ChatGPT says about my listed company, IR website for AI, investor relations GEO, AI search for listed companies, SEBI disclosure and AI |
+| /blog/generative-engine-optimization/ | What is GEO (generative engine optimisation)? A plain guide | generative engine optimization | geo explainer, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/geo-tool-india/ | AI SEO and GEO services in India | Mumbai | geo tool india | vertical, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/geo-vs-seo-vs-aeo/ | AEO vs GEO vs SEO: what is the difference? | geo vs seo vs aeo | comparison, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/how-ai-engines-choose-brands-to-cite/ | How AI engines choose which brands to cite | how ai engines choose brands to cite | engine guide, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/how-to-do-seo-for-chatgpt/ | How to do SEO for ChatGPT: what actually helps | how to do seo for chatgpt | engine guide, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/how-to-get-cited-by-ai-engines/ | How to get cited by AI engines (without guarantees) | how to get cited by ai engines | geo explainer, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/is-seo-dead-now-with-ai/ | Is SEO dead now with AI? What the data says | is seo dead now with ai | geo explainer, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/llms-txt-and-robots-txt-for-ai-crawlers/ | llms.txt and robots.txt for AI crawlers | llms txt and robots txt for ai crawlers | glossary, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/optimizer360-vs-profound/ | Optimizer360.ai vs Profound vs Peec AI: managed service or software? | optimizer360 vs profound | comparison, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/peec-ai-alternatives/ | Peec AI alternatives: compared by price and fit | peec ai alternatives | comparison, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/product-data-ai-shopping/ | Product data and AI shopping: what engines read | product data ai shopping | vertical, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/profound-alternatives/ | Profound alternatives: options with public pricing | profound alternatives | comparison, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/questions-to-ask-before-hiring-a-geo-firm/ | Eight questions to ask before hiring a GEO firm | questions to ask before hiring a geo firm | comparison, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/trust-led-categories-evidence-ai-can-check/ | Trust-led brands and AI answers: evidence engines can check | trust led categories evidence ai can check | vertical, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/what-an-ai-visibility-audit-includes/ | What an AI visibility audit includes | what an ai visibility audit includes | geo explainer, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/what-is-llm-seo/ | What is LLM SEO? A plain guide for brands | what is llm seo | geo explainer, generative engine optimisation, GEO, AI search, AI visibility |
+| /blog/when-ai-gets-your-brand-wrong/ | When AI gets your brand wrong: how to find and fix inaccurate answers | when ai gets your brand wrong | geo explainer, generative engine optimisation, GEO, AI search, AI visibility |
 | /results/ | GEO results: AI visibility measured from week one | GEO results | AI visibility case study, generative engine optimisation results, AI search visibility India, GEO case study real estate, investor relations AI answers |
 | /results/real-estate-ai-visibility/ | Real estate GEO case study: 32% to 58% in AI answers | real estate GEO case study | AI visibility real estate India, residential developer AI search, visibility score, real estate developer ChatGPT, GEO for real estate |
 | /results/investor-relations-narrative/ | Investor relations GEO case study: the narrative | investor relations GEO case study | AI answers investor relations, listed company AI visibility, investor relations ChatGPT, SEBI compliant GEO, AI narrative listed company India |

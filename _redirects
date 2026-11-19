@@ -32,3 +32,17 @@
 # When the optimizer360.ai domain is connected in Netlify, uncomment this so the
 # netlify.app address sends everyone (and search engines) to the real domain:
 # https://optimizer360-website.netlify.app/*  https://optimizer360.ai/:splat  301!
+
+# Old blog URLs (replaced Nov 2026), sent to the closest new article.
+/blog/what-is-generative-engine-optimisation      /blog/generative-engine-optimization/                301
+/blog/what-is-generative-engine-optimisation/     /blog/generative-engine-optimization/                301
+/blog/geo-vs-seo                                  /blog/geo-vs-seo-vs-aeo/                             301
+/blog/geo-vs-seo/                                 /blog/geo-vs-seo-vs-aeo/                             301
+/blog/how-ai-engines-choose-sources               /blog/how-ai-engines-choose-brands-to-cite/          301
+/blog/how-ai-engines-choose-sources/              /blog/how-ai-engines-choose-brands-to-cite/          301
+/blog/reddit-wikipedia-ai-visibility              /blog/how-to-get-cited-by-ai-engines/                301
+/blog/reddit-wikipedia-ai-visibility/             /blog/how-to-get-cited-by-ai-engines/                301
+/blog/measure-ai-visibility                       /blog/what-an-ai-visibility-audit-includes/          301
+/blog/measure-ai-visibility/                      /blog/what-an-ai-visibility-audit-includes/          301
+/blog/ai-answers-investor-relations               /solutions/geo-investor-relations/                   301
+/blog/ai-answers-investor-relations/              /solutions/geo-investor-relations/                   301
