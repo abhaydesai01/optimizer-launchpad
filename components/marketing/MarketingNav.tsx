@@ -23,7 +23,8 @@ export function MarketingNav({ themeToggle = false }: { themeToggle?: boolean })
   }, []);
 
   function isActive(href: string) {
-    if (href.startsWith("/#")) return pathname === "/";
+    // a link to a section of the home page is never the "current page" (two would light up at once)
+    if (href.startsWith("/#")) return false;
     return pathname === href || pathname.startsWith(`${href}/`);
   }
 

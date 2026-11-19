@@ -482,7 +482,7 @@ a {
   -webkit-text-stroke: 1px var(--ink-line-strong);
 }
 
-.mk-reveal {
+.js .mk-reveal {
   opacity: 0;
   transform: translateY(22px);
   transition:
@@ -496,6 +496,7 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .js .mk-reveal,
   .mk-reveal {
     opacity: 1;
     transform: none;
@@ -507,7 +508,7 @@ a {
   width: 100%;
   border: 1px solid var(--ink-line-strong);
   border-radius: 0.625rem;
-  background: rgba(10, 16, 32, 0.6);
+  background: var(--ink-900);
   color: var(--paper);
   padding: 0.8rem 1rem;
   font-size: 0.95rem;
@@ -719,12 +720,12 @@ a {
 }
 
 .theme-paper {
-  --ink-950: #f4f1ea;
-  --ink-900: #eeeae1;
-  --ink-850: #fbfaf7;
-  --ink-800: #e6e1d6;
-  --ink-line: rgba(17, 20, 26, 0.12);
-  --ink-line-strong: rgba(17, 20, 26, 0.24);
+  --ink-950: #f5f4ef;
+  --ink-900: #ebe9e2;
+  --ink-850: #fcfbf9;
+  --ink-800: #e3e0d8;
+  --ink-line: rgba(17, 21, 22, 0.115);
+  --ink-line-strong: rgba(17, 21, 22, 0.23);
   --mint: #0a8a68;
   --mint-strong: #087357;
   --mint-dim: rgba(60, 232, 180, 0.24);
@@ -816,17 +817,17 @@ html[data-theme="dark"] .theme-paper {
   --ink-900: #10131a;
   --ink-850: #141821;
   --ink-800: #1c212c;
-  --ink-line: rgba(232, 228, 218, 0.1);
-  --ink-line-strong: rgba(232, 228, 218, 0.2);
+  --ink-line: rgba(226, 232, 230, 0.1);
+  --ink-line-strong: rgba(226, 232, 230, 0.2);
   --mint: #3ce8b4;
   --mint-strong: #57f5c6;
   --mint-dim: rgba(60, 232, 180, 0.14);
   --amber: #e3b269;
   --amber-dim: rgba(227, 178, 105, 0.14);
-  --paper: #ece8df;
-  --paper-soft: #c3bfb5;
+  --paper: #e9eceb;
+  --paper-soft: #c0c5c4;
   --paper-muted: #8a8f99;
-  --btn-bg: #ece8df;
+  --btn-bg: #e9eceb;
   --btn-fg: #0b0d12;
   --btn-hover: #ffffff;
   --mark: rgba(60, 232, 180, 0.3);
@@ -836,4 +837,64 @@ html[data-theme="dark"] .theme-paper {
 .theme-paper .mk-h2 {
   font-size: clamp(2rem, 3.4vw, 3.8rem);
   line-height: 1.04;
+}
+
+/* EntryCard (components/marketing/EntryCard.tsx): an index entry whose whole card is the link */
+.mk-entry {
+  transition:
+    border-color 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    background-color 180ms ease;
+}
+.mk-entry__arrow {
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    color 180ms ease;
+}
+.mk-entry:hover,
+.mk-entry:focus-visible {
+  border-color: var(--ink-line-strong);
+  transform: translateY(-2px);
+}
+.mk-entry:hover .mk-entry__arrow,
+.mk-entry:focus-visible .mk-entry__arrow {
+  transform: translate(2px, -2px);
+}
+.mk-entry:active {
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mk-entry,
+  .mk-entry__arrow {
+    transition-property: border-color, color, background-color;
+  }
+  .mk-entry:hover,
+  .mk-entry:focus-visible,
+  .mk-entry:hover .mk-entry__arrow,
+  .mk-entry:focus-visible .mk-entry__arrow {
+    transform: none;
+  }
+}
+
+/* PageHeader entrance (components/marketing/PageHeader.tsx): the title rises out of its mask, the rest
+   settles. Plain CSS, so it runs on first paint with no script; reduced motion shows everything at once. */
+@keyframes mk-rise-in {
+  from { transform: translateY(105%); }
+  to { transform: translateY(0); }
+}
+@keyframes mk-settle-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.mk-rise {
+  animation: mk-rise-in 800ms cubic-bezier(0.22, 1, 0.36, 1) 50ms both;
+}
+.mk-settle {
+  animation: mk-settle-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .mk-rise,
+  .mk-settle {
+    animation: none;
+  }
 }

@@ -28,7 +28,7 @@ export function WhatIsGeo() {
               so AI engines can read, trust and cite you. When a buyer asks
               ChatGPT or Google AI who to trust, the engine composes one answer
               from the sources it considers credible. Our work is making sure
-              you are one of those sources — across all five major engines.
+              you are one of those sources — across all seven major engines.
             </p>
           </Reveal>
           <Reveal delay={180}>

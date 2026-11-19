@@ -2,7 +2,7 @@ export const MARKETING_FAQ = [
   {
     question: "What is AI GEO?",
     answer:
-      "AI GEO — formally called Generative Engine Optimisation, and sometimes Answer Engine Optimisation (AEO) — is the discipline of structuring a brand's credibility, content and evidence so AI engines like ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude can read, trust and cite the brand in their answers. Where traditional SEO earns a rank in a list of links, AI GEO earns a place in the answer itself.",
+      "AI GEO — formally called Generative Engine Optimisation, and sometimes Answer Engine Optimisation (AEO) — is the discipline of structuring a brand's credibility, content and evidence so AI engines like ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews can read, trust and cite the brand in their answers. Where traditional SEO earns a rank in a list of links, AI GEO earns a place in the answer itself.",
   },
   {
     question: "How is AI GEO different from traditional SEO?",
@@ -12,17 +12,17 @@ export const MARKETING_FAQ = [
   {
     question: "Does Optimizer360.ai guarantee AI citations?",
     answer:
-      "No. The engines decide what they cite — no honest firm can guarantee a specific citation. Optimizer360.ai does the work that earns citations: structuring credibility, content and evidence, then tracking results weekly across all five engines so every change is verifiable.",
+      "No. The engines decide what they cite — no honest firm can guarantee a specific citation. Optimizer360.ai does the work that earns citations: structuring credibility, content and evidence, then tracking results weekly across all seven engines so every change is verifiable.",
   },
   {
     question: "Which AI engines does Optimizer360.ai cover?",
     answer:
-      "Optimizer360.ai works across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude — with weekly tracking across all five.",
+      "Optimizer360.ai works across ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews — with weekly tracking across all seven.",
   },
   {
     question: "How does an engagement with Optimizer360.ai start?",
     answer:
-      "Every engagement starts with a baseline audit: we run your brand across all five AI engines and show you the honest picture — where you are named, where you are missed, and what it would take to own the answer. Request an audit to begin; every engagement is scoped and quoted individually.",
+      "Every engagement starts with a baseline audit: we run your brand across all seven AI engines and show you the honest picture — where you are named, where you are missed, and what it would take to own the answer. Request an audit to begin; every engagement is scoped and quoted individually.",
   },
   {
     question: "Does Optimizer360.ai fabricate data or use invented statistics?",
@@ -32,7 +32,7 @@ export const MARKETING_FAQ = [
   {
     question: "How long does it take to see results?",
     answer:
-      "We won't invent a number — AI engines refresh their sources on their own schedules, and timelines vary by category and starting position. What we commit to is visibility of progress: your baseline on day one, weekly tracking across all five engines from week one, and honest reporting of what has moved and what hasn't. Most engagements are scoped in quarters so the work has time to compound.",
+      "We won't invent a number — AI engines refresh their sources on their own schedules, and timelines vary by category and starting position. What we commit to is visibility of progress: your baseline on day one, weekly tracking across all seven engines from week one, and honest reporting of what has moved and what hasn't. Most engagements are scoped in quarters so the work has time to compound.",
   },
   {
     question: "How is pricing structured?",

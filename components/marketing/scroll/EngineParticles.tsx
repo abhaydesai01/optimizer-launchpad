@@ -6,7 +6,7 @@ import * as THREE from "three";
 import { ENGINES, loadGlyph, sampleGlyph, sampleMark } from "@/components/marketing/scroll/engineMarks";
 
 /*
- * Particle core that forms the marks of the five engines. Unlike the sign-in scene it runs on
+ * Particle core that forms the marks of the tracked engines. Unlike the sign-in scene it runs on
  * scroll, not a timer: `shape` (0→1) takes the sphere into the first mark, and `position`
  * (0 → engines-1, fractional while morphing) moves from one mark to the next.
  */
@@ -51,7 +51,7 @@ void main(){
   float ks = clamp(uSwap * 1.45 - aRand * 0.45, 0.0, 1.0);
   ks = ks * ks * (3.0 - 2.0 * ks);
   vec3 q = mix(aFrom, aTarget, ks);
-  q += vec3(snoise(q * 2.0 + t), snoise(q * 2.0 - t), 0.0) * 0.025;
+  q += vec3(snoise(q * 2.0 + t), snoise(q * 2.0 - t), 0.0) * 0.006;
   p = mix(p, q, k);
   // particles swoop toward the viewer mid-flight
   float flight = sin(k * 3.14159265) + sin(ks * 3.14159265) * 0.8;
@@ -59,7 +59,7 @@ void main(){
   p.xy += vec2(snoise(n * 3.0 + 7.0), snoise(n * 3.0 - 7.0)) * flight * 0.35;
   vec4 mv = modelViewMatrix * vec4(p, 1.0);
   gl_Position = projectionMatrix * mv;
-  gl_PointSize = (1.0 + aRand * 1.6) * uPixel * (5.5 / -mv.z);
+  gl_PointSize = (1.1 + aRand * 0.9) * uPixel * (5.5 / -mv.z);
   vGlow = mix(noise * 0.5 + 0.5, 0.75 + aRand * 0.35, k) + flight * 0.45;
   vRand = aRand;
 }`;
@@ -70,7 +70,7 @@ varying float vGlow; varying float vRand;
 void main(){
   float d = length(gl_PointCoord - 0.5);
   if (d > 0.5) discard;
-  float alpha = smoothstep(0.5, 0.0, d);
+  float alpha = 1.0 - smoothstep(0.32, 0.5, d);
   vec3 col = mix(uDeep, uBrand, smoothstep(0.2, 0.7, vGlow));
   col = mix(col, uHot, smoothstep(0.75, 1.15, vGlow) * 0.85);
   gl_FragColor = vec4(col, alpha * (0.55 + vRand * 0.45));
@@ -133,7 +133,7 @@ export function EngineParticles({
     const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
     camera.position.set(0, 0, 7.4);
 
-    const count = host.clientWidth < 500 ? 6000 : 11000;
+    const count = host.clientWidth < 500 ? 9000 : 18000;
     const { pos, rand } = fibonacciSphere(count);
     const marks = ENGINES.map((engine) => sampleMark(engine.id, count));
     const from = new Float32Array(marks[0]);

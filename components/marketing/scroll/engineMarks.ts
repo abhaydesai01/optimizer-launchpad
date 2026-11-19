@@ -2,7 +2,7 @@
 // into a white glyph (used by the orbit tiles and traced by the particle core); engines without a
 // logo file use a mark drawn on a canvas. Adapted from the dashboard's sign-in scene.
 
-export type EngineId = "chatgpt" | "perplexity" | "google-ai-overviews" | "gemini" | "claude" | "grok";
+export type EngineId = "chatgpt" | "perplexity" | "google-ai-overviews" | "gemini" | "claude" | "grok" | "deepseek";
 
 export type EngineInfo = {
   id: EngineId;
@@ -60,8 +60,24 @@ export const ENGINES: EngineInfo[] = [
     logo: "/engines/claude.png",
     tracks: ["Trust framing", "Third-party sources", "Recommendation lists", "Gap vs competitors"],
   },
-  // The orbit shows the five engines the site says it covers everywhere else (FAQ, schema, copy).
-  // Grok's glyph stays in draw() below in case it is added back to the tracked set.
+  {
+    id: "grok",
+    name: "Grok",
+    maker: "xAI",
+    how: "Answers from its training data plus live search of the web and posts on X, so recent conversation can shape who it names.",
+    tags: ["Live web", "X posts"],
+    logo: "/engines/grok.png",
+    tracks: ["Brand mentions in answers", "Recency of sources", "Competitor shortlists", "Weekly deltas"],
+  },
+  {
+    id: "deepseek",
+    name: "DeepSeek",
+    maker: "DeepSeek",
+    how: "Answers mostly from what it learned in training, with optional web search, so long-standing authority carries weight.",
+    tags: ["Training data", "Web search"],
+    logo: "/engines/deepseek.png",
+    tracks: ["Brand mentions in answers", "Description accuracy", "Recommendation lists", "Gap vs competitors"],
+  },
 ];
 
 const S = 512;
@@ -178,6 +194,26 @@ function draw(ctx: CanvasRenderingContext2D, id: EngineId) {
       ctx.stroke();
       break;
     }
+    case "deepseek": {
+      // whale in profile: body sweeping into a raised tail fluke, with an eye cut out
+      const k = R;
+      ctx.beginPath();
+      ctx.moveTo(-k * 1.0, k * 0.1);
+      ctx.bezierCurveTo(-k * 0.95, -k * 0.5, -k * 0.35, -k * 0.62, k * 0.15, -k * 0.38);
+      ctx.bezierCurveTo(k * 0.55, -k * 0.2, k * 0.62, k * 0.1, k * 0.75, k * 0.0);
+      ctx.bezierCurveTo(k * 0.85, -k * 0.1, k * 0.88, -k * 0.4, k * 0.78, -k * 0.7);
+      ctx.bezierCurveTo(k * 0.98, -k * 0.55, k * 1.05, -k * 0.2, k * 0.95, k * 0.12);
+      ctx.bezierCurveTo(k * 0.85, k * 0.35, k * 0.6, k * 0.42, k * 0.3, k * 0.5);
+      ctx.bezierCurveTo(-k * 0.2, k * 0.65, -k * 0.85, k * 0.55, -k * 1.0, k * 0.1);
+      ctx.closePath();
+      ctx.fill();
+      ctx.globalCompositeOperation = "destination-out";
+      ctx.beginPath();
+      ctx.arc(-k * 0.6, -k * 0.05, k * 0.07, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalCompositeOperation = "source-over";
+      break;
+    }
     case "google-ai-overviews": {
       // search lens with a small sparkle inside: "AI on top of search"
       ctx.lineWidth = S * 0.05;
@@ -282,8 +318,8 @@ export function loadGlyph(engine: EngineInfo): Promise<HTMLCanvasElement> {
 export function sampleGlyph(canvas: HTMLCanvasElement, count: number): Float32Array {
   const data = canvas.getContext("2d", { willReadFrequently: true })!.getImageData(0, 0, S, S).data;
   const filled: number[] = [];
-  for (let y = 0; y < S; y += 2) {
-    for (let x = 0; x < S; x += 2) {
+  for (let y = 0; y < S; y++) {
+    for (let x = 0; x < S; x++) {
       if (data[(y * S + x) * 4 + 3] > 128) filled.push(x, y);
     }
   }
@@ -293,9 +329,9 @@ export function sampleGlyph(canvas: HTMLCanvasElement, count: number): Float32Ar
   const unit = 1.55 / R;
   for (let i = 0; i < count; i++) {
     const j = Math.floor(Math.random() * pixels) * 2;
-    out[i * 3] = (filled[j] + Math.random() * 2 - C) * unit;
-    out[i * 3 + 1] = -(filled[j + 1] + Math.random() * 2 - C) * unit;
-    out[i * 3 + 2] = (Math.random() - 0.5) * 0.18;
+    out[i * 3] = (filled[j] + Math.random() - C) * unit;
+    out[i * 3 + 1] = -(filled[j + 1] + Math.random() - C) * unit;
+    out[i * 3 + 2] = (Math.random() - 0.5) * 0.05;
   }
   return out;
 }

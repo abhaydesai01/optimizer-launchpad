@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import { EntryCard } from "@/components/marketing/EntryCard";
+import { PageHeader } from "@/components/marketing/PageHeader";
 import { useMemo, useState } from "react";
 import {
   useCases,
@@ -34,20 +35,14 @@ export function UseCasesPageClient({
   }, [segment, role]);
 
   return (
-    <main className="mk-wrap max-w-7xl pb-24 pt-52 md:pt-60">
-      <header>
-        <p className="mk-kicker">Use Cases</p>
-        <h1 className="mk-h2 mt-5 max-w-3xl text-[var(--paper)]">
-          GEO playbooks by segment and role
-        </h1>
-        <p className="mk-body mt-6 max-w-2xl">
-          Built with a strategic marketing lens: each use case maps market context,
-          demand behavior, role priorities, and a practical operating model to turn
-          AI visibility into qualified pipeline.
-        </p>
-      </header>
+    <main>
+      <PageHeader
+        title="GEO playbooks by segment and role"
+        intro="Built with a strategic marketing lens: each use case maps market context, demand behavior, role priorities, and a practical operating model to turn AI visibility into qualified pipeline."
+      />
+      <div className="mk-wrap pb-24">
 
-      <section className="mk-card mt-10 p-6">
+      <section className="mk-card p-6">
         <div className="grid gap-4 md:grid-cols-3">
           <label className="text-sm font-semibold text-[var(--paper)]">
             Segment
@@ -101,30 +96,25 @@ export function UseCasesPageClient({
 
       <section className="mt-8 grid gap-4 md:grid-cols-2">
         {filtered.map((item) => (
-          <article key={item.slug} className="mk-card p-6">
-            <p className="mk-kicker">{item.segment}</p>
-            <h2 className="mt-2 text-2xl font-semibold text-[var(--paper)]">
-              {item.shortTitle}
-            </h2>
-            <p className="mt-2 text-sm text-[var(--paper-soft)]">{item.tagline}</p>
-            <p className="mt-3 text-sm text-[var(--paper-muted)]">{item.intro}</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {item.roles.map((entry) => (
-                <span
-                  key={entry}
-                  className="rounded-full border border-[var(--ink-line-strong)] px-2 py-1 text-xs font-medium text-[var(--paper-soft)]"
-                >
-                  {entry}
-                </span>
-              ))}
-            </div>
-            <Link
-              href={`/usecases/${item.slug}`}
-              className="mk-btn mk-btn-primary mt-5"
-            >
-              Open detailed playbook →
-            </Link>
-          </article>
+          <EntryCard
+            key={item.slug}
+            href={`/usecases/${item.slug}`}
+            // the segment only when it adds something the title does not say
+            label={item.segment === item.shortTitle ? undefined : item.segment}
+            title={item.shortTitle}
+            meta={
+              <span className="flex flex-wrap gap-2">
+                {item.roles.map((entry) => (
+                  <span key={entry} className="rounded-full border border-[var(--ink-line-strong)] px-2.5 py-1 text-[12px] font-medium text-[var(--paper-soft)]">
+                    {entry}
+                  </span>
+                ))}
+              </span>
+            }
+          >
+            <p className="text-[var(--paper)]">{item.tagline}</p>
+            <p className="mt-2">{item.intro}</p>
+          </EntryCard>
         ))}
       </section>
       {filtered.length === 0 ? (
@@ -132,6 +122,7 @@ export function UseCasesPageClient({
           No playbooks match this filter yet. Try selecting "All Segments" and "All Roles".
         </section>
       ) : null}
+      </div>
     </main>
   );
 }

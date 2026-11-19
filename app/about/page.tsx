@@ -1,8 +1,6 @@
+import { PageHeader } from "@/components/marketing/PageHeader";
+import { MarketingPage } from "@/components/marketing/MarketingPage";
 import Link from "next/link";
-import { MarketingNav } from "@/components/marketing/MarketingNav";
-import { MarketingFooter } from "@/components/marketing/MarketingFooter";
-import { CardGlow } from "@/components/marketing/CardGlow";
-import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
 import { pageMeta } from "@/lib/page-metadata";
 import { FOUNDER_NAME, FOUNDER_NOTE, ORG_ADDRESS, SAME_AS_URLS } from "@/lib/site";
@@ -33,30 +31,13 @@ const aboutSchema = {
 
 export default function AboutPage() {
   return (
-    <div className="theme-ink min-h-screen">
-      <MarketingNav />
-      <CardGlow />
+    <MarketingPage>
       <main>
-        <section className="relative overflow-hidden pb-20 pt-52 md:pt-60">
-          <AnswerBeams className="absolute inset-0" />
-          <div className="mk-wrap relative">
-            <Reveal>
-              <p className="mk-kicker">About Optimizer360.ai</p>
-              <h1 className="mk-h1 mt-6 max-w-3xl text-[var(--paper)]">
-                AI is the new front door to every brand. We keep yours open.
-              </h1>
-            </Reveal>
-            <Reveal delay={120}>
-              <p className="mk-body mt-7 max-w-2xl">
-                Optimizer360.ai is a specialist AI GEO firm — Generative Engine
-                Optimisation. We exist for one reason:
-                when your customers ask AI who to trust, the answer should
-                include you — accurately, credibly, and on the strength of
-                evidence the engines can verify.
-              </p>
-            </Reveal>
+        <PageHeader
+          title="AI is the new front door to every brand. We keep yours open."
+          intro="Optimizer360.ai is a specialist AI GEO firm — Generative Engine Optimisation. We exist for one reason: when your customers ask AI who to trust, the answer should include you — accurately, credibly, and on the strength of evidence the engines can verify."
+        >
             {FOUNDER_NOTE ? (
-              <Reveal delay={180}>
                 <blockquote className="mk-card mt-10 max-w-2xl p-6">
                   <p className="text-[15px] leading-relaxed text-[var(--paper-soft)]">
                     “{FOUNDER_NOTE.quote}”
@@ -65,10 +46,8 @@ export default function AboutPage() {
                     {FOUNDER_NOTE.name}, {FOUNDER_NOTE.role}
                   </footer>
                 </blockquote>
-              </Reveal>
             ) : null}
-          </div>
-        </section>
+        </PageHeader>
 
         <section className="mk-section mk-hairline" aria-labelledby="belief-heading">
           <div className="mk-wrap grid gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-20">
@@ -101,7 +80,6 @@ export default function AboutPage() {
         <section className="mk-section mk-hairline bg-[var(--ink-900)]" aria-labelledby="honesty-heading">
           <div className="mk-wrap">
             <Reveal>
-              <p className="mk-kicker">Our operating principle</p>
               <h2 id="honesty-heading" className="mk-h2 mt-5 max-w-2xl text-[var(--paper)]">
                 Radical honesty, expanded.
               </h2>
@@ -112,7 +90,7 @@ export default function AboutPage() {
                   <h3 className="font-serif-display text-lg text-[var(--paper)]">
                     We never fabricate
                   </h3>
-                  <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
+                  <p className="mt-3 text-[16px] leading-relaxed text-[var(--paper-soft)]">
                     No invented search volumes. No fake case studies. No
                     numbers we cannot show you the source of. A young market
                     invites exaggeration; we decided early that our reporting
@@ -125,7 +103,7 @@ export default function AboutPage() {
                   <h3 className="font-serif-display text-lg text-[var(--paper)]">
                     We never over-promise
                   </h3>
-                  <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
+                  <p className="mt-3 text-[16px] leading-relaxed text-[var(--paper-soft)]">
                     We do not guarantee a specific citation, because nobody
                     honestly can — the engines decide. What we commit to is the
                     work that earns citations, and to showing you its effect
@@ -138,7 +116,7 @@ export default function AboutPage() {
                   <h3 className="font-serif-display text-lg text-[var(--paper)]">
                     Everything is verifiable
                   </h3>
-                  <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
+                  <p className="mt-3 text-[16px] leading-relaxed text-[var(--paper-soft)]">
                     Every finding we report, you can reproduce yourself in any
                     AI engine. Open ChatGPT, ask the question, read the answer.
                     If our dashboard says something changed, you can watch it
@@ -208,11 +186,11 @@ export default function AboutPage() {
               </h2>
               <p className="mk-body mx-auto mt-6 max-w-xl">
                 A confidential audit of how AI answers about your brand today,
-                across all five engines.
+                across all seven engines.
               </p>
               <div className="mt-9">
                 <Link href="/request-audit" className="mk-btn mk-btn-primary">
-                  Request an Audit
+                  Request an audit
                 </Link>
               </div>
               <p className="mt-10 text-xs text-[var(--paper-muted)]">
@@ -224,11 +202,10 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <MarketingFooter />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
       />
-    </div>
+    </MarketingPage>
   );
 }

@@ -12,7 +12,7 @@ const DELIVERABLES = [
   {
     icon: Activity,
     title: "Live tracking dashboard",
-    body: "Your citation position across all five engines, updated weekly. Every data point reproducible by you.",
+    body: "Your citation position across all seven engines, updated weekly. Every data point reproducible by you.",
   },
   {
     icon: PenLine,

@@ -1,8 +1,6 @@
+import { MarketingPage } from "@/components/marketing/MarketingPage";
 import { UseCasesPageClient } from "@/components/usecases/UseCasesPageClient";
 import { useCaseRoles, useCaseSegments } from "@/lib/usecases";
-import { MarketingNav } from "@/components/marketing/MarketingNav";
-import { MarketingFooter } from "@/components/marketing/MarketingFooter";
-import { CardGlow } from "@/components/marketing/CardGlow";
 import { pageMeta } from "@/lib/page-metadata";
 
 export const metadata = pageMeta({
@@ -29,11 +27,8 @@ export default function UseCasesPage({
       : "All Segments";
 
   return (
-    <div className="theme-ink min-h-screen">
-      <MarketingNav />
-      <CardGlow />
+    <MarketingPage>
       <UseCasesPageClient initialRole={initialRole} initialSegment={initialSegment} />
-      <MarketingFooter />
-    </div>
+      </MarketingPage>
   );
 }

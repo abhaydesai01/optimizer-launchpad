@@ -213,7 +213,7 @@ export function AuditRequestForm() {
       </div>
 
       {error ? (
-        <p className="mt-5 border-l-2 border-[var(--amber)] pl-3 text-sm text-[var(--amber)]" role="alert">
+        <p className="mt-5 rounded-lg bg-[var(--amber-dim)] px-3 py-2 text-sm text-[var(--amber)]" role="alert">
           {error}
         </p>
       ) : null}

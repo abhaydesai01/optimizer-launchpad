@@ -1,3 +1,4 @@
+import { MarketingPage } from "@/components/marketing/MarketingPage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -5,9 +6,6 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { BreadcrumbTrail } from "@/components/marketing/BreadcrumbTrail";
 import { JsonLd } from "@/components/marketing/JsonLd";
-import { MarketingFooter } from "@/components/marketing/MarketingFooter";
-import { MarketingNav } from "@/components/marketing/MarketingNav";
-import { CardGlow } from "@/components/marketing/CardGlow";
 import { categoryLabel } from "@/lib/article-categories";
 import { withArticleSchemaDefaults } from "@/lib/article-schema";
 import { excerptFromMarkdown, stripSecondaryKeywords } from "@/lib/excerpt";
@@ -116,10 +114,8 @@ export default async function BlogArticlePage({
   }
 
   return (
-    <div className="theme-ink min-h-screen">
-      <MarketingNav />
-      <CardGlow />
-      <main className="mk-wrap max-w-3xl pb-24 pt-52 md:pt-60">
+    <MarketingPage>
+      <main className="mk-wrap max-w-3xl pb-24 pt-40 sm:pt-44 lg:pt-48">
         {article.schemaJson?.faqSchema ? (
           <JsonLd id="faq-schema" data={article.schemaJson.faqSchema} />
         ) : null}
@@ -139,9 +135,11 @@ export default async function BlogArticlePage({
           ]}
         />
 
-        <p className="mk-kicker">{categoryLabel(article.category)}</p>
-        <h1 className="font-serif-display mt-3 text-3xl text-[var(--paper)] md:text-5xl">
-          {article.title}
+        <p className="text-[13px] font-medium text-[var(--mint)]">{categoryLabel(article.category)}</p>
+        <h1 className="font-serif-display mt-3 text-[clamp(2.1rem,4.2vw,3.5rem)] leading-[1.06] text-[var(--paper)]">
+          <span className="block overflow-hidden pb-[0.08em]">
+            <span className="mk-rise block">{article.title}</span>
+          </span>
         </h1>
         <p className="mt-5 text-[15px] text-[var(--paper-muted)]">
           <Link href={`/authors/${authorSlug}`} className="text-[var(--mint)] hover:underline">
@@ -157,12 +155,12 @@ export default async function BlogArticlePage({
         </p>
 
         {lede ? (
-          <p className="mt-8 border-l-2 border-[var(--mint)] pl-4 text-[17px] leading-relaxed text-[var(--paper-soft)]">
+          <p className="mt-8 text-[19px] leading-relaxed text-[var(--paper)]">
             {lede}
           </p>
         ) : null}
 
-        <article className="prose prose-invert mt-8 max-w-none prose-headings:text-[var(--paper)] prose-p:text-[var(--paper-soft)] prose-a:text-[var(--mint)] prose-strong:text-[var(--paper)]">
+        <article className="prose mt-10 max-w-none text-[17px] leading-[1.75] prose-headings:font-serif-display prose-headings:font-normal prose-headings:text-[var(--paper)] prose-p:text-[var(--paper-soft)] prose-li:text-[var(--paper-soft)] prose-li:marker:text-[var(--paper-muted)] prose-a:text-[var(--mint)] prose-strong:text-[var(--paper)] prose-blockquote:border-[var(--ink-line-strong)] prose-blockquote:text-[var(--paper)] prose-code:text-[var(--paper)] prose-hr:border-[var(--ink-line)] prose-th:text-[var(--paper)] prose-td:text-[var(--paper-soft)] prose-thead:border-[var(--ink-line-strong)] prose-tr:border-[var(--ink-line)]">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {stripSecondaryKeywords(article.finalContent || article.draft || "")}
           </ReactMarkdown>
@@ -244,7 +242,6 @@ export default async function BlogArticlePage({
           </section>
         ) : null}
       </main>
-      <MarketingFooter />
-    </div>
+      </MarketingPage>
   );
 }

@@ -1,46 +1,27 @@
 import type { ReactNode } from "react";
-import { MarketingNav } from "@/components/marketing/MarketingNav";
-import { MarketingFooter } from "@/components/marketing/MarketingFooter";
-import { CardGlow } from "@/components/marketing/CardGlow";
-import {
-  BreadcrumbTrail,
-  type BreadcrumbItem,
-} from "@/components/marketing/BreadcrumbTrail";
+import { MarketingPage } from "@/components/marketing/MarketingPage";
+import { PageHeader } from "@/components/marketing/PageHeader";
+import type { BreadcrumbItem } from "@/components/marketing/BreadcrumbTrail";
 
 type SubPageShellProps = {
-  kicker: string;
+  /** @deprecated no longer shown: the breadcrumb says where the visitor is. Kept so call sites still compile. */
+  kicker?: string;
   title: string;
   intro?: string;
   breadcrumbs?: BreadcrumbItem[];
   children: ReactNode;
 };
 
-export function SubPageShell({
-  kicker,
-  title,
-  intro,
-  breadcrumbs,
-  children,
-}: SubPageShellProps) {
+/** A simple inner page: the shared frame, the editorial title block, then the page's content. */
+export function SubPageShell({ title, intro, breadcrumbs, children }: SubPageShellProps) {
   return (
-    <div className="theme-ink min-h-screen">
-      <MarketingNav />
-      <CardGlow />
+    <MarketingPage>
       <main>
-        {/* pt accounts for announcement bar + sticky header */}
-        <section className="pb-14 pt-52 md:pt-60">
-          <div className="mk-wrap">
-            {breadcrumbs?.length ? <BreadcrumbTrail items={breadcrumbs} /> : null}
-            <p className="mk-kicker">{kicker}</p>
-            <h1 className="mk-h2 mt-5 max-w-3xl text-[var(--paper)]">{title}</h1>
-            {intro ? <p className="mk-body mt-6 max-w-2xl">{intro}</p> : null}
-          </div>
-        </section>
-        <section className="mk-hairline pb-24 pt-14">
+        <PageHeader title={title} intro={intro} breadcrumbs={breadcrumbs} />
+        <section className="border-t border-[var(--ink-line)] pb-24 pt-14 sm:pt-16">
           <div className="mk-wrap">{children}</div>
         </section>
       </main>
-      <MarketingFooter />
-    </div>
+    </MarketingPage>
   );
 }

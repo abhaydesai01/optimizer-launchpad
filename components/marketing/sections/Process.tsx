@@ -19,7 +19,7 @@ const STEPS = [
   {
     number: "04",
     title: "Prove",
-    body: "Weekly tracking across all five engines. You watch citations grow — or you see exactly where the work still is. Nothing hidden.",
+    body: "Weekly tracking across all seven engines. You watch citations grow — or you see exactly where the work still is. Nothing hidden.",
   },
 ];
 

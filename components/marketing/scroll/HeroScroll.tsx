@@ -9,12 +9,6 @@ import { CAL_LINK } from "@/lib/site";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-// the three facts under the buttons: true for every engagement, nothing invented
-const FACTS = [
-  { value: "5", label: "AI engines tracked" },
-  { value: "Weekly", label: "answer checks" },
-  { value: "Mumbai", label: "India" },
-];
 
 /**
  * The first screen: the claim across the top, then the copy and the two actions beside the product
@@ -83,20 +77,6 @@ export function HeroScroll() {
               </Button>
             </motion.div>
 
-            <motion.dl
-              className="mt-10 grid grid-cols-[repeat(3,minmax(0,1fr))] gap-4 border-t border-[var(--ink-line)] pt-5 lg:mt-auto"
-              {...rise(0.46)}
-            >
-              {FACTS.map((fact) => (
-                <div key={fact.label}>
-                  <dt className="sr-only">{fact.label}</dt>
-                  <dd className="font-serif-display text-[1.4rem] leading-none text-[var(--paper)] sm:text-[1.7rem]">{fact.value}</dd>
-                  <dd aria-hidden="true" className="mt-2 text-[13px] text-[var(--paper-muted)]">
-                    {fact.label}
-                  </dd>
-                </div>
-              ))}
-            </motion.dl>
           </div>
 
           <motion.div

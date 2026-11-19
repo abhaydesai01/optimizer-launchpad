@@ -56,11 +56,11 @@ export default function ContactPage() {
             Request an audit
           </h2>
           <p className="mt-3 text-[15px] leading-relaxed text-[var(--paper-muted)]">
-            We run your brand across all five AI engines and send you the
+            We run your brand across all seven AI engines and send you the
             honest picture. Confidential and no-obligation.
           </p>
           <Link href="/request-audit" className="mk-btn mk-btn-ghost mt-6">
-            Request an Audit
+            Request an audit
           </Link>
         </article>
 

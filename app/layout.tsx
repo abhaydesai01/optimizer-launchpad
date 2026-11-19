@@ -92,7 +92,7 @@ const serviceSchema = {
     audienceType: "Enterprise brands in healthcare, finance, real estate, education, jewellery and hospitality",
   },
   description:
-    "Optimizer360.ai structures a brand's credibility, content and evidence so AI engines — ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude — can read, trust and cite it. Baseline audit, gap diagnosis, gap-targeted content and entity structuring, and weekly citation tracking across all five engines. Engagements are scoped individually; request an audit for a quote.",
+    "Optimizer360.ai structures a brand's credibility, content and evidence so AI engines — ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews — can read, trust and cite it. Baseline audit, gap diagnosis, gap-targeted content and entity structuring, and weekly citation tracking across all seven engines. Engagements are scoped individually; request an audit for a quote.",
 };
 
 export const metadata: Metadata = {
@@ -103,7 +103,7 @@ export const metadata: Metadata = {
     template: "%s | Optimizer360.ai",
   },
   description:
-    "Be the brand AI recommends. Optimizer360.ai is the AI GEO firm that makes your brand the answer AI gives — across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude. We never fabricate data.",
+    "Be the brand AI recommends. Optimizer360.ai is the AI GEO firm that makes your brand the answer AI gives — across ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews. We never fabricate data.",
   keywords: [
     "AI GEO",
     "AI GEO agency",
@@ -129,7 +129,7 @@ export const metadata: Metadata = {
     title:
       "Optimizer360.ai — AI GEO for Enterprise Brands",
     description:
-      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
+      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews.",
     url: "https://optimizer360.ai",
     siteName: "Optimizer360.ai",
     type: "website",
@@ -147,7 +147,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Optimizer360.ai — AI GEO for Enterprise Brands",
     description:
-      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across all five major AI engines.",
+      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across all seven major AI engines.",
     images: ["https://optimizer360.ai/og-image.png"],
   },
   robots: {
@@ -171,10 +171,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${interTight.variable} ${inter.variable} ${fraunces.variable} ${newsreader.variable} ${schibsted.variable} ${plexMono.variable}`}
     >
       <head>
-        {/* home page editorial theme: dark by default, light if the visitor chose it; set before first paint */}
+        {/* editorial theme: dark by default, light if the visitor chose it; set before first paint. The js class
+            lets scroll reveals hide content only when script is running (globals.css .js .mk-reveal) */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var t='dark';try{if(localStorage.getItem('o360-theme')==='light')t='light'}catch(e){}document.documentElement.dataset.theme=t})()`,
+            __html: `(function(){var t='dark';try{if(localStorage.getItem('o360-theme')==='light')t='light'}catch(e){}document.documentElement.dataset.theme=t;document.documentElement.classList.add('js')})()`,
           }}
         />
         {/* Google tag (gtag.js) */}

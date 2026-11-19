@@ -2,7 +2,8 @@
 
 export const MARKETING_NAV = [
   { label: "Platform", href: "/#platform" },
-  { label: "Engines", href: "/engines" },
+  // Engines opens the orbit on the home page; the full /engines page stays linked from the footer
+  { label: "Engines", href: "/#engines" },
   { label: "Blog", href: "/blog" },
   { label: "Use cases", href: "/usecases" },
   { label: "Compare", href: "/compare" },
@@ -30,7 +31,7 @@ export const MARKETING_FOOTER = {
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Careers", href: "/careers" },
-    { label: "Request an Audit", href: "/request-audit" },
+    { label: "Request an audit", href: "/request-audit" },
   ],
   legal: [
     { label: "Privacy", href: "/privacy" },
