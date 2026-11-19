@@ -100,7 +100,7 @@ export function MarketingFooter() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-[var(--paper-muted)]">
+          <p className="mt-6 border-l-2 border-[var(--mint)] pl-3 text-[var(--paper-muted)]">
             Ad-free. We never fabricate data.
           </p>
         </div>

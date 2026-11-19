@@ -6,11 +6,9 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { AnswerGlyph } from "@/components/marketing/AnswerMark";
 import { MARKETING_NAV, MARKETING_NAV_MOBILE_EXTRAS } from "@/lib/marketing-routes";
-import { CAL_LINK, DASHBOARD_LOGIN_URL } from "@/lib/site";
-import { ThemeToggle } from "@/components/marketing/scroll/ThemeToggle";
+import { DASHBOARD_LOGIN_URL } from "@/lib/site";
 
-/** `themeToggle` shows the light/dark switch (only pages on the editorial theme support it). */
-export function MarketingNav({ themeToggle = false }: { themeToggle?: boolean }) {
+export function MarketingNav() {
   const pathname = usePathname() ?? "";
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -23,8 +21,7 @@ export function MarketingNav({ themeToggle = false }: { themeToggle?: boolean })
   }, []);
 
   function isActive(href: string) {
-    // a link to a section of the home page is never the "current page" (two would light up at once)
-    if (href.startsWith("/#")) return false;
+    if (href.startsWith("/#")) return pathname === "/";
     return pathname === href || pathname.startsWith(`${href}/`);
   }
 
@@ -32,15 +29,16 @@ export function MarketingNav({ themeToggle = false }: { themeToggle?: boolean })
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled || open
-          ? "border-b border-[var(--ink-line)] bg-[color-mix(in_srgb,var(--ink-950)_88%,transparent)] backdrop-blur-md"
+          ? "border-b border-[var(--ink-line)] bg-[rgba(6,10,20,0.88)] backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
     >
       <Link
         href="/request-audit"
-        className="block text-balance bg-[var(--mint-dim)] px-4 py-2 text-center text-xs font-medium tracking-wide text-[var(--mint)] transition-colors hover:bg-[rgba(60,232,180,0.16)]"
+        className="block bg-[var(--mint-dim)] py-2 text-center text-xs font-medium tracking-wide text-[var(--mint)] transition-colors hover:bg-[rgba(60,232,180,0.16)]"
       >
-        Your category&apos;s AI answer is still up for grabs. Request an audit →
+        The founding-client window is open — your category&apos;s AI answer is
+        still up for grabs. Request an audit →
       </Link>
       <div className="mk-wrap flex h-[72px] items-center justify-between">
         <Link
@@ -71,40 +69,25 @@ export function MarketingNav({ themeToggle = false }: { themeToggle?: boolean })
               {link.label}
             </Link>
           ))}
-          <a
-            href={DASHBOARD_LOGIN_URL}
-            className="text-sm text-[var(--paper-soft)] transition-colors hover:text-[var(--paper)]"
-          >
+          <a href={DASHBOARD_LOGIN_URL} className="mk-btn mk-btn-primary !px-5 !py-2.5">
             Login
           </a>
-          <a
-            href={CAL_LINK}
-            target="_blank"
-            rel="noreferrer"
-            className="mk-btn mk-btn-primary !h-9 !px-4"
-          >
-            Book a demo
-          </a>
-          {themeToggle ? <ThemeToggle /> : null}
         </nav>
 
-        <div className="flex items-center gap-2 lg:hidden">
-        {themeToggle ? <ThemeToggle /> : null}
         <button
           type="button"
           aria-label={open ? "Close navigation" : "Open navigation"}
           aria-expanded={open}
           onClick={() => setOpen((prev) => !prev)}
-          className="rounded-lg border border-[var(--ink-line-strong)] p-2 text-[var(--paper)] lg:hidden"
+          className="rounded-sm border border-[var(--ink-line-strong)] p-2 text-[var(--paper)] lg:hidden"
         >
           {open ? <X size={18} /> : <Menu size={18} />}
         </button>
-        </div>
       </div>
 
       {open ? (
         <nav
-          className="border-t border-[var(--ink-line)] bg-[color-mix(in_srgb,var(--ink-950)_97%,transparent)] lg:hidden"
+          className="border-t border-[var(--ink-line)] bg-[rgba(6,10,20,0.97)] lg:hidden"
           aria-label="Mobile navigation"
         >
           <div className="mk-wrap flex flex-col gap-1 py-4">
@@ -137,18 +120,9 @@ export function MarketingNav({ themeToggle = false }: { themeToggle?: boolean })
               </Link>
             ))}
             <a
-              href={CAL_LINK}
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => setOpen(false)}
-              className="mk-btn mk-btn-primary mt-3"
-            >
-              Book a demo
-            </a>
-            <a
               href={DASHBOARD_LOGIN_URL}
               onClick={() => setOpen(false)}
-              className="mk-btn mk-btn-ghost mt-2"
+              className="mk-btn mk-btn-primary mt-3"
             >
               Login
             </a>

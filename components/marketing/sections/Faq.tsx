@@ -7,7 +7,8 @@ export function Faq() {
       <div className="mk-wrap grid gap-12 lg:grid-cols-[1fr_1.6fr]">
         <Reveal>
           <div>
-            <h2 id="faq-heading" className="mk-h2 text-[var(--paper)]">
+            <p className="mk-kicker">Questions</p>
+            <h2 id="faq-heading" className="mk-h2 mt-5 text-[var(--paper)]">
               Straight answers, in writing.
             </h2>
             <p className="mk-body mt-6">

@@ -62,7 +62,7 @@ const MODULES = [
 ];
 
 const STATS = [
-  { value: "7", label: "AI engines tracked in one platform" },
+  { value: "5", label: "AI engines tracked in one platform" },
   { value: "3 days", label: "for baseline GEO audit delivery" },
   { value: "White-label", label: "dashboard and report exports included" },
 ];
@@ -72,7 +72,7 @@ export default function AgencyPage() {
     <SubPageShell
       kicker="For agencies"
       title="The AI GEO platform built for agency partners."
-      intro="Launch a high-margin GEO practice under your brand. Track AI citations across seven engines, run auditable delivery, and present measurable client outcomes every month."
+      intro="Launch a high-margin GEO practice under your brand. Track AI citations across five engines, run auditable delivery, and present measurable client outcomes every month."
       breadcrumbs={[
         { label: "Home", href: "/" },
         { label: "For agencies" },

@@ -74,7 +74,7 @@ export function Hero() {
           <Reveal delay={320}>
             <div className="mt-12">
               <p className="text-xs uppercase tracking-[0.18em] text-[var(--paper-muted)]">
-                One discipline. All seven engines.
+                One discipline. All five engines.
               </p>
               <ul className="mt-4 flex flex-wrap gap-2.5" aria-label="AI engines covered">
                 {ENGINES.map((engine) => (

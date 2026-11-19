@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Fraunces, IBM_Plex_Mono, Inter, Inter_Tight, Newsreader, Schibsted_Grotesk } from "next/font/google";
+import { Fraunces, Inter, Inter_Tight } from "next/font/google";
 import { buildOrganizationSchema } from "@/lib/schema-library";
 import { FOUNDER_NAME, ORG_ADDRESS, ORG_DESCRIPTION, SAME_AS_URLS, SITE_LOGO_URL } from "@/lib/site";
 import "./globals.css";
@@ -22,28 +22,6 @@ const fraunces = Fraunces({
   variable: "--font-serif",
   display: "swap",
   axes: ["opsz"],
-});
-
-// Editorial set (used by .theme-paper): newspaper serif, newspaper grotesk, technical mono.
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-news",
-  display: "swap",
-  style: ["normal", "italic"],
-  axes: ["opsz"],
-});
-
-const schibsted = Schibsted_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-grotesk",
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  display: "swap",
-  weight: ["400", "500"],
 });
 
 const orgSchema = {
@@ -92,7 +70,7 @@ const serviceSchema = {
     audienceType: "Enterprise brands in healthcare, finance, real estate, education, jewellery and hospitality",
   },
   description:
-    "Optimizer360.ai structures a brand's credibility, content and evidence so AI engines — ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews — can read, trust and cite it. Baseline audit, gap diagnosis, gap-targeted content and entity structuring, and weekly citation tracking across all seven engines. Engagements are scoped individually; request an audit for a quote.",
+    "Optimizer360.ai structures a brand's credibility, content and evidence so AI engines — ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude — can read, trust and cite it. Baseline audit, gap diagnosis, gap-targeted content and entity structuring, and weekly citation tracking across all five engines. Engagements are scoped individually; request an audit for a quote.",
 };
 
 export const metadata: Metadata = {
@@ -103,7 +81,7 @@ export const metadata: Metadata = {
     template: "%s | Optimizer360.ai",
   },
   description:
-    "Be the brand AI recommends. Optimizer360.ai is the AI GEO firm that makes your brand the answer AI gives — across ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews. We never fabricate data.",
+    "Be the brand AI recommends. Optimizer360.ai is the AI GEO firm that makes your brand the answer AI gives — across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude. We never fabricate data.",
   keywords: [
     "AI GEO",
     "AI GEO agency",
@@ -129,7 +107,7 @@ export const metadata: Metadata = {
     title:
       "Optimizer360.ai — AI GEO for Enterprise Brands",
     description:
-      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and Google AI Overviews.",
+      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across ChatGPT, Perplexity, Google AI Overviews, Gemini and Claude.",
     url: "https://optimizer360.ai",
     siteName: "Optimizer360.ai",
     type: "website",
@@ -147,7 +125,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Optimizer360.ai — AI GEO for Enterprise Brands",
     description:
-      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across all seven major AI engines.",
+      "Be the brand AI recommends. AI GEO (Generative Engine Optimisation) across all five major AI engines.",
     images: ["https://optimizer360.ai/og-image.png"],
   },
   robots: {
@@ -167,17 +145,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      suppressHydrationWarning
-      className={`${interTight.variable} ${inter.variable} ${fraunces.variable} ${newsreader.variable} ${schibsted.variable} ${plexMono.variable}`}
+      className={`${interTight.variable} ${inter.variable} ${fraunces.variable}`}
     >
       <head>
-        {/* editorial theme: dark by default, light if the visitor chose it; set before first paint. The js class
-            lets scroll reveals hide content only when script is running (globals.css .js .mk-reveal) */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){var t='dark';try{if(localStorage.getItem('o360-theme')==='light')t='light'}catch(e){}document.documentElement.dataset.theme=t;document.documentElement.classList.add('js')})()`,
-          }}
-        />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-89SE77PEFT"></script>
         <script

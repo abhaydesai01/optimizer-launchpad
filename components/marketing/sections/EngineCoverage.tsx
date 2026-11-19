@@ -45,13 +45,13 @@ export function EngineCoverage() {
         <Reveal>
           <p className="mk-kicker">Engine coverage</p>
           <h2 id="engines-heading" className="mk-h2 mt-5 max-w-2xl text-[var(--paper)]">
-            All seven engines. One tracking layer.
+            All five engines. One tracking layer.
           </h2>
           <p className="mk-body mt-6 max-w-2xl">
             Tracking tools usually have you choose which engines to follow,
             and plans can cap how many. We track every major answer engine
             your buyers reach — weekly, prompt by prompt, with the same
-            methodology across all seven.
+            methodology across all five.
           </p>
         </Reveal>
 

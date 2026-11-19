@@ -90,7 +90,7 @@ export default function EnginesPage() {
 
       <div className="mt-14 border border-[var(--ink-line-strong)] bg-[var(--ink-900)] p-8 text-center md:p-10">
         <h2 className="font-serif-display text-2xl text-[var(--paper)]">
-          See your numbers across all seven engines.
+          See your numbers across all five engines.
         </h2>
         <p className="mk-body mx-auto mt-4 max-w-xl">
           The audit runs every engine against your brand&apos;s top buyer
@@ -98,7 +98,7 @@ export default function EnginesPage() {
         </p>
         <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
           <Link href="/request-audit" className="mk-btn mk-btn-primary">
-            Request an audit
+            Request an Audit
           </Link>
           <Link href="/compare" className="mk-btn mk-btn-ghost">
             How we compare to trackers

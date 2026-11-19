@@ -1,5 +1,8 @@
-import { MarketingPage } from "@/components/marketing/MarketingPage";
+import { MarketingNav } from "@/components/marketing/MarketingNav";
+import { MarketingFooter } from "@/components/marketing/MarketingFooter";
+import { CardGlow } from "@/components/marketing/CardGlow";
 import { AuditRequestForm } from "@/components/marketing/AuditRequestForm";
+import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
 import { pageMeta } from "@/lib/page-metadata";
 import { CAL_LINK } from "@/lib/site";
@@ -21,7 +24,7 @@ const auditPageSchema = {
 };
 
 const ASSURANCES = [
-  "We run your brand across all seven engines and record what the AI actually says.",
+  "We run your brand across all five engines and record what the AI actually says.",
   "You see where you're named, where you're missed, and where competitors are cited instead.",
   "Every finding is reproducible — open any engine and verify it yourself.",
 ];
@@ -43,24 +46,28 @@ const NEXT_STEPS = [
 
 export default function RequestAuditPage() {
   return (
-    <MarketingPage>
+    <div className="theme-ink min-h-screen">
+      <MarketingNav />
+      <CardGlow />
       <main>
-        <section className="pb-24 pt-40 sm:pt-44 lg:pt-48">
-          <div className="mk-wrap grid gap-16 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+        <section className="relative overflow-hidden pb-24 pt-52 md:pt-60">
+          <AnswerBeams className="absolute inset-0" />
+          <div className="mk-wrap relative grid gap-16 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
             <div>
-              <div className="mk-settle">
-                <h1 className="font-serif-display text-[clamp(2.4rem,4.6vw,4.4rem)] leading-[1.02] text-[var(--paper)]">
+              <Reveal>
+                <p className="mk-kicker">Request an audit</p>
+                <h1 className="mk-h1 mt-6 text-[var(--paper)]">
                   See exactly how AI represents your brand today.
                 </h1>
-              </div>
-              <div className="mk-settle" style={{ animationDelay: "200ms" }}>
+              </Reveal>
+              <Reveal delay={120}>
                 <p className="mk-body mt-7">
-                  A confidential, no-obligation audit across all seven AI
+                  A confidential, no-obligation audit across all five AI
                   engines. We never fabricate data — every finding is yours to
                   verify.
                 </p>
-              </div>
-              <div className="mk-settle" style={{ animationDelay: "280ms" }}>
+              </Reveal>
+              <Reveal delay={200}>
                 <ul className="mt-10 space-y-5">
                   {ASSURANCES.map((assurance) => (
                     <li
@@ -75,9 +82,9 @@ export default function RequestAuditPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
-              <div className="mk-settle" style={{ animationDelay: "340ms" }}>
-                <p className="mt-10 rounded-lg bg-[var(--ink-900)] p-4 text-sm leading-relaxed text-[var(--paper-soft)]">
+              </Reveal>
+              <Reveal delay={260}>
+                <p className="mt-10 border-l-2 border-[var(--amber)] pl-4 text-sm leading-relaxed text-[var(--paper-muted)]">
                   Your information is used only to prepare your audit — never
                   shared, never used for anything else. A mutual NDA is
                   available on request.
@@ -94,20 +101,21 @@ export default function RequestAuditPage() {
                   </a>{" "}
                   with a GEO strategist.
                 </p>
-              </div>
+              </Reveal>
             </div>
 
-            <div className="mk-settle" style={{ animationDelay: "240ms" }}>
-              <div className="rounded-xl border border-[var(--ink-line)] bg-[var(--ink-850)] p-8 md:p-10">
+            <Reveal delay={160}>
+              <div className="border border-[var(--ink-line)] bg-[rgba(13,21,38,0.6)] p-8 md:p-10">
                 <AuditRequestForm />
               </div>
-            </div>
+            </Reveal>
           </div>
         </section>
 
         <section className="mk-section mk-hairline" aria-labelledby="what-happens-next-heading">
           <div className="mk-wrap">
             <Reveal>
+              <p className="mk-kicker">What happens next</p>
               <h2 id="what-happens-next-heading" className="mk-h2 mt-5 max-w-2xl text-[var(--paper)]">
                 No black box. Here&apos;s exactly what follows.
               </h2>
@@ -132,10 +140,11 @@ export default function RequestAuditPage() {
           </div>
         </section>
       </main>
+      <MarketingFooter />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(auditPageSchema) }}
       />
-    </MarketingPage>
+    </div>
   );
 }

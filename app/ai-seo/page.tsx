@@ -1,8 +1,10 @@
-import { PageHeader } from "@/components/marketing/PageHeader";
-import { MarketingPage } from "@/components/marketing/MarketingPage";
 import Link from "next/link";
 import { ArticleLinks } from "@/components/marketing/ArticleLinks";
 import { EXPLAINER_ARTICLES } from "@/lib/featured-articles";
+import { MarketingNav } from "@/components/marketing/MarketingNav";
+import { MarketingFooter } from "@/components/marketing/MarketingFooter";
+import { CardGlow } from "@/components/marketing/CardGlow";
+import { AnswerBeams } from "@/components/marketing/AnswerMark";
 import { Reveal } from "@/components/marketing/Reveal";
 import { GEO_GLOSSARY } from "@/lib/glossary";
 import { pageMeta } from "@/lib/page-metadata";
@@ -61,12 +63,26 @@ function SectionHeading({ id, children }: { id: string; children: string }) {
 
 export default function AiSeoGuidePage() {
   return (
-    <MarketingPage>
+    <div className="theme-ink min-h-screen">
+      <MarketingNav />
+      <CardGlow />
       <main>
-        <PageHeader
-          title="What is AI GEO?"
-          intro="A plain-language briefing on Generative Engine Optimisation — written for the decision-maker who has to explain it to a board, not for other marketers. Share it freely."
-        />
+        <section className="relative overflow-hidden pb-16 pt-52 md:pt-60">
+          <AnswerBeams className="absolute inset-0" />
+          <div className="mk-wrap relative">
+            <Reveal>
+              <p className="mk-kicker">The executive briefing</p>
+              <h1 className="mk-h1 mt-6 max-w-3xl text-[var(--paper)]">
+                What is AI GEO?
+              </h1>
+              <p className="mk-body mt-7 max-w-2xl">
+                A plain-language briefing on Generative Engine Optimisation —
+                written for the decision-maker who has to explain it to a
+                board, not for other marketers. Share it freely.
+              </p>
+            </Reveal>
+          </div>
+        </section>
 
         <section className="mk-hairline pb-24 pt-16">
           <div className="mk-wrap grid gap-16 lg:grid-cols-[220px_1fr]">
@@ -126,7 +142,7 @@ export default function AiSeoGuidePage() {
                 <SectionHeading id="definition">
                   The definition
                 </SectionHeading>
-                <div className="rounded-xl border border-[var(--ink-line)] bg-[var(--ink-900)] p-6">
+                <div className="border-l-2 border-[var(--mint)] bg-[var(--ink-900)] p-6">
                   <p className="font-serif-display text-lg leading-relaxed text-[var(--paper)]">
                     AI GEO — formally, Generative Engine Optimisation —
                     is the discipline of structuring a brand&apos;s
@@ -135,8 +151,8 @@ export default function AiSeoGuidePage() {
                   </p>
                 </div>
                 <p className="mk-body">
-                  The seven engines we track are ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek and
-                  Google AI Overviews. Each composes answers
+                  The five engines that matter today are ChatGPT, Perplexity,
+                  Google AI Overviews, Gemini and Claude. Each composes answers
                   differently, but all of them decide what to cite the same
                   way: from sources they can parse and consider credible.
                 </p>
@@ -200,7 +216,7 @@ export default function AiSeoGuidePage() {
                   gap-targeted content plus the technical and entity
                   structuring engines require. And{" "}
                   <strong className="text-[var(--paper)]">proof</strong>:
-                  continuous tracking across all seven engines, so every change —
+                  continuous tracking across all five engines, so every change —
                   or its absence — is visible. Anything sold without a baseline
                   and tracking is faith, not strategy.
                 </p>
@@ -255,14 +271,14 @@ export default function AiSeoGuidePage() {
                   The logical next step
                 </h2>
                 <p className="mk-body mt-4">
-                  Before deciding anything, see your baseline: how the seven
+                  Before deciding anything, see your baseline: how the five
                   engines answer about your brand today. It&apos;s
                   confidential, no-obligation, and every finding is yours to
                   verify.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-4">
                   <Link href="/request-audit" className="mk-btn mk-btn-primary">
-                    Request an audit
+                    Request an Audit
                   </Link>
                   <a
                     href={CAL_LINK}
@@ -278,6 +294,7 @@ export default function AiSeoGuidePage() {
           </div>
         </section>
       </main>
+      <MarketingFooter />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -286,6 +303,6 @@ export default function AiSeoGuidePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(definedTermSchema) }}
       />
-    </MarketingPage>
+    </div>
   );
 }

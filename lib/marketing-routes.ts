@@ -2,8 +2,7 @@
 
 export const MARKETING_NAV = [
   { label: "Platform", href: "/#platform" },
-  // Engines opens the orbit on the home page; the full /engines page stays linked from the footer
-  { label: "Engines", href: "/#engines" },
+  { label: "Engines", href: "/engines" },
   { label: "Blog", href: "/blog" },
   { label: "Use cases", href: "/usecases" },
   { label: "Compare", href: "/compare" },
@@ -13,6 +12,7 @@ export const MARKETING_NAV = [
 /** Extra links shown in mobile nav only (keeps desktop nav focused). */
 export const MARKETING_NAV_MOBILE_EXTRAS = [
   { label: "What is AI GEO?", href: "/ai-seo" },
+  { label: "For agencies", href: "/agency" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -26,12 +26,13 @@ export const MARKETING_FOOTER = {
     { label: "FAQ", href: "/faq" },
     { label: "How we compare", href: "/compare" },
     { label: "What is AI GEO?", href: "/ai-seo" },
-    ],
+    { label: "For agencies", href: "/agency" },
+  ],
   company: [
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Careers", href: "/careers" },
-    { label: "Request an audit", href: "/request-audit" },
+    { label: "Request an Audit", href: "/request-audit" },
   ],
   legal: [
     { label: "Privacy", href: "/privacy" },

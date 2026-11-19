@@ -29,8 +29,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-.vercel
-
-# tasteskill build artefacts
-shots/
-.taste-skill/chrome-*/

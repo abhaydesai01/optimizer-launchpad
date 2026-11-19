@@ -298,9 +298,7 @@ a {
 /* ───────────────────────────────────────────────
    Optimizer360 — editorial dark theme (marketing)
    ─────────────────────────────────────────────── */
-/* .theme-ink repeats the tokens so a dark band can sit inside .theme-paper */
-:root,
-.theme-ink {
+:root {
   --ink-950: #060a14;
   --ink-900: #0a1020;
   --ink-850: #0d1526;
@@ -376,7 +374,7 @@ a {
 }
 
 .mk-wrap {
-  width: var(--wrap-w, min(1160px, 100% - 2.5rem));
+  width: min(1160px, 100% - 2.5rem);
   margin-inline: auto;
 }
 
@@ -390,7 +388,7 @@ a {
 
 .mk-card {
   border: 1px solid var(--ink-line);
-  border-radius: 0.875rem;
+  border-radius: 4px;
   background: linear-gradient(180deg, rgba(18, 27, 48, 0.55), rgba(10, 16, 32, 0.35));
   transition:
     border-color 240ms ease,
@@ -403,52 +401,41 @@ a {
   transform: translateY(-2px);
 }
 
-/* Matches the shadcn Button (components/ui/button.tsx) for links styled as buttons. */
 .mk-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  height: 2.75rem;
-  border-radius: 0.625rem;
-  font-weight: 500;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  padding: 0 1.25rem;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+  padding: 0.85rem 1.75rem;
   transition:
     background-color 200ms ease,
     color 200ms ease,
     border-color 200ms ease,
-    box-shadow 200ms ease;
-}
-
-.mk-btn svg {
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
+    transform 200ms ease;
 }
 
 .mk-btn-primary {
-  background: var(--btn-bg, var(--mint));
-  color: var(--btn-fg, var(--ink-950));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.35),
-    0 1px 2px rgba(0, 0, 0, 0.4);
+  background: var(--mint);
+  color: var(--ink-950);
 }
 
 .mk-btn-primary:hover {
-  background: var(--btn-hover, var(--mint-strong));
+  background: var(--mint-strong);
+  transform: translateY(-1px);
 }
 
 .mk-btn-ghost {
   border: 1px solid var(--ink-line-strong);
-  background: transparent;
   color: var(--paper);
 }
 
 .mk-btn-ghost:hover {
-  border-color: var(--paper-muted);
-  background: var(--ink-800);
+  border-color: var(--mint);
+  color: var(--mint);
 }
 
 .mk-btn:focus-visible,
@@ -482,7 +469,7 @@ a {
   -webkit-text-stroke: 1px var(--ink-line-strong);
 }
 
-.js .mk-reveal {
+.mk-reveal {
   opacity: 0;
   transform: translateY(22px);
   transition:
@@ -496,7 +483,6 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .js .mk-reveal,
   .mk-reveal {
     opacity: 1;
     transform: none;
@@ -507,8 +493,8 @@ a {
 .mk-input {
   width: 100%;
   border: 1px solid var(--ink-line-strong);
-  border-radius: 0.625rem;
-  background: var(--ink-900);
+  border-radius: 2px;
+  background: rgba(10, 16, 32, 0.6);
   color: var(--paper);
   padding: 0.8rem 1rem;
   font-size: 0.95rem;
@@ -609,6 +595,22 @@ a {
   opacity: 1;
 }
 
+.mk-btn-primary {
+  position: relative;
+  box-shadow: 0 0 0 0 rgba(60, 232, 180, 0.35);
+  animation: mkBtnPulse 3.2s ease-in-out infinite;
+}
+
+@keyframes mkBtnPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(60, 232, 180, 0.28);
+  }
+  50% {
+    box-shadow: 0 0 34px 2px rgba(60, 232, 180, 0.22);
+  }
+}
+
 .mk-marquee {
   display: flex;
   gap: 1rem;
@@ -689,212 +691,14 @@ a {
   }
 }
 
-@keyframes mkScrollHint {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(200%);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .mk-shimmer,
+  .mk-btn-primary,
   .mk-marquee,
   .mk-caret,
   .mk-pop,
   .mk-demo-flash,
   .mk-float {
-    animation: none;
-  }
-}
-
-/* ───────────────────────────────────────────────
-   Optimizer360 — paper theme (editorial home page)
-   Same brand mint, used as a highlighter on warm paper.
-   ─────────────────────────────────────────────── */
-.theme-ink {
-  --btn-bg: var(--mint);
-  --btn-fg: var(--ink-950);
-  --btn-hover: var(--mint-strong);
-}
-
-.theme-paper {
-  --ink-950: #f5f4ef;
-  --ink-900: #ebe9e2;
-  --ink-850: #fcfbf9;
-  --ink-800: #e3e0d8;
-  --ink-line: rgba(17, 21, 22, 0.115);
-  --ink-line-strong: rgba(17, 21, 22, 0.23);
-  --mint: #0a8a68;
-  --mint-strong: #087357;
-  --mint-dim: rgba(60, 232, 180, 0.24);
-  --mint-bright: #3ce8b4;
-  --amber: #9a5b0b;
-  --amber-dim: rgba(227, 178, 105, 0.28);
-  --paper: #11141a;
-  --paper-soft: #30353f;
-  --paper-muted: #666d7a;
-  --btn-bg: #11141a;
-  --btn-fg: #f4f1ea;
-  --btn-hover: #2b303a;
-  --wrap-w: min(1680px, 100% - clamp(2.5rem, 7vw, 8rem));
-  --mark: #3ce8b4;
-  --font-serif: var(--font-news);
-  --font-body: var(--font-grotesk);
-  --font-display: var(--font-grotesk);
-  background: var(--ink-950);
-  color: var(--paper);
-  font-family: var(--font-grotesk), system-ui, sans-serif;
-}
-
-.theme-paper ::selection {
-  background: var(--mint-bright);
-  color: #11141a;
-}
-
-.theme-paper .mk-h1,
-.theme-paper .mk-h2,
-.theme-paper .mk-h3,
-.theme-paper .font-serif-display {
-  font-weight: 400;
-  letter-spacing: -0.025em;
-}
-
-.theme-paper .mk-kicker,
-.mk-mono {
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.theme-paper .mk-kicker {
-  color: var(--paper-muted);
-}
-
-.theme-paper .mk-card {
-  background: var(--ink-850);
-}
-
-.theme-paper .mk-card::after {
-  display: none;
-}
-
-.theme-paper .mk-card:hover {
-  transform: none;
-}
-
-.theme-paper .mk-pill {
-  background: var(--ink-850);
-}
-
-.theme-paper .mk-btn-primary {
-  box-shadow: none;
-}
-
-/* highlighter stroke behind a word, in the true brand mint */
-.mk-mark {
-  background-image: linear-gradient(
-    transparent 30%,
-    var(--mark, #3ce8b4) 30%,
-    var(--mark, #3ce8b4) 88%,
-    transparent 88%
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  border-radius: 0.06em;
-  padding: 0 0.1em;
-  margin: 0 -0.04em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-
-/* dark mode for the editorial theme, toggled from the nav (html[data-theme]) */
-html[data-theme="dark"] .theme-paper {
-  --ink-950: #0b0d12;
-  --ink-900: #10131a;
-  --ink-850: #141821;
-  --ink-800: #1c212c;
-  --ink-line: rgba(226, 232, 230, 0.1);
-  --ink-line-strong: rgba(226, 232, 230, 0.2);
-  --mint: #3ce8b4;
-  --mint-strong: #57f5c6;
-  --mint-dim: rgba(60, 232, 180, 0.14);
-  --amber: #e3b269;
-  --amber-dim: rgba(227, 178, 105, 0.14);
-  --paper: #e9eceb;
-  --paper-soft: #c0c5c4;
-  --paper-muted: #8a8f99;
-  --btn-bg: #e9eceb;
-  --btn-fg: #0b0d12;
-  --btn-hover: #ffffff;
-  --mark: rgba(60, 232, 180, 0.3);
-  color-scheme: dark;
-}
-
-.theme-paper .mk-h2 {
-  font-size: clamp(2rem, 3.4vw, 3.8rem);
-  line-height: 1.04;
-}
-
-/* EntryCard (components/marketing/EntryCard.tsx): an index entry whose whole card is the link */
-.mk-entry {
-  transition:
-    border-color 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    background-color 180ms ease;
-}
-.mk-entry__arrow {
-  transition:
-    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    color 180ms ease;
-}
-.mk-entry:hover,
-.mk-entry:focus-visible {
-  border-color: var(--ink-line-strong);
-  transform: translateY(-2px);
-}
-.mk-entry:hover .mk-entry__arrow,
-.mk-entry:focus-visible .mk-entry__arrow {
-  transform: translate(2px, -2px);
-}
-.mk-entry:active {
-  transform: translateY(0);
-}
-@media (prefers-reduced-motion: reduce) {
-  .mk-entry,
-  .mk-entry__arrow {
-    transition-property: border-color, color, background-color;
-  }
-  .mk-entry:hover,
-  .mk-entry:focus-visible,
-  .mk-entry:hover .mk-entry__arrow,
-  .mk-entry:focus-visible .mk-entry__arrow {
-    transform: none;
-  }
-}
-
-/* PageHeader entrance (components/marketing/PageHeader.tsx): the title rises out of its mask, the rest
-   settles. Plain CSS, so it runs on first paint with no script; reduced motion shows everything at once. */
-@keyframes mk-rise-in {
-  from { transform: translateY(105%); }
-  to { transform: translateY(0); }
-}
-@keyframes mk-settle-in {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.mk-rise {
-  animation: mk-rise-in 800ms cubic-bezier(0.22, 1, 0.36, 1) 50ms both;
-}
-.mk-settle {
-  animation: mk-settle-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-@media (prefers-reduced-motion: reduce) {
-  .mk-rise,
-  .mk-settle {
     animation: none;
   }
 }

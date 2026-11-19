@@ -21,7 +21,7 @@ const ROWS: { capability: string; tracker: Support; seo: Support; o360: Support;
   { capability: "Creates gap-targeted content (client-approved)", tracker: "partial", seo: "partial", o360: "yes" },
   { capability: "Technical & entity structuring for AI readability", tracker: "no", seo: "partial", o360: "yes" },
   { capability: "An assigned team that executes the fixes", tracker: "no", seo: "partial", o360: "yes" },
-  { capability: "Weekly verifiable reporting across all 7 engines", tracker: "partial", seo: "no", o360: "yes" },
+  { capability: "Weekly verifiable reporting across all 5 engines", tracker: "partial", seo: "no", o360: "yes" },
   {
     capability: "Guarantees specific AI citations",
     tracker: "no",
@@ -187,7 +187,7 @@ export default function ComparePage() {
         </p>
         <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
           <Link href="/request-audit" className="mk-btn mk-btn-primary">
-            Request an audit
+            Request an Audit
           </Link>
           <a
             href={CAL_LINK}

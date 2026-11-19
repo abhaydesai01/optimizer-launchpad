@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { EntryCard } from "@/components/marketing/EntryCard";
 import connectDB from "@/lib/mongodb";
 import Article from "@/lib/models/Article";
 import { JsonLd } from "@/components/marketing/JsonLd";
@@ -129,28 +128,33 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           </article>
         ) : (
           articles.map((article) => (
-            <EntryCard
-              key={String(article._id)}
-              href={`/blog/${article.slug}`}
-              label={categoryLabel(article.category)}
-              title={article.title}
-              meta={
-                <span className="flex items-center justify-between gap-4">
-                  <span>{article.authorName || "Optimizer360 GEO team"}</span>
-                  <span>
-                    {article.publishedAt
-                      ? new Date(article.publishedAt).toLocaleDateString("en-GB", {
-                          day: "numeric",
-                          month: "short",
-                          year: "numeric",
-                        })
-                      : "Draft"}
-                  </span>
+            <article key={String(article._id)} className="mk-card p-6">
+              <p className="mk-kicker">{categoryLabel(article.category)}</p>
+              <h2 className="mt-2 text-lg font-semibold text-[var(--paper)]">
+                {article.title}
+              </h2>
+              <p className="mt-2 text-sm text-[var(--paper-muted)]">
+                {article.excerpt || article.metaDescription}
+              </p>
+              <div className="mt-4 flex items-center justify-between text-xs text-[var(--paper-muted)]">
+                <span>{article.authorName || "Optimizer360 GEO team"}</span>
+                <span>
+                  {article.publishedAt
+                    ? new Date(article.publishedAt).toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      })
+                    : "Draft"}
                 </span>
-              }
-            >
-              {article.excerpt || article.metaDescription}
-            </EntryCard>
+              </div>
+              <Link
+                href={`/blog/${article.slug}`}
+                className="mt-4 inline-block font-semibold text-[var(--mint)] hover:text-[var(--mint-strong)]"
+              >
+                Read article →
+              </Link>
+            </article>
           ))
         )}
       </div>

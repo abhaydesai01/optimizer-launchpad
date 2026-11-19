@@ -1,6 +1,8 @@
-import { MarketingPage } from "@/components/marketing/MarketingPage";
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
+import { MarketingNav } from "@/components/marketing/MarketingNav";
+import { MarketingFooter } from "@/components/marketing/MarketingFooter";
+import { CardGlow } from "@/components/marketing/CardGlow";
 import { pageMeta } from "@/lib/page-metadata";
 import { CAL_LINK } from "@/lib/site";
 
@@ -27,8 +29,10 @@ export default function ThankYouPage({ searchParams }: ThankYouProps) {
   const email = searchParams.email || "your email";
 
   return (
-    <MarketingPage>
-      <main className="grid min-h-[70vh] place-items-center px-4 pb-24 pt-40 sm:pt-44 lg:pt-48">
+    <div className="theme-ink min-h-screen">
+      <MarketingNav />
+      <CardGlow />
+      <main className="grid min-h-[70vh] place-items-center px-4 pb-24 pt-52 md:pt-60">
         <div className="w-full max-w-2xl border border-[var(--ink-line-strong)] bg-[var(--ink-900)] p-10 text-center md:p-14">
           <CheckCircle2
             className="mx-auto h-10 w-10 text-[var(--mint)]"
@@ -43,7 +47,7 @@ export default function ThankYouPage({ searchParams }: ThankYouProps) {
               <p className="mx-auto mt-4 max-w-md text-[15px] leading-relaxed text-[var(--paper-muted)]">
                 Your AI visibility audit for {brand} is being prepared.
                 We&apos;ll email you at {email} within 48 hours with the honest
-                picture across all seven engines.
+                picture across all five engines.
               </p>
             </>
           ) : (
@@ -75,6 +79,7 @@ export default function ThankYouPage({ searchParams }: ThankYouProps) {
           </div>
         </div>
       </main>
-      </MarketingPage>
+      <MarketingFooter />
+    </div>
   );
 }
