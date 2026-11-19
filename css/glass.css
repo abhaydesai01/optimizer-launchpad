@@ -1,0 +1,175 @@
+/* v10 · glass, not cards.
+   Rule of the house: an object (a live widget, a product window, a hero number) is a pane of glass
+   floating over the world; a list of facts is type on the page, separated by hairlines, never boxed. */
+
+/* ---------- tokens ---------- */
+:root, :root[data-theme="night"] {
+  --glass: linear-gradient(140deg, rgba(255, 255, 255, .085), rgba(255, 255, 255, .025) 60%, rgba(255, 255, 255, .045));
+  --glass-in: rgba(255, 255, 255, .055);
+  --glass-in-2: rgba(255, 255, 255, .08);
+  --glass-rim: rgba(255, 255, 255, .11);
+  --glass-hi: rgba(255, 255, 255, .16);
+  --glass-sh: 0 34px 90px -36px rgba(0, 0, 0, .8);
+  --glass-blur: blur(26px) saturate(1.6);
+  --aura-a: rgba(111, 216, 155, .085);
+  --aura-b: rgba(111, 216, 155, .05);
+}
+:root[data-theme="paper"] {
+  --glass: linear-gradient(140deg, rgba(255, 255, 255, .66), rgba(255, 255, 255, .30) 58%, rgba(255, 255, 255, .48));
+  --glass-in: rgba(255, 255, 255, .62);
+  --glass-in-2: rgba(255, 255, 255, .8);
+  --glass-rim: rgba(17, 17, 17, .075);
+  --glass-hi: rgba(255, 255, 255, .95);
+  --glass-sh: 0 36px 80px -40px rgba(14, 70, 44, .32), 0 2px 8px -3px rgba(14, 40, 30, .07);
+  --glass-blur: blur(26px) saturate(1.7);
+  --aura-a: rgba(30, 127, 86, .11);
+  --aura-b: rgba(30, 127, 86, .065);
+}
+
+/* ---------- the glass pane ---------- */
+:root .rent, :root .cs__hero, :root .app, :root .tabs, :root .keysheet__card, :root .chapters,
+:root .audit__field, :root .audit__run, :root .eng, :root .ai, :root .ba__card, :root .case__card, :root .case__read,
+:root .chartbox, :root .card, :root .zone {
+  background: var(--glass);
+  -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-rim);
+  box-shadow: inset 0 1px 0 var(--glass-hi), var(--glass-sh);
+}
+:root .inds li, :root .cs__steps span {
+  background: var(--glass-in); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border-color: var(--glass-rim); box-shadow: inset 0 1px 0 var(--glass-hi);
+}
+:root .cs__steps li:last-child span { background: var(--green); }
+
+/* a soft green aura behind every section that holds glass, so the frost has something to catch */
+:root :is(.sources, .engines, .investors, .whatgeo, .geo, .tool, .how, .case, .proof, .founders, .learn, .decide) {
+  background-image:
+    radial-gradient(44% 40% at 8% 14%, var(--aura-a), transparent 70%),
+    radial-gradient(42% 46% at 94% 84%, var(--aura-b), transparent 72%);
+}
+
+/* ---------- facts are type, not boxes ---------- */
+:root :is(.cs__kpis li, .cs__col, .gains li, .start__list li, .solve li, .guides article, .person, .audiences--cards li) {
+  position: relative; background: none; border: 0; border-radius: 0; box-shadow: none;
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+  border-top: 1px solid var(--line); padding: 24px 6px 6px 0;
+}
+:root :is(.cs__kpis li, .cs__col, .gains li, .start__list li, .solve li, .guides article, .person, .audiences--cards li)::after {
+  content: ""; position: absolute; left: 0; top: -1px; width: 34px; height: 2px; background: var(--green);
+}
+:root .panel { background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
+:root .cs__kpis { gap: 8px 36px; }
+:root .cs__did { gap: 8px 36px; }
+:root .guides article:hover { transform: none; }
+
+/* ---------- hero: the rented-growth widget is a pane of glass over the field ---------- */
+:root[data-theme="paper"] .rent { background: linear-gradient(140deg, rgba(255, 255, 255, .58), rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .4)); }
+.rent { border-radius: 28px; }
+.rent__chips li { border-color: var(--glass-rim); background: var(--glass-in); }
+
+/* ---------- the six chapters: the scene is a glass plane over the 3D ring ---------- */
+.ownx { height: 1300vh; }
+:root .ownx .sc {
+  --s-card: var(--glass-in-2); --s-card2: rgba(var(--ink), .05); --s-line: var(--glass-rim);
+  background: var(--glass);
+  -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-rim);
+  box-shadow: inset 0 1px 0 var(--glass-hi), var(--glass-sh);
+}
+:root .ownx .sc .c { box-shadow: inset 0 1px 0 var(--glass-hi), 0 14px 34px -22px rgba(0, 0, 0, calc(1.6 * var(--sk))); }
+:root .ownx .sc .rw { background: transparent; }
+/* the real pages rest flat inside the plane: no depth push, so nothing spills over the edge */
+:root .ownx.is-3d .sc .rw .shot.pop:nth-child(n) { --z: 0px; }
+:root .ownx.is-3d .sc .rw .shot.pop:nth-child(1) { --ty: 5deg; }
+:root .ownx.is-3d .sc .rw .shot.pop:nth-child(2) { --ty: -3deg; }
+:root .ownx.is-3d .sc .rw .shot.pop:nth-child(3) { --ty: -5deg; }
+:root .ownx.is-3d .sc .rw .shot.pop:nth-child(4) { --ty: 4deg; }
+:root .ownx.is-3d .sc .rw .shot.pop:nth-child(5) { --ty: -4deg; }
+:root .ownx.is-3d .sc .rw .shot.pop:nth-child(6) { --ty: 3deg; }
+:root .ownx.is-3d .sc .rw .shot.pop.on { transform: translate3d(0, 0, 0) rotateY(var(--ty, 0deg)) rotate(var(--r, 0deg)) scale(.95); }
+:root .ownx .sc .shot { border-color: var(--glass-rim); border-radius: .9em; box-shadow: 0 1.4em 3em -1.2em rgba(0, 0, 0, calc(1.6 * var(--sk))), 0 0 0 1px rgba(var(--ink), .04); }
+:root .ownx .sc .shot figcaption { background: var(--glass-in-2); }
+:root .ownx .sc__beat { border-top-color: var(--glass-rim); }
+@media (max-width: 760px) { .ownx { height: 1200vh; } }
+
+/* ---------- zone 1: the orbit ---------- */
+.orbit { margin: 0; justify-self: center; width: 100%; max-width: 880px; }
+.orbit__svg { display: block; width: 100%; height: auto; overflow: visible; }
+.ob-rail { fill: none; stroke: rgba(var(--ink), .14); stroke-width: 1; stroke-dasharray: 2 7; }
+.ob-rail--front { stroke: rgba(var(--ink), .24); }
+.ob-line { fill: none; stroke: rgba(var(--g), .24); stroke-linecap: round; }
+.ob-line.weak { stroke: rgba(var(--b), .5); stroke-dasharray: 3 7; }
+.ob-dot { fill: var(--green); }
+.ob-dot.weak { fill: var(--bad); }
+.ob-s-glow0 { stop-color: rgb(var(--g)); stop-opacity: .30; }
+.ob-s-glow1 { stop-color: rgb(var(--g)); stop-opacity: .08; }
+.ob-s-glow2 { stop-color: rgb(var(--g)); stop-opacity: 0; }
+.ob-s-core0 { stop-color: #E6FBEF; } .ob-s-core1 { stop-color: #3DAA78; } .ob-s-core2 { stop-color: #0F5034; }
+:root[data-theme="night"] .ob-s-core0, :root:not([data-theme="paper"]) .ob-s-core0 { stop-color: #E9FFF2; }
+:root:not([data-theme="paper"]) .ob-s-core1 { stop-color: #6FD89B; }
+:root:not([data-theme="paper"]) .ob-s-core2 { stop-color: #1B6B47; }
+.ob-orb { filter: drop-shadow(0 18px 30px rgba(var(--g), .35)); }
+.ob-shine { fill: rgba(255, 255, 255, .55); filter: blur(5px); }
+.ob-pulse { fill: none; stroke: rgb(var(--g)); stroke-width: 1.2; opacity: 0; transform-box: view-box; transform-origin: 440px 280px; animation: obPulse 3.6s cubic-bezier(.2, .7, .3, 1) infinite; }
+.ob-pulse--2 { animation-delay: 1.8s; }
+@keyframes obPulse { 0% { transform: scale(1); opacity: .45; } 100% { transform: scale(2.1); opacity: 0; } }
+.ob-core__t { fill: #fff; font: 600 21px var(--display); text-anchor: middle; letter-spacing: -.01em; }
+.ob-core__s { fill: rgba(255, 255, 255, .78); font: 500 11px var(--sans); text-anchor: middle; letter-spacing: .12em; text-transform: uppercase; }
+:root:not([data-theme="paper"]) .ob-core__t { fill: #04150C; }
+:root:not([data-theme="paper"]) .ob-core__s { fill: rgba(4, 21, 12, .7); }
+.ob-pill { fill: rgba(255, 255, 255, .8); stroke: rgba(17, 17, 17, .08); stroke-width: 1; filter: drop-shadow(0 10px 18px rgba(14, 70, 44, .13)); }
+:root:not([data-theme="paper"]) .ob-pill { fill: rgba(30, 33, 32, .82); stroke: rgba(255, 255, 255, .11); filter: drop-shadow(0 12px 22px rgba(0, 0, 0, .5)); }
+.ob-node.heavy .ob-pill { stroke: rgba(var(--g), .45); }
+.ob-node.weak .ob-pill { stroke: rgba(var(--b), .55); stroke-dasharray: 4 4; }
+.ob-name { fill: var(--text); font: 600 17px var(--sans); text-anchor: middle; }
+.ob-sub { fill: var(--mute); font: 500 13px var(--sans); text-anchor: middle; }
+.ob-node.weak .ob-name { fill: var(--bad); }
+.orbit__key { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin-top: 8px; font-size: 13.5px; color: var(--dim); }
+.orbit__key span { display: inline-flex; align-items: center; gap: 9px; }
+.orbit__key i { width: 9px; height: 9px; border-radius: 50%; }
+.orbit__key .k-g { background: var(--green); box-shadow: 0 0 0 4px rgba(var(--g), .16); }
+.orbit__key .k-r { background: var(--bad); box-shadow: 0 0 0 4px rgba(var(--b), .14); }
+:root .src__grid { grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); }
+@media (max-width: 900px) { :root .src__grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .ob-pulse { animation: none; } }
+
+/* the scroll-progress ring was drawn in night ink only, so on white it read as an empty circle */
+#progress-ring { fill: var(--text); }
+#progress-key * { fill: var(--green); }
+:root .progress, :root .key { background: var(--glass); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); border-color: var(--glass-rim); box-shadow: inset 0 1px 0 var(--glass-hi), 0 16px 34px -18px rgba(0, 0, 0, calc(1.8 * var(--sk))); }
+
+/* glass needs light to catch: a soft green bloom sits behind the hero number of each case */
+:root .cs__top { position: relative; isolation: isolate; }
+:root .cs__top::before { content: ""; position: absolute; z-index: -1; left: -6%; top: -18%; width: 62%; height: 136%; background: radial-gradient(closest-side, rgba(var(--g), .2), rgba(var(--g), .06) 60%, transparent); pointer-events: none; }
+
+/* call-outs are a green rule and type, not a tinted box */
+:root .trust, :root .ir-trust { background: none; border: 0; border-left: 2px solid var(--green); border-radius: 0; padding: 4px 0 4px 18px; box-shadow: none; }
+
+/* engines: four columns of type split by hairlines, not four boxes */
+:root .eng-grid { gap: 0; }
+:root .eng { background: none; -webkit-backdrop-filter: none; backdrop-filter: none; border: 0; border-left: 1px solid var(--line); border-radius: 0; box-shadow: none; padding: 6px clamp(18px, 2vw, 30px) 4px; }
+:root .eng:first-child { border-left: 0; padding-left: 0; }
+:root .eng li { background: none; border-radius: 0; padding: 12px 0; border-bottom: 1px solid var(--line); }
+:root .eng li.you { background: linear-gradient(90deg, rgba(var(--g), .12), transparent 85%); box-shadow: inset 2px 0 0 var(--green); padding-left: 12px; }
+:root .share { background: none; border: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 0; padding: 22px 0; }
+@media (max-width: 900px) { :root .eng { border-left: 0; padding: 18px 0 6px; border-top: 1px solid var(--line); } }
+:root .eng ol { gap: 0; }
+
+/* before / after: two columns of answers, not two boxes */
+:root .ba { gap: 0; }
+:root .ba__card { background: none; -webkit-backdrop-filter: none; backdrop-filter: none; border: 0; border-radius: 0; box-shadow: none; padding: 4px 0 4px clamp(18px, 2vw, 28px); border-left: 1px solid var(--line); }
+:root .ba__card--before { border-left: 0; padding-left: 0; padding-right: clamp(18px, 2vw, 28px); }
+:root .ba__card--after { border-left: 2px solid var(--green); }
+:root .ba__card ol, :root .eng ol { gap: 0; }
+:root .ba__card li { background: none; border-radius: 0; padding: 11px 0; border-bottom: 1px solid var(--line); }
+:root .ba__card li.you { background: linear-gradient(90deg, rgba(var(--g), .12), transparent 85%); box-shadow: inset 2px 0 0 var(--green); padding-left: 12px; }
+:root .solve { gap: 8px 32px; }
+
+/* the orbit on a phone: names only, set large enough to read */
+.orbit__svg.is-compact .ob-name { font-size: 31px; }
+.orbit__svg.is-compact .ob-sub, .orbit__svg.is-compact .ob-core__s { display: none; }
+.orbit__svg.is-compact .ob-core__t { font-size: 25px; transform: translateY(8px); }
+
+/* v11: the chapter scene glass is a little more solid, so the ring behind reads as a soft blur and the text stays crisp */
+:root[data-theme="paper"] .ownx .sc { background: linear-gradient(140deg, rgba(255, 255, 255, .84), rgba(255, 255, 255, .64) 58%, rgba(255, 255, 255, .76)); -webkit-backdrop-filter: blur(34px) saturate(1.3); backdrop-filter: blur(34px) saturate(1.3); }
+:root[data-theme="night"] .ownx .sc { background: linear-gradient(140deg, rgba(22, 25, 24, .78), rgba(14, 16, 16, .62) 58%, rgba(20, 23, 22, .72)); -webkit-backdrop-filter: blur(34px) saturate(1.3); backdrop-filter: blur(34px) saturate(1.3); }

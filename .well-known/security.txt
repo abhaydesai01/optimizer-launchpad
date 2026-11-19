@@ -1,0 +1,5 @@
+Contact: mailto:abhay@optimizer360.ai
+Expires: 2027-11-16T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://optimizer360.ai/.well-known/security.txt
+Policy: https://optimizer360.ai/privacy/

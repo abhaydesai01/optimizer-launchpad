@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sample scene · Own your reputation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<style>
+  /* Deck palette. "paper" = the white investor deck, "night" = the black chat-agent deck. */
+  :root[data-theme="paper"] {
+    --bg: #F2F2F0; --card: #FFFFFF; --ink: #141414; --dim: rgba(20,20,20,.62); --line: rgba(20,20,20,.12);
+    --sage: #A9CDBD; --sage-soft: #DCEBE3; --green: #3C7864; --bad: #B4472F; --bad-soft: #F6E4DE; --shadow: 0 10px 30px rgba(20,20,20,.10);
+  }
+  :root[data-theme="night"] {
+    --bg: #070808; --card: #111212; --ink: #F2F2F0; --dim: rgba(242,242,240,.64); --line: rgba(242,242,240,.13);
+    --sage: rgba(111,216,155,.22); --sage-soft: #1A1B1B; --green: #6FD89B; --bad: #F08A6E; --bad-soft: #2A1712; --shadow: 0 14px 40px rgba(0,0,0,.5);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: "Satoshi", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px 16px 40px; transition: background .4s, color .4s; }
+  .bar { width: min(1180px, 100%); display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 13px; color: var(--dim); flex-wrap: wrap; }
+  .bar b { color: var(--ink); font-weight: 700; }
+  .toggle { display: flex; border: 1px solid var(--line); border-radius: 99px; overflow: hidden; }
+  .toggle button { font: inherit; color: var(--dim); background: none; border: 0; padding: 7px 14px; cursor: pointer; }
+  .toggle button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .stage { width: min(1180px, 100%); aspect-ratio: 16 / 9; position: relative; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--bg); container-type: inline-size; }
+  .head { position: absolute; left: 4.5%; top: 6%; width: 36%; z-index: 3; }
+  .eyebrow { font-size: 1.05cqw; letter-spacing: .14em; text-transform: uppercase; color: var(--green); font-weight: 700; }
+  h1 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: 5cqw; line-height: 1; letter-spacing: -.01em; margin-top: .25em; }
+  h1 i { font-family: "Satoshi", sans-serif; font-weight: 700; font-style: italic; letter-spacing: -.035em; font-size: .86em; }
+  .beat { position: absolute; left: 4.5%; bottom: 8%; width: 34%; z-index: 3; font-size: 1.55cqw; line-height: 1.35; color: var(--dim); min-height: 4.4em; }
+  .beat span { position: absolute; inset: 0; opacity: 0; transform: translateY(8px); transition: .5s; }
+  .beat span.on { opacity: 1; transform: none; }
+  .beat strong { color: var(--ink); font-weight: 700; }
+  .score { position: absolute; left: 4.5%; top: 37%; z-index: 3; display: flex; align-items: baseline; gap: .6cqw; }
+  .score__n { font-family: "Instrument Serif", serif; font-size: 9cqw; line-height: 1; color: var(--bad); transition: color .6s; font-variant-numeric: tabular-nums; }
+  .score__s { font-size: 1.3cqw; color: var(--dim); }
+  .stage.good .score__n { color: var(--green); }
+
+  .wall { position: absolute; right: 3.5%; top: 6%; width: 54%; height: 88%; }
+  .rev { position: absolute; width: 47%; background: var(--card); border: 1px solid var(--line); border-radius: 1.1cqw; padding: 1.1cqw 1.3cqw; box-shadow: var(--shadow); font-size: 1.15cqw; line-height: 1.35;
+         opacity: 0; transform: scale(.7) rotate(var(--r, 0deg)); transition: transform .28s cubic-bezier(.2,1.6,.4,1), opacity .2s, border-color .5s, background .5s, left .8s cubic-bezier(.16,1,.3,1), top .8s cubic-bezier(.16,1,.3,1); }
+  .rev.in { opacity: 1; transform: scale(1) rotate(var(--r, 0deg)); }
+  .rev__top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .45cqw; }
+  .rev__src { font-size: .9cqw; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); font-weight: 700; }
+  .stars { letter-spacing: .1em; color: var(--bad); font-size: 1.2cqw; transition: color .5s; }
+  .rev__who { color: var(--dim); font-size: .95cqw; margin-top: .4cqw; }
+  .rev__reply { max-height: 0; overflow: hidden; opacity: 0; transition: .5s; border-left: 2px solid var(--green); padding-left: .8cqw; font-size: 1cqw; color: var(--dim); }
+  .rev.bad { border-color: var(--bad); background: var(--bad-soft); }
+  .rev.fixed { border-color: var(--green); background: var(--card); }
+  .rev.fixed .rev__reply { max-height: 5cqw; opacity: 1; margin-top: .6cqw; }
+  .rev.new { border-color: var(--green); }
+  .rev.new .stars { color: var(--green); }
+  .rev.gone { opacity: 0; transform: scale(.5) translate(0, 0); left: 26% !important; top: 34% !important; }
+
+  .answer { position: absolute; right: 6%; top: 15%; width: 49%; background: var(--card); border: 2px solid var(--green); border-radius: 1.4cqw; padding: 2cqw 2.2cqw; box-shadow: var(--shadow); opacity: 0; transform: scale(.9); transition: .6s cubic-bezier(.16,1,.3,1); z-index: 4; }
+  .answer.on { opacity: 1; transform: none; }
+  .answer__q { font-size: 1.15cqw; color: var(--dim); background: var(--sage-soft); border-radius: 99px; padding: .5cqw 1.1cqw; display: inline-block; }
+  .answer__a { font-family: "Instrument Serif", serif; font-size: 2.35cqw; line-height: 1.2; margin: 1.1cqw 0; }
+  .answer__a mark { background: var(--sage); color: inherit; padding: 0 .25em; border-radius: .3em; }
+  .chips { display: flex; flex-wrap: wrap; gap: .5cqw; }
+  .chips span { font-size: .95cqw; border: 1px solid var(--line); border-radius: 99px; padding: .35cqw .9cqw; color: var(--dim); }
+  .label { position: absolute; right: 2%; bottom: 2.4%; font-size: .9cqw; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); z-index: 5; }
+  .note { width: min(1180px, 100%); margin-top: 14px; font-size: 13px; color: var(--dim); line-height: 1.5; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span><b>Sample scene</b> · Chapter 02 of the film, rebuilt in code in the deck colours</span>
+    <div class="toggle" role="group" aria-label="Deck look">
+      <button type="button" data-t="paper" aria-pressed="true">White deck</button>
+      <button type="button" data-t="night" aria-pressed="false">Black deck</button>
+    </div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="head">
+      <p class="eyebrow">02 / 06 · Own it</p>
+      <h1>Your <i>reputation.</i></h1>
+    </div>
+    <div class="score"><span class="score__n" id="score">1.8</span><span class="score__s">★ average<br><span id="count">5</span> reviews</span></div>
+    <p class="beat" id="beat">
+      <span><strong>Five bad reviews.</strong> This is what buyers, and AI, read about you first.</span>
+      <span><strong>Answer every one.</strong> Fix the issue, reply in public, in your own voice.</span>
+      <span><strong>Ask happy buyers.</strong> Real reviews from real customers arrive every week.</span>
+      <span><strong>One story.</strong> Now AI repeats the reputation you earned.</span>
+    </p>
+    <div class="wall" id="wall"></div>
+    <div class="answer" id="answer">
+      <span class="answer__q">Is Aurelia Homes a trustworthy builder?</span>
+      <p class="answer__a">Yes. Buyers rate Aurelia Homes <mark>4.6 from 1,240 reviews</mark> and praise on-time handover. Early complaints about delays were <mark>answered and resolved</mark>.</p>
+      <div class="chips"><span>Google reviews</span><span>Property portal</span><span>News feature</span><span>Residents' forum</span></div>
+    </div>
+    <span class="label">Illustration · fictional brand</span>
+  </div>
+
+  <p class="note">The scene loops. Nothing here is a video file: it is HTML and CSS, so the same scene works inside the film and as a section of the landing page, in either deck look.</p>
+
+<script>
+const BAD = [
+  ["Google", "Possession delayed 8 months. Nobody picks up the phone.", "Rohit M.", "We called, apologised and shared the new handover date."],
+  ["Property portal", "Sales team promised a lot. Site visit told another story.", "Neha S.", "Walkthrough redone with the project head. Issue closed."],
+  ["Forum", "Raised a seepage complaint three times. No reply.", "A. Kulkarni", "Fixed in 6 days. Photos shared with the owner."],
+  ["Google", "Hidden charges at registration. Felt cheated.", "Imran K.", "Full cost sheet is now published on our website."],
+  ["Social", "Don't buy here. Worst after-sales service.", "Priya D.", "Dedicated service desk set up. Resolved in 48 hours."],
+];
+const GOOD = [
+  ["Google", "Keys handed over a week early. Smooth paperwork.", "Sana R."],
+  ["Property portal", "They fixed my issue fast and told me the truth.", "Vikram T."],
+  ["Forum", "Three years in. The society is run really well.", "Meera J."],
+  ["Google", "Clear pricing, no surprises at registration.", "Daniel F."],
+];
+const POS = [[2, 2, -3], [51, 9, 2.5], [6, 27, 2], [50, 36, -2], [22, 53, 1.5]];
+const POS_GOOD = [[0, 76, -1.5], [52, 64, 2], [3, 0, 1], [53, -2, -2]];
+const wall = document.getElementById("wall"), stage = document.getElementById("stage");
+const score = document.getElementById("score"), count = document.getElementById("count");
+const beats = [...document.querySelectorAll("#beat span")], answer = document.getElementById("answer");
+const star = n => "★".repeat(n) + "☆".repeat(5 - n);
+const wait = ms => new Promise(r => setTimeout(r, ms));
+const beat = i => beats.forEach((b, k) => b.classList.toggle("on", k === i));
+function card([src, text, who, reply], [x, y, r], stars, cls) {
+  const el = document.createElement("div");
+  el.className = "rev " + cls;
+  el.style.cssText = `left:${x}%;top:${y}%;--r:${r}deg`;
+  el.innerHTML = `<div class="rev__top"><span class="rev__src">${src}</span><span class="stars">${star(stars)}</span></div><p>${text}</p><p class="rev__who">${who}</p>` + (reply ? `<p class="rev__reply"><b>Reply from the brand:</b> ${reply}</p>` : "");
+  wall.appendChild(el); return el;
+}
+async function tween(from, to, n0, n1, ms) {
+  const t0 = performance.now();
+  return new Promise(res => (function f(t) {
+    const k = Math.min(1, (t - t0) / ms);
+    score.textContent = (from + (to - from) * k).toFixed(1);
+    count.textContent = Math.round(n0 + (n1 - n0) * k).toLocaleString("en-IN");
+    k < 1 ? requestAnimationFrame(f) : res();
+  })(t0));
+}
+async function run() {
+  for (;;) {
+    wall.innerHTML = ""; stage.classList.remove("good"); answer.classList.remove("on");
+    score.textContent = "1.8"; count.textContent = "0"; beat(0);
+    await wait(500);
+    const bad = [];
+    for (let i = 0; i < BAD.length; i++) {            // tuck, tuck, tuck
+      const el = card(BAD[i], POS[i], i % 2 ? 2 : 1, "bad"); bad.push(el);
+      el.getBoundingClientRect(); el.classList.add("in"); count.textContent = i + 1;
+      await wait(330);
+    }
+    await wait(1700); beat(1);
+    for (const el of bad) { el.classList.replace("bad", "fixed"); await wait(380); }
+    await wait(1500); beat(2); stage.classList.add("good");
+    const good = [];
+    tween(1.8, 4.6, 5, 1240, 2600);
+    for (let i = 0; i < GOOD.length; i++) {
+      const el = card(GOOD[i], POS_GOOD[i], 5, "new"); good.push(el);
+      el.getBoundingClientRect(); el.classList.add("in");
+      await wait(420);
+    }
+    await wait(2300); beat(3);
+    [...bad, ...good].forEach((el, i) => setTimeout(() => el.classList.add("gone"), i * 60));
+    await wait(650); answer.classList.add("on");
+    await wait(5200);
+  }
+}
+document.querySelectorAll(".toggle button").forEach(b => b.onclick = () => {
+  document.documentElement.dataset.theme = b.dataset.t;
+  document.querySelectorAll(".toggle button").forEach(x => x.setAttribute("aria-pressed", x === b));
+});
+run();
+</script>
+</body>
+</html>

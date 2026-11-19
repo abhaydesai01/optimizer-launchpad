@@ -1,137 +1,51 @@
-# Optimizer360 Launchpad
+# Optimizer360 landing page (v2, cinematic)
 
-Next.js 14 marketing site and admin content pipeline for GEO publishing.
+Static, SEO/GEO-first landing page. All copy is real HTML; the 3D logo and film add to it but never hold the content back.
 
-## Tech Stack
+## Run locally
 
-- Next.js 14 (App Router), React 18, TypeScript
-- MongoDB + Mongoose
-- NextAuth (credentials provider for admin)
-- Anthropic Claude for brief/draft/review/schema generation
-- Resend for contact and audit notifications
+```bash
+python3 -m http.server 4360 --directory /Users/apple/Downloads/optimizer360-site
+```
 
-## Local Setup
+Then open http://localhost:4360. Opening `index.html` directly from disk won't work, because the 3D module needs a server.
 
-1. Install dependencies:
-   - `npm install`
-2. Create a `.env.local` file (gitignored — no template is committed; ask a teammate for values):
-   - `MONGODB_URI`
-   - `ANTHROPIC_API_KEY`
-   - `ADMIN_EMAIL`
-   - `ADMIN_PASSWORD`
-   - `NEXTAUTH_SECRET`
-   - `NEXTAUTH_URL` (`http://localhost:3000` for local)
-   - `RESEND_API_KEY`
-   - `TO_EMAIL`
-   - `FOUNDER_EMAIL_DELAY_MINUTES` (default: `7`)
-   - `FOUNDER_QUEUE_SECRET` (required in production for queue job auth)
-   - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`
-   - `RECAPTCHA_SECRET_KEY`
-   - `NEXT_PUBLIC_DASHBOARD_URL` (dashboard app URL for the navbar's Login link; defaults to `https://geo.optimizer360.ai`)
-   - Optional: `NEXT_PUBLIC_CAL_LINK`, `INDEXNOW_KEY`
-4. Run dev server:
-   - `npm run dev`
+## Structure
 
-## Key Routes
+| Path | What it is |
+|---|---|
+| `index.html` | All 11 chapters, schema (Organization, WebSite, Service), meta and OG tags |
+| `css/site.css` | Dark cinematic system: near-black, porcelain text, Growth green glow. Type: Clash Display (headlines) + Satoshi (text), both from Fontshare (free for commercial use). |
+| `js/ring3d.js` | Three.js logo: the compounding ring in six segments plus the keyhole. Modes: hero, problem (cracks apart), turn (re-forms and unlocks), engine (thickens per outcome), CTA. |
+| `js/main.js` | Ring mode from scroll, GSAP layer (split-headline reveals, manifesto word scrub, clip-path image reveals + parallax, loop line draw, counters, magnetic buttons, card spotlight, cursor glow), engine steps, GEO tabs, audit form, corner progress ring |
+| `js/film.js` | Canvas film, scrubbed by scroll: 8 chapters. Each plays its Kling clip frames if `assets/film/frames/manifest.json` lists it, otherwise the still with a scripted camera move. Era grades, light effects, dip-to-black between eras. |
+| `tools/clip_to_frames.py` | `python3 tools/clip_to_frames.py <clip.mp4> <chapter-name>`: 12 fps WebP frames + manifest update |
+| `assets/film/` | Higgsfield keyframe stills (WebP); originals in `raw/` |
+| `assets/logo/` | Logo files from `optimizer360-brand/logo` |
+| `robots.txt`, `sitemap.xml`, `llms.txt` | Search and AI-crawler files (AI crawlers are explicitly allowed) |
 
-- Public:
-  - `/`, `/agency`, `/blog`, `/blog/[slug]`, `/authors/[slug]`, `/faq`, `/usecases`, `/about`, `/contact`
-  - Discovery: `/llms.txt`, `/llms-full.txt`, `/ai.txt`, `/feed.xml`, `/sitemap.xml`
-- Admin:
-  - `/admin/login`
-  - `/admin`, `/admin/targets`, `/admin/articles`
-  - `/admin/articles/[id]/brief|draft|review|schema|publish`
+## Deploy (Netlify)
 
-## Pipeline Flow
+- Live: https://optimizer360-website.netlify.app (custom domain optimizer360.ai not connected yet).
+- `netlify.toml` tells Netlify to run `python3 tools/build/package.py --out dist` and publish `dist/`, so the site can be deployed straight from this GitHub repo. Only public files are copied; README, CASE-STUDY, DIRECTOR-NOTES, docs/, tools/ and preview/ never ship.
+- Manual deploy from this computer: `python3 tools/build/build.py && python3 tools/build/audit.py && python3 tools/build/package.py`, then `netlify deploy --dir ../optimizer360-deploy --prod`.
+- Netlify files: `_redirects` (short and common addresses → real pages), `_headers` (written by package.py: security headers, caching, file types), `404.html`, `site.webmanifest` + `assets/logo/icon-*.png` (home-screen icons), `.well-known/security.txt`, `robots.txt`, `sitemap.xml`, `llms.txt`, `llms-full.txt`.
+- When optimizer360.ai is connected: uncomment the last line of `_redirects` so the netlify.app address forwards to the real domain.
 
-1. Seed targets (`npm run seed:targets`) and/or publish pillar posts (`npm run seed:pillars`)
-2. Start pipeline from admin dashboard
-3. Generate brief
-4. Generate draft
-5. Review / rewrite
-6. Inject schema + internal links
-7. Publish article (optional IndexNow ping)
+## Not connected yet
 
-## Destructive Command Warning
+1. **AI audit form:** front-end only; nothing is sent. Hook up the `TODO` in `js/main.js` to a real intake (CRM, email or API).
+2. **Strategy call:** links to `mailto:abhay@optimizer360.ai`. Swap in a calendar link when one exists.
+3. **Client logos and testimonial:** the slot is marked in the Results section; add them only with written client approval.
+4. **Film:** chapters without a clip fall back to the still with camera motion. To add or replace a clip: download it to `assets/film/clips/<chapter>.mp4` and run `tools/clip_to_frames.py`. Chapter names are in `js/film.js`.
+5. **Product pages:** the nav and footer link to sections on this page until `/geo`, `/geo/b2b` and the other pages exist; update the sitemap at the same time.
 
-`npm run seed:targets` runs `scripts/seed-targets.ts` and calls:
+## Sources for numbers on the page
 
-- `Target.deleteMany({})`
-
-This deletes all existing targets before reseeding.
-Use only in local/dev or with explicit approval in shared environments.
-
-`npm run seed:pillars` upserts six citation-grade pillar articles and a default author. It does not delete other posts. The same six posts are also compiled into the app as a fallback so `/blog` stays populated if Mongo is empty.
-
-## Security and Abuse Controls
-
-- Public forms (`/api/contact`, `/api/audit`) enforce:
-  - reCAPTCHA verification
-  - IP-based rate limiting
-- Admin credential login has request throttling.
-
-## GEO Schema and Robots Templates
-
-- JSON-LD template library:
-  - `lib/schema-library.ts`
-  - Pre-built templates:
-    - `FAQPage`
-    - `Organization`
-    - `Course`
-    - `MedicalBusiness`
-    - `LocalBusiness`
-    - `Product`
-    - `QAPage`
-    - `Person`, `BreadcrumbList`, `SoftwareApplication`, `Article`, `Blog`, `ItemList`, `ContactPage`
-- Robots template library:
-  - `lib/robots-template.ts`
-  - Consumed by `app/robots.ts`
-  - Explicit allow directives for:
-    - `GPTBot`
-    - `PerplexityBot`
-    - `ClaudeBot`
-    - `Google-Extended`
-
-## Founder Email Delay Queue
-
-- Contact/audit submissions queue a founder follow-up email instead of sending immediately.
-- Queue processor endpoint:
-  - `POST /api/jobs/process-founder-emails`
-- Authorization:
-  - Set `FOUNDER_QUEUE_SECRET` and send it as `x-founder-queue-secret` header (or Bearer token).
-- Run this endpoint via cron every 1-2 minutes for near-real-time delayed sends.
-
-## Staging Verification Checklist
-
-Before production release, validate:
-
-1. Env vars present in staging
-2. Contact form submission success + captcha failure path
-3. Audit form submission success + captcha failure path
-4. Rate-limit behavior (`429` and `Retry-After` headers)
-5. Admin login throttling after repeated failures
-6. End-to-end pipeline publish from a fresh target
-7. `/sitemap.xml` includes published `/blog/[slug]` URLs
-
-## Incident Quick Checks
-
-If pipeline or form submission fails:
-
-1. Check missing/invalid env vars in deployment logs.
-2. Check MongoDB connectivity (`MONGODB_URI`).
-3. Check Anthropic API errors for admin generation routes.
-4. Check Resend API status for contact/audit routes.
-5. Check reCAPTCHA keys for public form failures.
-6. Review `PipelineLog` entries for failed step diagnostics.
-
-## Useful Commands
-
-- `npm run dev` - start local development server
-- `npm run build` - production build
-- `npm run start` - run built app
-- `npm run lint` - lint checks
-- `npm run seed:targets` - destructive target reseed
-- `npm run seed:pillars` - upsert six published GEO pillar posts
-- `npm run verify:marketing` - GET public routes (requires `npm run dev`)
-
-The Vite `index.html` / `src/` tree is a leftover from an older SPA and is not served by the Next.js App Router. Do not treat its meta tags as live SEO.
+All checked against the investor deck (Nov 2026):
+- 5T+ Google searches a year (Google, Mar 2025)
+- 2.5B+ AI Overviews monthly users (Google I/O, May 2026)
+- 900M+ weekly ChatGPT users (OpenAI, Feb 2026)
+- 1B+ Gemini app monthly users (Google, Aug 2026)
+- $1.3T global ad revenue 2026 (WPP Media, Jun 2026)
+- Client results: 12 live (9 India, 3 international), 7 with measured results, 80–90 prompts in 2–2.5 months for one real-estate client

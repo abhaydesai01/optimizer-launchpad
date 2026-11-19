@@ -1,0 +1,59 @@
+# Optimizer360
+
+> Optimizer360 (optimizer360.ai) is the AI-native organic marketing company. Tagline: "Own your growth." It makes brands found, trusted, followed, talked about and chosen across AI answers, search, media and communities, using its own platform (Optimizer GEO) plus six specialist teams. Home market India; also the United States and Mauritius. Contact: abhay@optimizer360.ai
+
+Key facts: tracks 8 AI engines (ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot, Google AI Overviews), up to 10,000 prompts per brand per day. Method: Scan, Diagnose, Fix, Prove, measured against each client's Week-1 baseline. In one real-estate programme the visibility score rose from 32% to 58% across eight engines in under 2.5 months. Optimizer360 never names clients and never promises rankings. Works in 10 industries.
+
+## Solutions
+
+- [Six things you should own.](https://optimizer360.ai/solutions/): Optimizer360 is an organic marketing agency in India that builds six growth assets you own: AI visibility, reviews, media, community, chat agents, pipeline.
+- [Get named in the answer.](https://optimizer360.ai/solutions/geo/): GEO agency in India. Generative engine optimisation services that get your brand named and cited in ChatGPT, Gemini, Perplexity and Google AI Overviews.
+- [Accuracy, not spin.](https://optimizer360.ai/solutions/geo-investor-relations/): Investor relations GEO for listed companies in India. We keep what AI tells investors accurate and current, using public disclosures only, within SEBI rules.
+- [Be trusted before the call.](https://optimizer360.ai/solutions/reputation/): Online reputation management in India for the AI era: real reviews, public replies, fact corrections and press that shape your brand reputation in AI answers.
+- [Build the roads in.](https://optimizer360.ai/solutions/feeder-network/): Build an owned media network of feeder sites, channels and earned media that sends buyers your way and gives AI engines independent brand mentions to trust.
+- [Get talked about.](https://optimizer360.ai/solutions/content-community/): Community-led growth for brands: communities you host, Reddit and Quora answers posted openly as the brand, content agents and digital PR that earn real talk.
+- [Answer every buyer.](https://optimizer360.ai/solutions/ai-agents/): AI chat agents for lead qualification on your website, WhatsApp and Instagram. They answer accurately, qualify buyers and book calls or visits, day and night.
+- [Fund what actually works.](https://optimizer360.ai/solutions/leads-pipeline/): Organic lead generation with attribution for AI search. We trace each deal to the AI answer, review, thread or video where demand began, so you fund what works.
+- [See what AI says.](https://optimizer360.ai/platform/): Optimizer GEO is our AI visibility tracking platform. It runs up to 10,000 prompts per brand a day on 8 AI engines, tracking brand mentions, sources and fixes.
+
+## Industries
+
+- [Every industry, its own answers.](https://optimizer360.ai/industries/): GEO and organic growth by industry: what buyers in ten Indian sectors ask AI, which sources the engines trust, and the rules we work inside in each one.
+- [Be the builder AI recommends.](https://optimizer360.ai/industries/real-estate/): GEO for real estate and hospitality in India: get your projects and hotels named in ChatGPT and Gemini answers, with RERA-accurate facts and real reviews.
+- [Accurate answers investors can trust.](https://optimizer360.ai/industries/financial-services/): GEO for financial services and investor relations in India: keep what AI tells customers and investors accurate, current and sourced, inside SEBI rules.
+- [Be the brand AI suggests.](https://optimizer360.ai/industries/retail-consumer/): GEO for retail and D2C brands in India: get your products named when shoppers ask ChatGPT what to buy, with real reviews and accurate product facts.
+- [On the list, in the cart.](https://optimizer360.ai/industries/food-fmcg/): GEO for food and FMCG brands in India: get named when families ask AI what to buy or cook, with label-accurate facts and claims kept inside FSSAI rules.
+- [Make the vendor shortlist.](https://optimizer360.ai/industries/b2b-services/): GEO for B2B and professional services firms in India: get on the vendor shortlists buyers build with ChatGPT, with expertise pages AI engines can quote.
+- [Be the tool AI names first.](https://optimizer360.ai/industries/technology-saas/): GEO for SaaS and technology companies: get your product named when buyers ask ChatGPT for the best tool, using fair comparisons, open docs and real reviews.
+- [Right facts, right care.](https://optimizer360.ai/industries/pharma-healthcare/): GEO for pharma and healthcare in India: make AI answers about your hospital, clinic or medicine accurate and well sourced, inside medical advertising rules.
+- [Specified by the answer.](https://optimizer360.ai/industries/industrial-engineering/): GEO for industrial and engineering companies in India: get named when buyers ask AI for suppliers, with spec pages, certifications and trade press it can cite.
+- [Get the story told right.](https://optimizer360.ai/industries/cinema-entertainment/): GEO for cinema and entertainment in India: keep what AI says about your films and shows accurate, from release dates to credits, and earn the fan conversation.
+- [Be the supplier AI shortlists.](https://optimizer360.ai/industries/manufacturing/): GEO for B2B manufacturers in India: get named when sourcing teams ask AI for suppliers, with the right capabilities, certifications and capacity beside your name.
+
+## Results
+
+- [Results, measured from week one.](https://optimizer360.ai/results/): How we measure AI visibility from a Week-1 baseline across 8 engines, plus two anonymised GEO case studies: real estate and investor relations in India.
+- [32% to 58% in AI answers.](https://optimizer360.ai/results/real-estate-ai-visibility/): A residential developer in India went from a 32% to a 58% visibility score across 8 AI engines in under 2.5 months. What we did and how we measured it.
+- [From old news to the latest filing.](https://optimizer360.ai/results/investor-relations-narrative/): How AI answers to investor questions about a listed company in India moved from old figures and a resolved controversy to the latest filing. What we did.
+
+## Guides
+
+- [AI search, explained.](https://optimizer360.ai/blog/): Plain guides to generative engine optimisation: how AI engines pick sources, GEO vs SEO, Reddit and Wikipedia, and how to measure AI visibility.
+- [GEO, explained plainly.](https://optimizer360.ai/blog/what-is-generative-engine-optimisation/): Generative engine optimisation (GEO) explained: how AI engines build answers, the levers that get your brand named and cited, and how to measure it.
+- [SEO still counts. GEO builds on it.](https://optimizer360.ai/blog/geo-vs-seo/): GEO vs SEO explained: how ranking pages differs from being named in AI answers, where the two overlap, and why SEO still matters. With a comparison table.
+- [Who the engines listen to.](https://optimizer360.ai/blog/how-ai-engines-choose-sources/): How does ChatGPT choose sources? What studies from Profound, Semrush, Peec AI and Ahrefs show about how AI engines pick the brands they recommend.
+- [Show up openly. Never fake it.](https://optimizer360.ai/blog/reddit-wikipedia-ai-visibility/): An ethical playbook for Reddit, Wikipedia and Wikidata: how brands can show up in the sources AI engines cite most, without astroturfing or paid edits.
+- [Measure the answer, not the hope.](https://optimizer360.ai/blog/measure-ai-visibility/): How to measure AI visibility: visibility score, citation rate, AI share of voice and sentiment, built on a prompt universe, a Week-1 baseline and drift checks.
+- [Investors ask AI. Is it right?](https://optimizer360.ai/blog/ai-answers-investor-relations/): What does ChatGPT say about your listed company? Why AI answers to investors go stale, and how IR teams can correct them using public disclosures only.
+- [GEO terms, in plain words.](https://optimizer360.ai/glossary/): A plain GEO glossary: 28 terms on generative engine optimisation and AI search, from citation rate and visibility score to llms.txt, E-E-A-T and drift.
+- [Questions, answered plainly.](https://optimizer360.ai/faq/): Answers about GEO and Optimizer360: how it differs from SEO, engines we track, timelines, pricing, pilots, compliance, ethics and why we never name clients.
+
+## Company
+
+- [Stop renting growth. Own it.](https://optimizer360.ai/about/): Optimizer360 is an AI-native organic marketing company in India. AI agents find the gaps, expert teams fix them, and weekly data proves what has moved.
+- [Do the work that compounds.](https://optimizer360.ai/careers/): Careers at Optimizer360: GEO jobs in India across strategy, engineering, content, digital PR and AI agents. How we work, what we look for and how to apply.
+- [Get your AI audit.](https://optimizer360.ai/contact/): Get an AI audit from Optimizer360: which AI engines name you, who they name instead, the sources they cite and the first fixes. Email us to get started.
+- [Privacy, kept simple.](https://optimizer360.ai/privacy/): Our privacy notice: no analytics or advertising cookies, forms that open your own email app, and your rights under India's DPDP Act 2023 and other laws.
+- [Website terms, in plain words.](https://optimizer360.ai/terms/): Plain terms for using optimizer360.ai: general information not advice, fictional illustrations, no guarantees of rankings or results, and Indian law.
+
+Last updated: 2026-11-10

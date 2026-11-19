@@ -1,0 +1,34 @@
+# Netlify redirects for optimizer360.ai
+# Common addresses people type or other sites link to, sent to the real page (301 = permanent).
+
+/home                     /                         301
+/index                    /                         301
+/about-us                 /about/                   301
+/company                  /about/                   301
+/contact-us               /contact/                 301
+/audit                    /contact/                 301
+/ai-audit                 /contact/                 301
+/get-audit                /contact/                 301
+/privacy-policy           /privacy/                 301
+/privacy-notice           /privacy/                 301
+/terms-of-service         /terms/                   301
+/terms-and-conditions     /terms/                   301
+/terms-of-use             /terms/                   301
+/blogs                    /blog/                    301
+/articles                 /blog/                    301
+/case-studies             /results/                 301
+/case-study               /results/                 301
+/services                 /solutions/               301
+/geo                      /solutions/geo/           301
+/generative-engine-optimisation  /solutions/geo/    301
+/generative-engine-optimization  /solutions/geo/    301
+/investor-relations       /solutions/geo-investor-relations/  301
+/product                  /platform/                301
+/optimizer-geo            /platform/                301
+/jobs                     /careers/                 301
+/faqs                     /faq/                     301
+/llm.txt                  /llms.txt                 301
+
+# When the optimizer360.ai domain is connected in Netlify, uncomment this so the
+# netlify.app address sends everyone (and search engines) to the real domain:
+# https://optimizer360-website.netlify.app/*  https://optimizer360.ai/:splat  301!

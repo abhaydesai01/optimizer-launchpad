@@ -1,0 +1,834 @@
+[
+  {
+    "path": "/blog/",
+    "title": "GEO blog: AI search, explained",
+    "description": "Plain guides to generative engine optimisation: how AI engines pick sources, GEO vs SEO, Reddit and Wikipedia, and how to measure AI visibility.",
+    "keywords": [
+      "GEO blog",
+      "generative engine optimisation guide",
+      "AI search blog",
+      "AI visibility",
+      "GEO vs SEO",
+      "how to get mentioned in ChatGPT",
+      "AI search India"
+    ],
+    "schema": "CollectionPage",
+    "eyebrow": "Blog",
+    "h1": "AI search, <span class=\"g\">explained.</span>",
+    "lede": "Practical guides for marketing heads and founders on how AI engines answer, which sources they trust, and how to be named accurately.",
+    "answer": "The Optimizer360 blog explains generative engine optimisation (GEO) in plain terms: how AI engines such as ChatGPT, Gemini and Google AI Overviews build answers, which sources they cite, how GEO relates to SEO, how to take part in Reddit and Wikipedia ethically, how to measure AI visibility, and what listed companies should know.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "What will you find here?",
+        "html": "<p>Buyers now ask AI engines the questions they used to type into Google. The answer they read often names a few brands and skips the rest. These guides explain how that answer is put together and what you can do about it.</p><p>Every statistic is attributed to its source and year. Forecasts are labelled as forecasts. Results from our own work are described without naming clients, and we never promise rankings: the engines decide, and we show what moved.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which guide should you read first?",
+        "html": "<ul>\n<li><a href=\"/blog/what-is-generative-engine-optimisation/\">What is generative engine optimisation (GEO)?</a> The pillar guide: how AI answers are assembled, the levers that matter, what the research says, and how to start.</li>\n<li><a href=\"/blog/geo-vs-seo/\">GEO vs SEO: what changes and what stays</a>. Why SEO is not dead, how GEO builds on it, and a side-by-side comparison, including AEO.</li>\n<li><a href=\"/blog/how-ai-engines-choose-sources/\">How AI engines choose sources and brands</a>. What citation studies from Profound, Semrush, Peec AI and Ahrefs show, and why the picture keeps moving.</li>\n<li><a href=\"/blog/reddit-wikipedia-ai-visibility/\">Reddit and Wikipedia for AI visibility</a>. An ethical playbook: post openly as the brand, correct Wikipedia through the talk page, keep one clean Wikidata entity.</li>\n<li><a href=\"/blog/measure-ai-visibility/\">How to measure AI visibility and share of voice</a>. Visibility score, citation rate, share of voice, sentiment, the prompt universe, the Week-1 baseline and drift.</li>\n<li><a href=\"/blog/ai-answers-investor-relations/\">AI answers and investor relations: a guide</a>. What AI engines tell investors about listed companies, and how IR teams keep it accurate within SEBI rules.</li>\n</ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is GEO in simple terms?",
+        "a": "GEO, or generative engine optimisation, is the work of making sure AI engines such as ChatGPT and Google AI Overviews name your brand, describe it correctly and cite a source for it. It relies on clear facts on your own pages and honest mentions in the sources those engines trust."
+      },
+      {
+        "q": "Who is this blog written for?",
+        "a": "Marketing heads, founders and investor relations teams, mostly in India, who want to understand how AI answers affect their brand. The guides favour practical steps over theory."
+      },
+      {
+        "q": "Where do the statistics in these guides come from?",
+        "a": "Each figure is attributed in the text to its source and year, such as Pew Research Center, Profound, Semrush, Peec AI, Ahrefs and G2. Forecasts are labelled as forecasts. Our own results are described without naming clients."
+      }
+    ],
+    "related": [
+      "/solutions/geo/",
+      "/platform/",
+      "/glossary/"
+    ]
+  },
+  {
+    "path": "/blog/what-is-generative-engine-optimisation/",
+    "title": "What is generative engine optimisation (GEO)?",
+    "description": "Generative engine optimisation (GEO) explained: how AI engines build answers, the levers that get your brand named and cited, and how to measure it.",
+    "keywords": [
+      "what is generative engine optimisation",
+      "what is GEO",
+      "generative engine optimization",
+      "GEO meaning",
+      "GEO marketing",
+      "how to get mentioned in ChatGPT",
+      "AI search optimisation",
+      "GEO agency India"
+    ],
+    "schema": "Article",
+    "eyebrow": "Blog · The GEO guide",
+    "h1": "GEO, <span class=\"g\">explained plainly.</span>",
+    "lede": "AI engines now answer the questions your buyers used to type into a search box. This guide explains how those answers are built, and what you can do to be in them.",
+    "answer": "Generative engine optimisation (GEO) is the practice of making a brand accurately named, described and cited in answers from AI engines such as ChatGPT, Gemini, Perplexity and Google AI Overviews. It works by publishing clear, citable facts on your own pages and earning consistent mentions in the third-party sources those engines retrieve and trust.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "What is generative engine optimisation?",
+        "html": "<p>Generative engine optimisation, or GEO, is the work of shaping what AI engines say when someone asks about your category, your competitors or you. In US usage it is spelt generative engine optimization. The aim is simple. When a buyer asks an AI engine for a shortlist, your brand is named, described correctly and backed by a source the engine can point to.</p>\n<p>SEO asks, \"Where does my page rank?\" GEO asks, \"What does the answer say about me, and which sources did it use?\" Those are different questions. A page can rank well and still be missing from the answer. A brand can be named in the answer because of a review site, a forum thread or a news story, without its own site being cited at all.</p>\n<p>The term is closely tied to a study by researchers at Princeton and IIT Delhi (Aggarwal et al., KDD 2024), which tested how changes to content affect visibility inside generative answers. We return to its findings below.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do AI engines put an answer together?",
+        "html": "<p>Each engine works differently, and none publishes its full method. The broad pattern is still consistent enough to act on.</p>\n<ul>\n<li><strong>Reading the question.</strong> The engine works out what is being asked: a definition, a comparison, a shortlist, a price check or a local recommendation.</li>\n<li><strong>Retrieval.</strong> For many questions, especially about current products and companies, the engine searches the web or its own index and pulls a small set of pages to read.</li>\n<li><strong>Choosing sources.</strong> It favours pages that answer the question directly, come from sources it treats as reliable, and agree with other sources.</li>\n<li><strong>Entity understanding.</strong> It tries to resolve your brand to one entity: a company with a name, a location, products, leaders and a category. Where facts conflict across sources, the answer turns vague or wrong.</li>\n<li><strong>Writing the answer.</strong> The model writes a short response, often naming a few brands in a particular order and, on some engines, linking the sources it used.</li>\n</ul>\n<p>Two things follow. First, the engine is not reading only your website. It reads what others say about you, and often trusts that more. Second, it rewards clarity. A page that states a fact plainly, in one sentence, is easier to quote than a page that buries the same fact in a brochure PDF.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Why does GEO matter now?",
+        "html": "<p>Buyers have not stopped searching. They have started reading answers instead of clicking results. Several independent studies point the same way.</p>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "8%",
+            "d": "of Google visits with an AI summary led to a click on a result, against 15% without one. Only 1% clicked a link inside the summary.",
+            "src": "Pew Research Center, July 2025"
+          },
+          {
+            "n": "58.5%",
+            "d": "of US Google searches end without a click.",
+            "src": "SparkToro and Datos, 2024"
+          },
+          {
+            "n": "29%",
+            "d": "of B2B buyers start research on AI chat tools more often than on Google (1,169 buyers surveyed).",
+            "src": "G2, May 2025"
+          },
+          {
+            "n": "800M",
+            "d": "people use ChatGPT every week.",
+            "src": "OpenAI, October 2025"
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "html": "<p>Gartner forecast in February 2024 that traditional search engine volume would fall 25% by 2026. That was a forecast, not a measurement, so treat it as a direction rather than a fact. The measured data above already shows the shift: fewer clicks, and more answers read in place.</p>\n<p>For a marketing head in India, the practical point is this. The shortlist is increasingly formed before anyone visits your site. 6sense research from October 2024 found that buyers are around 70% of the way through the buying process before they talk to sellers. If an AI answer shaped that first 70%, you want to know what it said, and whether it was true.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What are the levers of GEO?",
+        "html": "<p>Seven levers do most of the work. None of them is a trick, and all of them also help real buyers.</p>\n<h3>1. Entity facts</h3><p>Decide the facts you want every engine to repeat: what you do, for whom, where, since when and who runs it. State them on one page of your site, word them the same way everywhere, and fix the places where they differ. Inconsistent facts produce vague answers.</p>\n<h3>2. Citable pages</h3><p>Write pages that answer one question each, answer first. Use the buyer's own wording in headings. Include real numbers the engine can quote: sizes, dates, specifications, coverage and process steps. A clear FAQ or comparison page is often easier to cite than a home page.</p>\n<h3>3. Third-party sources</h3><p>Engines cross-check. Mentions in trade media, directories, \"best X in Y\" lists and newsletters give them independent confirmation. Ahrefs' 2025 study of 75,000 brands found brand mentions correlated at 0.664 with AI Overview visibility, against 0.218 for backlinks. That is a correlation, not proof of cause, but it is a strong hint about where to spend effort. Our <a href=\"/solutions/feeder-network/\">feeder network</a> work is built for this.</p>\n<h3>4. Reviews</h3><p>Reviews inform buyers and engines alike. BrightLocal's 2025 survey found 74% of consumers use two or more review sites before they choose, and only 4% never read reviews. The work is a steady flow of real reviews, answered in public, with wrong facts corrected. Never fabricated. See <a href=\"/solutions/reputation/\">reputation</a>.</p>\n<h3>5. Communities</h3><p>Forums and Q&amp;A sites are cited heavily. Peec AI's March 2026 analysis of 30 million sources found Reddit was the number one directly cited source across ChatGPT, Google AI Mode, Gemini, Perplexity and AI Overviews. The honest way in is to answer real questions openly as the brand. Our <a href=\"/blog/reddit-wikipedia-ai-visibility/\">Reddit and Wikipedia playbook</a> covers how.</p>\n<h3>6. Structured data</h3><p>Schema markup for your organisation, products, locations and FAQs states your facts in a format machines can read without guessing. It does not guarantee a mention. It removes ambiguity, which is often what stands between a vague answer and an accurate one.</p>\n<h3>7. Freshness</h3><p>Engines prefer current information, but stale facts linger when nothing replaces them. When prices, leadership, results or products change, update your pages, profiles and structured data in the same week, then check what the engines now say.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What does the research say works?",
+        "html": "<p>The most cited study is by researchers at Princeton and IIT Delhi (Aggarwal et al., KDD 2024). They tested content changes against generative engine answers and found that adding statistics, quotations and cited sources raised a page's visibility in those answers by up to about 40%.</p>\n<p>The finding matches common sense. An engine is trying to give a reliable answer. Content that carries evidence, names its sources and includes quotable figures is easier to trust and easier to lift into a sentence. Content that is vague, padded or purely promotional gives the engine nothing to use.</p>\n<p>Two cautions. \"Up to about 40%\" is the upper end across test conditions, not a promise for every page. And engines change often, so any tactic should be measured on your own questions rather than assumed to work.</p>"
+      },
+      {
+        "type": "steps",
+        "h2": "How do you measure GEO?",
+        "items": [
+          {
+            "t": "Build a prompt universe",
+            "d": "List the questions your buyers actually ask, drawn from your SEO data, sales enquiries and category. AI engines publish no search volume, so rank questions by demand you can see, not invented numbers."
+          },
+          {
+            "t": "Take a Week-1 baseline",
+            "d": "Run every question across the engines you care about. Record who is named, in what order and which sources are cited. Date every answer."
+          },
+          {
+            "t": "Track four numbers",
+            "d": "Visibility score, citation rate, share of voice and brand sentiment. Each tells you something different about your position."
+          },
+          {
+            "t": "Watch for drift",
+            "d": "Re-run after launches, price changes and results. Answers move, and wrong facts can appear quickly."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "html": "<p>We cover this in detail in <a href=\"/blog/measure-ai-visibility/\">how to measure AI visibility</a>. Our <a href=\"/platform/\">platform</a> tracks eight AI engines with up to 10,000 prompts per brand a day, so changes show up against the baseline rather than in screenshots.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do you start with GEO?",
+        "html": "<p>Start small and measurable. A sensible first month looks like this:</p>\n<ol>\n<li>Write down the 20 to 50 questions that matter most to revenue. Ask your sales team what buyers ask on the first call.</li>\n<li>Ask those questions in ChatGPT, Gemini, Perplexity and Google, and save each answer with its date.</li>\n<li>List the sources the engines cite. Note which mention you, which mention competitors and which carry wrong facts.</li>\n<li>Fix your own facts first: about page, product or service pages, FAQs, structured data and Google Business Profile.</li>\n<li>Pick two or three third-party sources to work on: a review platform, a trade publication, a community where your buyers ask questions.</li>\n<li>Re-measure after four to six weeks and compare with your first answers.</li>\n</ol>\n<p>If you would rather have this run for you, our <a href=\"/solutions/geo/\">GEO service</a> starts with a baseline and a ranked map of the questions worth owning.</p>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>GEO checklist:</strong></p><ul><li>One page that states your core facts plainly.</li><li>The same facts on every profile, listing and directory.</li><li>Answer-first pages for your top buyer questions, with real numbers.</li><li>Organisation, product and FAQ schema in place.</li><li>Real reviews, answered in public.</li><li>An open, named presence where your buyers ask questions.</li><li>A dated baseline of what AI engines say about you today.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What are the common myths about GEO?",
+        "html": "<p><strong>\"GEO replaces SEO.\"</strong> It does not. Many engines retrieve from search indexes, so pages that are crawlable and well structured still matter. GEO builds on SEO. See <a href=\"/blog/geo-vs-seo/\">GEO vs SEO</a>.</p>\n<p><strong>\"You can buy your way into the answer.\"</strong> Whatever paid formats engines offer, the organic answer is shaped by the sources they read. That is what GEO works on.</p>\n<p><strong>\"Someone can guarantee you the top spot.\"</strong> No one controls the engines. Answers vary by engine, by wording and by day. A promise of guaranteed rankings is a guess. What can be done is rigorous work, measured every week.</p>\n<p><strong>\"It is keyword stuffing for AI.\"</strong> The research points the other way. Evidence, sources and clarity help. Padding does not.</p>\n<p><strong>\"Only big brands get named.\"</strong> Specific, local and technical questions often leave room for specialists. A focused brand with clear facts can own narrow questions that a larger competitor ignores.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is GEO the same as AEO?",
+        "a": "They overlap heavily. Answer engine optimisation (AEO) grew out of featured snippets and voice answers, while GEO focuses on generative AI engines such as ChatGPT and Gemini. In practice the work is similar: clear facts, answer-first pages and trusted third-party sources."
+      },
+      {
+        "q": "How long does GEO take to show results?",
+        "a": "It depends on the category, the competition and how many sources need fixing. In one real-estate programme, the visibility score rose from 32% to 58% across eight AI engines in under 2.5 months from the Week-1 baseline. That is one programme, not a promise."
+      },
+      {
+        "q": "Which AI engines should I track?",
+        "a": "Start with the engines your buyers use. We track eight: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews, because their answers differ."
+      },
+      {
+        "q": "Can a small company do GEO without an agency?",
+        "a": "Yes. The basics are a clear facts page, answer-first content, schema, real reviews and an honest community presence. An agency adds scale, measurement across engines and the sustained third-party work that is hard to run alongside a day job."
+      },
+      {
+        "q": "Does GEO matter for B2B companies?",
+        "a": "Yes. G2's May 2025 survey of 1,169 B2B buyers found 29% start research on AI chat tools more often than on Google. Vendor shortlists are increasingly formed inside those answers."
+      }
+    ],
+    "related": [
+      "/blog/geo-vs-seo/",
+      "/blog/how-ai-engines-choose-sources/",
+      "/blog/measure-ai-visibility/",
+      "/solutions/geo/"
+    ],
+    "article": {
+      "published": "2026-11-10",
+      "minutes": 9
+    }
+  },
+  {
+    "path": "/blog/geo-vs-seo/",
+    "title": "GEO vs SEO: what changes and what stays",
+    "description": "GEO vs SEO explained: how ranking pages differs from being named in AI answers, where the two overlap, and why SEO still matters. With a comparison table.",
+    "keywords": [
+      "GEO vs SEO",
+      "is SEO dead",
+      "AEO vs GEO vs SEO",
+      "difference between GEO and SEO",
+      "SEO vs AI search",
+      "answer engine optimisation",
+      "does SEO still matter",
+      "GEO and SEO strategy"
+    ],
+    "schema": "Article",
+    "eyebrow": "Blog · GEO vs SEO",
+    "h1": "SEO still counts. <span class=\"g\">GEO builds on it.</span>",
+    "lede": "Search is changing shape, not disappearing. Here is what stays the same, what is new, and how to plan for both without splitting your team in two.",
+    "answer": "GEO and SEO aim at different outcomes. SEO earns rankings and clicks from search results; GEO earns accurate mentions and citations inside AI answers from engines such as ChatGPT and Google AI Overviews. GEO builds on SEO rather than replacing it, because many AI engines retrieve from search indexes and favour pages that are crawlable, clear and trusted.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "Is SEO dead?",
+        "html": "<p>No. The question comes round every few years, and the answer is still no. What has changed is what happens after the search.</p>\n<p>Pew Research Center's July 2025 study found that when Google showed an AI summary, users clicked a result on 8% of visits, against 15% when no summary appeared. Only 1% clicked a link inside the summary. SparkToro and Datos found in 2024 that 58.5% of US Google searches ended without a click. Fewer clicks does not mean fewer searches. It means more of the decision happens on the results page or inside an AI answer.</p>\n<p>So SEO is not dead. Its job has grown. Pages still need to be found, crawled and trusted. Now they also need to be quotable.</p>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "8%",
+            "d": "of Google visits with an AI summary led to a click on a result, against 15% without one.",
+            "src": "Pew Research Center, July 2025"
+          },
+          {
+            "n": "58.5%",
+            "d": "of US Google searches end without a click.",
+            "src": "SparkToro and Datos, 2024"
+          },
+          {
+            "n": "25%",
+            "d": "forecast drop in traditional search volume by 2026. A forecast, made in February 2024.",
+            "src": "Gartner, 2024"
+          },
+          {
+            "n": "29%",
+            "d": "of B2B buyers start research on AI chat tools more often than on Google.",
+            "src": "G2, May 2025"
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "What is the difference between GEO and SEO?",
+        "html": "<p>SEO is about position: where your page appears in a list of links. GEO is about presence and accuracy: whether your brand is named in a written answer, how it is described and which sources the answer relies on.</p>\n<p>The unit of success changes. In SEO you win a ranking for a keyword. In GEO you win a mention for a question, and the question is often longer and more specific. \"Best CRM\" becomes \"Which CRM suits a 40-person sales team in India that sells over WhatsApp?\" The engine writes a fresh answer to that exact question, drawing on several sources at once.</p>\n<p>The inputs change too. In SEO, your page competes with other pages. In GEO, your page is only one input. Reviews, forums, Wikipedia, news and lists can all shape the answer, and sometimes they matter more than your own site.</p>"
+      },
+      {
+        "type": "table",
+        "h2": "How do GEO and SEO compare side by side?",
+        "head": [
+          "",
+          "SEO",
+          "GEO"
+        ],
+        "rows": [
+          [
+            "Goal",
+            "Rank pages in search results",
+            "Get named and cited in AI answers"
+          ],
+          [
+            "Unit of success",
+            "A ranking for a keyword",
+            "A mention in the answer to a question"
+          ],
+          [
+            "Typical query",
+            "Short keywords",
+            "Longer, conversational questions"
+          ],
+          [
+            "Main inputs",
+            "Your pages, links, technical health",
+            "Your pages plus reviews, forums, Wikipedia, press and lists"
+          ],
+          [
+            "What the user sees",
+            "A list of links",
+            "A written answer naming a few brands"
+          ],
+          [
+            "Key metrics",
+            "Rankings, clicks, organic traffic",
+            "Visibility score, citation rate, share of voice, sentiment"
+          ],
+          [
+            "Demand data",
+            "Published keyword volumes",
+            "No published volume; demand read from your own data"
+          ],
+          [
+            "How results vary",
+            "Rankings shift over weeks",
+            "Answers differ by engine, wording and day"
+          ],
+          [
+            "Foundations",
+            "Crawlable, fast, well-structured pages",
+            "The same, plus facts stated plainly and consistently"
+          ]
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "What do GEO and SEO have in common?",
+        "html": "<p>More than the debate suggests. Both reward pages that answer a real question well. Both depend on technical basics: pages that load, can be crawled and carry clean structured data. Both reward authority earned from other sites.</p>\n<p>Many AI engines retrieve from web search before they write. Google AI Overviews sits directly on top of Google Search. If a search crawler cannot find a page, an engine that relies on search results is unlikely to read it. That is why we say GEO builds on SEO. Remove the SEO foundation and GEO has nothing to stand on.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What changes when you add GEO?",
+        "html": "<ul>\n<li><strong>Off-site work matters more.</strong> Ahrefs' 2025 study of 75,000 brands found brand mentions correlated at 0.664 with AI Overview visibility, against 0.218 for backlinks. A correlation, not proof of cause, but it shifts attention from link counts towards being discussed in the right places.</li>\n<li><strong>Facts beat flourish.</strong> Engines lift sentences. A project page that states the possession date, the RERA number and the unit sizes is easier to quote than one that promises \"luxury living, redefined\".</li>\n<li><strong>Communities count.</strong> Semrush's 2025 research found Wikipedia and Reddit were ChatGPT's two most-cited domains. Few SEO plans treated either as a core channel. Our <a href=\"/blog/reddit-wikipedia-ai-visibility/\">Reddit and Wikipedia playbook</a> explains how to take part honestly.</li>\n<li><strong>Accuracy needs watching.</strong> An answer can be wrong about you even when your site is right. Facts can drift after a launch, a price change or a results announcement.</li>\n<li><strong>Measurement is new.</strong> There is no ranking report for ChatGPT answers. You build your own question set and measure it again and again. See <a href=\"/blog/measure-ai-visibility/\">how to measure AI visibility</a>.</li>\n</ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "AEO vs GEO vs SEO: what is the difference?",
+        "html": "<p>Answer engine optimisation (AEO) is the older term. It grew up around featured snippets and voice assistants, where the goal was to be the single answer boxed at the top of the page or read aloud. GEO is the newer term, focused on generative engines that write a fresh answer and name several brands.</p>\n<p>In practice the three overlap. SEO gets your pages found. AEO shapes them so a single fact can be lifted cleanly. GEO adds the wider set of sources, the entity facts and the measurement across engines. Rather than argue over labels, plan the work: technical health, answer-first content, consistent facts, trusted third-party mentions and a weekly view of what the engines say.</p>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>Practical takeaway:</strong> do not split your budget into rival SEO and GEO camps. Run one organic plan with two scoreboards.</p><ul><li><strong>Search:</strong> rankings, organic traffic and the enquiries they produce.</li><li><strong>AI answers:</strong> visibility score, citation rate, share of voice and sentiment against a Week-1 baseline.</li></ul><p>A fix that moves one scoreboard often helps the other. Log every change with its date so you can tell which.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How should a marketing team plan for both?",
+        "html": "<p>Keep the SEO work that already performs. Then add three things.</p>\n<p>First, a question map: the buyer questions that matter for revenue, written the way people ask an AI engine. Second, a sources audit: which sites the engines cite for those questions, and whether they describe you correctly. Third, a fixes log: every page shipped, every fact corrected and every review answered, each with its date, so you can tie changes in the answers back to work done.</p>\n<p>Our <a href=\"/solutions/geo/\">GEO service</a> works this way, alongside existing SEO teams rather than in place of them.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should I move my SEO budget to GEO?",
+        "a": "Not wholesale. Many AI engines retrieve from search indexes, so weak SEO usually means weak GEO. Keep the technical and content foundations, and add the off-site, entity and measurement work that GEO needs."
+      },
+      {
+        "q": "Is GEO just SEO with a new name?",
+        "a": "They overlap but are not identical. GEO adds work SEO rarely covered: consistent entity facts across the web, community and review presence, and measuring what AI answers say about you across several engines."
+      },
+      {
+        "q": "Do backlinks still matter for AI visibility?",
+        "a": "They still help pages get found and trusted. Ahrefs' 2025 study of 75,000 brands found brand mentions correlated more strongly with AI Overview visibility (0.664) than backlinks did (0.218). That is a correlation, not proof of cause."
+      },
+      {
+        "q": "What is the difference between AEO and GEO?",
+        "a": "AEO focused on featured snippets and voice answers, where one answer is shown. GEO focuses on generative engines that write a new answer and often name several brands. The practical work overlaps a great deal."
+      },
+      {
+        "q": "Can my SEO agency handle GEO?",
+        "a": "Some can. Ask how they measure AI answers across engines, how they approach Reddit and Wikipedia ethically and how they catch facts that drift. If they cannot show a dated baseline of AI answers, they are not measuring GEO yet."
+      }
+    ],
+    "related": [
+      "/blog/what-is-generative-engine-optimisation/",
+      "/blog/how-ai-engines-choose-sources/",
+      "/blog/measure-ai-visibility/",
+      "/solutions/geo/"
+    ],
+    "article": {
+      "published": "2026-11-10",
+      "minutes": 6
+    }
+  },
+  {
+    "path": "/blog/how-ai-engines-choose-sources/",
+    "title": "How AI engines choose sources and brands",
+    "description": "How does ChatGPT choose sources? What studies from Profound, Semrush, Peec AI and Ahrefs show about how AI engines pick the brands they recommend.",
+    "keywords": [
+      "how does ChatGPT choose sources",
+      "how AI picks brands to recommend",
+      "ChatGPT citations",
+      "AI citation sources",
+      "how to get cited by ChatGPT",
+      "Perplexity sources",
+      "AI Overviews sources",
+      "most cited domains in ChatGPT"
+    ],
+    "schema": "Article",
+    "eyebrow": "Blog · Sources",
+    "h1": "Who the engines <span class=\"g\">listen to.</span>",
+    "lede": "AI engines do not make up their recommendations from nothing. They read sources, weigh them and repeat what holds up. Here is what the data says about which sources count.",
+    "answer": "AI engines such as ChatGPT choose sources by retrieving pages relevant to the question and favouring those that answer it directly, come from domains they treat as reliable and agree with other sources. Citation studies show Wikipedia, Reddit, review sites and media carry heavy weight, but the shares differ by engine and shift quickly.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "How does ChatGPT choose sources?",
+        "html": "<p>When ChatGPT, Perplexity or Google AI Overviews answers a question about products or companies, it usually follows some version of the same routine. It interprets the question, searches for relevant pages, reads a small set of them and writes an answer from what they say. Some engines show their sources as links. Others show fewer, or none.</p>\n<p>No engine publishes its full rules. What we can see is the outcome: which domains get cited, for which kinds of question, on which engine. Several large studies have measured that outcome. They agree on the broad picture and differ on the detail, and the differences are as useful as the agreement.</p>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "47.9%",
+            "d": "of ChatGPT's top-10 cited source share is Wikipedia (680 million citations analysed).",
+            "src": "Profound, 2025"
+          },
+          {
+            "n": "Top 2",
+            "d": "Wikipedia and Reddit are ChatGPT's two most-cited domains.",
+            "src": "Semrush, 2025"
+          },
+          {
+            "n": "#1",
+            "d": "Reddit is the most directly cited source across ChatGPT, Google AI Mode, Gemini, Perplexity and AI Overviews (30 million sources).",
+            "src": "Peec AI, March 2026"
+          },
+          {
+            "n": "0.664",
+            "d": "correlation between brand mentions and AI Overview visibility, against 0.218 for backlinks (75,000 brands).",
+            "src": "Ahrefs, 2025"
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "What do the citation studies show?",
+        "html": "<p>Profound's 2025 analysis of 680 million citations found that Wikipedia accounted for 47.9% of ChatGPT's top-10 cited source share. Semrush's 2025 research found Wikipedia and Reddit were ChatGPT's two most-cited domains. Peec AI's March 2026 analysis of 30 million sources found Reddit was the number one directly cited source across ChatGPT, Google AI Mode, Gemini, Perplexity and AI Overviews.</p>\n<p>Ahrefs came at the question from another angle. Its 2025 study of 75,000 brands found that brand mentions across the web correlated at 0.664 with visibility in Google AI Overviews, against 0.218 for backlinks. That is a correlation, not proof of cause. It still tells you something useful: being discussed appears to matter more than being linked to.</p>\n<p>Taken together, the message is consistent. Engines lean on sources that are broad, community-written or independently edited, and on brands that are talked about in many places.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Why do citation shares differ by engine and change so fast?",
+        "html": "<p>Notice that the studies do not produce a single ranking. Profound's ChatGPT data puts Wikipedia far ahead. Peec AI's later, cross-engine data puts Reddit first. Both can be true. They measured different engines, different question sets and different time periods, with different methods.</p>\n<p>There are practical reasons the picture keeps moving:</p>\n<ul>\n<li><strong>Engines update often.</strong> Retrieval systems, data partnerships and ranking rules change, sometimes without notice.</li>\n<li><strong>Each engine draws on its own pool.</strong> Google AI Overviews draws on Google Search. Other engines use different search partners or their own crawlers, so the candidate pages differ.</li>\n<li><strong>Question type matters.</strong> A definition question may favour Wikipedia. A \"which one should I buy\" question may favour forums and review sites. A local question may favour maps and directories.</li>\n<li><strong>Wording matters.</strong> Small changes in phrasing can change which sources are retrieved.</li>\n</ul>\n<p>The lesson for a marketing team is not to chase whichever domain topped last quarter's study. Measure the sources cited for your own questions, on the engines your buyers use, and check again regularly.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do AI engines pick which brands to recommend?",
+        "html": "<p>Naming a brand is a separate step from citing a source. From the answers we track across engines, a few patterns stand out.</p>\n<ul>\n<li><strong>Consensus.</strong> Brands named across several independent sources are named more often. One glowing page rarely outweighs ten neutral mentions elsewhere.</li>\n<li><strong>A clear entity.</strong> The engine has to be sure who you are. The same name, category, location and core facts across your site, Wikidata, directories and profiles help it resolve you correctly.</li>\n<li><strong>Fit to the question.</strong> A brand described as \"for mid-size manufacturers in western India\" is easier to match to that question than one described as \"solutions for everyone\".</li>\n<li><strong>Evidence.</strong> Reviews, numbers and independent coverage give the engine something concrete to repeat.</li>\n<li><strong>Recency.</strong> Current information tends to win over stale information, though old facts linger when nothing replaces them.</li>\n</ul>\n<p>These are observed patterns, not published rules. Treat them as hypotheses to test on your own questions.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources should brands in India focus on?",
+        "html": "<p>Start with the sources the engines already cite for your questions. For most categories the list will include some of these:</p>\n<ul>\n<li><strong>Wikipedia and Wikidata.</strong> An accurate article if your company meets Wikipedia's notability standards, and a clean Wikidata entity either way.</li>\n<li><strong>Reddit and Quora threads</strong> where your buyers ask questions, including city and category communities.</li>\n<li><strong>Review platforms</strong>, from Google Business Profile to category portals and B2B review sites. BrightLocal's 2025 survey found 74% of consumers use two or more review sites before they choose.</li>\n<li><strong>Trade and business media</strong> that cover your sector.</li>\n<li><strong>\"Best X in Y\" lists</strong>, comparison sites and newsletters.</li>\n<li><strong>Video with full transcripts</strong>, so what is said can also be read.</li>\n<li><strong>Your own site</strong>, with answer-first pages and structured data.</li>\n</ul>\n<p>Our <a href=\"/solutions/feeder-network/\">feeder network</a> and <a href=\"/solutions/content-community/\">content and community</a> work is built around these sources. The <a href=\"/blog/reddit-wikipedia-ai-visibility/\">Reddit and Wikipedia playbook</a> covers the two biggest in detail.</p>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>A sources audit in five steps:</strong></p><ol><li>Pick 20 to 50 buyer questions that matter to revenue.</li><li>Ask each one on the engines your buyers use, and save every answer with its date.</li><li>List every cited source and the brands each one names.</li><li>Mark the sources that are wrong, outdated or silent about you.</li><li>Choose three to fix or earn this quarter, and re-check after each change.</li></ol>"
+      },
+      {
+        "type": "prose",
+        "h2": "Can you influence which sources an engine cites?",
+        "html": "<p>Not directly, and no one can promise a placement. What you can do is improve the odds. Publish pages that answer the question better than anything else the engine might find. Make sure your facts are identical wherever they appear. Earn honest mentions in the places the engine already trusts.</p>\n<p>Evidence helps. The Princeton and IIT Delhi GEO study (Aggarwal et al., KDD 2024) found that adding statistics, quotations and cited sources to content raised visibility in generative answers by up to about 40%.</p>\n<p>Then measure. Our <a href=\"/platform/\">platform</a> records every source cited in every answer it captures, so you can see which sources decide your category and whether your work is changing them.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why does ChatGPT cite Wikipedia so often?",
+        "a": "Wikipedia is broad, edited by volunteers under sourcing rules and structured consistently across millions of topics. Profound's 2025 analysis of 680 million citations found it made up 47.9% of ChatGPT's top-10 cited source share."
+      },
+      {
+        "q": "Does Perplexity use the same sources as ChatGPT?",
+        "a": "Not exactly. Engines use different indexes and retrieval methods, so their cited sources overlap but differ. Peec AI's March 2026 study found Reddit was the top directly cited source across several engines, including Perplexity, but the mix below it varies."
+      },
+      {
+        "q": "Is my own website enough to get cited by AI engines?",
+        "a": "Usually not on its own. Engines cross-check what you say against independent sources. Your site should state your facts clearly, and reviews, media, community threads and directories then confirm them."
+      },
+      {
+        "q": "How often do AI citation sources change?",
+        "a": "Often enough that a one-off audit goes stale. Engines update their retrieval, and answers differ by wording and by day. A weekly or monthly re-check of your core questions is a sensible minimum."
+      },
+      {
+        "q": "Do backlinks help with AI citations?",
+        "a": "They help pages get found and trusted. Ahrefs' 2025 study of 75,000 brands found brand mentions correlated at 0.664 with AI Overview visibility against 0.218 for backlinks, so mentions deserve at least as much attention as links."
+      }
+    ],
+    "related": [
+      "/blog/reddit-wikipedia-ai-visibility/",
+      "/blog/what-is-generative-engine-optimisation/",
+      "/solutions/feeder-network/",
+      "/platform/"
+    ],
+    "article": {
+      "published": "2026-11-10",
+      "minutes": 6
+    }
+  },
+  {
+    "path": "/blog/reddit-wikipedia-ai-visibility/",
+    "title": "Reddit and Wikipedia for AI visibility",
+    "description": "An ethical playbook for Reddit, Wikipedia and Wikidata: how brands can show up in the sources AI engines cite most, without astroturfing or paid edits.",
+    "keywords": [
+      "Reddit for AI visibility",
+      "Wikipedia for brands",
+      "Wikidata for SEO",
+      "Reddit marketing for brands",
+      "Wikipedia conflict of interest",
+      "Wikidata entity",
+      "how to get on Wikipedia",
+      "Reddit brand account"
+    ],
+    "schema": "Article",
+    "eyebrow": "Blog · Communities",
+    "h1": "Show up openly. <span class=\"g\">Never fake it.</span>",
+    "lede": "Reddit and Wikipedia are among the sources AI engines cite most. Both have strict rules and stricter communities. Here is how a brand can take part honestly.",
+    "answer": "Brands can improve AI visibility through Reddit and Wikipedia by taking part openly. On Reddit, post from a named brand account and answer real questions, never astroturf. On Wikipedia, propose corrections on the talk page with reliable sources and a conflict-of-interest disclosure, never promotional edits. On Wikidata, keep one clean, accurate entity for the company.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "Why do Reddit and Wikipedia matter for AI visibility?",
+        "html": "<p>Because the engines read them constantly. Semrush's 2025 research found Wikipedia and Reddit were ChatGPT's two most-cited domains. Profound's 2025 analysis of 680 million citations found Wikipedia held 47.9% of ChatGPT's top-10 cited source share. Peec AI's March 2026 analysis of 30 million sources found Reddit was the number one directly cited source across ChatGPT, Google AI Mode, Gemini, Perplexity and AI Overviews.</p>\n<p>The two play different roles. Wikipedia and its sister project Wikidata tell engines what a company is: its name, founding, leadership, category and history. Reddit tells engines what people think: which product held up, which service was slow, which developer handed over on time. One shapes facts. The other shapes opinion.</p>\n<p>Both are communities with rules, and both punish brands that try to game them. The playbook below is built on that.</p>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "Top 2",
+            "d": "Wikipedia and Reddit are ChatGPT's two most-cited domains.",
+            "src": "Semrush, 2025"
+          },
+          {
+            "n": "47.9%",
+            "d": "of ChatGPT's top-10 cited source share is Wikipedia.",
+            "src": "Profound, 2025"
+          },
+          {
+            "n": "#1",
+            "d": "Reddit is the most directly cited source across five major AI engines and modes.",
+            "src": "Peec AI, March 2026"
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "How should a brand use Reddit?",
+        "html": "<p>The short version: be a useful, visible participant, not a hidden one.</p>\n<ul>\n<li><strong>Use a named brand account.</strong> Make it obvious who you are. If staff post about the company, they say where they work.</li>\n<li><strong>Read each subreddit's rules first.</strong> Many communities restrict self-promotion or links. Respect them, and ask the moderators when unsure.</li>\n<li><strong>Answer real questions.</strong> Find threads where buyers ask about your category, your city or the problem you solve. Give a complete, honest answer, even when it does not favour you.</li>\n<li><strong>Share facts, not slogans.</strong> Dates, specifications, process details and clear next steps help the person asking, and they are the kind of content engines can quote.</li>\n<li><strong>Handle criticism in public.</strong> If someone had a bad experience, acknowledge it, correct factual errors politely and offer a way to resolve it.</li>\n<li><strong>Keep going.</strong> One post does little. A steady, helpful presence over months builds a record people and engines can see.</li>\n</ul>\n<p>Quora works the same way: a named profile, real answers and a disclosed affiliation. Our <a href=\"/solutions/content-community/\">content and community</a> team runs this for brands, always posting openly.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What counts as astroturfing on Reddit?",
+        "html": "<p>Astroturfing is any attempt to make brand messaging look like independent opinion. It includes:</p>\n<ul>\n<li>Posting from accounts that hide their link to the brand.</li>\n<li>Paying or asking people to post praise without disclosure.</li>\n<li>Buying upvotes, awards or aged accounts.</li>\n<li>Coordinated replies to bury criticism.</li>\n</ul>\n<p>We never do any of these. Beyond the ethics, astroturfing tends to fail. Communities spot it, moderators remove it, and the backlash becomes the thread the engines find. In India, undisclosed promotion also runs against ASCI's advertising codes. A disclosed brand voice that is genuinely useful is both the right approach and the one that lasts.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How should a brand approach Wikipedia?",
+        "html": "<p>Carefully, and through the front door. Wikipedia is written by volunteers under strict policies on neutrality, reliable sourcing and conflicts of interest. If you work for a company or are paid by it, you have a conflict of interest on its article.</p>\n<ul>\n<li><strong>Do not edit your own article directly.</strong> Use the article's talk page to request changes.</li>\n<li><strong>Disclose your conflict of interest.</strong> Say who you work for on your user page and in your request. Wikipedia's rules require paid editing to be disclosed.</li>\n<li><strong>Bring reliable, independent sources.</strong> Annual reports and official filings can support basic facts, but independent coverage carries more weight. Every requested change should cite a source.</li>\n<li><strong>Correct facts, do not add promotion.</strong> Fix a wrong founding year, an outdated headquarters or a missed leadership change. Do not add award lists, marketing language or product claims.</li>\n<li><strong>Accept the outcome.</strong> Volunteer editors decide. If they decline, improve the sourcing or let it go.</li>\n</ul>\n<p>If your company has no article, do not write one yourself. Notability depends on significant independent coverage. Earn that through real news and real <a href=\"/solutions/reputation/\">press</a>, and an article may follow from editors who are not you.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What is Wikidata and why does it matter for brands?",
+        "html": "<p>Wikidata is the structured database behind Wikipedia. Each entity, such as a company, has an item with a unique identifier and a set of statements: official name, official website, founding date, headquarters, founders, industry, parent company and official social accounts. Search engines and AI systems use structured data of this kind to work out which entity a name refers to.</p>\n<p>Entity hygiene on Wikidata means:</p>\n<ul>\n<li><strong>One item per entity.</strong> Find duplicates and flag them for merging.</li>\n<li><strong>Accurate core statements</strong>, each with a reference where possible.</li>\n<li><strong>The correct official website and identifiers</strong>, so the entity links cleanly to your site and profiles.</li>\n<li><strong>A neutral description.</strong> \"Indian real estate developer\", not \"India's most trusted developer\".</li>\n<li><strong>The same conflict-of-interest care.</strong> Be transparent, add sources and follow community guidance.</li>\n</ul>\n<p>Then match those facts on your own site. Organisation schema with <em>sameAs</em> links to your Wikidata item and official profiles helps engines join the dots. That is what \"Wikidata for SEO\" really means: one clear entity, described the same way everywhere.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What did this look like in a real programme?",
+        "html": "<p>In one programme for a residential developer in India, the community and reference work included Reddit answers in city and home-buying threads posted openly as the brand, Quora answers, replies to reviews on Google and property portals, Wikipedia facts corrected via the talk page with sources, and one clean Wikidata entity. It ran alongside project fact pages, schema and digital PR.</p>\n<p>Across eight AI engines, the visibility score rose from 32% to 58% in under 2.5 months from the Week-1 baseline. That came from the whole programme, not any single channel. <a href=\"/results/real-estate-ai-visibility/\">Read the case study</a>.</p>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>Before you post or request an edit, check:</strong></p><ul><li>Is it clear who we are?</li><li>Does this answer a real question someone asked?</li><li>Would we be comfortable if the whole community knew we wrote it?</li><li>Are our Wikipedia requests on the talk page, disclosed and sourced?</li><li>Does our Wikidata item match our website, fact for fact?</li><li>Have we avoided anything paid for without disclosure?</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I pay someone to edit my company's Wikipedia page?",
+        "a": "Wikipedia's rules require paid editing to be disclosed, and editors with a conflict of interest should request changes on the talk page rather than edit directly. Undisclosed paid editing risks removal and reputational damage. We only use disclosed, sourced talk-page requests."
+      },
+      {
+        "q": "Is it allowed for a brand to post on Reddit?",
+        "a": "Yes, if you follow Reddit's rules and each subreddit's rules, many of which limit self-promotion. Post from an account that clearly represents the brand, answer real questions and never disguise your affiliation."
+      },
+      {
+        "q": "Does my company need a Wikipedia article to appear in AI answers?",
+        "a": "No. Many brands are named in AI answers without one. A clean Wikidata entity, consistent facts on your site and profiles, real reviews and independent coverage all help. If your company meets Wikipedia's notability standards, an accurate article helps further."
+      },
+      {
+        "q": "How do I fix wrong information about my company on Wikipedia?",
+        "a": "Post an edit request on the article's talk page, disclose your conflict of interest, explain the error and cite a reliable source for the correct fact. Volunteer editors review the request and decide."
+      },
+      {
+        "q": "Will Reddit posts help my brand appear in ChatGPT answers?",
+        "a": "They can contribute, since several studies rank Reddit among the most cited sources. The effect depends on which threads engines retrieve for your questions, so measure the answers before and after rather than assuming."
+      }
+    ],
+    "related": [
+      "/blog/how-ai-engines-choose-sources/",
+      "/solutions/content-community/",
+      "/results/real-estate-ai-visibility/",
+      "/blog/measure-ai-visibility/"
+    ],
+    "article": {
+      "published": "2026-11-10",
+      "minutes": 6
+    }
+  },
+  {
+    "path": "/blog/measure-ai-visibility/",
+    "title": "How to measure AI visibility and share of voice",
+    "description": "How to measure AI visibility: visibility score, citation rate, AI share of voice and sentiment, built on a prompt universe, a Week-1 baseline and drift checks.",
+    "keywords": [
+      "how to measure AI visibility",
+      "AI share of voice",
+      "track brand in ChatGPT",
+      "AI visibility score",
+      "citation rate",
+      "brand sentiment in AI answers",
+      "prompt tracking",
+      "GEO metrics",
+      "AI search tracking"
+    ],
+    "schema": "Article",
+    "eyebrow": "Blog · Measurement",
+    "h1": "Measure the answer, <span class=\"g\">not the hope.</span>",
+    "lede": "There is no ranking report for AI answers. Here is how to build a measurement system for them that a board will accept.",
+    "answer": "To measure AI visibility, build a fixed set of buyer questions (a prompt universe), run it across the AI engines your buyers use and record every answer with its date. Track four numbers against a Week-1 baseline: visibility score, citation rate, share of voice and brand sentiment. Re-run on a schedule to catch drift.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "Why is AI visibility hard to measure?",
+        "html": "<p>Three reasons. First, AI engines publish no search volume, so nobody outside the engine knows how often a question is asked. Second, answers vary by engine, by exact wording and by day. Third, most AI engines offer brands no report showing how often they were named or cited.</p>\n<p>So you build your own measurement. Done well, it gives a stable, repeatable view of where you stand. Done badly, it produces screenshots and anecdotes. The difference is method.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What is a prompt universe?",
+        "html": "<p>A prompt universe is the fixed set of questions you track. It should reflect what your buyers really ask, phrased the way they ask an AI engine. Build it from sources you can see:</p>\n<ul>\n<li><strong>Your SEO data:</strong> search queries, especially the longer, question-style ones.</li>\n<li><strong>Your own enquiries:</strong> what prospects ask sales, support and your WhatsApp line.</li>\n<li><strong>A category map:</strong> definitions, comparisons, shortlists, prices, locations and problems.</li>\n<li><strong>A live baseline:</strong> what the engines answer today, and which brands they name.</li>\n</ul>\n<p>Rank each question by demand and winnability. Demand comes from the signals above. Winnability is how close you are to being named, and how strong the brands and sources in the current answer are. Then band the questions: <strong>Own</strong> (high demand, and you can win), <strong>Build</strong> (worth it, but needs work) and <strong>Monitor</strong> (watch, do not invest yet).</p>\n<p>One rule: do not invent prompt volume. AI engines do not publish it. Any figure claiming a precise monthly volume for a ChatGPT prompt is an estimate, and you should know how it was made before you trust it.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What should you measure?",
+        "html": "<p>Four numbers, plus two ideas that hold them together. Each number answers a different question, and none is enough alone.</p>"
+      },
+      {
+        "type": "terms",
+        "items": [
+          {
+            "id": "visibility-score",
+            "t": "Visibility score",
+            "d": "The share of tracked answers, across your prompt universe and the engines you track, in which your brand is named. Named in 40 of 100 answers means a visibility score of 40%."
+          },
+          {
+            "id": "citation-rate",
+            "t": "Citation rate",
+            "d": "The share of answers that cite your own pages or profiles as a source. Being named is good. Being the source the engine points to is stronger."
+          },
+          {
+            "id": "share-of-voice",
+            "t": "Share of voice",
+            "d": "Your mentions as a share of all brand mentions in the answers for your prompt universe. It shows your position against the competitors who are named, not in isolation."
+          },
+          {
+            "id": "brand-sentiment",
+            "t": "Brand sentiment",
+            "d": "Whether answers describe you positively, neutrally or negatively, and whether the facts are right. A mention with an outdated price or an old controversy is not a win."
+          },
+          {
+            "id": "week-1-baseline",
+            "t": "Week-1 baseline",
+            "d": "The first full, dated measurement of your prompt universe, taken before any fixes. Every later report is compared with it."
+          },
+          {
+            "id": "drift",
+            "t": "Drift",
+            "d": "A change in what engines say about you that you did not cause, such as an old price after a change, or last year's results after new ones are filed."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "How do you set a Week-1 baseline?",
+        "html": "<p>Run the full prompt universe across every engine you track before changing anything. For each answer, record the date, the engine, the brands named and their order, the sources cited, the facts stated about you and the tone. Run each question more than once, because answers vary, and report the pattern rather than one lucky result.</p>\n<p>Keep the raw answers. Months later, when someone asks whether the work changed anything, you can put the actual text from Week 1 next to the text from today. That persuades a board far more than a chart on its own.</p>"
+      },
+      {
+        "type": "steps",
+        "h2": "How often should you re-measure?",
+        "items": [
+          {
+            "t": "Every week",
+            "d": "Re-run the core questions and report against the baseline. Weekly is frequent enough to tie movement to specific fixes."
+          },
+          {
+            "t": "After every fix you ship",
+            "d": "Log each change with its date: a new page, a schema update, a corrected listing, an answered review. Then check the questions it was meant to move."
+          },
+          {
+            "t": "After business events",
+            "d": "Launches, price changes, results announcements and leadership changes are when drift appears. Check within days."
+          },
+          {
+            "t": "Every quarter",
+            "d": "Review the prompt universe itself. Add new questions, retire stale ones and re-rank by demand and winnability."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "What does good progress look like?",
+        "html": "<p>An example from our own work. In one programme for a residential developer in India, the visibility score rose from 32% to 58% across eight AI engines in under 2.5 months from the Week-1 baseline. Citation rate, share of voice and brand sentiment all went up, and the developer now shows up for 80 to 90 tracked buyer questions. <a href=\"/results/real-estate-ai-visibility/\">See the full case study</a>.</p>\n<p>That is one programme in one category, not a benchmark. The useful lesson is the method: a fixed question set, a dated baseline, every fix logged and the same questions re-run each week, so movement can be traced to work done.</p>\n<p>Keep a second scoreboard as well: SEO and your own enquiries. If AI visibility rises and qualified enquiries do not, something after the answer needs attention. Our <a href=\"/solutions/leads-pipeline/\">leads and pipeline</a> work traces each deal back to where demand began.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Can you track your brand in ChatGPT by hand?",
+        "html": "<p>For a first look, yes. Pick 20 questions, ask them in ChatGPT, Gemini, Perplexity and Google, and paste the answers into a spreadsheet with the date. You will learn a lot in an afternoon.</p>\n<p>It stops scaling quickly. Eight engines, a few hundred questions, several runs each and weekly repeats add up to thousands of answers. Your own account history and location can also colour what you see. At that point you need a tool that runs clean, repeatable queries and stores every answer and source. Our <a href=\"/platform/\">platform</a> tracks eight engines with up to 10,000 prompts per brand a day and records every citation.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which mistakes make AI visibility data misleading?",
+        "html": "<ul>\n<li><strong>Tracking only brand-name questions.</strong> Asking \"What is [your brand]?\" tests accuracy, not visibility. Most buying questions do not mention you, and those are where shortlists form.</li>\n<li><strong>Changing the question set every month.</strong> If the prompts move, the trend means nothing. Revise the universe quarterly and report old and new sets separately for a while.</li>\n<li><strong>One run per question.</strong> A single answer can be an outlier. Repeat runs and report the pattern.</li>\n<li><strong>Counting mentions without reading them.</strong> A mention in a list of brands to avoid is not progress. Read the sentiment and the facts, not just the count.</li>\n<li><strong>No dates on fixes.</strong> Without a dated log, you cannot tell which change moved which answer.</li>\n</ul>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>Measurement checklist:</strong></p><ul><li>A written prompt universe, banded Own, Build and Monitor.</li><li>No invented prompt volumes.</li><li>A dated Week-1 baseline, with the raw answers kept.</li><li>Four numbers: visibility score, citation rate, share of voice, sentiment.</li><li>A fixes log with dates.</li><li>Drift checks after launches, price changes and results.</li><li>A second scoreboard for SEO and owned enquiries.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is AI share of voice?",
+        "a": "AI share of voice is your brand's share of all brand mentions in AI answers for a defined set of questions. If your brand is named 100 times and competitors 300 times across the set, your share of voice is 25%."
+      },
+      {
+        "q": "How do I track my brand in ChatGPT?",
+        "a": "Write down the questions your buyers ask, run them in ChatGPT on a regular schedule and record whether you are named, how you are described and which sources are cited. For many questions across several engines, use a tool that stores every answer with its date."
+      },
+      {
+        "q": "What is a good AI visibility score?",
+        "a": "It depends on your category and the questions you track, so compare against your own baseline and your competitors rather than a universal number. In one real-estate programme, the score moved from 32% to 58% across eight engines in under 2.5 months."
+      },
+      {
+        "q": "Can I get search volume for ChatGPT prompts?",
+        "a": "No. AI engines do not publish prompt volume. Use demand signals you can see, such as your search data and sales enquiries, and treat any precise prompt volume figure as an estimate."
+      },
+      {
+        "q": "Why do AI answers change from day to day?",
+        "a": "Engines update their models and retrieval, and answers vary with wording and context. That is why each question is run more than once and tracked as a trend against a baseline, rather than judged on a single answer."
+      }
+    ],
+    "related": [
+      "/blog/what-is-generative-engine-optimisation/",
+      "/results/real-estate-ai-visibility/",
+      "/platform/",
+      "/blog/geo-vs-seo/"
+    ],
+    "article": {
+      "published": "2026-11-10",
+      "minutes": 6
+    }
+  },
+  {
+    "path": "/blog/ai-answers-investor-relations/",
+    "title": "AI answers and investor relations: a guide",
+    "description": "What does ChatGPT say about your listed company? Why AI answers to investors go stale, and how IR teams can correct them using public disclosures only.",
+    "keywords": [
+      "AI answers investor relations",
+      "what ChatGPT says about my listed company",
+      "IR website for AI",
+      "investor relations GEO",
+      "AI search for listed companies",
+      "SEBI disclosure and AI",
+      "investor perception AI",
+      "IR website best practice"
+    ],
+    "schema": "Article",
+    "eyebrow": "Blog · Investor relations",
+    "h1": "Investors ask AI. <span class=\"g\">Is it right?</span>",
+    "lede": "An investor can now ask an AI engine about a listed company and get a confident summary in seconds. That summary is not always current. Here is how IR teams can keep it accurate.",
+    "answer": "AI answers about listed companies are assembled from whatever the engine finds: filings, news, old articles, forums and data sites. They can quote outdated figures or lead with a resolved controversy. Investor relations teams can improve accuracy by publishing current, clearly structured disclosures on the IR website and keeping public facts consistent, within SEBI rules.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "What does ChatGPT say about your listed company?",
+        "html": "<p>Try it now. Ask ChatGPT, Gemini or Perplexity: \"Is [your company] a good investment?\", \"What were [your company]'s latest results?\" and \"What are the risks of investing in [your company]?\" Read the answers as an investor would.</p>\n<p>Problems we often see in AI answers about listed companies:</p>\n<ul>\n<li>Figures from an older year presented as current.</li>\n<li>A controversy resolved long ago presented as the headline.</li>\n<li>Management changes missed.</li>\n<li>Segments, subsidiaries or names confused with a similarly named company.</li>\n<li>Aggregator pages and forum posts cited instead of the company's own filings.</li>\n</ul>\n<p>ChatGPT alone has 800 million weekly users (OpenAI, October 2025). Some of your shareholders, and some of the people deciding whether to become one, are reading these answers.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Why do AI answers about listed companies go stale?",
+        "html": "<p>Engines favour sources that are easy to read, widely referenced and consistent with each other. A company's latest results may sit in a PDF on the stock exchange website and an investor presentation on the IR page. An old news story about a dispute may sit on a high-authority media site, linked from dozens of other pages. The engine often finds the old story first.</p>\n<p>IR websites can add to the problem. Many are archives of PDFs with little plain text, no dates in headings and no structured data. An engine looking for the latest revenue figure has to dig through documents, while a data aggregator with a clean table, even an outdated one, is easier to quote.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What does a stale answer look like, and how is it fixed?",
+        "html": "<p><em>Illustration only. Meridian Industries is a fictional listed company used to show the pattern. The answers described are not real engine output.</em></p>\n<p><strong>Before.</strong> Asked \"What is the outlook for Meridian Industries?\", an engine leads with a regulatory dispute that was settled two years ago, quotes revenue from an annual report that is two years old, and cites a forum thread and an aggregator page.</p>\n<p><strong>What the IR team did.</strong> It published a plain-text summary of each quarterly result on the IR site, dated and linked to the exchange filing. It added a company facts page with current leadership, segments and the status of past matters, each referencing a public disclosure. It added structured data for the organisation and its key pages. It requested factual corrections on reference sites through their proper channels, with sources. Every item had company sign-off before going live.</p>\n<p><strong>After.</strong> The same question returns an answer that opens with the latest filed results, describes the dispute as resolved and cites the company's own results page and exchange filing.</p>\n<p>The same pattern played out in one of our programmes for a listed company in India. The AI answer to investor questions moved from old figures and a resolved controversy to the latest filing. Answer accuracy and the citing of current sources went up, the old controversy as headline went down, and investor sentiment improved. <a href=\"/results/investor-relations-narrative/\">Read the case study</a>.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do you make an IR website readable by AI?",
+        "html": "<ul>\n<li><strong>Plain text alongside PDFs.</strong> Publish a short HTML summary of every result, presentation and material announcement, with the key figures stated in sentences.</li>\n<li><strong>Dates everywhere.</strong> Put the period and filing date in the heading. \"Q2 FY27 results, quarter ended 30 September 2026\" beats \"Financial results\".</li>\n<li><strong>A company facts page.</strong> Leadership, board, segments, subsidiaries, registered office, listing details and auditors, kept current.</li>\n<li><strong>Answer-first FAQs.</strong> The questions investors actually ask, such as dividend history, capital allocation policy and how to contact IR, answered from public disclosures only.</li>\n<li><strong>Structured data.</strong> Organisation schema with official identifiers and links to official profiles, plus FAQ and article schema where relevant.</li>\n<li><strong>A link to the source filing.</strong> Every summary points to the original exchange filing, so engines and investors can verify it.</li>\n<li><strong>Stale pages clearly dated.</strong> Old presentations are labelled as historical, not left looking current.</li>\n</ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which SEBI and compliance lines must you respect?",
+        "html": "<p>Accuracy, not spin. For a listed company in India, anything published about financial performance or material events must be consistent with what has been disclosed to the stock exchanges under SEBI rules. GEO for investor relations creates no new information. It makes existing public disclosures easier to find, read and quote.</p>\n<ul>\n<li><strong>Public disclosures only.</strong> No figures, guidance or detail that has not already been disclosed.</li>\n<li><strong>No selective disclosure.</strong> Nothing appears on an IR page, a reference site or a community thread that investors could not already find in filings.</li>\n<li><strong>Company sign-off.</strong> The company secretary, compliance and IR approve every item before it goes live.</li>\n<li><strong>No promotion.</strong> No claims about share price, returns or investment merit.</li>\n<li><strong>Corrections through proper channels.</strong> Reference sites such as Wikipedia are corrected under their own rules, through talk-page requests with sources and a disclosed conflict of interest.</li>\n</ul>\n<p>This is general guidance, not legal advice. Your compliance team and advisers decide what applies to your company.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which investor questions should you track?",
+        "html": "<p>Start with the questions investors and analysts already put to your IR team, then add the ones they are likely to ask an AI engine first. A useful starting set covers:</p>\n<ul>\n<li><strong>Performance:</strong> latest results, growth by segment and margins over time.</li>\n<li><strong>Capital:</strong> dividend history, debt, capital allocation and recent fundraises.</li>\n<li><strong>People:</strong> chair, managing director, CFO and board changes.</li>\n<li><strong>Risks:</strong> regulatory matters, litigation, customer concentration, and past controversies with their current status.</li>\n<li><strong>Peers:</strong> how the company compares with named listed competitors.</li>\n</ul>\n<p>Phrase them the way a retail investor would type them, not the way a filing is written.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do IR teams monitor AI answers?",
+        "html": "<p>Treat AI answers like any other channel investors use. Build a fixed set of investor questions covering results, dividends, management, risks, peers and past matters. Run them across the engines on a schedule, keep every answer with its date and watch for drift, especially in the days after results, AGMs, acquisitions and leadership changes. When an answer is wrong, trace the cited source and fix the cause, not the symptom.</p>\n<p>Our <a href=\"/solutions/geo-investor-relations/\">GEO for investor relations</a> package does this for listed companies, using only public disclosures and with company sign-off before anything is published. For the measurement method, see <a href=\"/blog/measure-ai-visibility/\">how to measure AI visibility</a>.</p>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>IR checklist for AI answers:</strong></p><ul><li>Ask five investor questions about your company on four engines today, and save the answers.</li><li>List every source cited and mark the outdated ones.</li><li>Publish a dated, plain-text summary of your latest results, linked to the filing.</li><li>Create or update a company facts page.</li><li>Add organisation schema with official identifiers.</li><li>Route every change through compliance sign-off.</li><li>Re-check the answers after every results announcement.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a listed company in India influence what AI engines say about it?",
+        "a": "It can improve the odds that answers are accurate, by publishing current public disclosures in clear, readable formats and correcting errors on reference sites through proper channels. No one controls what the engines write, and all of the work must stay within SEBI rules."
+      },
+      {
+        "q": "Is GEO for investor relations compatible with SEBI rules?",
+        "a": "It should be designed to be. The work uses only information already disclosed to the exchanges, adds no new claims and has company approval before anything is published. Your compliance team remains the final authority."
+      },
+      {
+        "q": "Why does ChatGPT show old financial results for my company?",
+        "a": "Engines often find older, widely linked pages more easily than new filings locked in PDFs. Publishing dated, plain-text summaries of each result, linked to the filing, gives them a current source that is easy to quote."
+      },
+      {
+        "q": "How quickly do AI answers update after results are announced?",
+        "a": "There is no fixed timetable. It varies by engine and by how easily the new information can be found. Check the answers in the days after each announcement and fix the sources that keep old figures alive."
+      },
+      {
+        "q": "Should we edit our company's Wikipedia page ourselves?",
+        "a": "No direct edits. Request corrections on the talk page, disclose your conflict of interest and cite public sources such as exchange filings or independent coverage. Volunteer editors decide."
+      }
+    ],
+    "related": [
+      "/solutions/geo-investor-relations/",
+      "/results/investor-relations-narrative/",
+      "/blog/reddit-wikipedia-ai-visibility/",
+      "/blog/measure-ai-visibility/"
+    ],
+    "article": {
+      "published": "2026-11-10",
+      "minutes": 6
+    }
+  }
+]

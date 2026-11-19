@@ -1,0 +1,279 @@
+/* Phone polish, loaded last on every page. Nothing may scroll sideways; long rows of tabs swipe. */
+html, body { overflow-x: clip; }
+.pg, .pg-hero { overflow-x: clip; }
+
+@media (max-width: 760px) {
+  /* tab rows become swipeable strips */
+  .tabs, .app__nav, .pp-tabs { display: flex; flex-wrap: nowrap; max-width: 100%; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; }
+  .tabs::-webkit-scrollbar, .app__nav::-webkit-scrollbar, .pp-tabs::-webkit-scrollbar { display: none; }
+  .tabs [role=tab], .app__nav button, .pp-tabs button { flex: none; white-space: nowrap; scroll-snap-align: start; }
+  .tabs [role=tab] { padding: 11px 15px; font-size: 14px; }
+
+  /* comfortable reading sizes */
+  .pg-hero { padding-top: 104px; }
+  .pg-h1 { font-size: clamp(36px, 10.5vw, 52px); }
+  .pg-lede { font-size: 17px; }
+  .pg-answer p { font-size: 16px; }
+  .pg-h2 { font-size: clamp(26px, 7.4vw, 36px); }
+  .prose, .is-post .prose { font-size: 17px; line-height: 1.7; }
+  .pg-acts { gap: 12px 18px; }
+  .pg-acts .btn { width: 100%; justify-content: center; }
+
+  /* hero scenes fit the screen */
+  .pg-viz { margin: 8px -4px 0; }
+  .vz-win { font-size: 14px; }
+  .vz-body { padding: 14px 14px 16px; }
+  .vz-a__t { font-size: 15.5px; }
+  .vz-th { grid-template-columns: 1fr; } .vz-th__side { display: none; }
+  .vz-rev { min-height: 240px; }
+  .vz-phone__body { height: 340px; }
+  .vz-ring { width: 100%; }
+  .vz-ch { min-height: 0; }
+
+  /* film bands are shorter on phones */
+  .pg-film__f { height: 46vh; }
+  .pg-film figcaption span { font-size: 24px; }
+
+  /* diagrams */
+  .xf__track b { font-size: 10px; letter-spacing: 0; }
+  .xf__detail { margin-top: 22px; }
+  .xh__n { padding: 8px 12px; } .xh__n b { font-size: 12.5px; }
+  .xm__tags span { font-size: 12.5px; padding: 7px 10px; }
+  .pg-stats li { padding-right: 0; }
+  .pg-index a { padding: 18px 2px; }
+  .pg-index b { font-size: 18px; }
+
+  /* contact form and CTA */
+  .pg-cta__in { padding: 28px 22px; border-radius: 24px; }
+  .pg-cta__go .btn { width: 100%; justify-content: center; }
+
+  /* footer: two tidy columns, brand on top */
+  .foot__grid--v11 { gap: 26px 18px; }
+  .foot__legal { flex-direction: column; }
+
+  /* floating key stays out of the way of content */
+  .key { right: 14px; bottom: 14px; }
+}
+
+@media (max-width: 420px) {
+  .wrap, .pg .wrap { padding-left: 18px; padding-right: 18px; }
+  .xf__track i { width: 40px; height: 40px; font-size: 13px; }
+}
+
+/* ================================================================ v18 · the phone flow */
+.dock { display: none; }
+@media (max-width: 760px) {
+  /* one app-like dock: menu + the one action; the key sits beside it. The old floating chapter ring goes. */
+  .dock { position: fixed; z-index: 84; left: 12px; right: 84px; bottom: calc(12px + env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 6px; height: 58px; padding: 6px; border-radius: 99px;
+    background: var(--glass); -webkit-backdrop-filter: blur(22px) saturate(1.6); backdrop-filter: blur(22px) saturate(1.6); border: 1px solid var(--glass-rim); box-shadow: inset 0 1px 0 var(--glass-hi), 0 16px 40px -16px rgba(0, 0, 0, calc(2 * var(--sk) + .2));
+    transform: translateY(140%); transition: transform .5s cubic-bezier(.2, .9, .25, 1); }
+  :root[data-theme="paper"] .dock { background: rgba(255, 255, 255, .86); }
+  .dock.on, html.is-menu .dock { transform: none; }
+  .dock__menu { display: flex; align-items: center; gap: 8px; height: 100%; padding: 0 16px 0 14px; border: 0; border-radius: 99px; background: rgba(var(--ink), .06); color: var(--text); font: 600 14px var(--sans); cursor: pointer; }
+  .dock__menu i { display: block; width: 16px; height: 1.6px; background: currentColor; box-shadow: 0 5px 0 currentColor; margin-top: -5px; }
+  .dock__menu i + i { display: none; }
+  .dock__cta { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; height: 100%; border-radius: 99px; background: var(--green); color: var(--on-green); font: 700 14.5px var(--sans); text-decoration: none; white-space: nowrap; }
+  .key { right: 12px !important; bottom: calc(12px + env(safe-area-inset-bottom)) !important; width: 58px !important; height: 58px !important; }
+  .progress, .chapters { display: none !important; }
+  body { padding-bottom: 84px; }
+  .mmenu { padding-bottom: 110px; }
+
+  /* the intro: let the film show; facts on one line */
+  :root .intro__bg::after { background: linear-gradient(0deg, rgba(var(--base), .96) 30%, rgba(var(--base), .55) 62%, rgba(var(--base), .05) 88%) !important; }
+  .intro__card { bottom: 96px; }
+  .intro__foot { flex-wrap: nowrap; justify-content: space-between; gap: 6px; font-size: 10px; letter-spacing: .1em; }
+  .intro__foot span { white-space: nowrap; } .intro__foot span + span::before { margin-right: 6px; }
+  :root .intro__title { font-size: clamp(46px, 13.5vw, 64px); }
+
+  /* shorter scroll-driven scenes: the same story in fewer thumbs */
+  .herox { height: 220vh; }
+  .ownx { height: 760vh; }
+  .gate { height: calc(var(--gate-units, 7) * 60vh + 100vh); }
+  .decide { height: 220vh; }
+
+  /* the six chapters: compact words, a big readable scene */
+  .ownx__mark { display: none; }
+  .ox { padding: 74px 16px 92px; gap: 14px; align-content: start; }
+  .ox__no { margin-bottom: 10px; }
+  .ox__term { font-size: clamp(30px, 9vw, 40px); }
+  .ox__mean { margin-top: 10px; font-size: 15px; line-height: 1.45; }
+  .ox__scene { width: 100%; justify-self: stretch; }
+  :root .ownx .sc { aspect-ratio: 100 / 104; font-size: 3.7cqw; }
+  .ownx__intro .ownx__title { font-size: clamp(34px, 10vw, 46px); }
+
+  /* the door: captions sit on a soft scrim so they read over the film */
+  .gate.is-3d .gate__shade { background: linear-gradient(0deg, rgba(var(--base), .92) 0%, rgba(var(--base), .55) 34%, transparent 62%) !important; opacity: 1 !important; }
+
+  /* swipe, don't stack: rows of cards scroll sideways with a peek of the next */
+  .eng-grid, .guides { display: flex !important; gap: 12px !important; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-left: -16px; margin-right: -16px; padding: 4px 16px 10px; }
+  .eng-grid::-webkit-scrollbar, .guides::-webkit-scrollbar { display: none; }
+  .eng-grid > *, .guides > * { flex: 0 0 82%; scroll-snap-align: start; }
+  :root .eng { border: 1px solid var(--glass-rim) !important; border-radius: 20px; padding: 16px 18px !important; background: var(--glass) !important; }
+  .eng-grid::after, .guides::after { content: ""; flex: 0 0 4px; }
+
+  /* stacked stats become a compact two-column grid */
+  .stats { grid-template-columns: 1fr 1fr !important; gap: 0; }
+  .stats li { padding: 20px 12px 18px 0 !important; border-right: 0 !important; border-bottom: 1px solid var(--line); }
+  .stats li:nth-child(odd) { padding-right: 14px !important; border-right: 1px solid var(--line) !important; }
+  .stats li:nth-child(even) { padding-left: 14px !important; }
+  .stat { font-size: clamp(34px, 10vw, 46px) !important; }
+  .stats li > span:not(.stat) { font-size: 13.5px !important; }
+  :root .cs__kpis { grid-template-columns: 1fr 1fr !important; gap: 6px 14px; }
+  :root .cs__kpis li { padding: 18px 0 8px !important; min-height: 0; }
+  .cs__kpis .gl { display: none; }
+  .cs__kpis b { font-size: 28px !important; } .cs__kpis em { font-size: 13px !important; }
+
+  /* the case map and diagrams breathe */
+  .xm__stage { gap: 16px; }
+  .xm__g > b { margin-bottom: 8px; }
+  .xm__hint { display: none; }
+
+  /* section rhythm on a phone */
+  :root { --sec: clamp(56px, 9vh, 80px); --head-gap: 28px; }
+}
+@media (max-width: 900px) {
+  /* hub diagrams: ideas swipe sideways, the explanation sits below */
+  .xh__stage { flex-wrap: nowrap !important; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 -16px; padding: 4px 16px 8px; }
+  .xh__stage::-webkit-scrollbar { display: none; }
+  .xh__n { flex: 0 0 74%; scroll-snap-align: start; border-radius: 18px !important; padding: 14px 16px !important; text-align: left; }
+  .xh__n b { font-size: 14px !important; line-height: 1.35; }
+  .xh__detail { padding-top: 6px; }
+}
+
+/* ================================================================ v19 · the phone, directed
+   One idea per screen. Pictures show whole (never cropped), words get room, details wait for a tap. */
+@media (max-width: 760px) {
+  /* film bands: the full 16:9 frame edge to edge, the line underneath (no text over faces) */
+  .pg-film .wrap { padding-left: 0 !important; padding-right: 0 !important; }
+  .pg-film__f { height: auto !important; border-radius: 0 !important; overflow: visible; transform: none !important; background: transparent; }
+  .pg-film__f video { position: relative; z-index: 0; height: auto; aspect-ratio: 16 / 9; object-fit: cover; transform: none !important; }
+  .pg-film__f::after { display: none; }
+  .pg-film figcaption { position: static; padding: 16px 18px 0; }
+  .pg-film figcaption span { color: var(--text); text-shadow: none; font-size: clamp(22px, 6.6vw, 28px) !important; max-width: 18ch; }
+  .pg-film { padding-bottom: 8px; }
+
+  /* the short answer: the first lines, the rest on a tap */
+  .pg-answer.is-clamp p { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .pg-answer__more { margin-top: 10px; padding: 0; border: 0; background: none; color: var(--green); font: 600 14px var(--sans); cursor: pointer; }
+
+  /* fewer words where the picture already says it */
+  .tool__use { display: none; }
+  .ox__mean { font-size: 14.5px; max-width: 34ch; }
+  .pg-lede { font-size: 16.5px; line-height: 1.5; }
+
+  /* footer: one column of folded groups */
+  .foot__grid--v11 { grid-template-columns: 1fr !important; gap: 0 !important; }
+  .foot__brand { padding-bottom: 18px; }
+  .foot__grid--v11 > nav { border-top: 1px solid var(--line); }
+  .foot__grid--v11 > nav h3 { display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 16px 0; cursor: pointer; }
+  .foot__grid--v11 > nav h3::after { content: "+"; font: 400 20px/1 var(--sans); color: var(--green); transition: transform .3s; }
+  .foot__grid--v11 > nav.is-open h3::after { transform: rotate(45deg); }
+  .foot__grid--v11 > nav ul { display: none; padding-bottom: 14px; }
+  .foot__grid--v11 > nav.is-open ul { display: grid; gap: 10px; }
+
+  /* breathing room: sections sit further apart, headings never crowd the text below */
+  :root { --sec: clamp(72px, 12vh, 104px); --head-gap: 32px; }
+  .pg-sec { padding: clamp(60px, 10vh, 88px) 0; } .pg-sec--tight { padding: 28px 0; }
+  .pg-h2 { margin-bottom: 18px; }
+  .prose p + p { margin-top: 1.05em; }
+}
+@media (max-width: 760px) and (orientation: portrait) {
+  /* hero: the wave above, the card below; the card loses its footnotes */
+  .rent { top: 64% !important; width: calc(100vw - 32px) !important; padding: 16px 18px 14px !important; }
+  .rent__num { margin: 10px 0 4px; } .rent__num strong { font-size: 44px; }
+  .rent__chart { height: 112px; }
+  .rent__chips, .rent__note { display: none; }
+}
+
+/* ================================================================ v20 · the six chapters on a phone: one idea per screen, pin-sharp
+   Words: number + name only (the meaning lives in the scene's own line underneath and stays in the page for search).
+   Pictures: flat (3D tilts and glass blur make phones render text soft), a taller stage, real pages shown one at a time. */
+@media (max-width: 760px) {
+  .ox { display: flex !important; flex-direction: column; align-items: stretch !important; padding: 72px 16px 100px !important; gap: 12px !important; }
+  .ox__copy { flex: none; align-self: stretch; }
+  .ox__no { margin-bottom: 6px !important; }
+  .ox__term { font-size: clamp(30px, 8.6vw, 38px) !important; line-height: 1; }
+  .ox__mean { display: none; }
+  .ox__scene { width: 100% !important; flex: 1; min-height: 0; max-height: 560px; display: flex; }
+  :root .ownx .sc { aspect-ratio: auto !important; width: 100%; height: auto; flex: 1; font-size: 3.6cqw !important; }
+  .ox__term { text-wrap: balance; }
+  /* feeder: the kind of source is enough, the example line goes */
+  .sc-feed .fd b { display: none; } .sc-feed .fd em { margin: 0; font-size: .78em; }
+
+  /* sharp: no 3D tilt, no backdrop blur inside the moving scene, a near-solid surface instead */
+  .ownx.is-3d .ox__scene { perspective: none !important; }
+  :root .ownx.is-3d .sc { transform: none !important; transform-style: flat !important; }
+  :root .ownx.is-3d .sc .rw { perspective: none !important; transform-style: flat !important; }
+  :root .ownx .sc { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+  :root[data-theme="paper"] .ownx .sc { background: rgba(255, 255, 255, .94) !important; }
+  :root[data-theme="night"] .ownx .sc { background: rgba(18, 21, 20, .94) !important; }
+  .ownx .sc .c { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+
+  /* real pages: a deck of cards. The newest sits on top, full width and readable; the ones before it tuck behind */
+  .ownx .sc .shot { left: 1em !important; right: 1em; width: auto !important; top: max(2.6em, calc(50% - 9em)) !important; }
+  :root .ownx .sc .rw .shot.pop, :root .ownx.is-3d .sc .rw .shot.pop { opacity: 0; transform: translateY(1.2em) !important; transition: opacity .45s, transform .6s cubic-bezier(.2, .9, .25, 1) !important; }
+  :root .ownx .sc .rw .shot.pop.on, :root .ownx.is-3d .sc .rw .shot.pop.on { opacity: 1; transform: none !important; }
+  :root .ownx .sc .rw .shot.pop.on:has(~ .shot.on) { opacity: .5; transform: translateY(-1.3em) scale(.93) !important; filter: saturate(.6); }
+  :root .ownx .sc .rw .shot.pop.on:has(~ .shot.on ~ .shot.on) { opacity: .25; transform: translateY(-2.4em) scale(.86) !important; }
+  :root .ownx .sc .rw .shot.pop.on:has(~ .shot.on ~ .shot.on ~ .shot.on) { opacity: 0; }
+  .ownx .sc .shot img { aspect-ratio: 16 / 11; }
+  .ownx .sc .shot figcaption { font-size: .8em; padding: .6em .8em; }
+  .ownx .sc .shot__n { font-size: .9em; padding: .4em .9em; left: .8em; bottom: .8em; }
+  :root .ownx .sc .rw:not(.on) .shot.pop.on { opacity: 0 !important; }
+
+  /* the coded scenes: keep the punchline, drop the small print */
+  .sc__beat { height: 4.4em !important; }
+  .sc__beat span { font-size: 1.04em !important; }
+  .sc-story .st-rows li:nth-child(1), .sc-story .st-rows li:nth-child(5) { display: none; }
+  .sc-story .aia__src { display: none; }
+  .ownx .aia__chips span:nth-child(n+3) { display: none; }
+  .sc__label { font-size: 9px !important; opacity: .8; }
+  .ownx__ring { opacity: .35; }
+}
+
+/* ================================================================ v21 · phones: the six chapters stacked, nothing pinned, nothing overlapping */
+@media (max-width: 760px) {
+  .own-stack .ownx { height: auto !important; margin-top: 0 !important; }
+  .own-stack .ownx__stage { position: relative !important; height: auto !important; overflow: visible !important; visibility: visible !important; background: var(--bg); }
+  .own-stack .ownx__stage::before, .own-stack .own3d, .own-stack .ownx__mark { display: none !important; }
+  .own-stack .ownx__intro, .own-stack .ownx__outro { position: relative !important; inset: auto !important; opacity: 1 !important; visibility: visible !important; transform: none !important; pointer-events: auto; padding: 88px 20px 28px; }
+  .own-stack .ownx__outro { padding: 64px 20px 72px; }
+  .own-stack .ownx__ring { opacity: 1; }
+  .own-stack .ownx__ring .rg { width: 150px; margin-bottom: 22px; }
+
+  .own-stack .ownx .ox { position: relative !important; inset: auto !important; display: block !important; opacity: 1 !important; visibility: visible !important; transform: none !important; padding: 52px 16px 20px !important; border-top: 1px solid var(--line); }
+  .own-stack .ox__term { font-size: clamp(32px, 9.4vw, 42px) !important; line-height: 1; }
+  .own-stack .ox__mean { display: block !important; margin-top: 12px !important; font-size: 16px !important; line-height: 1.5; color: var(--dim); max-width: 34ch; }
+  .own-stack .ox__scene { display: block !important; max-height: none !important; margin-top: 4px; }
+  :root.own-stack .ownx .sc { display: block; height: auto !important; aspect-ratio: auto !important; background: none !important; border: 0 !important; box-shadow: none !important; border-radius: 0; font-size: 3.6cqw !important; }
+
+  /* section heads inside a chapter */
+  .oxm-k { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; margin: 26px 0 12px !important; font: 700 11px/1.2 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--green); }
+  .oxm-k em { font: 500 10px/1.3 var(--sans); letter-spacing: .1em; color: var(--mute); }
+  .oxm-cap { margin-top: 12px !important; font-size: 15px; line-height: 1.5; color: var(--dim); }
+  .oxm-cap b { color: var(--text); font-weight: 700; margin-right: .3em; }
+
+  /* the real pages: a swipe row of readable cards */
+  .oxm-rw { margin: 0 -16px; }
+  .oxm-rw .oxm-k, .oxm-rw .oxm-cap { padding: 0 16px; }
+  .oxm-shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 2px 16px 14px; font-size: 13px; }
+  .oxm-shots::-webkit-scrollbar { display: none; }
+  .own-stack .ownx .sc .oxm-shots .shot { position: relative !important; left: auto !important; right: auto !important; top: auto !important; width: auto !important; flex: 0 0 84%; scroll-snap-align: center; opacity: 1 !important; transform: none !important; filter: none !important; box-shadow: 0 14px 30px -18px rgba(0, 0, 0, calc(1.4 * var(--sk) + .1)); }
+  .own-stack .ownx .sc .oxm-shots .shot img { aspect-ratio: 16 / 10.5; }
+  .own-stack .ownx .sc .oxm-shots .shot__n { font-size: 12px; }
+
+  /* the drawn scene: its own card, its own space */
+  .oxm-card { padding: 1em; border-radius: 1.4em; border: 1px solid var(--glass-rim); background: rgba(var(--ink), .025); }
+  :root[data-theme="night"] .oxm-card { background: rgba(255, 255, 255, .03); }
+  .own-stack .ownx .sc__body { margin: 0 !important; height: 99cqw; }
+}
+@media (max-width: 760px) { .own-stack .ownx .sc-story .sc__body, .own-stack .ownx .sc-chat .sc__body, .own-stack .ownx .sc-pipe .sc__body { height: auto; } }
+
+@media (max-width: 760px) {
+  /* phones: "Six things you should own" sits inside the ring at the end of the hero */
+  .own-stack .herox .oxm-intro { position: absolute !important; inset: 0 !important; z-index: 4; display: grid !important; place-content: center; justify-items: center; text-align: center; padding: 0 64px !important; opacity: 0; visibility: hidden; pointer-events: none; }
+  .own-stack .herox .oxm-intro .eyebrow { margin-bottom: 12px; font-size: 10px; }
+  .own-stack .herox .oxm-intro .ownx__title { font-size: clamp(26px, 7.6vw, 34px) !important; line-height: 1.02; }
+  .own-stack .herox .oxm-intro .ownx__lede { display: none; }
+  .own-stack .ownx .ox:first-of-type { border-top: 0; }
+}

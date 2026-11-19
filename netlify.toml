@@ -1,6 +1,15 @@
-[build]
-  command = "npm run build"
-  publish = ".next"
+# Netlify settings for optimizer360.ai
+# The pages are already built and committed (tools/build/build.py), so Netlify only packages the public files.
+# package.py copies the website into dist/ and leaves out internal notes (README, CASE-STUDY, DIRECTOR-NOTES,
+# docs/, tools/, preview/). Headers and redirects live in _headers (written by package.py) and _redirects.
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[build]
+  command = "python3 tools/build/package.py --out dist"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Files are already minified where it matters; don't let Netlify rewrite them.
+[build.processing]
+  skip_processing = true

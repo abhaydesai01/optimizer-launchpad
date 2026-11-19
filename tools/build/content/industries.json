@@ -1,0 +1,1236 @@
+[
+  {
+    "path": "/industries/",
+    "title": "GEO and organic growth by industry",
+    "description": "GEO and organic growth by industry: what buyers in ten Indian sectors ask AI, which sources the engines trust, and the rules we work inside in each one.",
+    "keywords": [
+      "GEO by industry",
+      "AI visibility by industry",
+      "generative engine optimisation for Indian industries",
+      "GEO agency India",
+      "industry-specific GEO",
+      "how AI engines choose sources by industry",
+      "AI search visibility for Indian brands",
+      "organic growth agency India"
+    ],
+    "schema": "CollectionPage",
+    "eyebrow": "Industries",
+    "h1": "Every industry, <span class=\"g\">its own answers.</span>",
+    "lede": "Buyers in every sector now ask AI before they ask you. What they ask, where the engines look and which rules apply change from one industry to the next.",
+    "answer": "GEO by industry means shaping AI answers around the questions, sources and rules of one sector. A homebuyer's answer leans on property portals and RERA records, a SaaS buyer's on review sites and docs, a patient's on medical references. Optimizer360 works in nine industries, measures 8 AI engines and fixes the sources each sector's answers depend on.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "Which industries do we work in?",
+        "intro": "Ten sectors, each with its own buyer question.",
+        "items": [
+          {
+            "t": "Real estate & hospitality",
+            "d": "Buyers ask: \"Best builders in Pune for a 2BHK near Hinjewadi?\" Portals, RERA records and city forums decide the shortlist."
+          },
+          {
+            "t": "Financial services & investor relations",
+            "d": "Investors ask: \"Why did this company's shares fall?\" Filings, regulators and financial news decide whether the answer is current."
+          },
+          {
+            "t": "Retail & consumer brands",
+            "d": "Shoppers ask: \"Best D2C sunscreen for oily skin in India?\" Marketplace reviews, creators and listicles decide who gets named."
+          },
+          {
+            "t": "Food & FMCG",
+            "d": "Families ask: \"Healthiest packaged snack for kids?\" Quick-commerce listings, recipes and label facts shape the answer."
+          },
+          {
+            "t": "B2B & professional services",
+            "d": "Buyers ask: \"Best CA firm in Mumbai for startup compliance?\" Directories, LinkedIn and trade press build the vendor shortlist."
+          },
+          {
+            "t": "Technology & SaaS",
+            "d": "Teams ask: \"Best CRM for an Indian sales team with WhatsApp?\" Review sites, docs and comparison pages decide."
+          },
+          {
+            "t": "Pharma & healthcare",
+            "d": "Patients ask: \"Best hospital for knee replacement in Chennai?\" Medical references, reviews and accreditation listings carry weight."
+          },
+          {
+            "t": "Industrial & engineering",
+            "d": "Procurement asks: \"Top valve manufacturers in India with API certification?\" Directories, spec sheets and tenders decide."
+          },
+          {
+            "t": "Manufacturing",
+            "d": "Sourcing asks: \"IATF certified component makers near Chennai?\" Directories, capability pages and certificates decide the shortlist."
+          },
+          {
+            "t": "Cinema & entertainment",
+            "d": "Audiences ask: \"Best Malayalam thrillers on OTT this month?\" Wikipedia, film databases, reviews and fan threads decide."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Why does each industry need a different GEO approach?",
+        "html": "<p>Generative engine optimisation (GEO, spelt optimization in the US) works the same way everywhere at the level of method: find the questions, see who the engines name, trace which sources they quote, fix those sources and measure again. What changes by industry is everything inside that method.</p><ul><li><strong>The questions differ.</strong> A homebuyer asks about possession dates. An investor asks about the last quarter. A procurement engineer asks about a material grade.</li><li><strong>The sources differ.</strong> Engines lean on property portals for flats, exchange filings for listed companies, review sites for software and medical references for medicines.</li><li><strong>The rules differ.</strong> RERA, SEBI, FSSAI, the Drugs and Magic Remedies Act, professional body codes and CBFC certification all limit what a brand may say, and so what we may publish for it.</li></ul><p>That is why we start every programme with a Week-1 baseline built from your own category, not a template.</p>"
+      },
+      {
+        "type": "table",
+        "h2": "Where do AI engines look in each industry?",
+        "head": [
+          "Industry",
+          "Sources the engines lean on",
+          "Rules we work inside"
+        ],
+        "rows": [
+          [
+            "Real estate & hospitality",
+            "Property portals, RERA sites, Google reviews, YouTube walkthroughs, city forums",
+            "RERA, ASCI (no promised returns)"
+          ],
+          [
+            "Financial services & IR",
+            "Exchange filings, regulator registers, financial news, Wikipedia, Reddit",
+            "SEBI, RBI and IRDAI norms, public disclosures only"
+          ],
+          [
+            "Retail & consumer",
+            "Marketplace listings and reviews, creators, listicles, Reddit",
+            "Consumer Protection Act, ASCI, BIS review standard"
+          ],
+          [
+            "Food & FMCG",
+            "Quick-commerce listings, recipe sites, YouTube, label facts",
+            "FSSAI claims rules, ASCI"
+          ],
+          [
+            "B2B & professional services",
+            "Directories, LinkedIn, trade press, award lists, Google reviews",
+            "Professional body codes, client confidentiality"
+          ],
+          [
+            "Technology & SaaS",
+            "Software review sites, docs, comparison pages, Reddit, GitHub",
+            "ASCI on comparisons, DPDP Act"
+          ],
+          [
+            "Pharma & healthcare",
+            "Medical references, regulators, journals, doctor listings",
+            "Drugs and Magic Remedies Act, ASCI healthcare guidelines"
+          ],
+          [
+            "Industrial & engineering",
+            "B2B directories, tenders, datasheets, trade press, LinkedIn",
+            "Verifiable certifications, NDAs"
+          ],
+          [
+            "Manufacturing",
+            "B2B directories, capability pages, certification records, trade press, reviews",
+            "Current certificates only, no customer names without permission, ASCI"
+          ],
+          [
+            "Cinema & entertainment",
+            "Wikipedia, film databases, critics, news, fan communities",
+            "CBFC, ASCI influencer disclosure"
+          ]
+        ]
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "800M",
+            "d": "people use ChatGPT every week.",
+            "src": "OpenAI, Oct 2025"
+          },
+          {
+            "n": "8% vs 15%",
+            "d": "of visits ended in a click on a result when Google showed an AI summary, compared with visits without one.",
+            "src": "Pew Research, Jul 2025"
+          },
+          {
+            "n": "#1",
+            "d": "Reddit is the most directly cited source across ChatGPT, Google AI Mode, Gemini, Perplexity and AI Overviews.",
+            "src": "Peec AI, Mar 2026"
+          }
+        ]
+      },
+      {
+        "type": "steps",
+        "h2": "How do we start in any industry?",
+        "items": [
+          {
+            "t": "Scan",
+            "d": "We run your category's buyer questions across 8 AI engines and record who is named and which sources are quoted."
+          },
+          {
+            "t": "Diagnose",
+            "d": "We score readiness out of 80 and find the portals, reviews, filings or forums that decide your answers."
+          },
+          {
+            "t": "Fix",
+            "d": "Our teams ship AI-citable pages, FAQs, schema, reviews and PR, each checked against your industry's rules."
+          },
+          {
+            "t": "Prove",
+            "d": "We re-measure and report weekly against the Week-1 baseline, on AI answers and on SEO and owned enquiries."
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>What we won't promise:</strong> a guaranteed position in any AI answer. The engines decide. We do the rigorous work, keep it inside your industry's rules and show you every week what moved.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does GEO work the same way in every industry?",
+        "a": "The method is the same: scan, diagnose, fix and prove. The questions, the sources the engines trust and the rules on what you may say are different in each sector. We build the question universe and source map for your category before we change anything."
+      },
+      {
+        "q": "Which industries does Optimizer360 work in?",
+        "a": "We work in ten: real estate and hospitality, financial services and investor relations, retail and consumer brands, food and FMCG, B2B and professional services, technology and SaaS, pharma and healthcare, manufacturing, industrial and engineering, and cinema and entertainment. Our home market is India and we also work in the United States and Mauritius."
+      },
+      {
+        "q": "How do you handle regulated industries like finance and healthcare?",
+        "a": "Every piece of content goes through brand, legal and regulatory sign-off before it goes live. We use public disclosures only for listed companies, follow SEBI rules, avoid medical claims beyond approved labelling and never publish fabricated reviews or figures."
+      },
+      {
+        "q": "My industry is not on the list. Can GEO still help?",
+        "a": "Usually, yes. Most categories share the same building blocks: accurate fact pages, real reviews, cited press and honest community presence. Write to us and we can run a baseline to see which sources decide your answers."
+      }
+    ],
+    "related": [
+      "/solutions/",
+      "/platform/",
+      "/blog/how-ai-engines-choose-sources/",
+      "/contact/"
+    ]
+  },
+  {
+    "path": "/industries/real-estate/",
+    "title": "GEO for real estate: get your project recommended",
+    "description": "GEO for real estate and hospitality in India: get your projects and hotels named in ChatGPT and Gemini answers, with RERA-accurate facts and real reviews.",
+    "keywords": [
+      "GEO for real estate",
+      "AI visibility for real estate brands",
+      "how to get my real estate project recommended by ChatGPT",
+      "best builders in Pune AI answer",
+      "real estate developer AI search India",
+      "GEO for hotels and hospitality",
+      "RERA compliant real estate marketing",
+      "AI answers for homebuyers India"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Real estate & hospitality",
+    "h1": "Be the builder <span class=\"g\">AI recommends.</span>",
+    "lede": "Homebuyers and travellers now ask ChatGPT for a shortlist before they visit a site or book a room. We work to put your name on that shortlist, with the right facts beside it.",
+    "answer": "GEO for real estate is the work of getting a developer's projects, or a hotel, named accurately in AI answers to buyer questions such as \"best builders in Pune\". AI engines draw on property portals, RERA records, Google reviews, news and city forums. Optimizer360 measures 8 engines, fixes those sources and keeps every claim inside RERA and ASCI rules.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do homebuyers and guests ask AI?",
+        "intro": "Real questions we track for this category, across 8 AI engines.",
+        "items": [
+          {
+            "t": "\"Best builders in Pune for a 2BHK near Hinjewadi?\"",
+            "d": "A shortlist question. The engine names three to five developers and the buyer rarely looks further."
+          },
+          {
+            "t": "\"Is this project RERA registered, and when is possession?\"",
+            "d": "A trust check. One wrong possession date here costs site visits."
+          },
+          {
+            "t": "\"Which developer in Bengaluru delivers on time?\"",
+            "d": "Reputation by proxy: reviews, news and forum threads decide the answer."
+          },
+          {
+            "t": "\"Ready-to-move flats in Thane near a good school?\"",
+            "d": "A location question that pulls from portals, maps and local area guides."
+          },
+          {
+            "t": "\"Is this builder trustworthy? Any complaints?\"",
+            "d": "The question nobody wants answered from a five-year-old forum thread."
+          },
+          {
+            "t": "\"Best boutique hotel in Udaipur for a small wedding?\"",
+            "d": "Hospitality shortlists lean on travel reviews, vlogs and booking sites."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on in real estate?",
+        "html": "<p>Our Sources view records every citation behind every answer. In real estate and hospitality the same groups come up again and again:</p><ul><li><strong>Property portals:</strong> project listings, configurations and buyer reviews.</li><li><strong>State RERA websites:</strong> registration numbers, carpet areas, possession timelines and complaints.</li><li><strong>Google Business Profiles and reviews</strong> for project sites, sales offices and hotels.</li><li><strong>News and property media:</strong> launches, delays and disputes.</li><li><strong>YouTube site walkthroughs and vlogs</strong>, especially when they carry full transcripts.</li><li><strong>Reddit and city forums:</strong> home-buying threads for Pune, Bengaluru, Mumbai and other cities.</li><li><strong>Travel review sites, booking platforms and travel blogs</strong> for hotels and resorts.</li><li><strong>Wikipedia and Wikidata</strong> for larger developers and hotel groups.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for real estate?",
+        "html": "<ul><li>Old possession dates or configurations copied from stale portal listings.</li><li>A project confused with a similarly named project, or placed in the wrong micro-market.</li><li>A resolved complaint or an old delay still leading the answer.</li><li>A competitor named first because its listings and reviews are more complete.</li><li>New launches missing entirely because no source the engines trust mentions them yet.</li><li>Hotel answers built on a handful of old reviews.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for developers and hotels?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> answer-first buyer guides, project fact pages with RERA numbers, possession dates, sizes and amenities, FAQ and comparison pages, and schema for the company, every project and every FAQ.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> replies to every review on Google and property portals, a steady stream of real reviews from real buyers and guests, and digital PR in property and business media.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> YouTube site walkthroughs with full transcripts, local area guides and earned places on \"best of\" lists.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> Reddit and Quora answers in city and home-buying threads, posted openly as the brand. Wikipedia facts corrected only through the talk page, with sources.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> a WhatsApp and website agent that answers project questions accurately and books site visits.</li><li><strong><a href=\"/solutions/leads-pipeline/\">Leads and pipeline</a>:</strong> each booking traced back to the AI answer, review or thread where it began.</li></ul>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>In one programme:</strong> a residential developer in India moved from a 32% to a 58% visibility score across 8 AI engines in under 2.5 months from its Week-1 baseline, and now shows up for 80 to 90 tracked buyer questions. <a href=\"/results/real-estate-ai-visibility/\">Read how the programme worked</a>.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside in real estate?",
+        "html": "<ul><li><strong>RERA:</strong> project content carries the registration details the law expects, and carpet areas, timelines and approvals match what is filed with the state authority.</li><li><strong>ASCI:</strong> no promised returns, rental yields or price appreciation, and no claims we cannot back with a document.</li><li><strong>DPDP Act:</strong> enquiry data collected by chat agents and forms is handled with consent.</li><li><strong>Our own lines:</strong> no fake reviews, no astroturfing, Reddit and Quora posted openly as the brand, and no promotional Wikipedia edits.</li></ul><p>Brand, legal and regulatory sign-off comes before anything goes live.</p>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "74%",
+            "d": "of consumers use two or more review sites before they choose.",
+            "src": "BrightLocal, 2025"
+          },
+          {
+            "n": "#1",
+            "d": "Reddit is the most directly cited source across the major AI engines.",
+            "src": "Peec AI, Mar 2026"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I get my real estate project recommended by ChatGPT?",
+        "a": "Make the facts easy to find and easy to trust. That means a project page with RERA details, possession dates and sizes, consistent portal listings, real reviews with public replies, and honest presence in the forums buyers read. We measure which of these the engines cite for your city and fix the gaps first."
+      },
+      {
+        "q": "Why does ChatGPT show the wrong possession date for my project?",
+        "a": "The engine is usually quoting an old portal listing, a news story or a forum post. We find the source in our Sources view, correct it where we can, publish the current fact on a page the engines can cite and re-measure until the answer changes."
+      },
+      {
+        "q": "Can you guarantee my project appears in 'best builders in Pune' answers?",
+        "a": "No. Nobody can, because the engines decide. We track that question and dozens like it every day, fix the sources behind them and report every week what moved against your Week-1 baseline."
+      },
+      {
+        "q": "Does GEO work for hotels and resorts too?",
+        "a": "Yes. The sources shift towards travel review sites, booking platforms, Google reviews and travel vlogs, but the work is the same: accurate fact pages, real guest reviews with replies, and content the engines can quote."
+      },
+      {
+        "q": "Do you post on Reddit for real estate developers?",
+        "a": "Only openly, as the brand, in threads where a useful answer belongs. We never use fake accounts or pose as buyers."
+      }
+    ],
+    "related": [
+      "/results/real-estate-ai-visibility/",
+      "/solutions/geo/",
+      "/solutions/reputation/",
+      "/blog/reddit-wikipedia-ai-visibility/"
+    ]
+  },
+  {
+    "path": "/industries/financial-services/",
+    "title": "GEO for financial services and investor relations",
+    "description": "GEO for financial services and investor relations in India: keep what AI tells customers and investors accurate, current and sourced, inside SEBI rules.",
+    "keywords": [
+      "GEO for financial services",
+      "AI visibility for financial services brands",
+      "AI answers investor relations India",
+      "how to correct what ChatGPT says about my listed company",
+      "GEO for NBFCs and fintech",
+      "SEBI compliant AI visibility",
+      "best personal loan app India AI answer",
+      "AI visibility for banks and insurers"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Financial services & investor relations",
+    "h1": "Accurate answers <span class=\"g\">investors can trust.</span>",
+    "lede": "Customers ask AI which lender is safe. Investors ask AI what happened last quarter. In both cases a stale or wrong answer costs trust you cannot buy back with ads.",
+    "answer": "GEO for financial services is the work of making AI answers about a lender, insurer, fintech or listed company accurate, current and properly sourced. Engines draw on exchange filings, regulator registers, financial news, Wikipedia and Reddit. Optimizer360 measures 8 engines and fixes those sources using public disclosures only, following SEBI rules, with company sign-off before anything is published.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do customers and investors ask AI?",
+        "intro": "Two audiences, one problem: the answer is often out of date.",
+        "items": [
+          {
+            "t": "\"Is this NBFC safe for a fixed deposit?\"",
+            "d": "A trust question. The answer leans on credit ratings, regulator status and news."
+          },
+          {
+            "t": "\"Best personal loan app in India with no hidden charges?\"",
+            "d": "A shortlist question shaped by comparison sites, app reviews and Reddit."
+          },
+          {
+            "t": "\"Is this fintech app registered with RBI?\"",
+            "d": "A regulatory check. A vague answer here sends users elsewhere."
+          },
+          {
+            "t": "\"Which health insurer settles claims fastest?\"",
+            "d": "Engines reach for published claim data and review threads."
+          },
+          {
+            "t": "\"What were this company's results last quarter?\"",
+            "d": "Investors expect the latest filing. Engines often quote an older one."
+          },
+          {
+            "t": "\"Why did this company's shares fall?\"",
+            "d": "The answer can lead with a controversy that was resolved long ago."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on in financial services?",
+        "html": "<ul><li><strong>Stock exchange filings, annual reports and investor presentations</strong> for listed companies.</li><li><strong>Regulator websites and registers:</strong> SEBI, RBI and IRDAI lists of registered entities and published data.</li><li><strong>Financial news and business media</strong>, which often outrank your own investor page.</li><li><strong>Wikipedia</strong>, the single largest share of ChatGPT's top cited sources.</li><li><strong>Comparison sites and app store reviews</strong> for loans, cards, insurance and investing apps.</li><li><strong>Reddit personal finance communities and YouTube finance creators</strong>, whose opinions are sometimes repeated as fact.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for financial brands?",
+        "html": "<ul><li>Old quarterly figures quoted as current after new results are filed.</li><li>A resolved controversy or past regulatory action still leading the answer.</li><li>The company confused with a group entity or a similarly named firm.</li><li>Rates, fees or product features quoted from old pages.</li><li>A creator's opinion presented as the company's own position.</li><li>The brand missing from \"best X\" shortlists because comparison sites carry stale data.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for financial services and listed companies?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo-investor-relations/\">GEO for investor relations</a>:</strong> for listed companies, we keep what AI tells investors accurate and current, using only public disclosures. Accuracy, not spin.</li><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> product and company fact pages, FAQs and schema that engines can quote, refreshed after every rate change or filing.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> public replies to reviews, factual corrections and drift alerts after results or announcements.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> plain explainers and open, brand-labelled answers in finance threads, without advice.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> chat agents that answer product questions from approved content and hand anything personal to licensed staff.</li></ul>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>In one investor relations programme</strong> for a listed company in India, the AI answer to investor questions moved from old figures and a resolved controversy to the latest filing. <a href=\"/results/investor-relations-narrative/\">See how the narrative changed</a>.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside in financial services?",
+        "html": "<ul><li><strong>SEBI:</strong> public disclosures only, nothing unpublished or price-sensitive, nothing ahead of an exchange filing, and no forward-looking promises.</li><li><strong>Who may advise:</strong> we stay inside SEBI's limits on investment advice and on tie-ups with unregistered finance creators.</li><li><strong>RBI and IRDAI expectations</strong> for regulated lenders and insurers, including required disclosures and risk statements.</li><li><strong>ASCI:</strong> no assured returns and no claims without evidence.</li><li><strong>DPDP Act:</strong> lead and chat data handled with consent.</li></ul><p>The company signs off every change before it is published.</p>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "47.9%",
+            "d": "of ChatGPT's top-10 cited source share is Wikipedia.",
+            "src": "Profound, 2025"
+          },
+          {
+            "n": "800M",
+            "d": "people use ChatGPT every week.",
+            "src": "OpenAI, Oct 2025"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I correct what ChatGPT says about my listed company?",
+        "a": "Find the sources it is quoting, then make the current, public facts easier to cite than the old ones. We map every citation, publish accurate pages from your filings, correct Wikipedia through the talk page with sources and re-measure weekly."
+      },
+      {
+        "q": "Is GEO for investor relations allowed under SEBI rules?",
+        "a": "It is built around them. We use only information you have already disclosed publicly, never share anything unpublished or price-sensitive, and nothing goes live without company sign-off."
+      },
+      {
+        "q": "Can you make AI answers say our stock is a good investment?",
+        "a": "No. That would be advice and spin. Our job is accuracy: the latest figures, the right context and current sources."
+      },
+      {
+        "q": "Why does AI still mention an old controversy about our company?",
+        "a": "Older news and forum threads have had years to be cited, while the resolution may sit in a single filing. We find where the old story is coming from and make the resolved, current position easy for the engines to find and quote."
+      },
+      {
+        "q": "Can an AI chat agent answer customer questions about our loans or policies?",
+        "a": "Yes, from approved content only. It answers product questions, never gives personalised financial advice and hands anything personal to your licensed team."
+      }
+    ],
+    "related": [
+      "/solutions/geo-investor-relations/",
+      "/results/investor-relations-narrative/",
+      "/blog/ai-answers-investor-relations/",
+      "/solutions/geo/"
+    ]
+  },
+  {
+    "path": "/industries/retail-consumer/",
+    "title": "GEO for retail, consumer and D2C brands",
+    "description": "GEO for retail and D2C brands in India: get your products named when shoppers ask ChatGPT what to buy, with real reviews and accurate product facts.",
+    "keywords": [
+      "GEO for retail brands",
+      "AI visibility for consumer brands",
+      "GEO for D2C brands India",
+      "how to get my brand recommended by ChatGPT shopping",
+      "best D2C skincare brand India AI answer",
+      "AI shopping answers India",
+      "product visibility in Google AI Overviews",
+      "marketplace reviews and AI answers"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Retail & consumer brands",
+    "h1": "Be the brand <span class=\"g\">AI suggests.</span>",
+    "lede": "Shoppers now ask AI what to buy, then check the reviews. If your products are missing from the answer, or described wrongly, the sale goes to someone else.",
+    "answer": "GEO for retail and D2C brands is the work of getting your products named, and described correctly, when shoppers ask AI what to buy. Engines draw on marketplace listings and reviews, creator videos, \"best X in India\" lists and Reddit. Optimizer360 measures 8 engines, fixes the product facts and review trail they cite, and keeps claims inside consumer protection and ASCI rules.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do shoppers ask AI?",
+        "intro": "Questions we see in consumer categories, from first idea to checkout.",
+        "items": [
+          {
+            "t": "\"Best sunscreen for oily skin in an Indian summer?\"",
+            "d": "A category question. Two or three brands get named and the rest are invisible."
+          },
+          {
+            "t": "\"Is this brand better than that one for running shoes?\"",
+            "d": "A comparison the engine settles with reviews, creator videos and spec pages."
+          },
+          {
+            "t": "\"Best Indian mattress brand with a long trial?\"",
+            "d": "A D2C shortlist built from listicles, review threads and brand pages."
+          },
+          {
+            "t": "\"Is this brand legit? How are delivery and returns?\"",
+            "d": "A trust check that pulls from marketplace reviews and complaint threads."
+          },
+          {
+            "t": "\"Sustainable ethnic wear brands made in India?\"",
+            "d": "A values question. Engines look for evidence, not slogans."
+          },
+          {
+            "t": "\"Where can I buy this brand offline in Hyderabad?\"",
+            "d": "A location question answered from store pages and Google Business Profiles."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on for consumer brands?",
+        "html": "<ul><li><strong>Marketplace listings and reviews</strong> on Amazon, Flipkart, Myntra, Nykaa and similar platforms.</li><li><strong>Your own product pages</strong>, when they carry clear specs, ingredients, sizes and FAQs.</li><li><strong>YouTube reviews and Instagram creators</strong>, especially videos with transcripts.</li><li><strong>\"Best X in India\" lists and comparison blogs.</strong></li><li><strong>Reddit communities</strong> on skincare, fitness, fashion and home.</li><li><strong>Google Business Profiles and reviews</strong> for physical stores.</li><li><strong>Startup and business media</strong> covering launches and funding.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for retail brands?",
+        "html": "<ul><li>Incumbents named by default because the lists the engines quote are years old.</li><li>Wrong ingredients, sizes or specs copied from reseller listings.</li><li>Discontinued products recommended while new ones are missing.</li><li>Old delivery or returns complaints still shaping the trust answer.</li><li>The brand confused with a similarly named one in another category.</li><li>Store locations out of date.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for retail and D2C brands?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> product fact pages, honest comparison pages and product and FAQ schema, so engines quote you and not a reseller.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> a steady stream of real reviews from real customers, every review answered in public and drift alerts after launches or price changes.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> buying guides, a video channel, a WhatsApp channel, and earned places with creators and \"best X\" lists, clearly disclosed.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> a community of real customers and open, brand-labelled answers on Reddit.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> Instagram, WhatsApp and website agents that answer size, ingredient and order questions accurately.</li><li><strong><a href=\"/solutions/leads-pipeline/\">Leads and pipeline</a>:</strong> orders traced back to the answer, review or video where demand began.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside for consumer brands?",
+        "html": "<ul><li><strong>Consumer Protection Act and CCPA guidelines</strong> on misleading advertisements and dark patterns.</li><li><strong>ASCI code and influencer guidelines:</strong> every paid creator post is disclosed, and claims carry evidence.</li><li><strong>The BIS standard on online consumer reviews:</strong> no paid or fake reviews, and no hiding negative ones.</li><li><strong>DPDP Act:</strong> consent before marketing messages on WhatsApp or email.</li></ul>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "74%",
+            "d": "of consumers use two or more review sites before they choose. Only 4% never read reviews.",
+            "src": "BrightLocal, 2025"
+          },
+          {
+            "n": "0.664",
+            "d": "correlation between brand mentions and AI Overview visibility, against 0.218 for backlinks. A correlation, not causation.",
+            "src": "Ahrefs, 2025"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I get my D2C brand into ChatGPT's product recommendations?",
+        "a": "Give the engines evidence they can quote: clear product pages, real reviews across the sites shoppers use, creator coverage and places on credible \"best X\" lists. We track the shopping questions in your category and fix the sources the engines actually cite."
+      },
+      {
+        "q": "Do Amazon and Flipkart reviews affect AI answers?",
+        "a": "Marketplace pages and reviews often appear among the sources engines cite for product questions. Our Sources view shows exactly which ones matter for your category, so we know where real reviews and accurate listings will count."
+      },
+      {
+        "q": "Will you write reviews for our products?",
+        "a": "No. We help you ask real customers for honest reviews and answer every review in public. Fake or paid reviews break consumer rules and damage trust when they are found."
+      },
+      {
+        "q": "Is GEO different from marketplace SEO?",
+        "a": "Marketplace SEO ranks a listing inside one store. GEO shapes the answer a shopper gets before they open any store, which draws on many sources at once, including your own site, reviews, creators and forums."
+      }
+    ],
+    "related": [
+      "/solutions/reputation/",
+      "/solutions/feeder-network/",
+      "/industries/food-fmcg/",
+      "/blog/geo-vs-seo/"
+    ]
+  },
+  {
+    "path": "/industries/food-fmcg/",
+    "title": "GEO for food and FMCG brands in India",
+    "description": "GEO for food and FMCG brands in India: get named when families ask AI what to buy or cook, with label-accurate facts and claims kept inside FSSAI rules.",
+    "keywords": [
+      "GEO for FMCG brands",
+      "AI visibility for food brands",
+      "GEO for food and beverage brands India",
+      "how to get my food brand recommended by ChatGPT",
+      "healthy snacks brand India AI answer",
+      "quick commerce listings AI visibility",
+      "FSSAI compliant content marketing",
+      "FMCG distributor enquiries AI search"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Food & FMCG",
+    "h1": "On the list, <span class=\"g\">in the cart.</span>",
+    "lede": "Families ask AI which snack is healthier, which masala chefs use and whether a ghee is pure. Distributors ask how to stock you. The answer they get decides what goes in the cart.",
+    "answer": "GEO for food and FMCG brands is the work of getting your products named, and described with label-accurate facts, when consumers and distributors ask AI. Engines draw on quick-commerce and marketplace listings, recipe sites, YouTube, food creators and news. Optimizer360 measures 8 engines, fixes the sources they cite and keeps every health or nutrition claim inside FSSAI rules.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do consumers and distributors ask AI?",
+        "intro": "Everyday questions with a brand decision inside them.",
+        "items": [
+          {
+            "t": "\"Healthiest packaged breakfast cereal for kids in India?\"",
+            "d": "A health-led shortlist where label facts and claims matter."
+          },
+          {
+            "t": "\"Best high-protein snacks without palm oil?\"",
+            "d": "An ingredient question. Engines read nutrition panels, reviews and creator videos."
+          },
+          {
+            "t": "\"Which masala brand is best for biryani?\"",
+            "d": "A recipe-led question answered from food blogs and YouTube cooks."
+          },
+          {
+            "t": "\"Is this ghee pure? Any adulteration reports?\"",
+            "d": "A trust check that can surface one old news story for years."
+          },
+          {
+            "t": "\"Is this product Jain-friendly or vegan?\"",
+            "d": "A dietary question that needs exact ingredient data."
+          },
+          {
+            "t": "\"How do I become a distributor for this brand in Gujarat?\"",
+            "d": "A trade enquiry that should reach your sales team, not a dead form."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on for food brands?",
+        "html": "<ul><li><strong>Quick-commerce and marketplace listings</strong> on Blinkit, Zepto, Swiggy Instamart, BigBasket, Amazon and similar, with their reviews.</li><li><strong>Recipe sites and food blogs</strong>, where brands are named as ingredients.</li><li><strong>YouTube cooks and Instagram food creators</strong>, especially with transcripts and captions.</li><li><strong>Label-reading creators and nutrition threads on Reddit.</strong></li><li><strong>News</strong> on recalls, quality tests and regulator actions.</li><li><strong>Your own product pages</strong>, when they carry ingredients, nutrition and dietary facts in text.</li><li><strong>Trade press and directories</strong> for distributor and retailer questions.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for FMCG?",
+        "html": "<ul><li>Nutrition facts or ingredients quoted from an old pack.</li><li>A one-off quality story from years ago leading the trust answer.</li><li>Health claims the engine invents, such as \"sugar-free\" or \"boosts immunity\", that your label does not make and you could not make.</li><li>The brand missing from recipe answers where it is a natural fit.</li><li>Regional availability wrong, or a product shown as discontinued.</li><li>Distributor questions answered with an old contact.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for food and FMCG brands?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> product pages with label-accurate ingredients, nutrition, veg marks and allergens in plain text, with product and FAQ schema.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> real reviews, public replies and fast factual corrections when an old story resurfaces.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> a recipe and guide site, a YouTube channel with full transcripts, and disclosed work with food creators.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> open, brand-labelled answers in food and nutrition threads, and digital PR.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> a WhatsApp agent for consumer questions and distributor enquiries.</li><li><strong><a href=\"/solutions/leads-pipeline/\">Leads and pipeline</a>:</strong> distributor and retailer leads traced back to where they began.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside for food brands?",
+        "html": "<ul><li><strong>FSSAI advertising and claims rules:</strong> nutrition and health claims only as permitted and as they appear on the label, care with words such as \"natural\", \"fresh\" and \"pure\", and no disease claims.</li><li><strong>ASCI:</strong> evidence for every claim, disclosed creator posts and extra care with food advertising aimed at children.</li><li><strong>Packaging rules:</strong> the facts we publish match the declared pack information.</li><li><strong>DPDP Act:</strong> consent for WhatsApp and email marketing.</li></ul>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "Up to ~40%",
+            "d": "higher visibility in generative engine answers when content added statistics, quotations and cited sources.",
+            "src": "Princeton/IIT Delhi GEO study, KDD 2024"
+          },
+          {
+            "n": "74%",
+            "d": "of consumers use two or more review sites before they choose.",
+            "src": "BrightLocal, 2025"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I get my snack brand mentioned when people ask ChatGPT for healthy snacks?",
+        "a": "Publish clear, label-accurate nutrition and ingredient facts, build real reviews where shoppers buy, and earn mentions from the creators and guides the engines cite. We track those questions daily and fix the sources behind them, without overstating any health benefit."
+      },
+      {
+        "q": "Can AI repeat a health claim we are not allowed to make?",
+        "a": "Yes, engines sometimes attach claims from forums or creators to a product. We watch for this, publish the correct label facts in a form the engines can quote and report whether the answer changes."
+      },
+      {
+        "q": "Do quick-commerce listings affect AI answers?",
+        "a": "They can, along with marketplace reviews and recipe content. Our Sources view shows which listings and pages are cited in your category, so effort goes where it counts."
+      },
+      {
+        "q": "Can GEO help us find distributors?",
+        "a": "It can make sure distributor questions about your brand get an accurate answer and a working route to your sales team. We then trace each enquiry back to where it started."
+      }
+    ],
+    "related": [
+      "/solutions/feeder-network/",
+      "/solutions/reputation/",
+      "/industries/retail-consumer/",
+      "/blog/how-ai-engines-choose-sources/"
+    ]
+  },
+  {
+    "path": "/industries/b2b-services/",
+    "title": "GEO for B2B and professional services firms",
+    "description": "GEO for B2B and professional services firms in India: get on the vendor shortlists buyers build with ChatGPT, with expertise pages AI engines can quote.",
+    "keywords": [
+      "GEO for B2B companies",
+      "AI visibility for professional services firms",
+      "how to get on ChatGPT vendor shortlists",
+      "best CA firm in Mumbai for startups AI answer",
+      "GEO for consulting firms India",
+      "B2B vendor shortlist AI search",
+      "AI visibility for law and accounting firms",
+      "B2B lead generation from AI answers"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · B2B & professional services",
+    "h1": "Make the <span class=\"g\">vendor shortlist.</span>",
+    "lede": "B2B buyers now draft their shortlist with an AI chat before they call anyone. If your firm is not named, you are not in the room when the decision starts.",
+    "answer": "GEO for B2B and professional services is the work of getting your firm named on the vendor shortlists buyers build with AI. Engines draw on company websites, LinkedIn, industry directories, trade press, award lists and Google reviews. Optimizer360 measures 8 engines, publishes expertise pages they can quote, earns the third-party mentions they trust and traces enquiries back to the answer.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do B2B buyers ask AI?",
+        "intro": "Shortlist questions, asked long before a sales call.",
+        "items": [
+          {
+            "t": "\"Best CA firm in Mumbai for startup compliance?\"",
+            "d": "A local shortlist where reviews, directories and articles decide who is named."
+          },
+          {
+            "t": "\"Top logistics partners for D2C brands in India?\"",
+            "d": "A category list built from trade press, listicles and case pages."
+          },
+          {
+            "t": "\"HR consulting firms in Bengaluru that work with manufacturers?\"",
+            "d": "A fit question. Engines look for evidence of sector experience."
+          },
+          {
+            "t": "\"Compare these two firms for GST advisory.\"",
+            "d": "A head-to-head the engine settles from whatever it can find about each."
+          },
+          {
+            "t": "\"Who are the leading IT staffing companies in Pune?\"",
+            "d": "A ranking question shaped by directories and business media."
+          },
+          {
+            "t": "\"Does this firm have experience in pharma?\"",
+            "d": "A proof question that gated PDFs cannot answer."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on for B2B firms?",
+        "html": "<ul><li><strong>Your service, sector and insight pages</strong>, when they answer questions in plain text.</li><li><strong>LinkedIn</strong> company pages, leader posts and articles.</li><li><strong>Industry directories, award lists and association member lists.</strong></li><li><strong>Business media and trade press</strong>, including interviews and bylines.</li><li><strong>Google reviews</strong> for local professional services.</li><li><strong>Reddit and Quora threads</strong> where founders and managers ask for recommendations.</li><li><strong>Podcasts and webinars with transcripts.</strong></li><li><strong>Wikipedia</strong> for larger firms.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for B2B firms?",
+        "html": "<ul><li>The firm described by an old service mix or an old office list.</li><li>Partners who have left still named as the firm's experts.</li><li>No sign of sector experience because case studies sit in gated PDFs.</li><li>Missing from \"top firms\" lists that the engines keep quoting.</li><li>Generic answers because the website has no answer-first pages.</li><li>Confusion with a similarly named firm in another city.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for B2B and professional services firms?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> our Brand and Product package for vendor shortlists, with answer-first service and sector pages and schema for the firm and its people.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> real client reviews where the rules allow, replies in public and digital PR in business media.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> a newsletter, guide site and podcast, plus earned places on credible lists and directories.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> thought-leadership content and open answers in founder and finance communities.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> a website agent that answers scope questions, qualifies enquiries and books calls.</li><li><strong><a href=\"/solutions/leads-pipeline/\">Leads and pipeline</a>:</strong> every mandate traced back to the answer, article or thread where it began.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside for professional services?",
+        "html": "<ul><li><strong>Professional body codes:</strong> Bar Council of India rules restrict advocates from advertising or soliciting work, and ICAI's code limits solicitation by chartered accountants. For these firms we keep content informational and within the code.</li><li><strong>Client confidentiality:</strong> no client names or matter details without written consent.</li><li><strong>ASCI:</strong> no claims we cannot evidence.</li><li><strong>DPDP Act:</strong> enquiry data handled with consent.</li></ul>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "29%",
+            "d": "of B2B buyers start research on AI chat tools more often than on Google.",
+            "src": "G2, May 2025"
+          },
+          {
+            "n": "~70%",
+            "d": "of the buying process is done before buyers talk to sellers.",
+            "src": "6sense, Oct 2024"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I get my firm on ChatGPT's shortlist for my service?",
+        "a": "Publish clear pages on what you do, for whom and with what evidence, then earn mentions in the directories, lists and media the engines cite for your category. We find those sources first, so the work goes where the answers come from."
+      },
+      {
+        "q": "Can a law firm or CA firm do GEO under professional rules?",
+        "a": "Yes, within limits. We keep content informational and factual, avoid solicitation and follow the relevant professional body code, with your sign-off on everything."
+      },
+      {
+        "q": "Does LinkedIn content show up in AI answers?",
+        "a": "Public LinkedIn pages and articles are sometimes cited, depending on the category and the engine. Our Sources view shows whether they matter for your questions before we invest effort there."
+      },
+      {
+        "q": "Do we have to name our clients in content?",
+        "a": "No. Expertise can be shown through sector pages, anonymised examples and published thinking. We never name a client without written consent."
+      },
+      {
+        "q": "How do we know if an enquiry came from an AI answer?",
+        "a": "We trace each lead from first mention to closed deal across AI answers, reviews, threads and content, and report it alongside SEO and owned enquiries."
+      }
+    ],
+    "related": [
+      "/solutions/geo/",
+      "/solutions/leads-pipeline/",
+      "/industries/technology-saas/",
+      "/blog/measure-ai-visibility/"
+    ]
+  },
+  {
+    "path": "/industries/technology-saas/",
+    "title": "GEO for SaaS and technology companies",
+    "description": "GEO for SaaS and technology companies: get your product named when buyers ask ChatGPT for the best tool, using fair comparisons, open docs and real reviews.",
+    "keywords": [
+      "GEO for SaaS",
+      "AI visibility for SaaS brands",
+      "how to get my SaaS recommended by ChatGPT",
+      "best CRM for Indian SMEs AI answer",
+      "GEO for B2B software India",
+      "software review sites and AI visibility",
+      "comparison pages for AI search",
+      "AI search for developer tools"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Technology & SaaS",
+    "h1": "Be the tool <span class=\"g\">AI names first.</span>",
+    "lede": "Software buyers ask AI for the best tool, the cheapest alternative and how two products compare. The engines answer from review sites, docs and comparison pages, often written by someone else.",
+    "answer": "GEO for SaaS is the work of getting your product named, and described with current features, when buyers ask AI which tool to use. Engines draw on software review sites, product docs, comparison and alternatives pages, Reddit and tech media. Optimizer360 measures 8 engines, makes your docs and comparisons quotable, builds real reviews and traces demos back to the answer.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do software buyers ask AI?",
+        "intro": "Evaluation questions, asked before anyone books a demo.",
+        "items": [
+          {
+            "t": "\"Best CRM for a 20-person sales team in India with WhatsApp integration?\"",
+            "d": "A shortlist with requirements. Missing one integration in the answer drops you out."
+          },
+          {
+            "t": "\"This tool vs that tool for payroll in India?\"",
+            "d": "A comparison often settled by whichever side wrote the clearer page."
+          },
+          {
+            "t": "\"Alternatives to a global tool for Indian startups?\"",
+            "d": "An alternatives query where review sites and listicles dominate."
+          },
+          {
+            "t": "\"Does this product integrate with Tally?\"",
+            "d": "A feature check answered from docs, if the engine can read them."
+          },
+          {
+            "t": "\"Is customer data stored in India?\"",
+            "d": "A security and compliance question that needs a current, exact answer."
+          },
+          {
+            "t": "\"How do I set up approval workflows in this product?\"",
+            "d": "A how-to that keeps users, or sends them to a competitor's tutorial."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on for SaaS?",
+        "html": "<ul><li><strong>Software review sites</strong> such as G2 and Capterra, and their category grids.</li><li><strong>Product docs, help centres and changelogs</strong>, when they are public and crawlable.</li><li><strong>Comparison and alternatives pages</strong>, both yours and your competitors'.</li><li><strong>Reddit</strong> communities for SaaS, startups and developers.</li><li><strong>GitHub and Stack Overflow</strong> for developer tools.</li><li><strong>YouTube tutorials and reviews</strong> with transcripts.</li><li><strong>Tech media and launch coverage.</strong></li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for SaaS?",
+        "html": "<ul><li>Features, plans or integrations quoted from an old version.</li><li>A competitor's comparison page shaping how your product is described.</li><li>The product placed in the wrong category, so it never appears in the right shortlist.</li><li>Docs behind a login or rendered only in JavaScript, so engines cite a third-party tutorial instead.</li><li>A thin review site profile that makes a strong product look unproven.</li><li>Wrong answers on data residency, security or compliance.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for SaaS and technology companies?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> our Brand and Product package for vendor shortlists, with fair comparison pages, crawlable docs, a public changelog and software schema.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> a steady programme of real user reviews on the sites buyers check, every review answered and drift alerts after releases.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> a blog, newsletter and tutorial channel, plus earned places on credible \"best X\" lists.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> a user community on your own site and open, brand-labelled answers on Reddit.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> a website agent that answers product and security questions accurately and books demos.</li><li><strong><a href=\"/solutions/leads-pipeline/\">Leads and pipeline</a>:</strong> trials and demos traced back to the answer, review or thread where they began.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside for software companies?",
+        "html": "<ul><li><strong>ASCI on comparisons:</strong> comparative claims must be fair, factual and verifiable, and we treat competitors' names and marks with care.</li><li><strong>Review site rules:</strong> incentives for reviews are disclosed and no review is written for a user.</li><li><strong>DPDP Act:</strong> what you say about data handling must match what the product does, and lead data is collected with consent.</li><li><strong>Security claims:</strong> certifications are stated only while they are current.</li></ul>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "29%",
+            "d": "of B2B buyers start research on AI chat tools more often than on Google.",
+            "src": "G2, May 2025"
+          },
+          {
+            "n": "#1",
+            "d": "Reddit is the most directly cited source across the major AI engines.",
+            "src": "Peec AI, Mar 2026"
+          },
+          {
+            "n": "0.664",
+            "d": "correlation between brand mentions and AI Overview visibility, against 0.218 for backlinks. A correlation, not causation.",
+            "src": "Ahrefs, 2025"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I get my SaaS product recommended by ChatGPT?",
+        "a": "Make sure the engines can read accurate, current facts about your product, see real reviews from real users and find you in the comparisons and lists buyers trust. We track the shortlist questions in your category and fix the sources the engines cite for them."
+      },
+      {
+        "q": "Do comparison pages help in AI answers?",
+        "a": "Fair, factual comparison pages are often quoted, which is why a competitor's page can end up describing your product. We publish honest comparisons with verifiable facts, inside ASCI's rules on comparative claims."
+      },
+      {
+        "q": "Should our product docs be public for AI engines?",
+        "a": "Usually the parts that answer buyer questions should be. If docs sit behind a login or only render in JavaScript, engines tend to quote someone else's tutorial instead."
+      },
+      {
+        "q": "Can you get us more reviews on G2 or Capterra?",
+        "a": "We run a steady programme of asking real users for honest reviews and answering them in public. We never write, buy or fake reviews."
+      },
+      {
+        "q": "Does GEO replace SEO for SaaS?",
+        "a": "No. Strong SEO pages often become the sources AI engines quote. We report on both scoreboards: the AI answers, and SEO plus owned enquiries."
+      }
+    ],
+    "related": [
+      "/solutions/geo/",
+      "/solutions/content-community/",
+      "/industries/b2b-services/",
+      "/blog/geo-vs-seo/"
+    ]
+  },
+  {
+    "path": "/industries/pharma-healthcare/",
+    "title": "GEO for pharma and healthcare brands in India",
+    "description": "GEO for pharma and healthcare in India: make AI answers about your hospital, clinic or medicine accurate and well sourced, inside medical advertising rules.",
+    "keywords": [
+      "GEO for healthcare",
+      "AI visibility for healthcare brands",
+      "GEO for pharma companies India",
+      "best hospital for knee replacement in Chennai AI answer",
+      "how hospitals appear in ChatGPT answers",
+      "compliant healthcare marketing India",
+      "AI answers about medicines accuracy",
+      "GEO for diagnostic labs and clinics"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Pharma & healthcare",
+    "h1": "Right facts, <span class=\"g\">right care.</span>",
+    "lede": "Patients and caregivers ask AI which hospital to trust, which lab to book and what a medicine does. In healthcare a wrong answer is more than a lost lead.",
+    "answer": "GEO for pharma and healthcare is the work of making AI answers about a hospital, clinic, lab or medicine accurate, current and properly sourced. Engines lean on medical references, regulators, journals, doctor listings and reviews. Optimizer360 measures 8 engines and fixes those sources with clinically reviewed content, making no medical claims beyond approved labelling and using no patient testimonials.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do patients and caregivers ask AI?",
+        "intro": "Questions where accuracy matters more than reach.",
+        "items": [
+          {
+            "t": "\"Best hospital for knee replacement in Chennai?\"",
+            "d": "A shortlist that leans on accreditation, doctor profiles, reviews and news."
+          },
+          {
+            "t": "\"Which diagnostic lab near Andheri offers home sample collection?\"",
+            "d": "A local service question answered from listings and Google Business Profiles."
+          },
+          {
+            "t": "\"Which cardiologist at this hospital treats arrhythmia?\"",
+            "d": "A doctor-level question that old staff lists often get wrong."
+          },
+          {
+            "t": "\"Does this hospital offer cashless treatment with my insurer?\"",
+            "d": "A practical check that sends patients elsewhere when the answer is vague."
+          },
+          {
+            "t": "\"What are the side effects of this medicine?\"",
+            "d": "A medical question that must rest on approved information, not forum posts."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on in healthcare?",
+        "html": "<ul><li><strong>Medical references and drug information databases.</strong></li><li><strong>Regulators and approved product information</strong>, including CDSCO and approved prescribing information.</li><li><strong>Journals and indexed studies.</strong></li><li><strong>Hospital and doctor profiles</strong> on your site and on doctor-listing platforms.</li><li><strong>Accreditation listings</strong> such as NABH and NABL.</li><li><strong>Google reviews and health news.</strong></li><li><strong>Wikipedia, patient forums and Reddit</strong>, which engines sometimes blend into medical facts.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for healthcare?",
+        "html": "<ul><li>Doctor lists, departments or timings out of date.</li><li>Accreditation or insurance tie-ups stated wrongly.</li><li>A medicine described with benefits beyond its approved label, or brand and generic names mixed up.</li><li>A single complaint or news story leading the answer about a hospital.</li><li>Patient anecdotes from forums repeated as if they were medical fact.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for hospitals, clinics and pharma brands?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> department, doctor and service pages with accreditation facts, clinically reviewed FAQs and medical organisation schema.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> public replies to reviews that never disclose patient information, and fast correction of wrong facts.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> patient education guides and video explainers with transcripts, reviewed by your clinicians.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> general health information in open, brand-labelled answers, never diagnosis.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> agents that book appointments and answer timings and insurance questions, never give medical advice and route urgent cases to your staff.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside in healthcare?",
+        "html": "<ul><li><strong>Approved labelling only:</strong> no medical claims beyond what the regulator has approved, and no promotion of prescription medicines to the public.</li><li><strong>Drugs and Magic Remedies (Objectionable Advertisements) Act:</strong> no claims to cure or treat the conditions it covers.</li><li><strong>ASCI healthcare guidelines:</strong> evidence for every claim and no misleading comparisons.</li><li><strong>No patient testimonials</strong> and no before-and-after stories.</li><li><strong>Medical council rules</strong> on how doctors present themselves, and the pharmaceutical marketing code for content aimed at doctors.</li><li><strong>DPDP Act:</strong> health information treated as sensitive, with consent for every enquiry.</li></ul><p>Clinical, legal and regulatory sign-off comes before anything goes live.</p>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "Up to ~40%",
+            "d": "higher visibility in generative engine answers when content added statistics, quotations and cited sources.",
+            "src": "Princeton/IIT Delhi GEO study, KDD 2024"
+          },
+          {
+            "n": "47.9%",
+            "d": "of ChatGPT's top-10 cited source share is Wikipedia.",
+            "src": "Profound, 2025"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a hospital do GEO without breaking advertising rules?",
+        "a": "Yes. GEO in healthcare is mostly about accuracy: correct doctor, department, accreditation and insurance facts, and clear patient information. We make no claims beyond approved labelling, use no testimonials and get clinical and legal sign-off first."
+      },
+      {
+        "q": "How do I correct wrong information ChatGPT gives about our medicine?",
+        "a": "We find the sources behind the answer, then publish approved product information in a form the engines can quote and correct third-party pages where we can. We re-measure weekly and report whether the answer has changed."
+      },
+      {
+        "q": "Will you use patient testimonials or success stories?",
+        "a": "No. We do not use patient testimonials or before-and-after stories. We reply to reviews in public without disclosing any patient information."
+      },
+      {
+        "q": "Can an AI chat agent book appointments for our hospital?",
+        "a": "Yes. It can book appointments and answer timings, departments and insurance questions on WhatsApp and the website. It never gives medical advice and routes urgent cases to your team."
+      }
+    ],
+    "related": [
+      "/solutions/geo/",
+      "/solutions/ai-agents/",
+      "/solutions/reputation/",
+      "/blog/how-ai-engines-choose-sources/"
+    ]
+  },
+  {
+    "path": "/industries/industrial-engineering/",
+    "title": "GEO for industrial and engineering companies",
+    "description": "GEO for industrial and engineering companies in India: get named when buyers ask AI for suppliers, with spec pages, certifications and trade press it can cite.",
+    "keywords": [
+      "GEO for industrial companies",
+      "AI visibility for engineering brands",
+      "GEO for manufacturers India",
+      "best valve manufacturers in India AI answer",
+      "how to get my manufacturing company found by ChatGPT",
+      "AI search for industrial procurement",
+      "industrial supplier shortlist AI",
+      "technical content for AI engines"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Industrial & engineering",
+    "h1": "Specified by <span class=\"g\">the answer.</span>",
+    "lede": "Procurement teams, EPC consultants and distributors now ask AI who makes what, to which standard and where. If your specs live in a scanned PDF, the engine quotes a directory instead.",
+    "answer": "GEO for industrial and engineering companies is the work of getting a manufacturer named, with correct specs and certifications, when buyers ask AI for suppliers. Engines draw on B2B directories, tender and spec documents, trade press, datasheets and LinkedIn. Optimizer360 measures 8 engines, turns technical facts into pages they can quote and traces each RFQ back to where it began.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do industrial buyers ask AI?",
+        "intro": "Supplier questions from procurement, engineering and distribution.",
+        "items": [
+          {
+            "t": "\"Top stainless steel valve manufacturers in India with API certification?\"",
+            "d": "A certified-supplier shortlist where proof of certification decides inclusion."
+          },
+          {
+            "t": "\"Who makes IE3 motors for export in Gujarat?\"",
+            "d": "A capability and location question answered from directories and spec pages."
+          },
+          {
+            "t": "\"Indian suppliers of ASTM A105 flanges near Pune?\"",
+            "d": "A material-grade query that needs exact, readable specifications."
+          },
+          {
+            "t": "\"EPC contractors in India with large solar plant experience?\"",
+            "d": "A track-record question shaped by trade press and tender results."
+          },
+          {
+            "t": "\"Authorised distributors of this pump brand in Kolkata?\"",
+            "d": "A channel question that old dealer lists often get wrong."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on for industrial companies?",
+        "html": "<ul><li><strong>B2B directories and marketplaces</strong> such as IndiaMART and TradeIndia.</li><li><strong>Tender and specification documents</strong>, including public procurement portals.</li><li><strong>Trade press, industry associations and exhibition lists.</strong></li><li><strong>Product datasheets and catalogues</strong>, when the text is readable.</li><li><strong>Certification registers</strong> for BIS, ISO and similar standards.</li><li><strong>LinkedIn</strong> company pages and engineering posts.</li><li><strong>YouTube</strong> plant tours and product demos with transcripts.</li><li><strong>Wikipedia</strong> for larger groups.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for manufacturers?",
+        "html": "<ul><li>Specs quoted from a directory listing because the real datasheet is a scanned PDF.</li><li>Old capacities, plant locations or lapsed certifications repeated as current.</li><li>The manufacturer confused with a trader who resells its products.</li><li>Missing from \"top manufacturers\" lists the engines keep quoting.</li><li>The distributor network out of date.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for industrial and engineering companies?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> product and spec pages in plain text, certifications with numbers and validity, application guides and product schema.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> digital PR in trade press, consistent directory listings and replies to reviews.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> a technical blog, a video channel with demos and transcripts, and LinkedIn content from your engineers.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> open, brand-labelled answers in engineering forums and threads.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> a website and WhatsApp agent that answers spec questions and routes RFQs to the right engineer.</li><li><strong><a href=\"/solutions/leads-pipeline/\">Leads and pipeline</a>:</strong> each RFQ traced back to the answer, listing or article where it began.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside for industrial companies?",
+        "html": "<ul><li><strong>Verifiable certifications:</strong> BIS, ISO, API and similar marks are stated only while current and with evidence.</li><li><strong>No borrowed approvals:</strong> no \"approved by\" or vendor-list claims without written proof.</li><li><strong>NDAs and confidentiality:</strong> no customer names or project details without consent.</li><li><strong>ASCI:</strong> performance claims backed by test data.</li><li><strong>DPDP Act:</strong> RFQ and enquiry data handled with consent.</li></ul>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "~70%",
+            "d": "of the buying process is done before buyers talk to sellers.",
+            "src": "6sense, Oct 2024"
+          },
+          {
+            "n": "29%",
+            "d": "of B2B buyers start research on AI chat tools more often than on Google.",
+            "src": "G2, May 2025"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do industrial buyers really use ChatGPT to find suppliers?",
+        "a": "B2B buyers increasingly start research with AI chat tools, and most of the buying journey happens before they speak to a seller. We track the supplier questions in your category across 8 engines so you can see what buyers are told."
+      },
+      {
+        "q": "Our specs are in PDF catalogues. Is that a problem for AI engines?",
+        "a": "Often, yes, especially with scanned PDFs. Engines then quote a directory or a reseller instead. We turn key specs and certifications into plain-text pages with schema that engines can read and cite."
+      },
+      {
+        "q": "Can we mention customer projects in our content?",
+        "a": "Only with written consent. Where projects are under NDA, we show capability through specs, standards met and anonymised application examples."
+      },
+      {
+        "q": "Does a directory listing affect AI answers?",
+        "a": "Directories are among the sources engines cite for supplier questions, so inconsistent listings can spread wrong facts. We make listings consistent and point them to accurate pages on your own site."
+      }
+    ],
+    "related": [
+      "/industries/manufacturing/",
+      "/solutions/geo/",
+      "/solutions/leads-pipeline/",
+      "/industries/b2b-services/"
+    ]
+  },
+  {
+    "path": "/industries/cinema-entertainment/",
+    "title": "GEO for cinema and entertainment brands",
+    "description": "GEO for cinema and entertainment in India: keep what AI says about your films and shows accurate, from release dates to credits, and earn the fan conversation.",
+    "keywords": [
+      "GEO for entertainment brands",
+      "AI visibility for films and OTT shows",
+      "GEO for cinema India",
+      "how to get my film recommended by ChatGPT",
+      "best Malayalam thrillers on OTT AI answer",
+      "Wikipedia accuracy for films",
+      "AI answers about box office",
+      "fan community marketing for films"
+    ],
+    "schema": "Service",
+    "eyebrow": "Industries · Cinema & entertainment",
+    "h1": "Get the story <span class=\"g\">told right.</span>",
+    "lede": "Audiences ask AI what to watch, where to stream it and whether it is worth a ticket. The answer comes from Wikipedia, film databases, critics and fan threads, and it is often out of date.",
+    "answer": "GEO for cinema and entertainment is the work of getting films, shows and studios named, and described correctly, when audiences ask AI what to watch. Engines draw on Wikipedia, film databases, critics, entertainment news and fan communities. Optimizer360 measures 8 engines, publishes official facts they can quote, corrects Wikipedia only through talk pages and builds real conversation in fan communities.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do audiences ask AI?",
+        "intro": "Questions that decide a ticket, a stream or a skip.",
+        "items": [
+          {
+            "t": "\"Best Malayalam thrillers to watch on OTT this month?\"",
+            "d": "A recommendation list. Recent releases often miss it because sources lag."
+          },
+          {
+            "t": "\"Is this film worth watching in theatres?\"",
+            "d": "A verdict built from critics, audience reviews and reaction videos."
+          },
+          {
+            "t": "\"Where can I stream this film?\"",
+            "d": "A platform question that old answers frequently get wrong."
+          },
+          {
+            "t": "\"Who composed the music for this film?\"",
+            "d": "A credits question answered from Wikipedia and film databases."
+          },
+          {
+            "t": "\"What is the box office collection after day five?\"",
+            "d": "A numbers question where engines repeat whichever figure they find first."
+          },
+          {
+            "t": "\"Upcoming Telugu releases in December?\"",
+            "d": "A discovery question that favours films with clear, current release facts."
+          }
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on in entertainment?",
+        "html": "<ul><li><strong>Wikipedia and Wikidata</strong>, often the backbone of the answer.</li><li><strong>Film and TV databases</strong> such as IMDb.</li><li><strong>Critics, review aggregators and audience ratings.</strong></li><li><strong>Entertainment news and trade analysts</strong>, including box-office reporting.</li><li><strong>Streaming platform pages</strong> and music streaming credits.</li><li><strong>YouTube trailers, interviews and reaction videos.</strong></li><li><strong>Fan communities</strong> on Reddit, X and Instagram.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for films and shows?",
+        "html": "<ul><li>Wrong release dates or streaming platforms.</li><li>Cast and crew credits mixed up, especially across language versions and remakes.</li><li>Inflated or contradictory box-office figures repeated as fact.</li><li>An old controversy leading the answer about a studio or star.</li><li>Ratings skewed by review-bombing.</li><li>New releases missing because the sources the engines trust have not caught up.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What do we do for studios, producers and platforms?",
+        "html": "<ul><li><strong><a href=\"/solutions/geo/\">Brand story and GEO</a>:</strong> official fact pages for each film or show with credits, release dates and platforms, movie and series schema, and one clean Wikidata entity.</li><li><strong><a href=\"/solutions/reputation/\">Reputation</a>:</strong> real press and critic coverage, public replies to audiences and fast corrections of wrong facts.</li><li><strong><a href=\"/solutions/feeder-network/\">Feeder network</a>:</strong> a YouTube channel with full transcripts, a newsletter and a WhatsApp channel that you own.</li><li><strong><a href=\"/solutions/content-community/\">Content and community</a>:</strong> fan communities you help keep alive, with Reddit presence posted openly as the studio.</li><li><strong><a href=\"/solutions/ai-agents/\">AI agents</a>:</strong> Instagram and WhatsApp agents that answer release, showtime and streaming questions accurately.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside in entertainment?",
+        "html": "<ul><li><strong>CBFC:</strong> certification shown correctly on promotional content.</li><li><strong>ASCI influencer guidelines:</strong> every paid creator promotion is disclosed.</li><li><strong>No fake reviews or paid ratings</strong>, and never any action against rival films.</li><li><strong>Wikipedia:</strong> facts corrected through the talk page with sources, never promotional edits by the studio.</li><li><strong>Verifiable numbers:</strong> box-office figures only from sources we can cite.</li><li><strong>Rights:</strong> clips, stills and music used only with permission.</li></ul>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {
+            "n": "47.9%",
+            "d": "of ChatGPT's top-10 cited source share is Wikipedia.",
+            "src": "Profound, 2025"
+          },
+          {
+            "n": "Top 2",
+            "d": "Wikipedia and Reddit are ChatGPT's two most-cited domains.",
+            "src": "Semrush, 2025"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I fix wrong information about my film in ChatGPT?",
+        "a": "Find the source it is quoting, which is often Wikipedia, a film database or an old news story. We publish official facts on a page the engines can cite, correct Wikipedia through the talk page with sources and re-measure until the answer changes."
+      },
+      {
+        "q": "Can you edit our film's Wikipedia page for us?",
+        "a": "We do not make promotional edits. We propose factual corrections on the talk page, with reliable sources, and let Wikipedia's editors decide."
+      },
+      {
+        "q": "Do fan communities affect what AI says about a film?",
+        "a": "They can. Reddit is among the most cited sources across AI engines, so real conversation in fan communities often feeds the answer. We help you take part openly, as the studio."
+      },
+      {
+        "q": "Can you get our film into 'best films to watch' answers?",
+        "a": "We cannot guarantee it, because the engines decide. We make sure the facts, coverage and conversation around your film are strong enough to be considered, and we report every week what moved."
+      }
+    ],
+    "related": [
+      "/solutions/content-community/",
+      "/solutions/feeder-network/",
+      "/blog/reddit-wikipedia-ai-visibility/",
+      "/solutions/geo/"
+    ]
+  }
+]

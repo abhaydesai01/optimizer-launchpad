@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "optimizer360-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4360", "--directory", "/Users/apple/Downloads/optimizer360-site"],
+      "port": 4360
+    }
+  ]
+}

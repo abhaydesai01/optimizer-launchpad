@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/industries/manufacturing/",
+    "title": "GEO for manufacturing and B2B manufacturers",
+    "description": "GEO for B2B manufacturers in India: get named when sourcing teams ask AI for suppliers, with the right capabilities, certifications and capacity beside your name.",
+    "keywords": ["GEO for manufacturing", "AI visibility for manufacturers", "B2B manufacturer marketing India", "contract manufacturer India AI search", "how to get my factory recommended by ChatGPT", "supplier discovery AI", "private label manufacturer India", "export manufacturer visibility"],
+    "schema": "Service",
+    "eyebrow": "Industries · Manufacturing",
+    "h1": "Be the supplier <span class=\"g\">AI shortlists.</span>",
+    "lede": "Sourcing teams, brand owners and overseas buyers now ask AI for a supplier shortlist before they send a single RFQ. We work to put your plant on it, with capabilities and certifications that are right.",
+    "answer": "GEO for manufacturing is the work of getting a B2B manufacturer named accurately when buyers ask AI engines for suppliers. Engines lean on B2B directories, capability pages, certification records, trade press and reviews. Optimizer360 measures 8 engines, turns capabilities, materials, tolerances and certifications into pages they can quote, and traces each RFQ back to where it began.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do sourcing teams ask AI?",
+        "intro": "Real buyer questions. Each one ends in a shortlist of three to five names.",
+        "items": [
+          {"t": "\"CNC machining suppliers in Pune for aerospace parts?\"", "d": "A capability question. The engine looks for processes, materials and tolerances stated plainly."},
+          {"t": "\"IATF 16949 certified component makers near Chennai?\"", "d": "A certification question. Only certificates the engine can verify get you named."},
+          {"t": "\"Contract manufacturer for private-label skincare in India?\"", "d": "A brand owner looking for a partner. Minimum order, formats and approvals decide the answer."},
+          {"t": "\"Alternatives to overseas suppliers for precision castings?\"", "d": "An export buyer diversifying supply. Export experience and capacity carry the most weight."},
+          {"t": "\"Reliable corrugated packaging supplier for FMCG in Maharashtra?\"", "d": "A repeat-buy question. Reviews, delivery record and location decide who is named."},
+          {"t": "\"Is this manufacturer trustworthy for a first order?\"", "d": "A trust check. Engines repeat what directories, reviews and trade press say about you."}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which sources do AI engines lean on for manufacturers?",
+        "html": "<ul><li><strong>B2B directories and marketplaces</strong> such as IndiaMART and TradeIndia, where capability, location and response records sit side by side.</li><li><strong>Your own capability pages</strong>: processes, machines, materials, tolerances, capacity and industries served, written as text rather than locked in a brochure PDF.</li><li><strong>Certification and quality records</strong>: ISO, IATF, GMP and similar certificates, with scope and validity dates.</li><li><strong>Trade press and trade-fair listings</strong>, which engines read as third-party confirmation.</li><li><strong>Google Business Profiles and reviews</strong> for each plant, plus LinkedIn for leadership and hiring signals.</li><li><strong>Factory and process videos</strong> with transcripts, which show capability in a way a list cannot.</li></ul>"
+      },
+      {
+        "type": "stats",
+        "items": [
+          {"n": "29%", "d": "of B2B buyers start research on AI chat tools more often than on Google.", "src": "G2, May 2025"},
+          {"n": "~70%", "d": "of the buying journey is done before a buyer talks to sales.", "src": "6sense, Oct 2024"},
+          {"n": "3×", "d": "Brand mentions track AI visibility about three times more closely than backlinks (0.664 vs 0.218, a correlation).", "src": "Ahrefs, 2025"}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "What usually goes wrong in AI answers for manufacturers?",
+        "html": "<ul><li><strong>Old capability.</strong> The answer lists a process you stopped or misses the line you added last year.</li><li><strong>Missing or wrong certifications.</strong> A lapsed certificate is quoted, or a current one is not mentioned at all.</li><li><strong>Only the biggest names.</strong> Smaller specialists with better fit are left out because nothing citable describes them.</li><li><strong>Confused identity.</strong> A similarly named firm, an old address or a closed plant is attached to your name.</li><li><strong>No export signal.</strong> Overseas buyers never see you because nothing states the markets you already ship to.</li></ul>"
+      },
+      {
+        "type": "steps",
+        "h2": "What do we do for manufacturers?",
+        "items": [
+          {"t": "Capability pages", "d": "Processes, materials, tolerances, capacity and industries served, as quotable text with schema. See <a href=\"/solutions/geo/\">GEO</a>."},
+          {"t": "Certified facts", "d": "Every current certificate stated with its scope and validity, and directory listings made consistent."},
+          {"t": "Proof others publish", "d": "Trade press, trade-fair listings and buyer reviews, so engines hear about you from more than your own site. See <a href=\"/solutions/reputation/\">reputation</a>."},
+          {"t": "RFQs answered 24/7", "d": "An AI agent on your website and WhatsApp that captures material, quantity and timeline. See <a href=\"/solutions/ai-agents/\">AI agents</a>."},
+          {"t": "Every RFQ traced", "d": "Each enquiry traced back to the AI answer, directory or video where it began. See <a href=\"/solutions/leads-pipeline/\">leads and pipeline</a>."}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Which rules do we work inside for manufacturers?",
+        "html": "<ul><li>We state only certifications you hold today, with their scope. Expired or pending certificates are never presented as current.</li><li>We never name your customers or show their drawings, parts or volumes without written permission.</li><li>Claims about quality, delivery and capacity follow ASCI guidelines and are backed by records you can show.</li><li>Enquiry data from forms and agents is handled in line with the DPDP Act.</li></ul>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>How we measure:</strong> a Week-1 baseline across 8 AI engines on the supplier questions your buyers really ask, then weekly re-measurement. We do not promise rankings; the engines decide.</p>"
+      }
+    ],
+    "faqs": [
+      {"q": "How do I get my manufacturing company recommended by ChatGPT?", "a": "State your processes, materials, tolerances, capacity and certifications as plain text on your own site, keep directory listings consistent, and earn mentions in trade press and reviews. Engines name suppliers they can verify across several sources."},
+      {"q": "Do B2B directories still matter if buyers use AI?", "a": "Yes. Directories such as IndiaMART and TradeIndia are among the sources engines read for supplier questions, so a complete, consistent listing helps you get named in the AI answer as well."},
+      {"q": "Can GEO help a contract or private-label manufacturer?", "a": "Yes. Brand owners ask AI for contract partners by format, minimum order and approvals. Clear pages on those points, plus third-party proof, are what put you on that shortlist."},
+      {"q": "Will you publish our customer names to build trust?", "a": "No. We never name your customers or show their parts without written permission. Trust is built from certifications, process detail, reviews and trade press instead."},
+      {"q": "How is manufacturing different from your industrial and engineering work?", "a": "Our industrial and engineering work focuses on capital equipment, projects and tenders. Manufacturing focuses on suppliers and contract makers chosen by sourcing teams and brand owners, where capability, certification and capacity decide the shortlist."}
+    ],
+    "related": ["/industries/industrial-engineering/", "/solutions/geo/", "/solutions/ai-agents/", "/solutions/leads-pipeline/"]
+  }
+]

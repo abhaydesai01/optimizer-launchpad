@@ -1,0 +1,629 @@
+[
+  {
+    "path": "/results/",
+    "title": "GEO results: AI visibility measured from week one",
+    "description": "How we measure AI visibility from a Week-1 baseline across 8 engines, plus two anonymised GEO case studies: real estate and investor relations in India.",
+    "keywords": ["GEO results", "AI visibility case study", "generative engine optimisation results", "AI search visibility India", "GEO case study real estate", "investor relations AI answers", "how to measure AI visibility"],
+    "schema": "CollectionPage",
+    "eyebrow": "Results",
+    "h1": "Results, measured <span class=\"g\">from week one.</span>",
+    "lede": "Every programme starts with a Week-1 baseline and is re-measured every week. Here is what we track, how we report it, and two programmes in detail.",
+    "answer": "Optimizer360 measures results against a Week-1 baseline taken across 8 AI engines, then re-measures every week on two scoreboards: the AI answers themselves, and SEO plus owned enquiries. In one real-estate programme, a residential developer in India moved from a 32% to a 58% visibility score in under 2.5 months. We never name clients and never promise rankings.",
+    "sections": [
+      {
+        "type": "stats",
+        "items": [
+          {"n": "8", "d": "AI engines tracked: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews.", "src": "Optimizer GEO platform"},
+          {"n": "10,000", "d": "prompts per brand a day, each answer stored with its date.", "src": "Optimizer GEO platform"},
+          {"n": "58%", "d": "visibility score in one real-estate programme, up from 32% at the Week-1 baseline.", "src": "Residential developer, India"},
+          {"n": "9", "d": "industries we work in, from real estate and financial services to cinema and entertainment.", "src": "Optimizer360"}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "How do we measure results?",
+        "html": "<p>Before we change anything, we take a <strong>Week-1 baseline</strong>: the same set of buyer questions run on all 8 engines, with every answer, every brand named and every source cited stored with its date. That baseline is the line every later number is measured against.</p><p>Then every fix we ship is logged with its date and re-measured. We report weekly against the baseline, so you can see what moved and what did not.</p>"
+      },
+      {
+        "type": "cols",
+        "h2": "What are the two scoreboards?",
+        "intro": "We report on both, because AI visibility only matters if it reaches the business.",
+        "items": [
+          {"t": "Scoreboard 1: the AI answers", "d": "Visibility score, citation rate, share of voice and brand sentiment, measured on every stored answer across the 8 engines."},
+          {"t": "Scoreboard 2: SEO and owned enquiries", "d": "Search performance and the enquiries that reach your own channels, traced back to where demand began: an AI answer, a review, a thread or a video."}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Two programmes in detail",
+        "html": "<h3><a href=\"/results/real-estate-ai-visibility/\">Real estate: 32% to 58% in under 2.5 months</a></h3><p>A residential developer in India, measured across 8 AI engines. The visibility score rose from 32% to 58% from the Week-1 baseline. Citation rate, share of voice and brand sentiment went up, and the developer now shows up for 80–90 tracked buyer questions.</p><h3><a href=\"/results/investor-relations-narrative/\">Investor relations: from old news to the latest filing</a></h3><p>A listed company in India. The AI answer to investor questions moved from old figures and a resolved controversy to the latest filing. Answer accuracy and current sources cited went up; the old controversy as headline went down.</p>"
+      },
+      {
+        "type": "steps",
+        "h2": "How does a result get made?",
+        "items": [
+          {"t": "Scan", "d": "Run the buyer questions on 8 engines and record who is named, in what order, quoting which source."},
+          {"t": "Diagnose", "d": "Find the gaps: wrong facts, missing pages, the sources engines trust and the rivals named instead."},
+          {"t": "Fix", "d": "Ship AI-citable pages, FAQs, schema, review replies and PR. Every fix is logged with its date."},
+          {"t": "Prove", "d": "Once published and crawled, re-measure and report weekly against the Week-1 baseline."}
+        ]
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>Why we never name clients:</strong> the work we do touches how a brand is described, and that belongs to the brand. So we do not name, describe identifiably, count or quote our clients, and we show no logos or testimonials. Our case studies describe the sector and the market, never the company.</p>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>What we won't promise:</strong> guaranteed rankings. The engines decide what they say. We do the work rigorously and show every week what moved.</p>"
+      }
+    ],
+    "faqs": [
+      {"q": "How do you measure AI visibility results?", "a": "We take a Week-1 baseline across 8 AI engines before any fix ships, then re-measure every week. Results are reported on two scoreboards: the AI answers themselves, and SEO plus owned enquiries."},
+      {"q": "What results has Optimizer360 achieved?", "a": "In one real-estate programme, a residential developer in India moved from a 32% to a 58% visibility score across 8 AI engines in under 2.5 months. In an investor relations programme, AI answers moved from old figures and a resolved controversy to the latest filing."},
+      {"q": "Why don't you name your clients?", "a": "Because how a brand is described belongs to the brand. We never name, count or quote clients, and we show no logos or testimonials. Case studies describe the sector and market only."},
+      {"q": "Can you guarantee the same results for us?", "a": "No. The engines decide what they say, so no one can honestly guarantee rankings. We measure your starting point, do the work and report every week what moved."}
+    ],
+    "related": ["/results/real-estate-ai-visibility/", "/results/investor-relations-narrative/", "/platform/", "/blog/measure-ai-visibility/"]
+  },
+  {
+    "path": "/results/real-estate-ai-visibility/",
+    "title": "Real estate GEO case study: 32% to 58% in AI answers",
+    "description": "A residential developer in India went from a 32% to a 58% visibility score across 8 AI engines in under 2.5 months. What we did and how we measured it.",
+    "keywords": ["real estate GEO case study", "AI visibility real estate India", "residential developer AI search", "visibility score", "real estate developer ChatGPT", "GEO for real estate", "generative engine optimisation case study"],
+    "schema": "Article",
+    "eyebrow": "Results · Real estate",
+    "h1": "32% to 58% <span class=\"g\">in AI answers.</span>",
+    "lede": "A residential developer in India, measured across 8 AI engines from a Week-1 baseline. Under 2.5 months later, the brand appeared in 58% of tracked answers.",
+    "answer": "In this programme, a residential developer in India raised its visibility score from 32% to 58% across 8 AI engines in under 2.5 months, measured from the Week-1 baseline. Citation rate, share of voice and brand sentiment all went up, and the developer now shows up for 80–90 tracked buyer questions. The work combined site pages, communities, reference sources, press and video.",
+    "sections": [
+      {
+        "type": "stats",
+        "items": [
+          {"n": "32% → 58%", "d": "visibility score across 8 AI engines, in under 2.5 months.", "src": "Measured from the Week-1 baseline"},
+          {"n": "80–90", "d": "tracked buyer questions where the developer now shows up.", "src": "Prompts ranked"},
+          {"n": "8", "d": "AI engines measured: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews.", "src": "Optimizer GEO platform"}
+        ]
+      },
+      {
+        "type": "table",
+        "h2": "What moved?",
+        "head": ["Metric", "Result"],
+        "rows": [
+          ["Visibility score", "32% → 58%"],
+          ["Citation rate", "Up"],
+          ["Share of voice", "Up"],
+          ["Brand sentiment", "Up"],
+          ["Prompts ranked", "80–90 tracked buyer questions"]
+        ]
+      },
+      {
+        "type": "prose",
+        "html": "<p>We publish two figures from this programme: the visibility score and the number of prompts ranked. The other measures are shown as direction only. Prompts ranked is one parameter, not the headline: the visibility score is the measure that counts across all 8 engines.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What did we do on the site?",
+        "html": "<ul><li>Answer-first blogs and buyer guides.</li><li>Project fact pages with RERA numbers, possession dates, sizes and amenities.</li><li>FAQ and comparison pages for the questions buyers ask.</li><li>Schema for the company, every project and every FAQ.</li><li>Real numbers engines can quote, such as the delivery record and homes handed over.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What did we do in communities?",
+        "html": "<ul><li>Reddit: real answers in city and home-buying threads, posted openly as the brand.</li><li>Quora answers to the same buyer questions.</li><li>Replies to reviews on Google and on property portals.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What did we do on reference sources?",
+        "html": "<ul><li>Wikipedia: facts corrected through the talk page, with sources. Never promotional edits.</li><li>Wikidata: one clean entity for the company and its projects.</li><li>Google Business Profiles fixed for every project.</li><li>Property portal listings made consistent.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What did we do in press and video?",
+        "html": "<ul><li>Digital PR in property and business media.</li><li>\"Best of\" lists and local area guides.</li><li>YouTube site walkthroughs with full transcripts.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "How are the numbers defined?",
+        "html": "<ul><li><strong>Visibility score:</strong> the share of tracked questions, across all 8 engines, where the brand appears in the answer.</li><li><strong>Citation rate:</strong> the share of answers that cite the brand's own pages as a source.</li><li><strong>Share of voice:</strong> the brand's share of all brand mentions in category answers, against the rivals named.</li><li><strong>Brand sentiment:</strong> the tone of how engines describe the brand, scored on every stored answer.</li><li><strong>Prompts ranked:</strong> the tracked buyer questions where the brand now shows up in the answer.</li></ul>"
+      },
+      {
+        "type": "steps",
+        "h2": "How did the programme run?",
+        "items": [
+          {"t": "Scan", "d": "Took the Week-1 baseline: the buyer question universe run on all 8 engines, every answer and source stored with its date."},
+          {"t": "Diagnose", "d": "Found which rivals were named instead, which portals, forums and media the engines trusted, and where facts were missing or wrong."},
+          {"t": "Fix", "d": "Shipped the site pages, community answers, reference corrections, PR and video, each change logged with its date."},
+          {"t": "Prove", "d": "Re-measured every week against the baseline, on the AI answers and on SEO and owned enquiries."}
+        ]
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>What this is not:</strong> a promise. The engines decide what they say. This is one programme, measured the same way every week. We do not name the developer.</p>"
+      }
+    ],
+    "faqs": [
+      {"q": "How long did it take to go from 32% to 58% visibility?", "a": "Under 2.5 months from the Week-1 baseline, measured across 8 AI engines. This is one programme; timelines depend on the category, the starting point and the sources engines already trust."},
+      {"q": "What is a visibility score?", "a": "It is the share of tracked questions, across all 8 engines, where the brand appears in the answer. It is the headline measure because it covers every engine and every question we track."},
+      {"q": "Did you edit Wikipedia for the developer?", "a": "No promotional edits. We proposed factual corrections on the Wikipedia talk page, with sources, for editors to review. We also kept one clean Wikidata entity for the company and its projects."},
+      {"q": "Who is the developer?", "a": "We never name clients. It is a residential developer in India, and that is all we share publicly."},
+      {"q": "Why are only two figures published?", "a": "We publish the visibility score and prompts ranked as figures. Citation rate, share of voice and brand sentiment are shown as direction only, so the page stays accurate without exposing client data."}
+    ],
+    "related": ["/industries/real-estate/", "/solutions/geo/", "/blog/reddit-wikipedia-ai-visibility/", "/results/"],
+    "article": {"published": "2026-11-10", "minutes": 6}
+  },
+  {
+    "path": "/results/investor-relations-narrative/",
+    "title": "Investor relations GEO case study: the narrative",
+    "description": "How AI answers to investor questions about a listed company in India moved from old figures and a resolved controversy to the latest filing. What we did.",
+    "keywords": ["investor relations GEO case study", "AI answers investor relations", "listed company AI visibility", "investor relations ChatGPT", "SEBI compliant GEO", "AI narrative listed company India", "financial AI search accuracy"],
+    "schema": "Article",
+    "eyebrow": "Results · Investor relations",
+    "h1": "From old news <span class=\"g\">to the latest filing.</span>",
+    "lede": "A listed company in India. Investors asking AI engines about it were getting old figures and a controversy that had already been resolved. Now the answer starts with the latest filing.",
+    "answer": "In this investor relations programme, the AI answer to investor questions about a listed company in India moved from old figures and a resolved controversy to the latest filing. Answer accuracy and current sources cited went up, the old controversy dropped as the headline, and investor sentiment improved. The work used public disclosures only, followed SEBI rules and had company sign-off.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "What was the problem?",
+        "html": "<p>When investors asked AI engines about the company, the answers led with figures from older periods and with a controversy that had been resolved. The latest results were in filings and presentations, but engines were drawing on older, weaker sources instead.</p><p>The job was accuracy, not spin: make the current, public record the easiest thing for engines to find and quote.</p>"
+      },
+      {
+        "type": "table",
+        "h2": "What moved?",
+        "head": ["Metric", "Direction", "What it measures"],
+        "rows": [
+          ["Answer accuracy", "Up", "Key figures in the answer match the latest filing."],
+          ["Current sources cited", "Up", "Filings and IR pages from the last two quarters cited as sources."],
+          ["Old controversy as headline", "Down", "How often the resolved issue leads the answer."],
+          ["Investor sentiment", "Up", "The tone of how engines describe the company to investors."]
+        ]
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>Illustration:</strong> the answers below use a fictional company, Meridian Industries. They show the pattern we saw, not the client's actual answers.</p>"
+      },
+      {
+        "type": "table",
+        "h2": "What did the answer look like before and after?",
+        "head": ["", "Before (illustration)", "After (illustration)"],
+        "rows": [
+          ["Question", "\"Is Meridian Industries a good company to invest in?\"", "\"Is Meridian Industries a good company to invest in?\""],
+          ["How the answer opens", "\"Meridian Industries is best known for a controversy from some years ago.\"", "\"Meridian Industries is a listed industrial company. Its latest quarterly filing reports its current results and outlook.\""],
+          ["Figures quoted", "Figures from older periods, taken from secondary sites.", "Figures from the latest filing and investor presentation."],
+          ["The controversy", "Presented as the headline.", "Mentioned, if at all, as resolved, citing the company's exchange disclosures."],
+          ["Sources cited", "Old news articles and forum posts.", "The company's investor pages, filings and current financial media."]
+        ]
+      },
+      {
+        "type": "cols",
+        "h2": "What did we do?",
+        "intro": "All of it from public disclosures, with company sign-off before anything was published.",
+        "items": [
+          {"t": "Investor site", "d": "Results, presentations and call transcripts published as readable text, not only PDFs. A key-facts page with schema, and an FAQ answering what investors ask AI."},
+          {"t": "Reference sources", "d": "Current financials and leadership proposed on the Wikipedia talk page, sourced to filings. Wikidata entity, listing and leaders kept current. Exchange and financial-portal profiles corrected."},
+          {"t": "Media", "d": "Financial-media coverage after each result, from public disclosures only, plus analyst-facing explainers."},
+          {"t": "Forums and monitoring", "d": "Investor forums and Reddit monitored. Factual errors answered with links to filings, never promotion. Drift alerts after every results date and corporate action."},
+          {"t": "Compliance", "d": "Public disclosures only, SEBI rules followed, and company sign-off before anything was published."}
+        ]
+      },
+      {
+        "type": "steps",
+        "h2": "How did the programme run?",
+        "items": [
+          {"t": "Scan", "d": "Ran the questions investors ask on 8 AI engines and stored every answer, figure and source with its date."},
+          {"t": "Diagnose", "d": "Found where answers quoted old figures, which sources engines relied on, and how often the resolved controversy led."},
+          {"t": "Fix", "d": "Made the investor site readable, corrected reference sources and supported current media coverage, all signed off by the company."},
+          {"t": "Prove", "d": "Re-measured after each change and after every results date, against the Week-1 baseline."}
+        ]
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>Accuracy, not spin:</strong> we use only public disclosures, follow SEBI rules and get company sign-off before anything is published. We do not promise what engines will say, and we do not name the company.</p>"
+      }
+    ],
+    "faqs": [
+      {"q": "Can you change what ChatGPT tells investors about a listed company?", "a": "We cannot control any engine. We can make the company's current, public record easy for engines to read and cite, correct reference sources with filings, and measure what the answers say every week."},
+      {"q": "Is GEO for investor relations SEBI compliant?", "a": "Our IR work uses public disclosures only, follows SEBI rules and has company sign-off before anything is published. We never publish unpublished or price-sensitive information."},
+      {"q": "Is the Meridian Industries example real?", "a": "No. Meridian Industries is a fictional company used to illustrate the pattern. The client is a listed company in India, and we do not name it."},
+      {"q": "Why do AI engines quote old figures about a company?", "a": "Engines draw on what they can find and read. If results sit only in PDFs or on hard-to-read pages, older secondary sources often fill the gap."}
+    ],
+    "related": ["/solutions/geo-investor-relations/", "/industries/financial-services/", "/blog/ai-answers-investor-relations/", "/results/"],
+    "article": {"published": "2026-11-10", "minutes": 6}
+  },
+  {
+    "path": "/about/",
+    "title": "About us: the AI-native organic marketing company",
+    "description": "Optimizer360 is an AI-native organic marketing company in India. AI agents find the gaps, expert teams fix them, and weekly data proves what has moved.",
+    "keywords": ["AI-native organic marketing company", "GEO agency India", "about Optimizer360", "generative engine optimisation agency", "Salil Chaturvedi", "Abhay Desai", "organic marketing India"],
+    "schema": "AboutPage",
+    "eyebrow": "About",
+    "h1": "Stop renting growth. <span class=\"g\">Own it.</span>",
+    "lede": "We make brands found, trusted, followed, talked about and chosen in AI answers, search, media and communities.",
+    "answer": "Optimizer360 is an AI-native organic marketing company based in India, also working in the United States and Mauritius. We make brands found, trusted, followed, talked about and chosen in AI answers, search, media and communities. AI agents find the gaps, expert teams fix them, and data proves what moved, measured every week against a Week-1 baseline.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "Why do we exist?",
+        "html": "<p>Most growth is rented. Ads, sponsored posts and paid placements stop working the day the budget stops. Owned growth is different: the pages you write and keep true, the reviews and press buyers trust, the community that recommends you, the channels you build. Those keep working, and they compound.</p><p>Buyers now ask AI engines before they ask you. What those engines say comes from what is published about you, by you and by others. We exist to help brands <strong>own that growth</strong>, and to prove it with data.</p>"
+      },
+      {
+        "type": "cols",
+        "h2": "What does AI-native mean here?",
+        "intro": "AI agents and expert teams, run as one organic engine.",
+        "items": [
+          {"t": "Agents find it", "d": "Our platform tracks 8 AI engines and up to 10,000 prompts per brand a day, recording who is named, in what order and quoting which source."},
+          {"t": "Experts fix it", "d": "Specialist teams ship the pages, schema, review replies, community answers and PR, and log every fix with its date."},
+          {"t": "Data proves it", "d": "Every change is re-measured and reported weekly against the Week-1 baseline, on the AI answers and on SEO and owned enquiries."}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Who founded Optimizer360?",
+        "html": "<h3>Salil Chaturvedi, founder</h3><p>A serial entrepreneur, investor and mentor. Salil founded Provogue and Prozone. He is a YPO member and the Founding President of EO Navi Mumbai.</p><h3>Abhay Desai, founding team</h3><p>Abhay leads technology and product, with experience across fintech, edtech and other sectors. He built the Optimizer360 platform and runs delivery.</p>"
+      },
+      {
+        "type": "cols",
+        "h2": "Which teams do the work?",
+        "intro": "Six specialist teams own the KPIs and review them weekly with your CMO.",
+        "items": [
+          {"t": "Brand strategy", "d": "Defines the story and the facts the brand should be known for."},
+          {"t": "GEO strategy", "d": "Builds the prompt universe, reads the answers and sets the priorities."},
+          {"t": "Technical", "d": "Schema, site structure and the readiness work that lets engines read you."},
+          {"t": "Content", "d": "Answer-first pages, FAQs, guides and community answers."},
+          {"t": "Digital PR", "d": "Real press, lists and coverage in the media engines trust."},
+          {"t": "Programme management", "d": "Keeps the plan, the sign-offs and the weekly reporting on track."}
+        ]
+      },
+      {
+        "type": "cols",
+        "h2": "What are our principles?",
+        "items": [
+          {"t": "Accuracy first", "d": "We make AI answers true, current and sourced. No fabricated reviews or figures."},
+          {"t": "No fake reviews", "d": "Real reviews from real customers, and a public reply to every one. No astroturfing."},
+          {"t": "Open in communities", "d": "On Reddit and Quora we post openly as the brand. On Wikipedia we work only through talk pages, with sources."},
+          {"t": "We never name clients", "d": "No client names, logos, counts, quotes or testimonials, anywhere."},
+          {"t": "No ranking promises", "d": "The engines decide. We do the work and show every week what moved."},
+          {"t": "Sign-off before go-live", "d": "Brand, legal and regulatory sign-off, with RERA, ASCI and SEBI checks, before anything ships."}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "Where do we work?",
+        "html": "<p>Our home market is <strong>India</strong>. We also work in the <strong>United States</strong> and <strong>Mauritius</strong>.</p><p>We work across 10 industries: real estate and hospitality; financial services and investor relations; retail and consumer brands; food and FMCG; B2B and professional services; technology and SaaS; pharma and healthcare; manufacturing; industrial and engineering; cinema and entertainment.</p>"
+      }
+    ],
+    "faqs": [
+      {"q": "What is an AI-native organic marketing company?", "a": "It is a company that uses AI agents to track and find the gaps in how brands appear in AI answers and search, with expert teams fixing them. At Optimizer360, agents find it, experts fix it and data proves it."},
+      {"q": "Who founded Optimizer360?", "a": "Salil Chaturvedi is the founder; he founded Provogue and Prozone and is the Founding President of EO Navi Mumbai. Abhay Desai is on the founding team, leads technology and product, and built the Optimizer360 platform."},
+      {"q": "Where is Optimizer360 based?", "a": "Our home market is India. We also work in the United States and Mauritius."},
+      {"q": "Is Optimizer360 a GEO agency?", "a": "Yes, and more. Generative engine optimisation is the core, alongside reputation, feeder networks, content and community, AI conversation agents and lead attribution."}
+    ],
+    "related": ["/solutions/", "/platform/", "/careers/", "/contact/"]
+  },
+  {
+    "path": "/careers/",
+    "title": "GEO jobs and AI marketing careers in India",
+    "description": "Careers at Optimizer360: GEO jobs in India across strategy, engineering, content, digital PR and AI agents. How we work, what we look for and how to apply.",
+    "keywords": ["GEO jobs India", "AI marketing careers", "generative engine optimisation jobs", "GEO strategist jobs", "digital PR jobs India", "AI agent engineer jobs", "Optimizer360 careers"],
+    "schema": "WebPage",
+    "eyebrow": "Careers",
+    "h1": "Do the work <span class=\"g\">that compounds.</span>",
+    "lede": "We hire people who want to do generative engine optimisation and organic marketing properly: accurately, openly and with data to show for it.",
+    "answer": "Optimizer360 hires into brand strategy, GEO strategy, technical and engineering, content, digital PR, programme management and AI agents. We do not post fixed job listings on this page. To apply, email abhay@optimizer360.ai with the subject \"Careers:\" followed by the team name, for example \"Careers: Digital PR\", and send work you are proud of.",
+    "sections": [
+      {
+        "type": "callout",
+        "html": "<p><strong>Straight up:</strong> this page has no job listings, salaries or perks, because we would rather not publish what we have not decided. Write to us about the team you want to join, and we will tell you where things stand.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do we work?",
+        "html": "<p>Every programme runs the same loop: <strong>Scan, Diagnose, Fix, Prove</strong>. AI agents track 8 engines and record every answer. People decide what to fix, ship it and log it with its date. Then we re-measure and report weekly against the Week-1 baseline.</p><p>Each team owns its KPIs and reviews them every week with the client's CMO. We work inside clear lines: no fake reviews, no astroturfing, community posts made openly as the brand, Wikipedia only through talk pages with sources, and sign-off before anything goes live.</p>"
+      },
+      {
+        "type": "table",
+        "h2": "Which teams do we hire into?",
+        "head": ["Team", "What the work involves"],
+        "rows": [
+          ["Brand strategy", "Shaping the story and the facts a brand should be known for, in AI answers and beyond."],
+          ["GEO strategy", "Building prompt universes, reading answers across engines and setting what to fix first."],
+          ["Technical and engineering", "Schema, site structure, readiness work and the Optimizer GEO platform."],
+          ["Content", "Answer-first pages, FAQs, buyer guides and community answers that engines can quote."],
+          ["Digital PR", "Earning real coverage, lists and mentions in the media engines trust."],
+          ["Programme management", "Running plans, sign-offs and weekly reporting so nothing slips."],
+          ["AI agents", "Building and running chat agents for websites, WhatsApp and Instagram that answer accurately and qualify leads."]
+        ]
+      },
+      {
+        "type": "cols",
+        "h2": "What do we look for?",
+        "items": [
+          {"t": "Accuracy", "d": "You check facts before you publish them, and you care when something is wrong."},
+          {"t": "Clear writing", "d": "Short sentences, plain words, answers first. It is how engines and people both read."},
+          {"t": "Comfort with data", "d": "You can read a baseline, spot what moved and say what it means."},
+          {"t": "Curiosity about AI search", "d": "You want to know why an engine named one brand and not another."},
+          {"t": "Ethics you keep", "d": "You would rather lose a quick win than post a fake review."},
+          {"t": "Ownership", "d": "You ship, log what you shipped and own the result."}
+        ]
+      },
+      {
+        "type": "steps",
+        "h2": "How do I apply?",
+        "items": [
+          {"t": "Pick a team", "d": "Choose the team from the list above that fits your work best."},
+          {"t": "Write to us", "d": "Email abhay@optimizer360.ai with the subject \"Careers:\" followed by the team name, for example \"Careers: Digital PR\"."},
+          {"t": "Send work you are proud of", "d": "A page, a campaign, code, an analysis or a piece of writing, with a line on what you did and what happened."},
+          {"t": "Talk to us", "d": "If there is a fit, we will set up a conversation."}
+        ]
+      }
+    ],
+    "faqs": [
+      {"q": "Do I need GEO experience to apply?", "a": "No. Generative engine optimisation is a young field. We look for accuracy, clear writing, comfort with data and curiosity about how AI engines choose what to say."},
+      {"q": "Are there open roles listed with salaries?", "a": "We do not publish job listings, salaries or perks on this page. Email abhay@optimizer360.ai with the subject \"Careers:\" followed by the team name, and we will tell you where things stand."},
+      {"q": "What should I send with my application?", "a": "Send work you are proud of, such as writing, a campaign, code or an analysis, with a short note on what you did and what it achieved. A CV is welcome, but the work matters more."},
+      {"q": "Where does Optimizer360 work?", "a": "Our home market is India, and we also work with brands in the United States and Mauritius. Tell us where you are based when you write."}
+    ],
+    "related": ["/about/", "/blog/what-is-generative-engine-optimisation/", "/platform/", "/contact/"]
+  },
+  {
+    "path": "/contact/",
+    "title": "Contact us: get your AI visibility audit",
+    "description": "Get an AI audit from Optimizer360: which AI engines name you, who they name instead, the sources they cite and the first fixes. Email us to get started.",
+    "keywords": ["AI visibility audit", "GEO audit", "contact Optimizer360", "AI search audit India", "ChatGPT brand audit", "GEO agency contact", "AI answers audit"],
+    "schema": "ContactPage",
+    "eyebrow": "Contact",
+    "h1": "Get your <span class=\"g\">AI audit.</span>",
+    "lede": "See what AI engines say about you today, and what we would fix first.",
+    "answer": "To start with Optimizer360, email abhay@optimizer360.ai or use the form on this page to request an AI audit. The audit shows which AI engines name your brand, who they name instead, which sources they cite and the first fixes we would make. From there you choose one of three ways to start: a baseline, your strongest questions, or a one-quarter pilot.",
+    "sections": [
+      {
+        "type": "cols",
+        "h2": "What do you receive?",
+        "items": [
+          {"t": "Which engines name you", "d": "Where you appear across the AI engines we track, and where you do not."},
+          {"t": "Who they name instead", "d": "The rivals engines recommend for the questions your buyers ask."},
+          {"t": "The sources they cite", "d": "The portals, press, reviews and forums engines trust in your category."},
+          {"t": "The first fixes", "d": "What we would change first, and why."}
+        ]
+      },
+      {
+        "type": "cols",
+        "h2": "What are the three ways to start?",
+        "items": [
+          {"t": "A. Baseline and universe map", "d": "One Week-1 measurement: readiness scorecard, ranked question universe and a costed plan."},
+          {"t": "B. Own your strongest questions", "d": "Start where you already lead and demand is high, then widen."},
+          {"t": "C. One-quarter pilot", "d": "Priority clusters, both scoreboards reported monthly, and a clear go or stop at month 3."}
+        ]
+      },
+      {
+        "type": "prose",
+        "h2": "How do I reach you?",
+        "html": "<p>Email <a href=\"mailto:abhay@optimizer360.ai\">abhay@optimizer360.ai</a>, or use the form below. The form opens your own email app with the message filled in; nothing is sent until you press send.</p><p><strong>India · US · Mauritius</strong></p>"
+      }
+    ],
+    "faqs": [
+      {"q": "How much does an AI audit or GEO programme cost?", "a": "It depends on scope: the number of brands, markets and questions. We agree it with you before any work starts, and most programmes begin with a Week-1 baseline."},
+      {"q": "What do you need from us to start?", "a": "Your brand and website, the markets you sell in, the rivals you meet most often and the questions your buyers ask. We take it from there."},
+      {"q": "Do you work outside India?", "a": "Yes. Our home market is India, and we also work in the United States and Mauritius."}
+    ],
+    "related": ["/platform/", "/results/", "/faq/"]
+  },
+  {
+    "path": "/glossary/",
+    "title": "GEO glossary: AI search terms explained",
+    "description": "A plain GEO glossary: 28 terms on generative engine optimisation and AI search, from citation rate and visibility score to llms.txt, E-E-A-T and drift.",
+    "keywords": ["GEO glossary", "generative engine optimisation terms", "AI search glossary", "what is AEO", "what is a citation rate", "visibility score definition", "llms.txt meaning", "AI Overviews definition"],
+    "schema": "DefinedTermSet",
+    "eyebrow": "Glossary",
+    "h1": "GEO terms, <span class=\"g\">in plain words.</span>",
+    "lede": "The words used in generative engine optimisation and AI search, defined briefly and neutrally.",
+    "answer": "This GEO glossary defines the terms used in generative engine optimisation and AI search: how engines such as ChatGPT, Gemini and Google AI Overviews build answers, how brands get cited in them, and how visibility is measured. Each definition is short and neutral, so you can use it in a brief, a board paper or a conversation with an agency.",
+    "sections": [
+      {
+        "type": "prose",
+        "html": "<p>AI search has brought a new vocabulary with it. Some terms come from search, some from machine learning and some from how agencies like ours measure the work. Where a term describes how we measure, we say so.</p>"
+      },
+      {
+        "type": "terms",
+        "items": [
+          {"id": "generative-engine-optimisation", "t": "Generative engine optimisation (GEO)", "d": "Generative engine optimisation is the practice of making a brand easier for AI engines to find, trust, name and cite in their answers. It covers the pages a brand publishes, the sources engines rely on and how accurately the brand is described. The US spelling is generative engine optimization."},
+          {"id": "answer-engine-optimisation", "t": "Answer engine optimisation (AEO)", "d": "Answer engine optimisation is a closely related term for structuring content so that AI search features and voice assistants can lift a direct answer from it. The terms are often used interchangeably; AEO tends to focus on the format of answers, GEO on being named and cited."},
+          {"id": "llm", "t": "LLM (large language model)", "d": "A large language model is an AI model trained on large amounts of text to understand and generate language. LLMs power chat assistants such as ChatGPT, Gemini and Claude, often combined with live web search."},
+          {"id": "ai-overviews", "t": "AI Overviews", "d": "AI Overviews are AI-generated summaries that Google shows above some search results, with links to the sources used. They are one of the 8 engines we track."},
+          {"id": "ai-mode", "t": "AI Mode", "d": "AI Mode is Google's conversational search experience, in which a user asks questions and follow-ups and receives an AI-generated answer with links instead of a standard list of results."},
+          {"id": "retrieval-augmented-generation", "t": "Retrieval-augmented generation (RAG)", "d": "Retrieval-augmented generation is a method in which an AI system first retrieves relevant documents, for example through a web search, and then writes its answer from them. It is why current, readable pages can change what an engine says."},
+          {"id": "citation", "t": "Citation", "d": "A citation is a source an AI engine links to or names as the basis for its answer. Being cited is different from being mentioned: a brand can be named without its own pages being the source."},
+          {"id": "citation-rate", "t": "Citation rate", "d": "Citation rate is the share of AI answers that cite a brand's own pages as a source. It shows whether engines rely on what the brand publishes or on third parties."},
+          {"id": "visibility-score", "t": "Visibility score", "d": "Visibility score is the share of tracked questions, across all the engines measured, where the brand appears in the answer. It is the headline measure of AI visibility in our reporting."},
+          {"id": "share-of-voice", "t": "Share of voice", "d": "Share of voice is a brand's share of all brand mentions in the answers for its category, measured against the rivals the engines name."},
+          {"id": "brand-sentiment", "t": "Brand sentiment", "d": "Brand sentiment is the tone in which AI engines describe a brand, scored on every stored answer. It shows whether the brand is described positively, neutrally or with caveats."},
+          {"id": "prompt", "t": "Prompt", "d": "A prompt is the question or instruction a person types into an AI engine. In GEO tracking, a prompt is one buyer question run on each engine and recorded with its answer and date."},
+          {"id": "prompt-universe", "t": "Prompt universe", "d": "A prompt universe is the full set of questions a brand's buyers are likely to ask AI engines. Ours is built from SEO data, the brand's own enquiries, a category map and a live engine baseline, then ranked by demand and winnability."},
+          {"id": "question-cluster", "t": "Question cluster", "d": "A question cluster is a group of closely related prompts that share one intent, such as questions comparing two neighbourhoods or two products. Work is usually planned and measured cluster by cluster."},
+          {"id": "entity", "t": "Entity", "d": "An entity is a distinct thing, such as a company, person, product or place, that search engines and AI systems recognise and connect to facts. Clear, consistent entity data helps engines describe a brand correctly."},
+          {"id": "knowledge-graph", "t": "Knowledge graph", "d": "A knowledge graph is a database of entities and the relationships between them, used by search engines and AI systems to answer factual questions. Google's Knowledge Graph is the best-known example."},
+          {"id": "wikidata", "t": "Wikidata", "d": "Wikidata is a free, collaboratively edited knowledge base run by the Wikimedia Foundation that stores structured facts about entities. Search engines and AI systems use it as a reference source."},
+          {"id": "structured-data", "t": "Structured data (schema markup)", "d": "Structured data, or schema markup, is code added to a web page, usually using the Schema.org vocabulary, that labels facts such as an organisation's name, a product's details or a page's questions and answers. It helps machines read the page accurately."},
+          {"id": "llms-txt", "t": "llms.txt", "d": "llms.txt is a proposed convention: a plain-text Markdown file at a website's root that points AI systems to the site's most useful pages. It is not an official standard, and support among engines varies."},
+          {"id": "e-e-a-t", "t": "E-E-A-T", "d": "E-E-A-T stands for experience, expertise, authoritativeness and trustworthiness. The term comes from Google's search quality rater guidelines and describes what Google looks for in reliable content."},
+          {"id": "zero-click-search", "t": "Zero-click search", "d": "Zero-click search is a search that ends without the user clicking any result, because the answer appears on the results page or in an AI summary. SparkToro and Datos (2024) found that 58.5% of US Google searches ended without a click."},
+          {"id": "drift", "t": "Drift", "d": "Drift is when what AI engines say about a brand changes or falls out of date, often after a launch, a price change or new results. Drift alerts flag these changes so wrong facts are caught early."},
+          {"id": "week-1-baseline", "t": "Week-1 baseline", "d": "The Week-1 baseline is the first full measurement of a brand's AI visibility, taken before any fixes ship. Every later result is reported against it."},
+          {"id": "readiness-scorecard", "t": "Readiness scorecard", "d": "A readiness scorecard rates how prepared a brand is to be named in AI answers. Ours scores 8 factors out of 10 each, for a total out of 80: brand recognition, trust and credibility, entity accuracy, technical readiness, share of answer, location authority, discovery and comparisons."},
+          {"id": "feeder-network", "t": "Feeder network", "d": "A feeder network is the set of sites and channels that send buyers and AI engines towards a brand. It includes owned channels, such as a blog, guide site, video channel, newsletter or WhatsApp channel, and earned ones, such as creators, 'best X in Y' lists and newsletters."},
+          {"id": "owned-vs-rented-growth", "t": "Owned vs rented growth", "d": "Rented growth comes from ads, sponsored posts and paid placements, and stops when the budget stops. Owned growth comes from assets a brand controls, such as its pages, reviews, community and channels, which keep working and compound."},
+          {"id": "digital-pr", "t": "Digital PR", "d": "Digital PR is earning coverage, mentions and links in online media, lists and publications. In GEO it matters because AI engines often draw on trusted media when they describe a brand."},
+          {"id": "hallucination", "t": "Hallucination", "d": "A hallucination is a statement an AI model produces that sounds plausible but is false or unsupported, such as a wrong price, date or figure. Accurate, current, well-sourced pages leave fewer gaps for hallucinations to fill."}
+        ]
+      }
+    ],
+    "faqs": [
+      {"q": "What is the difference between GEO and AEO?", "a": "They overlap and are often used interchangeably. AEO usually means formatting content so engines can lift a direct answer; GEO is broader, covering whether a brand is named, cited and described accurately in AI answers."},
+      {"q": "What is the difference between a mention and a citation in AI answers?", "a": "A mention is when the engine names the brand in its answer. A citation is when it links to or names a source as the basis for the answer. A brand can be mentioned without its own pages being cited."},
+      {"q": "Does llms.txt help a brand appear in AI answers?", "a": "llms.txt is a proposed convention, not an official standard, and support among engines varies. It can do no harm, but clear, accurate, well-structured pages and trusted third-party sources matter far more."}
+    ],
+    "related": ["/blog/what-is-generative-engine-optimisation/", "/blog/geo-vs-seo/", "/faq/", "/platform/"]
+  },
+  {
+    "path": "/faq/",
+    "title": "GEO FAQ: questions about AI visibility answered",
+    "description": "Answers about GEO and Optimizer360: how it differs from SEO, engines we track, timelines, pricing, pilots, compliance, ethics and why we never name clients.",
+    "keywords": ["GEO FAQ", "generative engine optimisation questions", "GEO vs SEO", "how much does GEO cost", "GEO agency India", "can you guarantee ChatGPT rankings", "AI visibility questions"],
+    "schema": "FAQPage",
+    "eyebrow": "FAQ",
+    "h1": "Questions, <span class=\"g\">answered plainly.</span>",
+    "lede": "What we do, how we work, what we will not do, and how to start.",
+    "answer": "Optimizer360 is an AI-native organic marketing company that helps brands get named, cited and described accurately in AI answers, search, media and communities. We track 8 AI engines, work in 10 industries, start every programme with a Week-1 baseline and report weekly. We never promise rankings, never name clients and never post fake reviews. The questions below cover the rest.",
+    "sections": [
+      {
+        "type": "prose",
+        "html": "<p>Short answers to the questions buyers ask us most. For definitions of the terms used here, see the <a href=\"/glossary/\">GEO glossary</a>. For anything not covered, email <a href=\"mailto:abhay@optimizer360.ai\">abhay@optimizer360.ai</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {"q": "What does Optimizer360 do?", "a": "We make brands found, trusted, followed, talked about and chosen in AI answers, search, media and communities. AI agents track how engines describe you, and our expert teams fix what is missing or wrong, from pages and schema to reviews, PR and community answers."},
+      {"q": "What is generative engine optimisation (GEO)?", "a": "GEO is the practice of making a brand easier for AI engines to find, trust, name and cite in their answers. The US spelling is generative engine optimization. It covers what you publish, the sources engines rely on and how accurately you are described."},
+      {"q": "How is GEO different from SEO?", "a": "SEO aims to rank pages in a list of search results. GEO aims to get your brand named, cited and described accurately inside the answer itself. The two share foundations, which is why we report on both scoreboards: the AI answers, and SEO plus owned enquiries."},
+      {"q": "Which AI engines do you track?", "a": "Eight: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews. We track up to 10,000 prompts per brand a day and store every answer with its date."},
+      {"q": "How long does GEO take to show results?", "a": "It depends on your category, starting point and the sources engines already trust. In one real-estate programme, a residential developer in India moved from a 32% to a 58% visibility score across 8 engines in under 2.5 months. That is one programme, not a promise."},
+      {"q": "How much does GEO cost?", "a": "It depends on scope: the brands, markets and questions involved. We do not publish prices. Most clients start with a Week-1 baseline, which gives a scorecard, a ranked question universe and a costed plan."},
+      {"q": "Do we have to sign a long contract?", "a": "No. There are three ways to start: a baseline and universe map; owning your strongest questions first; or a one-quarter pilot with both scoreboards reported monthly and a clear go or stop at month 3."},
+      {"q": "Do you guarantee rankings in ChatGPT or Google?", "a": "No. The engines decide what they say, and anyone who guarantees rankings is guessing. We do the work rigorously, measure from a Week-1 baseline and show every week what moved."},
+      {"q": "How do you measure and report results?", "a": "We take a Week-1 baseline, log every fix with its date and re-measure after it is published and crawled. Weekly reports compare against the baseline on two scoreboards: the AI answers, and SEO plus owned enquiries."},
+      {"q": "Do you name your clients or show testimonials?", "a": "No. We never name, describe identifiably, count or quote clients, and we show no logos or testimonials. Our case studies describe the sector and the market only."},
+      {"q": "Do you post on Reddit or edit Wikipedia for clients?", "a": "On Reddit and Quora we post openly as the brand, never through fake accounts. On Wikipedia we only propose factual corrections on talk pages, with sources, and never make promotional edits."},
+      {"q": "Do you write fake reviews?", "a": "Never. We help brands earn a steady stream of real reviews and reply to every one in public. No fabricated reviews, figures or astroturfing."},
+      {"q": "How do you handle compliance in India?", "a": "Brand, legal and regulatory sign-off comes before anything goes live. We check against RERA, ASCI and SEBI rules where they apply, and our work is aligned with the Digital Personal Data Protection Act (DPDP)."},
+      {"q": "Can you help a listed company with what AI tells investors?", "a": "Yes, through our Investor Relations package. We keep AI answers accurate and current using only public disclosures, follow SEBI rules and get company sign-off before anything is published. Accuracy, not spin."},
+      {"q": "Are you an agency or a software tool?", "a": "We are an agency that runs on our own platform, Optimizer GEO. The platform tracks the engines, answers and sources; our six specialist teams ship the fixes and own the KPIs."},
+      {"q": "Which industries do you work in?", "a": "Nine: real estate and hospitality; financial services and investor relations; retail and consumer brands; food and FMCG; B2B and professional services; technology and SaaS; pharma and healthcare; manufacturing; industrial and engineering; cinema and entertainment."},
+      {"q": "Which countries do you work in?", "a": "Our home market is India. We also work in the United States and Mauritius."},
+      {"q": "What do we get in the first week?", "a": "A Week-1 baseline: a readiness scorecard across 8 factors, a ranked universe of the questions your buyers ask, and a costed plan. It is the line every later result is measured against."},
+      {"q": "How do we get started?", "a": "Email abhay@optimizer360.ai or request an AI audit on our contact page. It shows which engines name you, who they name instead, the sources they cite and the first fixes we would make."}
+    ],
+    "related": ["/glossary/", "/solutions/geo/", "/results/", "/contact/"]
+  },
+  {
+    "path": "/privacy/",
+    "title": "Privacy notice for this website",
+    "description": "Our privacy notice: no analytics or advertising cookies, forms that open your own email app, and your rights under India's DPDP Act 2023 and other laws.",
+    "keywords": ["Optimizer360 privacy notice", "privacy policy", "DPDP Act 2023 rights", "no analytics cookies", "website privacy India", "data protection contact"],
+    "schema": "WebPage",
+    "eyebrow": "Privacy",
+    "h1": "Privacy, <span class=\"g\">kept simple.</span>",
+    "lede": "Last updated: 10 November 2026. What this website collects, what it does not, and how to reach us about your data.",
+    "answer": "This website does not use analytics or advertising cookies. It stores one setting, your colour-mode preference, in your browser's localStorage. The contact and audit forms do not send data to a server: they open your own email app with a prefilled message to abhay@optimizer360.ai. We use the emails we receive only to reply, never sell them, and keep them only as long as needed.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "Who does this notice cover?",
+        "html": "<p>This notice covers the website optimizer360.ai, run by Optimizer360. Where we receive personal data from you, we decide how it is used, which under India's Digital Personal Data Protection Act 2023 makes us the data fiduciary.</p><p><strong>Last updated: 10 November 2026.</strong></p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What does this website collect?",
+        "html": "<ul><li><strong>No analytics or advertising cookies.</strong> We do not use them.</li><li><strong>Your colour-mode preference.</strong> If you switch between light and dark mode, the choice is saved in your browser's localStorage so the site remembers it. It stays on your device and is not sent to us. You can clear it at any time in your browser settings.</li><li><strong>Standard technical data.</strong> Like any website, the servers that deliver these pages may record basic technical information, such as IP address, browser type and the page requested, to keep the site secure and running. We do not use it to profile visitors.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do the contact and audit forms work?",
+        "html": "<p>The forms on this site do not submit anything to a server. When you press the button, your own email app opens with a message to <a href=\"mailto:abhay@optimizer360.ai\">abhay@optimizer360.ai</a>, filled in with what you typed. Nothing reaches us unless you choose to send that email. Your email provider handles the message under its own privacy terms.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "What happens to emails you send us?",
+        "html": "<ul><li>We use them to reply to you and to carry on the conversation you started.</li><li>We do not sell them, and we do not use them for advertising.</li><li>We keep them only as long as we need them for that conversation and any work that follows, or as long as the law requires.</li></ul>"
+      },
+      {
+        "type": "prose",
+        "h2": "What are your rights under India's DPDP Act 2023?",
+        "html": "<p>Under the Digital Personal Data Protection Act 2023 you have the right to:</p><ul><li><strong>Access:</strong> ask what personal data we hold about you and how we use it.</li><li><strong>Correction:</strong> ask us to correct, complete or update it.</li><li><strong>Erasure:</strong> ask us to delete it, unless the law requires us to keep it.</li><li><strong>Grievance redressal:</strong> raise a complaint with us. If you are not satisfied with our response, you may approach the Data Protection Board of India.</li><li><strong>Nomination:</strong> name someone to exercise these rights for you in the event of death or incapacity.</li></ul><p>To use any of these rights, email <a href=\"mailto:abhay@optimizer360.ai\">abhay@optimizer360.ai</a>.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Visitors from the EU, UK and US",
+        "html": "<p><strong>EU and UK:</strong> if the GDPR or UK GDPR applies to you, you have rights to access, correct, erase, restrict, object to and move your personal data, and to complain to your local data protection authority. We process the emails you send us to reply to your request.</p><p><strong>United States:</strong> we do not sell or share your personal information, and we do not use it for targeted advertising. You can ask us to tell you what we hold or to delete it.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "How do I contact you about privacy?",
+        "html": "<p>Email <a href=\"mailto:abhay@optimizer360.ai\">abhay@optimizer360.ai</a> with \"Privacy\" in the subject line.</p>"
+      },
+      {
+        "type": "callout",
+        "html": "<p><strong>If we add analytics or a form backend, this notice will be updated first.</strong></p>"
+      }
+    ],
+    "faqs": [
+      {"q": "Does the Optimizer360 website use cookies?", "a": "No analytics or advertising cookies. The only thing stored is your colour-mode preference, kept in your browser's localStorage on your own device."},
+      {"q": "Does the contact form send my details to a server?", "a": "No. It opens your own email app with a prefilled message to abhay@optimizer360.ai. Nothing reaches us unless you choose to send that email."}
+    ],
+    "related": ["/terms/", "/contact/"]
+  },
+  {
+    "path": "/terms/",
+    "title": "Website terms of use",
+    "description": "Plain terms for using optimizer360.ai: general information not advice, fictional illustrations, no guarantees of rankings or results, and Indian law.",
+    "keywords": ["Optimizer360 terms of use", "website terms", "terms and conditions", "no ranking guarantee", "governing law India", "website disclaimer"],
+    "schema": "WebPage",
+    "eyebrow": "Terms",
+    "h1": "Website terms, <span class=\"g\">in plain words.</span>",
+    "lede": "Last updated: 10 November 2026. The rules for using this website.",
+    "answer": "These terms cover your use of optimizer360.ai. The content is general information, not legal, financial or investment advice. Illustrations use fictional brands, and third-party names and screenshots belong to their owners. We do not guarantee rankings or results. Indian law governs these terms. If you have a question about them, email abhay@optimizer360.ai.",
+    "sections": [
+      {
+        "type": "prose",
+        "h2": "About these terms",
+        "html": "<p>By using optimizer360.ai you agree to these terms. If you do not agree, please do not use the site.</p><p><strong>Last updated: 10 November 2026.</strong></p>"
+      },
+      {
+        "type": "prose",
+        "h2": "General information, not advice",
+        "html": "<p>Everything on this website is general information about AI search, organic marketing and our services. It is not legal, financial, investment, regulatory or other professional advice. Get advice on your own situation before you act on it.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Illustrations and fictional brands",
+        "html": "<p>Some examples on this site use fictional brands, such as Aurelia Homes and Meridian Industries, and are labelled as illustrations. Any resemblance to a real company is not intended. Our case studies describe real programmes but never name the client.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Third-party names and screenshots",
+        "html": "<p>The names of AI engines, platforms and other products mentioned on this site, and any screenshots of them, belong to their owners. They are shown as examples only and do not mean that those owners endorse or work with us. Third-party statistics are quoted with their source and year.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "No guarantees of rankings or results",
+        "html": "<p>AI engines and search engines decide what they show. We do not guarantee any ranking, citation, visibility score or business result. Results described on this site come from specific programmes and are not a promise of what any other programme will achieve.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Intellectual property",
+        "html": "<p>The text, design, graphics and code of this website belong to Optimizer360 unless stated otherwise. You may read, share links to and quote short extracts with credit. Do not copy, republish or sell substantial parts of the site without our written permission.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Links to other sites",
+        "html": "<p>We link to other websites for reference. We do not control them and are not responsible for their content, accuracy or privacy practices.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Limits on our liability",
+        "html": "<p>We work to keep this website accurate and available, but we provide it as it is. To the extent the law allows, we are not liable for any loss that comes from using the site or relying on its content.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Governing law",
+        "html": "<p>These terms are governed by the laws of India, and the courts of India have jurisdiction over any dispute arising from them.</p>"
+      },
+      {
+        "type": "prose",
+        "h2": "Changes and contact",
+        "html": "<p>We may update these terms. The date at the top of the page shows when they last changed. Questions about these terms: <a href=\"mailto:abhay@optimizer360.ai\">abhay@optimizer360.ai</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {"q": "Does Optimizer360 guarantee rankings or results?", "a": "No. AI engines and search engines decide what they show. We measure, do the work and report what moved, but we do not guarantee any ranking or result."}
+    ],
+    "related": ["/privacy/", "/contact/"]
+  }
+]
