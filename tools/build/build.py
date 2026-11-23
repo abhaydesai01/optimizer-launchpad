@@ -226,7 +226,7 @@ def h1_of(p):
     """Blog posts lead with their keyword title (search intent); other pages keep their brand-voice headline."""
     if not is_post(p):
         return p["h1"]
-    t = esc(p["title"])
+    t = esc(p.get("h1_title") or p["title"])
     if ":" in t:
         a, b = t.split(":", 1)
         return f'{a}: <span class="g">{b.strip()}</span>'
