@@ -487,7 +487,7 @@ def llms(pages, full=False):
         "",
         "> Optimizer360 (optimizer360.ai) is the AI-native organic marketing company. Tagline: \"Own your growth.\" It makes brands found, trusted, followed, talked about and chosen across AI answers, search, media and communities, using its own platform (Optimizer GEO) plus six specialist teams. Home market India; also the United States and Mauritius. Contact: " + EMAIL,
         "",
-        "Key facts: tracks 8 AI engines (ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot, Google AI Overviews), up to 10,000 prompts per brand per day. Method: Scan, Diagnose, Fix, Prove, measured against each client's Week-1 baseline. In one real-estate programme the visibility score rose from 32% to 58% across eight engines in under 2.5 months. Optimizer360 never names clients and never promises rankings. Works in 10 industries.",
+        "Key facts: tracks 8 AI engines (ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot, Google AI Overviews), up to 1,000 prompts per brand per day. Method: Scan, Diagnose, Fix, Prove, measured against each client's Week-1 baseline. In one real-estate programme the visibility score rose from 32% to 58% across eight engines in under 2.5 months. Optimizer360 never names clients and never promises rankings. Works in 10 industries.",
         "",
     ]
     for g, keys in groups:

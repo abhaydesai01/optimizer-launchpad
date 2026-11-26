@@ -2,7 +2,7 @@
 
 > Optimizer360 (optimizer360.ai) is the AI-native organic marketing company. Tagline: "Own your growth." It makes brands found, trusted, followed, talked about and chosen across AI answers, search, media and communities, using its own platform (Optimizer GEO) plus six specialist teams. Home market India; also the United States and Mauritius. Contact: abhay@optimizer360.ai
 
-Key facts: tracks 8 AI engines (ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot, Google AI Overviews), up to 10,000 prompts per brand per day. Method: Scan, Diagnose, Fix, Prove, measured against each client's Week-1 baseline. In one real-estate programme the visibility score rose from 32% to 58% across eight engines in under 2.5 months. Optimizer360 never names clients and never promises rankings. Works in 10 industries.
+Key facts: tracks 8 AI engines (ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot, Google AI Overviews), up to 1,000 prompts per brand per day. Method: Scan, Diagnose, Fix, Prove, measured against each client's Week-1 baseline. In one real-estate programme the visibility score rose from 32% to 58% across eight engines in under 2.5 months. Optimizer360 never names clients and never promises rankings. Works in 10 industries.
 
 ## Solutions
 
@@ -22,8 +22,8 @@ Key facts: tracks 8 AI engines (ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi,
   AI chat agents are assistants on your website, WhatsApp and Instagram that answer buyer questions accurately, qualify each lead and book a call or visit, at any hour. Optimizer360 builds them on the same verified facts used in your GEO work, so the answer in your chat matches the answer buyers saw in an AI engine.
 - [Fund what actually works.](https://optimizer360.ai/solutions/leads-pipeline/): Organic lead generation with attribution for AI search. We trace each deal to the AI answer, review, thread or video where demand began, so you fund what works.
   Organic lead generation brings in buyers through channels you own and earn rather than paid ads. Attribution for AI search traces each deal back to where demand began, such as an AI answer, a review, a forum thread or a video, so budgets follow evidence. Optimizer360 connects first mention to closed deal and reports it every week.
-- [See what AI says.](https://optimizer360.ai/platform/): Optimizer GEO is our AI visibility tracking platform. It runs up to 10,000 prompts per brand a day on 8 AI engines, tracking brand mentions, sources and fixes.
-  Optimizer GEO is the platform Optimizer360 built to track how brands appear in AI answers. It runs up to 10,000 prompts per brand a day across eight engines, including ChatGPT, Gemini, Perplexity and Google AI Overviews, recording who is named, in what order and which sources are cited. Our teams use it to plan, ship and prove every fix.
+- [See what AI says.](https://optimizer360.ai/platform/): Optimizer GEO is our AI visibility tracking platform. It runs up to 1,000 prompts per brand a day on 8 AI engines, tracking brand mentions, sources and fixes.
+  Optimizer GEO is the platform Optimizer360 built to track how brands appear in AI answers. It runs up to 1,000 prompts per brand a day across eight engines, including ChatGPT, Gemini, Perplexity and Google AI Overviews, recording who is named, in what order and which sources are cited. Our teams use it to plan, ship and prove every fix.
 
 ## Industries
 
@@ -130,7 +130,7 @@ Key facts: tracks 8 AI engines (ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi,
 - Q: How is GEO different from SEO?
   A: SEO aims to rank pages in a list of search results. GEO aims to get your brand named, cited and described accurately inside the answer itself. The two share foundations, which is why we report on both scoreboards: the AI answers, and SEO plus owned enquiries.
 - Q: Which AI engines do you track?
-  A: Eight: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews. We track up to 10,000 prompts per brand a day and store every answer with its date.
+  A: Eight: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews. We track up to 1,000 prompts per brand a day and store every answer with its date.
 - Q: How long does GEO take to show results?
   A: It depends on your category, starting point and the sources engines already trust. In one real-estate programme, a residential developer in India moved from a 32% to a 58% visibility score across 8 engines in under 2.5 months. That is one programme, not a promise.
 - Q: How much does GEO cost?

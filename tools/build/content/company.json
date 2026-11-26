@@ -14,7 +14,7 @@
         "type": "stats",
         "items": [
           {"n": "8", "d": "AI engines tracked: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews.", "src": "Optimizer GEO platform"},
-          {"n": "10,000", "d": "prompts per brand a day, each answer stored with its date.", "src": "Optimizer GEO platform"},
+          {"n": "1,000", "d": "prompts per brand a day, each answer stored with its date.", "src": "Optimizer GEO platform"},
           {"n": "58%", "d": "visibility score in one real-estate programme, up from 32% at the Week-1 baseline.", "src": "Residential developer, India"},
           {"n": "9", "d": "industries we work in, from real estate and financial services to cinema and entertainment.", "src": "Optimizer360"}
         ]
@@ -250,7 +250,7 @@
         "h2": "What does AI-native mean here?",
         "intro": "AI agents and expert teams, run as one organic engine.",
         "items": [
-          {"t": "Agents find it", "d": "Our platform tracks 8 AI engines and up to 10,000 prompts per brand a day, recording who is named, in what order and quoting which source."},
+          {"t": "Agents find it", "d": "Our platform tracks 8 AI engines and up to 1,000 prompts per brand a day, recording who is named, in what order and quoting which source."},
           {"t": "Experts fix it", "d": "Specialist teams ship the pages, schema, review replies, community answers and PR, and log every fix with its date."},
           {"t": "Data proves it", "d": "Every change is re-measured and reported weekly against the Week-1 baseline, on the AI answers and on SEO and owned enquiries."}
         ]
@@ -483,7 +483,7 @@
       {"q": "What does Optimizer360 do?", "a": "We make brands found, trusted, followed, talked about and chosen in AI answers, search, media and communities. AI agents track how engines describe you, and our expert teams fix what is missing or wrong, from pages and schema to reviews, PR and community answers."},
       {"q": "What is generative engine optimisation (GEO)?", "a": "GEO is the practice of making a brand easier for AI engines to find, trust, name and cite in their answers. The US spelling is generative engine optimization. It covers what you publish, the sources engines rely on and how accurately you are described."},
       {"q": "How is GEO different from SEO?", "a": "SEO aims to rank pages in a list of search results. GEO aims to get your brand named, cited and described accurately inside the answer itself. The two share foundations, which is why we report on both scoreboards: the AI answers, and SEO plus owned enquiries."},
-      {"q": "Which AI engines do you track?", "a": "Eight: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews. We track up to 10,000 prompts per brand a day and store every answer with its date."},
+      {"q": "Which AI engines do you track?", "a": "Eight: ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews. We track up to 1,000 prompts per brand a day and store every answer with its date."},
       {"q": "How long does GEO take to show results?", "a": "It depends on your category, starting point and the sources engines already trust. In one real-estate programme, a residential developer in India moved from a 32% to a 58% visibility score across 8 engines in under 2.5 months. That is one programme, not a promise."},
       {"q": "How much does GEO cost?", "a": "It depends on scope: the brands, markets and questions involved. We do not publish prices. Most clients start with a Week-1 baseline, which gives a scorecard, a ranked question universe and a costed plan."},
       {"q": "Do we have to sign a long contract?", "a": "No. There are three ways to start: a baseline and universe map; owning your strongest questions first; or a one-quarter pilot with both scoreboards reported monthly and a clear go or stop at month 3."},

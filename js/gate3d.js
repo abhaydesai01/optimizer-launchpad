@@ -141,7 +141,7 @@ const PANELS = [
   { type: "bars", title: "Answer share by engine", v: [.72, .61, .54, .48, .35, .29] },
   { type: "line", title: "Share of voice", v: [.12, .15, .2, .22, .31, .38, .44, .52, .6] },
   { type: "list", title: "Live answers", v: [["ChatGPT", "#2"], ["Gemini", "#1"], ["Perplexity", "#3"], ["Claude", "#2"]] },
-  { type: "num", title: "Engines tracked", v: "8", sub: "10,000 prompts a day" },
+  { type: "num", title: "Engines tracked", v: "8", sub: "1,000 prompts a day" },
   { type: "list", title: "Sources AI cites", v: [["Your site", "#rising"], ["Wikipedia", "cited"], ["Reddit", "cited"], ["Press", "cited"]] },
   { type: "bars", title: "Readiness", v: [.6, .5, .5, .5, .4, .4] },
   { type: "line", title: "Citation rate", v: [.2, .22, .21, .3, .34, .41, .47, .55, .63] },

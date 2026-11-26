@@ -39,7 +39,7 @@ The door is a real-time 3D film rendered in code (three.js): the camera flies fr
 
 - **Readiness scorecard**: 8 dimensions scored /10 at the Week-1 baseline.
 - **Prompt universe**: no invented "prompt volume". Built from SEO data, first-party enquiries, the category map and an engine baseline; ranked on demand × winnability; banded Own / Build / Monitor for compliance.
-- **Live answers**: 8 engines, up to 10,000 prompts a day, every answer captured with its date.
+- **Live answers**: 8 engines, up to 1,000 prompts a day, every answer captured with its date.
 - **Sources**: every citation recorded, so PR and content go where engines actually read.
 - **Fixes & proof**: every fix dated and re-measured on two scoreboards (AI answers, plus SEO and owned enquiries).
 - **What the data gives you**: real demand, who wins instead of you, the sources that decide, early alerts on wrong facts, board-ready proof, compliance (RERA, ASCI, SEBI, DPDP).

@@ -58,10 +58,10 @@ const SCENES = [
     const COLS = 40;
     const el = h(`<div class="pv pv--grid"><div class="pv-count"><strong>0</strong><span>questions asked today</span></div>
       <div class="pv-mx">${ENG.map((e) => `<div class="pv-row"><span>${e}</span><div>${"<i></i>".repeat(COLS)}</div></div>`).join("")}</div>
-      <p class="pv-cap">8 engines × up to 10,000 prompts, per brand, every day</p></div>`);
+      <p class="pv-cap">8 engines × up to 1,000 prompts, per brand, every day</p></div>`);
     const dots = [...el.querySelectorAll(".pv-mx i")], num = el.querySelector(".pv-count strong");
     const order = dots.map((_, i) => i).sort((a, b) => ((a * 7919) % 97) - ((b * 7919) % 97));
-    return { el, up(t) { const n = Math.round(seg(t, 0.05, 0.85) * dots.length); order.forEach((d, k) => dots[d].classList.toggle("on", k < n)); num.textContent = Math.round(seg(t, 0.05, 0.85) * 10000).toLocaleString("en-IN"); } };
+    return { el, up(t) { const n = Math.round(seg(t, 0.05, 0.85) * dots.length); order.forEach((d, k) => dots[d].classList.toggle("on", k < n)); num.textContent = Math.round(seg(t, 0.05, 0.85) * 1000).toLocaleString("en-IN"); } };
   },
 
   // 3 · every answer, on record: the real Overview screen

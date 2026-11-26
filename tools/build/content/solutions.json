@@ -227,7 +227,7 @@
       {
         "type": "prose",
         "h2": "Which AI engines do we optimise for?",
-        "html": "<p>Our <a href=\"/platform/\">Optimizer GEO platform</a> tracks eight engines, running up to 10,000 prompts per brand a day:</p><ul><li>ChatGPT</li><li>Gemini</li><li>Claude</li><li>Grok</li><li>Perplexity</li><li>Kimi</li><li>Microsoft Copilot</li><li>Google AI Overviews</li></ul><p>Each engine favours different sources and changes over time, so we measure them separately rather than averaging them into one number you cannot act on.</p>"
+        "html": "<p>Our <a href=\"/platform/\">Optimizer GEO platform</a> tracks eight engines, running up to 1,000 prompts per brand a day:</p><ul><li>ChatGPT</li><li>Gemini</li><li>Claude</li><li>Grok</li><li>Perplexity</li><li>Kimi</li><li>Microsoft Copilot</li><li>Google AI Overviews</li></ul><p>Each engine favours different sources and changes over time, so we measure them separately rather than averaging them into one number you cannot act on.</p>"
       },
       {
         "type": "steps",
@@ -1273,7 +1273,7 @@
   {
     "path": "/platform/",
     "title": "Optimizer GEO platform: AI visibility tracking",
-    "description": "Optimizer GEO is our AI visibility tracking platform. It runs up to 10,000 prompts per brand a day on 8 AI engines, tracking brand mentions, sources and fixes.",
+    "description": "Optimizer GEO is our AI visibility tracking platform. It runs up to 1,000 prompts per brand a day on 8 AI engines, tracking brand mentions, sources and fixes.",
     "keywords": [
       "Optimizer GEO platform",
       "AI visibility tracking tool",
@@ -1289,12 +1289,12 @@
     "eyebrow": "Platform",
     "h1": "See what <span class=\"g\">AI says.</span>",
     "lede": "Optimizer GEO shows what eight AI engines say about your brand, why they say it, and what changed after every fix.",
-    "answer": "Optimizer GEO is the platform Optimizer360 built to track how brands appear in AI answers. It runs up to 10,000 prompts per brand a day across eight engines, including ChatGPT, Gemini, Perplexity and Google AI Overviews, recording who is named, in what order and which sources are cited. Our teams use it to plan, ship and prove every fix.",
+    "answer": "Optimizer GEO is the platform Optimizer360 built to track how brands appear in AI answers. It runs up to 1,000 prompts per brand a day across eight engines, including ChatGPT, Gemini, Perplexity and Google AI Overviews, recording who is named, in what order and which sources are cited. Our teams use it to plan, ship and prove every fix.",
     "sections": [
       {
         "type": "prose",
         "h2": "How do you track brand mentions in ChatGPT and other engines?",
-        "html": "<p>You ask the engines the questions your buyers ask, at scale, and keep every answer. Optimizer GEO runs up to <strong>10,000 prompts per brand a day</strong> across ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews. Each answer is stored with its date, the brands it names, their order and every source it cites.</p><p>That record turns AI visibility from a guess into something you can measure, compare and improve. The platform was built by Abhay Desai, who leads technology and product and runs delivery.</p>"
+        "html": "<p>You ask the engines the questions your buyers ask, at scale, and keep every answer. Optimizer GEO runs up to <strong>1,000 prompts per brand a day</strong> across ChatGPT, Gemini, Claude, Grok, Perplexity, Kimi, Microsoft Copilot and Google AI Overviews. Each answer is stored with its date, the brands it names, their order and every source it cites.</p><p>That record turns AI visibility from a guess into something you can measure, compare and improve. The platform was built by Abhay Desai, who leads technology and product and runs delivery.</p>"
       },
       {
         "type": "cols",
@@ -1438,7 +1438,7 @@
     "faqs": [
       {
         "q": "How can I track what ChatGPT says about my brand?",
-        "a": "Ask it the questions your buyers ask, many times and on a schedule, and keep every answer with its date and sources. Doing that by hand does not scale, which is why Optimizer GEO runs up to 10,000 prompts per brand a day across eight engines."
+        "a": "Ask it the questions your buyers ask, many times and on a schedule, and keep every answer with its date and sources. Doing that by hand does not scale, which is why Optimizer GEO runs up to 1,000 prompts per brand a day across eight engines."
       },
       {
         "q": "Which AI engines does Optimizer GEO track?",
